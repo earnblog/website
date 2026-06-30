@@ -1,0 +1,26 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { SITE } from '../config.mjs';
+const { post } = Astro.props;
+const { title, date, cover, coverCaption } = post.data;
+const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<BaseLayout title={title} description={post.data.description}>
+  <article class="post">
+    <a class="back" href="/">← 返回目录</a>
+    <div class="post-kicker">
+      <span>{SITE.author}</span><span class="dot">/</span><span>{dateStr}</span>
+    </div>
+    <h1 class="post-title">{title}</h1>
+    {cover && (
+      <figure class="post-cover">
+        <img src={cover} alt={title} />
+        {coverCaption && <figcaption>{coverCaption}</figcaption>}
+      </figure>
+    )}
+    <div class="post-content">
+      <slot />
+    </div>
+    <p class="post-disclaimer">{SITE.disclaimer}</p>
+  </article>
+</BaseLayout>

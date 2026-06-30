@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config.mjs';
+---
+<BaseLayout title="关于">
+  <article class="post">
+    <h1 class="post-title">关于</h1>
+    <div class="post-content">
+      <p>这里是 {SITE.author} 的独立财经分析。不预测涨跌,只拆解机制——市场是一台亿万人的分布式计算机,我想做的,是看清它在如何计算。</p>
+      <p>内容涵盖股市、汇率、资产、宏观与一些关于秩序和人性的思考。原创、独立,只代表我自己的偏见。</p>
+      <p>(这段是占位文字,换成你自己的介绍。)</p>
+    </div>
+    <p class="post-disclaimer">{SITE.disclaimer}</p>
+  </article>
+</BaseLayout>

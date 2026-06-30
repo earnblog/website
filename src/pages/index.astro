@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = (d) => d.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '.');
+const [latest, ...rest] = posts;
+---
+<BaseLayout>
+  {latest && (
+    <section class="hero">
+      <div class="text">
+        <span class="label">最新</span>
+        <h1><a href={`/posts/${latest.slug}`}>{latest.data.title}</a></h1>
+        {latest.data.description && <p class="excerpt">{latest.data.description}</p>}
+        <div class="more">
+          <span class="date">{fmt(latest.data.date)}</span>
+          <a href={`/posts/${latest.slug}`}>阅读全文 →</a>
+        </div>
+      </div>
+      {latest.data.cover && (
+        <figure class="cover">
+          <a href={`/posts/${latest.slug}`}><img src={latest.data.cover} alt={latest.data.title} /></a>
+        </figure>
+      )}
+    </section>
+  )}
+
+  {rest.length > 0 && (
+    <section class="archive">
+      <div class="section-head">归档 · ARCHIVE</div>
+      <ol class="toc">
+        {rest.map((post, i) => (
+          <li>
+            <a href={`/posts/${post.slug}`}>
+              <span class="num">{String(i + 2).padStart(2, '0')}</span>
+              <span class="body">
+                <h3>{post.data.title}</h3>
+                {post.data.description && <p>{post.data.description}</p>}
+              </span>
+              <span class="date">{fmt(post.data.date)}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+</BaseLayout>

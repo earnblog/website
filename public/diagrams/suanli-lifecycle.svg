@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="算力生命周期示意图">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <line x1="40" y1="64" x2="640" y2="64" stroke="#a8453a" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="636" y="56" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">流动性物理极限</text>
+  <line x1="40" y1="296" x2="640" y2="296" stroke="#ddd4c4" stroke-width="1"/>
+  <path d="M44 290 C150 282 200 262 268 236 C330 214 360 196 392 170 C424 144 446 110 470 86 C486 70 494 70 502 78 C520 96 540 210 560 270 C575 300 600 300 636 300" fill="none" stroke="#33404f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="498" cy="76" r="4" fill="#a8453a"/>
+  <text x="498" y="44" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#a8453a">最疯狂 = 算力最低</text>
+  <rect x="44" y="312" width="200" height="7" rx="3.5" fill="#4f6b8a"/>
+  <rect x="248" y="312" width="120" height="7" rx="3.5" fill="#c8a96a"/>
+  <rect x="372" y="312" width="120" height="7" rx="3.5" fill="#b07d33"/>
+  <rect x="496" y="312" width="140" height="7" rx="3.5" fill="#a8453a"/>
+  <g font-family="'Noto Serif SC',serif" font-size="12.5" fill="#3a352c" text-anchor="middle">
+    <text x="144" y="340">① 分布式计算·基于现实</text>
+    <text x="308" y="340">② 正反馈加速·凸性</text>
+    <text x="432" y="340">③ 自我循环·算力压缩</text>
+    <text x="566" y="340">④ 撞极限·逆转</text>
+  </g>
+  <text x="44" y="24" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">色带 = 算力状态:由高(蓝)递减至枯竭(红)</text>
+</svg>
