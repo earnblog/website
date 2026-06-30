@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:超指数曲线冲向天花板的泡沫">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <!-- 流动性天花板 -->
+  <line x1="40" y1="56" x2="640" y2="56" stroke="#a8453a" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="636" y="48" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">流动性极限</text>
+  <!-- 超指数曲线 -->
+  <path d="M44 250 C200 244 320 232 420 196 C500 166 540 118 566 74" fill="none" stroke="#c8a96a" stroke-width="3" stroke-linecap="round"/>
+  <!-- 泡沫 -->
+  <circle cx="566" cy="74" r="20" fill="none" stroke="#e3c587" stroke-width="2"/>
+  <circle cx="566" cy="74" r="20" fill="#c8a96a" opacity="0.18"/>
+  <circle cx="560" cy="68" r="4" fill="#e3c587" opacity="0.8"/>
+  <text x="120" y="240" font-family="'Noto Serif SC',serif" font-size="14" fill="#9b9385">最后一公里</text>
+</svg>

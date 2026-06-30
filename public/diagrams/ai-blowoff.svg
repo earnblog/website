@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="blow-off 泡沫末段示意图:超指数爆发后撞顶崩盘">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <line x1="40" y1="62" x2="640" y2="62" stroke="#a8453a" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="636" y="54" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">流动性物理极限</text>
+  <line x1="40" y1="300" x2="640" y2="300" stroke="#ddd4c4" stroke-width="1"/>
+  <!-- 价格:健康上行→blow-off爆发→崩 -->
+  <path d="M44 292 C160 280 240 256 320 226 C380 204 410 180 440 150 C462 128 474 96 486 78 C492 70 498 70 504 80 C522 110 545 240 565 285 C578 305 605 305 636 305" fill="none" stroke="#33404f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="492" cy="72" r="4" fill="#a8453a"/>
+  <text x="492" y="44" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#a8453a">blow-off 顶</text>
+  <!-- 两段标注 -->
+  <rect x="44" y="318" width="300" height="7" rx="3.5" fill="#4f6b8a"/>
+  <rect x="348" y="318" width="160" height="7" rx="3.5" fill="#c8a96a"/>
+  <rect x="512" y="318" width="124" height="7" rx="3.5" fill="#a8453a"/>
+  <g font-family="'Noto Serif SC',serif" font-size="12.5" fill="#3a352c" text-anchor="middle">
+    <text x="194" y="344">为未来定价(健康)</text>
+    <text x="428" y="344">只为上涨定价(blow-off)</text>
+    <text x="574" y="344">增量枯竭·崩</text>
+  </g>
+  <text x="44" y="24" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">最陡的一段最诱人,也离悬崖最近</text>
+</svg>

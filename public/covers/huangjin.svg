@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:下跌的价格红线与稳定的金线">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <g stroke="#2a3342" stroke-width="1">
+    <line x1="40" y1="80" x2="640" y2="80"/><line x1="40" y1="150" x2="640" y2="150"/><line x1="40" y1="220" x2="640" y2="220"/>
+  </g>
+  <!-- 价格红线:下跌 -->
+  <path d="M44 70 L140 96 L210 84 L300 128 L380 116 L470 176 L560 168 L636 232" fill="none" stroke="#a8453a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="636" cy="232" r="4" fill="#a8453a"/>
+  <!-- 金线:稳定的逻辑 -->
+  <line x1="44" y1="150" x2="636" y2="150" stroke="#c8a96a" stroke-width="3"/>
+  <!-- 金条 -->
+  <path d="M300 138 l80 0 l14 24 l-108 0 z" fill="#c8a96a"/>
+  <path d="M300 138 l80 0 l-8 8 l-64 0 z" fill="#e3c587"/>
+  <text x="500" y="142" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#c8a96a">逻辑</text>
+  <text x="500" y="252" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#a8453a">价格</text>
+</svg>

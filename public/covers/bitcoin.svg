@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:比特币符号与其在流动性潮水上的影子">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <!-- 潮水波 -->
+  <path d="M0 175 Q85 150 170 175 T340 175 T510 175 T680 175" fill="none" stroke="#4f6b8a" stroke-width="2" opacity="0.8"/>
+  <path d="M0 192 Q85 170 170 192 T340 192 T510 192 T680 192" fill="none" stroke="#3a4659" stroke-width="2" opacity="0.7"/>
+  <!-- 比特币符号(本体) -->
+  <g transform="translate(340,108)">
+    <circle r="42" fill="#c8a96a"/>
+    <text x="0" y="16" text-anchor="middle" font-family="Georgia,serif" font-size="48" font-weight="700" fill="#181f2b">&#8383;</text>
+  </g>
+  <!-- 影子(下方,扁压、变淡) -->
+  <g transform="translate(340,238) scale(1,-0.55)" opacity="0.30">
+    <circle r="42" fill="#c8a96a"/>
+    <text x="0" y="16" text-anchor="middle" font-family="Georgia,serif" font-size="48" font-weight="700" fill="#181f2b">&#8383;</text>
+  </g>
+</svg>
