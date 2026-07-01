@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:退去的信用潮水与干涸的滩">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <!-- 退潮的水位线,逐级下降 -->
+  <path d="M0 120 Q80 104 160 120 T320 120 T480 120 T680 120" fill="none" stroke="#4f6b8a" stroke-width="2" opacity="0.85"/>
+  <path d="M0 158 Q80 144 160 158 T320 158 T480 158 T680 158" fill="none" stroke="#3f5470" stroke-width="2" opacity="0.6"/>
+  <path d="M0 196 Q80 184 160 196 T320 196 T480 196 T680 196" fill="none" stroke="#33455c" stroke-width="2" opacity="0.4"/>
+  <!-- 退潮箭头 -->
+  <line x1="150" y1="230" x2="90" y2="230" stroke="#5b6b85" stroke-width="1.5"/>
+  <path d="M90 230 l12 -5 l0 10 z" fill="#5b6b85"/>
+  <text x="160" y="234" font-family="'Noto Serif SC',serif" font-size="13" fill="#5b6b85">信用退潮</text>
+  <!-- 干涸的滩(右侧裂纹) -->
+  <g stroke="#2a3342" stroke-width="1.5">
+    <path d="M470 240 l20 14 M500 236 l16 20 M540 244 l24 10 M580 234 l14 22 M610 246 l22 8"/>
+  </g>
+  <!-- 价格点:落在水面上,下滑 -->
+  <circle cx="560" cy="196" r="6" fill="#c8a96a"/>
+  <text x="560" y="182" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#c8a96a">价格</text>
+</svg>

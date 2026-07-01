@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:满屏噪音里一根不动的金线">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <!-- 噪音:杂乱的浅色折线 -->
+  <path d="M20 90 L60 150 L100 70 L140 170 L180 60 L220 160 L260 80 L300 180 L340 66 L380 172 L420 84 L460 158 L500 72 L540 176 L580 78 L620 164 L660 96" fill="none" stroke="#33455c" stroke-width="1.5" opacity="0.7"/>
+  <path d="M20 210 L60 160 L100 220 L140 150 L180 230 L220 158 L260 214 L300 152 L340 226 L380 156 L420 218 L460 150 L500 224 L540 160 L580 212 L620 154 L660 206" fill="none" stroke="#2a3342" stroke-width="1.5" opacity="0.7"/>
+  <!-- 不动的金线 -->
+  <line x1="30" y1="150" x2="650" y2="150" stroke="#c8a96a" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="340" cy="150" r="7" fill="#e3c587"/>
+  <text x="340" y="134" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a">按住不动</text>
+</svg>
