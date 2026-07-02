@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:方向相反的两支箭,一收紧一放松">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <!-- 中线 -->
+  <line x1="340" y1="40" x2="340" y2="260" stroke="#33455c" stroke-width="1" stroke-dasharray="5 5"/>
+  <!-- 左:收紧治通胀(向左) -->
+  <line x1="300" y1="120" x2="120" y2="120" stroke="#a8453a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M108 120 l20 -12 l0 24 z" fill="#a8453a"/>
+  <text x="240" y="104" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c06152">收紧治通胀</text>
+  <!-- 右:放松救增长(向右) -->
+  <line x1="380" y1="180" x2="560" y2="180" stroke="#4f6b8a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M572 180 l-20 -12 l0 24 z" fill="#4f6b8a"/>
+  <text x="450" y="208" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#7f93ad">放松救增长</text>
+  <!-- 中间:被撕扯 -->
+  <text x="340" y="156" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">滞胀</text>
+</svg>
