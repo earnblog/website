@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="有增长的凸性曲线与只有高股息、无增长的凹性曲线对照">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <line x1="90" y1="320" x2="640" y2="320" stroke="#ddd4c4" stroke-width="1"/>
+  <line x1="90" y1="40" x2="90" y2="320" stroke="#ddd4c4" stroke-width="1"/>
+  <circle cx="120" cy="230" r="5" fill="#3a352c"/>
+  <text x="98" y="215" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">同一起点</text>
+
+  <!-- 凸性:有增长,上行敞开 -->
+  <path d="M120 230 C240 224 340 196 440 150 C520 112 580 82 632 60" fill="none" stroke="#b07d33" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="632" cy="60" r="4" fill="#b07d33"/>
+  <text x="470" y="52" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#b07d33">有增长 · 凸性</text>
+  <text x="470" y="70" font-family="system-ui,sans-serif" font-size="11.5" fill="#a07a3e">上行敞开,是复利</text>
+
+  <!-- 凹性:只有高股息、无增长,上行封死、下行敞开 -->
+  <path d="M120 230 C240 244 340 258 440 272 C520 284 580 296 632 306" fill="none" stroke="#4f6b8a" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="632" cy="306" r="4" fill="#4f6b8a"/>
+  <text x="440" y="300" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#4f6b8a">只有高股息 · 凹性</text>
+  <text x="440" y="318" font-family="system-ui,sans-serif" font-size="11.5" fill="#54687d">上行封死,是单利烟蒂</text>
+
+  <text x="96" y="345" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#8a8170">安全边际藏在增长里,不在一个跌出来的高比率里</text>
+</svg>

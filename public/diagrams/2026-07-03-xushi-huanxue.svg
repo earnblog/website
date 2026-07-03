@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="稀缺叙事与过剩叙事的镜像:同一组事实,两种相反的解读">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <line x1="340" y1="40" x2="340" y2="320" stroke="#ddd4c4" stroke-width="1" stroke-dasharray="5 5"/>
+  <text x="44" y="30" font-family="system-ui,sans-serif" font-size="12" fill="#8a8170">同一组事实:租金在涨、交货排队、Meta 卖闲置</text>
+
+  <!-- 左:稀缺叙事(正反馈,向上) -->
+  <text x="170" y="70" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#4f6b8a">稀缺叙事</text>
+  <path d="M70 250 C140 230 200 190 270 120" fill="none" stroke="#4f6b8a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M270 120 l-3 20 l19 -7 z" fill="#4f6b8a"/>
+  <text x="90" y="285" font-family="system-ui,sans-serif" font-size="12" fill="#5c6b7d">涨价 = 需求爆发 → 人人加仓</text>
+  <text x="90" y="305" font-family="system-ui,sans-serif" font-size="12" fill="#5c6b7d">越买不到越买,自我强化</text>
+
+  <!-- 右:过剩叙事(负反馈,向下) -->
+  <text x="510" y="70" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#a8453a">过剩叙事</text>
+  <path d="M410 120 C480 190 540 230 610 250" fill="none" stroke="#a8453a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M610 250 l-19 -7 l3 20 z" fill="#a8453a"/>
+  <text x="410" y="285" font-family="system-ui,sans-serif" font-size="12" fill="#9a5148">涨价 = 末日前疯狂 → 人人减仓</text>
+  <text x="410" y="305" font-family="system-ui,sans-serif" font-size="12" fill="#9a5148">同一个事实,读成利空</text>
+
+  <text x="340" y="345" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#8a8170">变的不是供需,是故事的方向</text>
+</svg>

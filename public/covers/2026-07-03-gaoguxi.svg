@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一个百分号稳坐,底下的台子却在开裂">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <g stroke="#2a3342" stroke-width="1"><line x1="40" y1="90" x2="640" y2="90"/><line x1="40" y1="160" x2="640" y2="160"/></g>
+  <!-- 高高的股息率 % 稳坐 -->
+  <text x="340" y="130" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="76" font-weight="700" fill="#c8a96a">%</text>
+  <text x="340" y="160" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#e3c587">高股息率</text>
+  <!-- 开裂的台子 = 缩水的分母 / 萎缩的生意 -->
+  <line x1="150" y1="205" x2="325" y2="205" stroke="#a8453a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="355" y1="205" x2="530" y2="205" stroke="#a8453a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M325 205 l14 26 l-28 0 z" fill="#1c2330" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="340" y="258" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">底下的生意在萎缩 —— 比率高,未必有真底</text>
+</svg>

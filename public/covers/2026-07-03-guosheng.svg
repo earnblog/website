@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:价格仍在上行,叙事却从稀缺切到过剩">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <g stroke="#2a3342" stroke-width="1"><line x1="40" y1="80" x2="640" y2="80"/><line x1="40" y1="150" x2="640" y2="150"/><line x1="40" y1="220" x2="640" y2="220"/></g>
+  <!-- 价格仍在上行 -->
+  <path d="M70 210 C160 196 220 178 300 150 C370 126 420 108 470 88" fill="none" stroke="#c8a96a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M470 88 l-4 24 l22 -8 z" fill="#c8a96a"/>
+  <text x="70" y="238" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a">价格仍在上行 · 货还得排队</text>
+  <!-- 叙事开关:稀缺 → 过剩 -->
+  <rect x="470" y="120" rx="6" width="78" height="34" fill="#26405c" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="509" y="142" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#7f9ec2">稀缺</text>
+  <path d="M556 137 h34" stroke="#8a8170" stroke-width="2"/>
+  <path d="M590 137 l-10 -6 l0 12 z" fill="#8a8170"/>
+  <rect x="562" y="120" rx="6" width="78" height="34" fill="#3a1f1c" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="601" y="142" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#c06152">过剩</text>
+  <text x="470" y="180" font-family="system-ui,sans-serif" font-size="12" fill="#8a8170">变的不是东西,是故事的开关</text>
+</svg>

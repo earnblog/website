@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一根横梁,筹码全压向一边而失衡">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <g stroke="#2a3342" stroke-width="1"><line x1="40" y1="90" x2="640" y2="90"/><line x1="40" y1="230" x2="640" y2="230"/></g>
+  <!-- 支点 -->
+  <path d="M340 210 l-22 34 l44 0 z" fill="#4f6b8a"/>
+  <!-- 倾斜的横梁:全压向左 -->
+  <g transform="rotate(-13 340 208)">
+    <line x1="150" y1="208" x2="560" y2="208" stroke="#c8a96a" stroke-width="5" stroke-linecap="round"/>
+    <!-- 左侧拥挤的筹码 -->
+    <circle cx="180" cy="192" r="9" fill="#a8453a"/>
+    <circle cx="204" cy="192" r="9" fill="#a8453a"/>
+    <circle cx="228" cy="192" r="9" fill="#a8453a"/>
+    <circle cx="192" cy="174" r="9" fill="#c06152"/>
+    <circle cx="216" cy="174" r="9" fill="#c06152"/>
+    <circle cx="204" cy="158" r="9" fill="#c8a96a"/>
+    <!-- 右侧空无一人 -->
+    <circle cx="520" cy="192" r="7" fill="none" stroke="#3a4557" stroke-width="1.5"/>
+  </g>
+  <text x="150" y="278" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c06152">所有人挤在同一边</text>
+  <text x="470" y="278" font-family="system-ui,sans-serif" font-size="13" fill="#5a6678">…无人接盘</text>
+</svg>
