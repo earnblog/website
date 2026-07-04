@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:同一个事实,一头连着加号一头连着减号">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <g stroke="#2a3342" stroke-width="1"><line x1="40" y1="72" x2="640" y2="72"/><line x1="40" y1="228" x2="640" y2="228"/></g>
+  <!-- 中心:同一个事实 -->
+  <rect x="278" y="128" width="124" height="44" rx="6" fill="#232c3b" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="340" y="155" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#cdd6e2">同一个事实</text>
+  <!-- 向上分叉 → 利多 + -->
+  <path d="M402 138 C 470 118, 500 100, 540 96" fill="none" stroke="#c8a96a" stroke-width="2.5"/>
+  <circle cx="556" cy="94" r="20" fill="#2a3446" stroke="#c8a96a" stroke-width="2"/>
+  <text x="556" y="102" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#e3c587">+</text>
+  <text x="556" y="132" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">"成熟"</text>
+  <!-- 向下分叉 → 利空 − -->
+  <path d="M402 162 C 470 182, 500 200, 540 204" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+  <circle cx="556" cy="206" r="20" fill="#2a3446" stroke="#a8453a" stroke-width="2"/>
+  <text x="556" y="214" text-anchor="middle" font-family="system-ui,sans-serif" font-size="26" font-weight="700" fill="#c06152">−</text>
+  <text x="556" y="244" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c06152">"过剩"</text>
+  <text x="200" y="276" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">符号不在事实里,在讲它的故事里</text>
+</svg>

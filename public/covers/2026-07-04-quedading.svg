@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一个亮着的小节点,置身一整片幽微的秩序之网">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <!-- 幽微的秩序之网:大量节点 + 连线 -->
+  <g stroke="#28303f" stroke-width="1">
+    <line x1="90" y1="70" x2="200" y2="130"/><line x1="200" y1="130" x2="150" y2="220"/>
+    <line x1="200" y1="130" x2="320" y2="90"/><line x1="320" y1="90" x2="440" y2="140"/>
+    <line x1="440" y1="140" x2="560" y2="80"/><line x1="440" y1="140" x2="520" y2="210"/>
+    <line x1="150" y1="220" x2="300" y2="240"/><line x1="300" y1="240" x2="440" y2="140"/>
+    <line x1="300" y1="240" x2="520" y2="210"/><line x1="560" y1="80" x2="600" y2="170"/>
+    <line x1="90" y1="70" x2="150" y2="220"/><line x1="320" y1="90" x2="340" y2="158"/>
+  </g>
+  <g fill="#3a4557">
+    <circle cx="90" cy="70" r="4"/><circle cx="200" cy="130" r="4"/><circle cx="150" cy="220" r="4"/>
+    <circle cx="320" cy="90" r="4"/><circle cx="440" cy="140" r="4"/><circle cx="560" cy="80" r="4"/>
+    <circle cx="520" cy="210" r="4"/><circle cx="300" cy="240" r="4"/><circle cx="600" cy="170" r="4"/>
+  </g>
+  <!-- 中心那个自以为看穿一切的小节点 -->
+  <circle cx="340" cy="158" r="12" fill="#c8a96a"/>
+  <circle cx="340" cy="158" r="12" fill="none" stroke="#e3c587" stroke-width="1.5" opacity="0.5"/>
+  <text x="340" y="196" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">你,一个节点</text>
+  <text x="340" y="282" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#6a7080">系统的算力,是所有节点之和 —— 它比你大</text>
+</svg>

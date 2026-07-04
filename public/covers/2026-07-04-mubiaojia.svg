@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一堆黄金目标价从同一点炸成一倍宽的扇面">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <g stroke="#2a3342" stroke-width="1"><line x1="40" y1="70" x2="640" y2="70"/><line x1="40" y1="240" x2="640" y2="240"/></g>
+  <!-- 起点:同一批数据 -->
+  <circle cx="120" cy="158" r="6" fill="#8a8170"/>
+  <text x="120" y="188" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#6a7080">同一批数据</text>
+  <!-- 发散的目标价扇面 -->
+  <line x1="126" y1="156" x2="600" y2="86" stroke="#c8a96a" stroke-width="2.5"/>
+  <line x1="126" y1="157" x2="600" y2="128" stroke="#b07d33" stroke-width="2"/>
+  <line x1="126" y1="158" x2="600" y2="166" stroke="#4f6b8a" stroke-width="2"/>
+  <line x1="126" y1="159" x2="600" y2="204" stroke="#8a5a52" stroke-width="2"/>
+  <line x1="126" y1="160" x2="600" y2="232" stroke="#a8453a" stroke-width="2.5"/>
+  <!-- 端点标价 -->
+  <text x="612" y="90" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#e3c587">8000</text>
+  <text x="612" y="132" font-family="'Noto Serif SC',serif" font-size="13" fill="#c8a96a">6300</text>
+  <text x="612" y="170" font-family="'Noto Serif SC',serif" font-size="13" fill="#7f97b4">5400</text>
+  <text x="612" y="208" font-family="'Noto Serif SC',serif" font-size="13" fill="#b57d73">5200</text>
+  <text x="612" y="236" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#c06152">4300</text>
+  <text x="300" y="278" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">差了将近一倍 —— 算的不是黄金,是人心</text>
+</svg>
