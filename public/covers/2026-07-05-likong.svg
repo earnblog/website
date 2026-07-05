@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:价格线先自己止跌,利空出尽的标签事后才贴上">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <g stroke="#2a3342" stroke-width="1"><line x1="40" y1="60" x2="640" y2="60"/><line x1="40" y1="150" x2="640" y2="150"/><line x1="40" y1="240" x2="640" y2="240"/></g>
+  <!-- 下跌后止跌的价格线 -->
+  <path d="M60 78 L150 108 L240 150 L330 196 L410 224 L470 230 L520 228 L570 226 L620 227" fill="none" stroke="#c8a96a" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- 止跌区标注 -->
+  <circle cx="470" cy="230" r="4.5" fill="#c8a96a"/>
+  <text x="470" y="262" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">价格先自己止了跌</text>
+  <!-- 事后贴上的标签 -->
+  <g transform="translate(505 96)">
+    <rect x="0" y="0" width="120" height="34" rx="4" fill="none" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="60" y="22" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#c06152">利空出尽</text>
+  </g>
+  <line x1="540" y1="130" x2="520" y2="215" stroke="#a8453a" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="590" y="150" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#6a7080">(事后才贴上)</text>
+  <text x="60" y="285" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">利空从不会出尽,用尽的只是耐心</text>
+</svg>

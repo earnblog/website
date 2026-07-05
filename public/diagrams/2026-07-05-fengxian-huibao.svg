@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="散户买黄金的上行敞口与央行买黄金的下行保险,风险回报率方向相反">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="40" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f">同一块黄金,两笔不同的账</text>
+  <line x1="60" y1="200" x2="620" y2="200" stroke="#ddd4c4" stroke-width="1.2"/>
+  <text x="628" y="204" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">当下</text>
+
+  <!-- 散户:赌上行 -->
+  <text x="200" y="76" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#b07d33">散户:赌上行</text>
+  <rect x="150" y="120" width="100" height="80" fill="#c8a96a" opacity="0.85"/>
+  <text x="200" y="166" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#fbf9f4">上行空间</text>
+  <text x="200" y="182" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#fbf9f4">=全部指望</text>
+  <rect x="150" y="200" width="100" height="26" fill="#ddd4c4" opacity="0.6"/>
+  <text x="200" y="252" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#6b6350">不涨,这笔钱就是死钱</text>
+
+  <!-- 央行:保下行 -->
+  <text x="480" y="76" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#4f6b8a">央行:保下行</text>
+  <rect x="430" y="174" width="100" height="26" fill="#ddd4c4" opacity="0.6"/>
+  <rect x="430" y="200" width="100" height="96" fill="#4f6b8a" opacity="0.85"/>
+  <text x="480" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#fbf9f4">下行尾部</text>
+  <text x="480" y="258" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#fbf9f4">=信用保险</text>
+  <text x="480" y="322" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#6b6350">别的都塌了,它还在,甚至发光</text>
+
+  <text x="340" y="348" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">一个赌它涨,一个赌万一别的都塌了它还在——风险回报率正好相反</text>
+</svg>

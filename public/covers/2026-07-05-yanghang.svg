@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:同一块黄金,散户当彩票赌上行,央行当保险保下行">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <line x1="340" y1="46" x2="340" y2="254" stroke="#2a3342" stroke-width="1.2"/>
+  <!-- 中央金块 -->
+  <g transform="translate(340 150)">
+    <rect x="-34" y="-16" width="68" height="32" rx="3" fill="#c8a96a"/>
+    <rect x="-34" y="-16" width="68" height="10" rx="3" fill="#e3c587"/>
+  </g>
+  <!-- 左:散户·彩票·赌上行 -->
+  <text x="150" y="70" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#b57d73">散户 · 彩票</text>
+  <path d="M150 210 L150 108" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+  <path d="M150 100 l-7 12 l14 0 z" fill="#a8453a"/>
+  <text x="150" y="238" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">赌它涨(上行敞口)</text>
+  <!-- 右:央行·保险·保下行 -->
+  <text x="530" y="70" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#7f97b4">央行 · 保险</text>
+  <path d="M530 90 L530 192" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <path d="M530 200 l-7 -12 l14 0 z" fill="#4f6b8a"/>
+  <text x="530" y="238" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">保它在(下行尾部)</text>
+  <text x="340" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">同一块黄金,方向正好相反</text>
+</svg>
