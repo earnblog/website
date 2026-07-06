@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:标普500里十只巨头占四成权重,伪装成分散的集中下注">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="58" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">看着五百只,押的是十只</text>
+  <!-- 权重条 -->
+  <g transform="translate(48 108)">
+    <!-- 十巨头 40% -->
+    <rect x="0" y="0" width="234" height="52" rx="3" fill="#c8a96a"/>
+    <rect x="0" y="0" width="234" height="14" rx="3" fill="#e3c587"/>
+    <text x="117" y="33" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#2a2416">十巨头 · 40%</text>
+    <!-- 其余 60% 由小格子拼 -->
+    <g fill="#3a4658">
+      <rect x="242" y="0" width="342" height="52" rx="3"/>
+    </g>
+    <g stroke="#1c2330" stroke-width="1.4">
+      <line x1="272" y1="0" x2="272" y2="52"/><line x1="302" y1="0" x2="302" y2="52"/>
+      <line x1="332" y1="0" x2="332" y2="52"/><line x1="362" y1="0" x2="362" y2="52"/>
+      <line x1="392" y1="0" x2="392" y2="52"/><line x1="422" y1="0" x2="422" y2="52"/>
+      <line x1="452" y1="0" x2="452" y2="52"/><line x1="482" y1="0" x2="482" y2="52"/>
+      <line x1="512" y1="0" x2="512" y2="52"/><line x1="542" y1="0" x2="542" y2="52"/>
+    </g>
+    <text x="413" y="33" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#9aa4b2">其余约490只 · 60%</text>
+  </g>
+  <text x="48" y="212" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">上行跟着十只吃,下行替五百只扛——这不是分散,是伪装成分散的集中下注。</text>
+  <text x="48" y="250" font-family="'Noto Serif SC',serif" font-size="13.5" fill="#a8453a">四成权重压在同一个叙事上</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一笔钱在封闭的圈里循环,圈外没有新增需求进入">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="60" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">同一笔钱,转圈</text>
+  <!-- 圆环箭头 -->
+  <g transform="translate(300 155)">
+    <circle r="86" fill="none" stroke="#a8453a" stroke-width="2.6" stroke-dasharray="0"/>
+    <!-- 四个节点 -->
+    <circle cx="0" cy="-86" r="5" fill="#c8a96a"/>
+    <circle cx="86" cy="0" r="5" fill="#c8a96a"/>
+    <circle cx="0" cy="86" r="5" fill="#c8a96a"/>
+    <circle cx="-86" cy="0" r="5" fill="#c8a96a"/>
+    <!-- 顺时针方向箭头 -->
+    <path d="M78 -38 l6 12 l-13 -1 z" fill="#a8453a"/>
+    <path d="M38 78 l-1 13 l-12 -6 z" fill="#a8453a"/>
+    <path d="M-78 38 l-6 -12 l13 1 z" fill="#a8453a"/>
+    <path d="M-38 -78 l1 -13 l12 6 z" fill="#a8453a"/>
+    <text x="0" y="-98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c9c2b2">撒钱</text>
+    <text x="104" y="4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c9c2b2">采购</text>
+    <text x="0" y="112" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c9c2b2">记收入</text>
+    <text x="-104" y="4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#c9c2b2">抬估值</text>
+  </g>
+  <!-- 圈外 -->
+  <text x="560" y="150" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" fill="#4f6b8a">圈外</text>
+  <text x="560" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#4f6b8a">+0</text>
+  <text x="300" y="286" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#8a8170">转得再快,也变不出圈外的一分钱</text>
+</svg>

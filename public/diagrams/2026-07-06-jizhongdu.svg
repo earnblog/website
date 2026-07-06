@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="标普500里十只巨头占四成权重,被动资金按市值优先流入头部,形成正反馈的伪分散">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#33404f">伪分散:一篮子,一个赌注</text>
+  <!-- 权重条 -->
+  <g transform="translate(64 78)">
+    <rect x="0" y="0" width="216" height="58" rx="4" fill="#c8a96a"/>
+    <text x="108" y="35" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#2a2416">十巨头 · 40%</text>
+    <rect x="220" y="0" width="332" height="58" rx="4" fill="#dfe4ea" stroke="#c3cbd6" stroke-width="1"/>
+    <g stroke="#c3cbd6" stroke-width="1">
+      <line x1="250" y1="0" x2="250" y2="58"/><line x1="280" y1="0" x2="280" y2="58"/>
+      <line x1="310" y1="0" x2="310" y2="58"/><line x1="340" y1="0" x2="340" y2="58"/>
+      <line x1="370" y1="0" x2="370" y2="58"/><line x1="400" y1="0" x2="400" y2="58"/>
+      <line x1="430" y1="0" x2="430" y2="58"/><line x1="460" y1="0" x2="460" y2="58"/>
+      <line x1="490" y1="0" x2="490" y2="58"/><line x1="520" y1="0" x2="520" y2="58"/>
+    </g>
+    <text x="386" y="35" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#6b7482">其余约490只 · 60%</text>
+  </g>
+  <!-- 正反馈箭头:被动资金优先砸向头部 -->
+  <g font-family="'Noto Serif SC',serif" font-size="13" fill="#33404f" text-anchor="middle">
+    <text x="172" y="198" fill="#a8453a" font-weight="700">被动资金按市值加权流入</text>
+  </g>
+  <g fill="none" stroke="#a8453a" stroke-width="2.4">
+    <path d="M172 210 q0 30 0 44"/>
+  </g>
+  <path d="M172 262 l-6 -13 l12 0 z" fill="#a8453a"/>
+  <g transform="translate(64 268)">
+    <rect x="0" y="0" width="216" height="34" rx="4" fill="#f0d9a0" stroke="#c8a96a" stroke-width="1.4"/>
+    <text x="108" y="22" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" fill="#5a4a24">又优先推高这十只 → 越涨越集中</text>
+  </g>
+  <!-- 右侧对照 -->
+  <text x="470" y="212" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13.5" fill="#4f6b8a">真分散 = 负反馈,自我平抑</text>
+  <text x="470" y="238" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13.5" fill="#a8453a">伪分散 = 正反馈,自我踩踏</text>
+  <text x="340" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#6b6455">分散不在名字的多少,在这些名字会不会在同一天一起下跌</text>
+</svg>

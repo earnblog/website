@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="反身性循环:撒钱、采购、确认收入、抬高估值四节点自我强化,圈外没有新增终端需求">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#33404f">反身循环:钱没出过圈</text>
+  <!-- 四节点环,顺时针 -->
+  <g font-family="'Noto Serif SC',serif" font-size="14" fill="#33404f" text-anchor="middle">
+    <!-- 上:撒钱 -->
+    <rect x="278" y="70" width="124" height="40" rx="6" fill="#f2ecdd" stroke="#c8a96a" stroke-width="1.5"/>
+    <text x="340" y="95">供应商撒钱/投资</text>
+    <!-- 右:采购 -->
+    <rect x="470" y="160" width="124" height="40" rx="6" fill="#f2ecdd" stroke="#c8a96a" stroke-width="1.5"/>
+    <text x="532" y="185">客户回头采购</text>
+    <!-- 下:记收入 -->
+    <rect x="278" y="250" width="124" height="40" rx="6" fill="#f2ecdd" stroke="#c8a96a" stroke-width="1.5"/>
+    <text x="340" y="275">账面确认收入</text>
+    <!-- 左:抬估值 -->
+    <rect x="86" y="160" width="124" height="40" rx="6" fill="#f2ecdd" stroke="#c8a96a" stroke-width="1.5"/>
+    <text x="148" y="185">收入撑起估值</text>
+  </g>
+  <!-- 顺时针弧形箭头 -->
+  <g fill="none" stroke="#a8453a" stroke-width="2.4">
+    <path d="M402 96 q92 8 122 56"/>
+    <path d="M532 200 q-8 58 -122 66"/>
+    <path d="M278 278 q-92 -8 -122 -66"/>
+    <path d="M148 160 q8 -58 122 -66"/>
+  </g>
+  <g fill="#a8453a">
+    <path d="M524 152 l14 2 l-6 13 z"/>
+    <path d="M418 268 l-2 14 l-13 -6 z"/>
+    <path d="M156 208 l-14 -2 l6 -13 z"/>
+    <path d="M262 92 l2 -14 l13 6 z"/>
+  </g>
+  <text x="340" y="185" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#a8453a">自我强化 · 越转越高</text>
+  <!-- 圈外提示 -->
+  <line x1="618" y1="70" x2="618" y2="290" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="640" y="176" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" fill="#4f6b8a" transform="rotate(90 640 176)">圈外:无新增终端需求</text>
+  <text x="340" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12.5" fill="#6b6455">健康生态:每转一圈,圈外进来一笔新钱 / 反身循环:同一笔钱,数很多遍</text>
+</svg>
