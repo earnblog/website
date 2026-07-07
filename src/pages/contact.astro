@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config.mjs';
+---
+<BaseLayout title="联系我们" description="联系「临界」(fncuthdert.com)">
+  <article class="post">
+    <h1 class="post-title">联系我们</h1>
+    <div class="post-content legal">
+      <p>关于付费、解锁、退款或内容的任何问题,欢迎邮件联系,我们通常在 <strong>2 个工作日内</strong>回复:</p>
+      <p class="contact-line">📮 <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></p>
+      <ul>
+        <li>网站:{SITE.name} · The Critical Point(fncuthdert.com)</li>
+        <li>运营者:{SITE.operator}</li>
+        <li>支付问题请尽量附上 Stripe 收据中的交易编号,以便我们快速定位。</li>
+      </ul>
+      <p>商务合作与转载授权,同样使用以上邮箱。</p>
+    </div>
+  </article>
+</BaseLayout>

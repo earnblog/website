@@ -2,13 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../config.mjs';
 ---
-<BaseLayout title="关于">
+<BaseLayout title="关于" description="关于「临界」——独立财经分析">
   <article class="post">
     <h1 class="post-title">关于</h1>
     <div class="post-content">
       <p>这里是 {SITE.author} 的独立财经分析。不预测涨跌,只拆解机制——市场是一台亿万人的分布式计算机,我想做的,是看清它在如何计算。</p>
-      <p>内容涵盖股市、汇率、资产、宏观与一些关于秩序和人性的思考。原创、独立,只代表我自己的偏见。</p>
-      <p>(这段是占位文字,换成你自己的介绍。)</p>
+      <p>内容涵盖股市、汇率、资产、宏观,以及一些关于秩序和人性的思考。原创、独立,只代表我自己的偏见。每天更新。</p>
+      <h2>内容与付费</h2>
+      <p>本站大部分文章免费公开。少量深度文章为<strong>单篇付费</strong>:价格以美元标示在文章页,开头部分免费预览,支付后即时解锁全文。如果某篇免费文章对你有价值,也可以在文末<strong>打赏</strong>支持写作。支付由 Stripe 处理,支持主流银行卡。</p>
+      <p>付费与解锁的细则,见<a href="/terms">《服务条款》</a>与<a href="/refunds">《退款政策》</a>;有任何问题,<a href="/contact">联系我们</a>。</p>
     </div>
     <p class="post-disclaimer">{SITE.disclaimer}</p>
   </article>
