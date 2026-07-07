@@ -1,6 +1,6 @@
 // POST /api/checkout — 创建 Stripe Checkout 会话
 // body: { type: 'tip', amount, slug?, title? } 或 { type: 'unlock', slug }
-import store from '../_lib/paid-store.mjs';
+import store, { passPrice } from '../_lib/paid-store.mjs';
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -40,6 +40,13 @@ export async function onRequestPost({ request, env }) {
     const label = entry.path.startsWith('/en/') ? 'Unlock article' : '解锁全文';
     name = `${label} · ${entry.title.slice(0, 60)}`;
     successUrl = `${origin}/api/unlock?slug=${slug}&session_id={CHECKOUT_SESSION_ID}`;
+  } else if (body.type === 'pass') {
+    // 年度通行证:一次性付款,解锁全站付费文章一年(有效期从支付时刻起算)
+    cents = Math.round(passPrice * 100);
+    name = path.startsWith('/en/')
+      ? `Annual Pass · The Critical Point (1 year, all paid articles)`
+      : `年度通行证 · 临界(一年内全站付费文章)`;
+    successUrl = `${origin}/api/unlock?pass=1&session_id={CHECKOUT_SESSION_ID}`;
   } else {
     return json({ error: 'bad type' }, 400);
   }
@@ -54,6 +61,7 @@ export async function onRequestPost({ request, env }) {
     'line_items[0][price_data][product_data][name]': name,
     'metadata[kind]': body.type,
     'metadata[slug]': slug,
+    'metadata[path]': path,
   });
 
   const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {

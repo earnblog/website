@@ -10,6 +10,7 @@ export const SITE = {
   operator: 'Guo Qing',              // 运营者(与 Stripe 账户注册名一致)
   legalUpdated: '2026年7月7日',       // 法务页面最近更新日期
   legalUpdatedEn: 'July 7, 2026',
+  passPrice: 50,                     // 年度通行证价格(美元):一次付款解锁全站付费文章一年
 };
 
 // ===== 界面双语文案(zh 中文站 / en 英文站) =====
@@ -29,6 +30,10 @@ export const I18N = {
     tipHead: '觉得这篇有价值?请作者喝杯咖啡',
     tipCustom: '自定金额', tipGo: '打赏',
     tipNote: 'STRIPE 安全支付 · 支持银行卡',
+    passOr: '或',
+    passBtn: (p) => `$${p} 订阅全站 · 一年内所有付费文章`,
+    passLine: (p) => `订阅全文:$${p} 年度通行证,一年内解锁全站所有付费文章`,
+    passGo: '开通 →',
     disclaimer: '本站文章仅代表作者个人观点,是探索世界、追寻真相的过程,不构成任何投资建议。',
     fAbout: '关于', fTerms: '服务条款', fPrivacy: '隐私政策', fRefunds: '退款政策', fContact: '联系我们',
     fOp: (op) => `运营者 ${op}`,
@@ -51,6 +56,10 @@ export const I18N = {
     tipHead: 'Found this valuable? Buy the author a coffee',
     tipCustom: 'Custom', tipGo: 'Tip',
     tipNote: 'SECURE PAYMENT VIA STRIPE',
+    passOr: 'or',
+    passBtn: (p) => `Annual pass $${p} · every paid article for one year`,
+    passLine: (p) => `Subscribe: $${p} annual pass unlocks every paid article on this site for one year`,
+    passGo: 'Get the pass →',
     disclaimer: "Articles on this site represent the author's personal views only — a process of exploring the world in pursuit of truth. Nothing here constitutes investment advice.",
     fAbout: 'About', fTerms: 'Terms of Service', fPrivacy: 'Privacy Policy', fRefunds: 'Refund Policy', fContact: 'Contact',
     fOp: (op) => `Operated by ${op}`,

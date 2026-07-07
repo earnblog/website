@@ -4,6 +4,7 @@ import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { splitBody, renderMd } from '../src/lib/paywall.mjs';
+import { SITE } from '../src/config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 // 中英两个文章目录;pathPrefix 决定解锁后跳回哪个语言版面
@@ -45,5 +46,9 @@ for (const { dir, pathPrefix } of SOURCES) {
 }
 
 await mkdir(path.dirname(OUT), { recursive: true });
-await writeFile(OUT, `export default ${JSON.stringify(store, null, 2)};\n`, 'utf8');
-console.log(`paywall: ${Object.keys(store).length} 篇付费文章 -> functions/_lib/paid-store.mjs`);
+await writeFile(
+  OUT,
+  `export default ${JSON.stringify(store, null, 2)};\nexport const passPrice = ${Number(SITE.passPrice) || 50};\n`,
+  'utf8',
+);
+console.log(`paywall: ${Object.keys(store).length} 篇付费文章,通行证 $${SITE.passPrice} -> functions/_lib/paid-store.mjs`);

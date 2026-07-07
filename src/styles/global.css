@@ -233,6 +233,29 @@ a { color: inherit; text-decoration: none; }
   margin: 16px auto 0; max-width: 40ch; font-family: var(--mono);
   font-size: 11px; line-height: 1.8; color: var(--cream-soft); letter-spacing: .03em;
 }
+.paywall-or {
+  display: flex; align-items: center; gap: 14px; max-width: 220px; margin: 14px auto;
+  font-family: var(--mono); font-size: 11px; color: var(--cream-soft); text-transform: uppercase; letter-spacing: .2em;
+}
+.paywall-or::before, .paywall-or::after { content: ""; flex: 1; height: 1px; background: var(--rule-soft); }
+.btn-ghost {
+  font-family: var(--serif); font-size: 15px; font-weight: 600; letter-spacing: .04em;
+  color: var(--gold-bright); background: transparent;
+  border: 1px solid var(--rule); border-radius: 4px; padding: 10px 26px; cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.btn-ghost:hover { background: var(--gold); color: var(--ink); }
+.btn-ghost:disabled { opacity: .55; cursor: wait; }
+.pass-line {
+  margin: 18px 0 0; text-align: center; font-size: 13.5px; color: var(--cream-soft); letter-spacing: .03em;
+}
+.pass-line .pass-link {
+  background: none; border: none; padding: 0 2px; cursor: pointer;
+  font-family: inherit; font-size: inherit; color: var(--gold);
+  border-bottom: 1px solid var(--rule); transition: color .2s;
+}
+.pass-line .pass-link:hover { color: var(--gold-bright); }
+.pass-line .pass-link:disabled { opacity: .55; cursor: wait; }
 
 /* ===== 打赏卡片 ===== */
 .tip-card {

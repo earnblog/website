@@ -28,6 +28,8 @@ const dateStr = t.dateFmt(date);
       <div class="paywall" id="paywall">
         <p class="paywall-note">{t.paywallNote}</p>
         <button class="btn-gold" id="unlock-btn">{t.unlockBtn(price)}</button>
+        <div class="paywall-or"><span>{t.passOr}</span></div>
+        <button class="btn-ghost pass-btn">{t.passBtn(SITE.passPrice)}</button>
         <p class="paywall-hint">{t.paywallHint}</p>
       </div>
     )}
@@ -47,6 +49,11 @@ const dateStr = t.dateFmt(date);
       </div>
       <p class="tip-note">{t.tipNote}</p>
     </div>
+
+    <p class="pass-line">
+      {t.passLine(SITE.passPrice)}
+      <button class="pass-btn pass-link" type="button">{t.passGo}</button>
+    </p>
 
     <p class="post-disclaimer">{t.disclaimer}</p>
   </article>
@@ -116,6 +123,10 @@ const dateStr = t.dateFmt(date);
 
   const unlockBtn = document.getElementById('unlock-btn') as HTMLButtonElement | null;
   unlockBtn?.addEventListener('click', () => checkout({ type: 'unlock', slug }, unlockBtn));
+
+  document.querySelectorAll<HTMLButtonElement>('.pass-btn').forEach((b) =>
+    b.addEventListener('click', () => checkout({ type: 'pass' }, b)),
+  );
 
   // 付费文章:已解锁(cookie 有效)则直接取全文替换付费墙
   if (document.getElementById('paywall')) {
