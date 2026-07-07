@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../config.mjs';
+---
+<BaseLayout title="Subscribe" description={`$${SITE.passPrice} annual pass — every paid article on The Critical Point for one year`} lang="en">
+  <article class="post subscribe-page">
+    <div class="sub-head">
+      <div class="sub-eyebrow">ANNUAL PASS</div>
+      <h1 class="post-title">Annual Pass</h1>
+      <div class="sub-price"><span class="cur">$</span>{SITE.passPrice}<span class="per">/ year</span></div>
+    </div>
+    <div class="post-content legal sub-body">
+      <ul class="sub-perks">
+        <li>Unlocks <strong>every paid article</strong> on this site, including those published during your term</li>
+        <li><strong>One payment, no auto-renewal</strong> — buy again to extend when it expires</li>
+        <li>Takes effect instantly; read without logging in, in this browser, for one year</li>
+        <li>Bookmark the payment success link to restore access on another device or after clearing cache</li>
+        <li>Secure payment via Stripe — this site never sees your card details</li>
+      </ul>
+      <div class="sub-cta-row">
+        <button class="btn-gold sub-buy" id="pass-buy">Get the pass · ${SITE.passPrice}</button>
+      </div>
+      <p class="sub-fine">By purchasing you agree to the <a href="/en/terms">Terms of Service</a> and <a href="/en/refunds">Refund Policy</a>. Questions? <a href="/en/contact">Contact us</a>.</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  function toast(msg: string) {
+    const el = document.createElement('div');
+    el.className = 'toast';
+    el.textContent = msg;
+    document.body.appendChild(el);
+    requestAnimationFrame(() => el.classList.add('on'));
+    setTimeout(() => { el.classList.remove('on'); setTimeout(() => el.remove(), 400); }, 4200);
+  }
+  const btn = document.getElementById('pass-buy') as HTMLButtonElement;
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    try {
+      const r = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ type: 'pass', path: location.pathname }),
+      });
+      const d = await r.json();
+      if (r.ok && d.url) { location.href = d.url; return; }
+      toast(d.error || 'Payment is temporarily unavailable. Please try again later.');
+    } catch {
+      toast('Payment is temporarily unavailable. Please try again later.');
+    }
+    btn.disabled = false;
+  });
+  const q = new URLSearchParams(location.search);
+  if (q.get('unlocked')) toast('Your pass is active — enjoy every paid article');
+  if (q.get('unlockfail')) toast('Payment incomplete — the pass is not active yet');
+</script>

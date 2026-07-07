@@ -21,7 +21,7 @@ export async function onRequestPost({ request, env }) {
   const origin = new URL(request.url).origin;
   const slug = typeof body.slug === 'string' && /^[\w-]+$/.test(body.slug) ? body.slug : '';
   // 客户端带上当前页面路径(中/英文版路由不同),校验格式后用于支付完成的回跳
-  const path = typeof body.path === 'string' && /^\/(en\/)?posts\/[\w-]+\/?$/.test(body.path) ? body.path : '';
+  const path = typeof body.path === 'string' && /^\/(en\/)?(posts\/[\w-]+|subscribe)\/?$/.test(body.path) ? body.path : '';
   const backUrl = path ? `${origin}${path.replace(/\/$/, '')}` : origin;
 
   let name, cents, successUrl;

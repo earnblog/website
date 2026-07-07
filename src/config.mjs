@@ -17,7 +17,7 @@ export const SITE = {
 export const I18N = {
   zh: {
     utilbar: '独立财经分析 · INDEPENDENT RESEARCH',
-    navHome: '首页', navAbout: '关于', navContact: '联系',
+    navHome: '首页', navAbout: '关于', navContact: '联系', navSubscribe: '订阅',
     langSwitch: 'EN', langSwitchHref: '/en/',
     tagline: '市场 · 机制 · 秩序',
     latest: '最新', readMore: '阅读全文 →',
@@ -34,6 +34,9 @@ export const I18N = {
     passBtn: (p) => `$${p} 订阅全站 · 一年内所有付费文章`,
     passLine: (p) => `订阅全文:$${p} 年度通行证,一年内解锁全站所有付费文章`,
     passGo: '开通 →',
+    bannerTitle: '年度通行证',
+    bannerDesc: (p) => `$${p} 一年,解锁全站所有付费文章(含订阅期内新发布)。一次付款,不自动续费。`,
+    bannerCta: '订阅全文 →',
     disclaimer: '本站文章仅代表作者个人观点,是探索世界、追寻真相的过程,不构成任何投资建议。',
     fAbout: '关于', fTerms: '服务条款', fPrivacy: '隐私政策', fRefunds: '退款政策', fContact: '联系我们',
     fOp: (op) => `运营者 ${op}`,
@@ -43,7 +46,7 @@ export const I18N = {
   },
   en: {
     utilbar: 'INDEPENDENT FINANCIAL ANALYSIS',
-    navHome: 'Home', navAbout: 'About', navContact: 'Contact',
+    navHome: 'Home', navAbout: 'About', navContact: 'Contact', navSubscribe: 'Subscribe',
     langSwitch: '中文', langSwitchHref: '/',
     tagline: 'Markets · Mechanisms · Order',
     latest: 'Latest', readMore: 'Read article →',
@@ -60,6 +63,9 @@ export const I18N = {
     passBtn: (p) => `Annual pass $${p} · every paid article for one year`,
     passLine: (p) => `Subscribe: $${p} annual pass unlocks every paid article on this site for one year`,
     passGo: 'Get the pass →',
+    bannerTitle: 'Annual Pass',
+    bannerDesc: (p) => `$${p} for one year of every paid article on this site, including those published during your term. One payment, no auto-renewal.`,
+    bannerCta: 'Subscribe →',
     disclaimer: "Articles on this site represent the author's personal views only — a process of exploring the world in pursuit of truth. Nothing here constitutes investment advice.",
     fAbout: 'About', fTerms: 'Terms of Service', fPrivacy: 'Privacy Policy', fRefunds: 'Refund Policy', fContact: 'Contact',
     fOp: (op) => `Operated by ${op}`,

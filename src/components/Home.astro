@@ -1,5 +1,5 @@
 ---
-import { I18N } from '../config.mjs';
+import { SITE, I18N } from '../config.mjs';
 const { posts, lang = 'zh' } = Astro.props;
 const t = I18N[lang];
 const base = lang === 'en' ? '/en/posts' : '/posts';
@@ -29,6 +29,14 @@ const archive = rest.slice(6);       // 紧凑目录区
     )}
   </section>
 )}
+
+<aside class="sub-banner">
+  <div class="sub-text">
+    <span class="sub-badge">{t.bannerTitle}</span>
+    <p>{t.bannerDesc(SITE.passPrice)}</p>
+  </div>
+  <a class="btn-gold sub-cta" href={`${lang === 'en' ? '/en' : ''}/subscribe`}>{t.bannerCta}</a>
+</aside>
 
 {featured.length > 0 && (
   <section class="recent">

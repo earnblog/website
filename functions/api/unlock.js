@@ -25,7 +25,7 @@ export async function onRequestGet({ request, env }) {
   if (!res.ok || session.payment_status !== 'paid') return fail();
 
   // 回跳到购买时所在页面(通行证从任意文章页都能买)
-  const metaPath = typeof session.metadata?.path === 'string' && /^\/(en\/)?posts\/[\w-]+\/?$/.test(session.metadata.path)
+  const metaPath = typeof session.metadata?.path === 'string' && /^\/(en\/)?(posts\/[\w-]+|subscribe)\/?$/.test(session.metadata.path)
     ? session.metadata.path
     : '';
 

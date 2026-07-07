@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config.mjs';
+---
+<BaseLayout title="订阅全文" description={`$${SITE.passPrice} 年度通行证,一年内解锁「临界」全站所有付费文章`}>
+  <article class="post subscribe-page">
+    <div class="sub-head">
+      <div class="sub-eyebrow">ANNUAL PASS</div>
+      <h1 class="post-title">年度通行证</h1>
+      <div class="sub-price"><span class="cur">$</span>{SITE.passPrice}<span class="per">/ 一年</span></div>
+    </div>
+    <div class="post-content legal sub-body">
+      <ul class="sub-perks">
+        <li>解锁全站<strong>所有付费文章</strong>,包括订阅期内新发布的</li>
+        <li><strong>一次付款,不自动续费</strong>——到期想继续,再买一次即可</li>
+        <li>支付后即时生效,本浏览器一年内免登录直读</li>
+        <li>支付成功页链接可收藏,换设备、清缓存后打开即恢复</li>
+        <li>Stripe 安全支付,本站不接触你的卡号</li>
+      </ul>
+      <div class="sub-cta-row">
+        <button class="btn-gold sub-buy" id="pass-buy">立即开通 · ${SITE.passPrice}</button>
+      </div>
+      <p class="sub-fine">购买即表示同意<a href="/terms">《服务条款》</a>与<a href="/refunds">《退款政策》</a>。有问题?<a href="/contact">联系我们</a>。</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  function toast(msg: string) {
+    const el = document.createElement('div');
+    el.className = 'toast';
+    el.textContent = msg;
+    document.body.appendChild(el);
+    requestAnimationFrame(() => el.classList.add('on'));
+    setTimeout(() => { el.classList.remove('on'); setTimeout(() => el.remove(), 400); }, 4200);
+  }
+  const btn = document.getElementById('pass-buy') as HTMLButtonElement;
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    try {
+      const r = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ type: 'pass', path: location.pathname }),
+      });
+      const d = await r.json();
+      if (r.ok && d.url) { location.href = d.url; return; }
+      toast(d.error || '支付通道暂时不可用,请稍后再试');
+    } catch {
+      toast('支付通道暂时不可用,请稍后再试');
+    }
+    btn.disabled = false;
+  });
+  const q = new URLSearchParams(location.search);
+  if (q.get('unlocked')) toast('通行证已开通,全站付费文章任你读');
+  if (q.get('unlockfail')) toast('支付未完成,通行证尚未开通');
+</script>
