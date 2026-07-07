@@ -1,17 +1,18 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import { SITE } from '../config.mjs';
-const { post } = Astro.props;
+import { SITE, I18N } from '../config.mjs';
+const { post, lang = 'zh' } = Astro.props;
+const t = I18N[lang];
 const { title, date, cover, coverCaption, price } = post.data;
-const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+const dateStr = t.dateFmt(date);
 ---
-<BaseLayout title={title} description={post.data.description}>
-  <article class="post" data-slug={post.slug} data-title={title}>
-    <a class="back" href="/">← 返回目录</a>
+<BaseLayout title={title} description={post.data.description} lang={lang}>
+  <article class="post" data-slug={post.slug} data-title={title} data-lang={lang}>
+    <a class="back" href={lang === 'en' ? '/en/' : '/'}>{t.back}</a>
     <div class="post-kicker">
       <span>{SITE.author}</span><span class="dot">/</span><span>{dateStr}</span>
       {price && <span class="dot">/</span>}
-      {price && <span class="paid-tag">付费 ${price}</span>}
+      {price && <span class="paid-tag">{t.paidTag(price)}</span>}
     </div>
     <h1 class="post-title">{title}</h1>
     {cover && (
@@ -25,29 +26,29 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long
     </div>
     {price && (
       <div class="paywall" id="paywall">
-        <p class="paywall-note">—— 以下为付费内容 ——</p>
-        <button class="btn-gold" id="unlock-btn">解锁全文 · ${price}</button>
-        <p class="paywall-hint">支付后在本浏览器长期有效;支付成功页的链接可收藏,换设备时打开即恢复解锁。</p>
+        <p class="paywall-note">{t.paywallNote}</p>
+        <button class="btn-gold" id="unlock-btn">{t.unlockBtn(price)}</button>
+        <p class="paywall-hint">{t.paywallHint}</p>
       </div>
     )}
     {price && <div class="post-content" id="paid-content" hidden></div>}
 
     <div class="tip-card" id="tip-card">
-      <div class="tip-head">觉得这篇有价值?请作者喝杯咖啡</div>
+      <div class="tip-head">{t.tipHead}</div>
       <div class="tip-row">
         <button class="tip-btn" data-amount="2">$2</button>
         <button class="tip-btn" data-amount="5">$5</button>
         <button class="tip-btn" data-amount="10">$10</button>
         <span class="tip-custom">
           <span class="cur">$</span>
-          <input id="tip-amount" type="number" min="1" max="10000" step="1" placeholder="自定金额" />
-          <button class="tip-btn tip-go" id="tip-go">打赏</button>
+          <input id="tip-amount" type="number" min="1" max="10000" step="1" placeholder={t.tipCustom} />
+          <button class="tip-btn tip-go" id="tip-go">{t.tipGo}</button>
         </span>
       </div>
-      <p class="tip-note">STRIPE 安全支付 · 支持银行卡</p>
+      <p class="tip-note">{t.tipNote}</p>
     </div>
 
-    <p class="post-disclaimer">{SITE.disclaimer}</p>
+    <p class="post-disclaimer">{t.disclaimer}</p>
   </article>
 </BaseLayout>
 
@@ -55,14 +56,33 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long
   const article = document.querySelector('article.post') as HTMLElement;
   const slug = article.dataset.slug || '';
   const title = article.dataset.title || '';
+  const isEn = article.dataset.lang === 'en';
+
+  const MSG = isEn
+    ? {
+        unavailable: 'Payment is temporarily unavailable. Please try again later.',
+        minAmount: 'Please enter an amount of $1 or more',
+        maxAmount: 'Maximum $10,000 per payment',
+        thanks: 'Tip received — thank you for your support',
+        unlocked: 'Full article unlocked. Thank you!',
+        unlockfail: 'Payment incomplete — the article is still locked',
+      }
+    : {
+        unavailable: '支付通道暂时不可用,请稍后再试',
+        minAmount: '请输入 $1 以上的金额',
+        maxAmount: '单笔最多 $10,000',
+        thanks: '收到你的打赏,谢谢支持',
+        unlocked: '已解锁全文,感谢支持',
+        unlockfail: '支付未完成,全文尚未解锁',
+      };
 
   function toast(msg: string) {
-    const t = document.createElement('div');
-    t.className = 'toast';
-    t.textContent = msg;
-    document.body.appendChild(t);
-    requestAnimationFrame(() => t.classList.add('on'));
-    setTimeout(() => { t.classList.remove('on'); setTimeout(() => t.remove(), 400); }, 4200);
+    const el = document.createElement('div');
+    el.className = 'toast';
+    el.textContent = msg;
+    document.body.appendChild(el);
+    requestAnimationFrame(() => el.classList.add('on'));
+    setTimeout(() => { el.classList.remove('on'); setTimeout(() => el.remove(), 400); }, 4200);
   }
 
   async function checkout(payload: object, btn: HTMLButtonElement) {
@@ -71,13 +91,13 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long
       const r = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ ...payload, path: location.pathname }),
       });
       const d = await r.json();
       if (r.ok && d.url) { location.href = d.url; return; }
-      toast(d.error || '支付通道暂时不可用,请稍后再试');
+      toast(d.error || MSG.unavailable);
     } catch {
-      toast('支付通道暂时不可用,请稍后再试');
+      toast(MSG.unavailable);
     }
     btn.disabled = false;
   }
@@ -89,8 +109,8 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long
   const tipGo = document.getElementById('tip-go') as HTMLButtonElement | null;
   tipGo?.addEventListener('click', () => {
     const v = Number((document.getElementById('tip-amount') as HTMLInputElement).value);
-    if (!Number.isFinite(v) || v < 1) { toast('请输入 $1 以上的金额'); return; }
-    if (v > 10000) { toast('单笔最多 $10,000'); return; }
+    if (!Number.isFinite(v) || v < 1) { toast(MSG.minAmount); return; }
+    if (v > 10000) { toast(MSG.maxAmount); return; }
     checkout({ type: 'tip', amount: v, slug, title }, tipGo);
   });
 
@@ -114,7 +134,7 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long
   }
 
   const q = new URLSearchParams(location.search);
-  if (q.get('thanks')) toast('收到你的打赏,谢谢支持');
-  if (q.get('unlocked')) toast('已解锁全文,感谢支持');
-  if (q.get('unlockfail')) toast('支付未完成,全文尚未解锁');
+  if (q.get('thanks')) toast(MSG.thanks);
+  if (q.get('unlocked')) toast(MSG.unlocked);
+  if (q.get('unlockfail')) toast(MSG.unlockfail);
 </script>

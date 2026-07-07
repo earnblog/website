@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../config.mjs';
+---
+<BaseLayout title="Terms of Service" description="Terms of Service — The Critical Point (fncuthdert.com)" lang="en">
+  <article class="post">
+    <h1 class="post-title">Terms of Service</h1>
+    <div class="post-content legal">
+      <p class="legal-meta">Last updated: {SITE.legalUpdatedEn}</p>
+      <p>Welcome to "{SITE.nameEn}" ({SITE.name}, fncuthdert.com — the "Site"), operated by {SITE.operator} (Singapore). By accessing or using the Site, you agree to these Terms. If you do not agree, please discontinue use.</p>
+
+      <h2>1. Services</h2>
+      <p>The Site publishes original analysis of financial markets and macroeconomics, including:</p>
+      <ul>
+        <li><strong>Free articles</strong>, available to all visitors.</li>
+        <li><strong>Paid articles</strong>, unlocked individually. Prices are stated in US dollars (USD) on each article page before payment.</li>
+        <li><strong>Tips</strong>: readers may voluntarily pay any amount ($1–$10,000) to support the author. Tips carry no promise of goods, services, or returns.</li>
+      </ul>
+
+      <h2>2. Payment and delivery</h2>
+      <p>All payments are processed by Stripe, a third-party payment provider. The Site never receives or stores your card details. Paid articles are <strong>delivered instantly</strong> upon successful payment: the full text unlocks in your current browser for one year. The payment success page link can be saved and opened on another device or browser to restore access. For unlock issues, contact {SITE.contactEmail}.</p>
+
+      <h2>3. Refunds</h2>
+      <p>Paid articles are digital content delivered instantly upon unlock and are generally non-refundable; tips are voluntary gifts and are non-refundable. Exceptions (duplicate charges, technical failures, etc.) are set out in the <a href="/en/refunds">Refund Policy</a>.</p>
+
+      <h2>4. Intellectual property</h2>
+      <p>All articles, charts, and page designs on the Site are protected by copyright. Unlocking a paid article grants you a <strong>personal, non-transferable license to read it</strong>. Reselling, republishing, bulk copying, or providing paid content to third parties without written permission is prohibited; reasonable quotation with attribution and a link is welcome.</p>
+
+      <h2>5. Content disclaimer</h2>
+      <p>{SITE.disclaimer} Nothing on this Site constitutes investment advice, an offer, or a solicitation regarding any security, fund, currency, digital asset, or other financial product, nor legal, tax, or accounting advice. The author may hold positions in assets mentioned. You act on the content at your own risk.</p>
+
+      <h2>6. User conduct</h2>
+      <p>You agree not to attack, scrape, reverse-engineer, or interfere with the Site or its payment mechanism, and not to make payments with instruments you are not authorized to use.</p>
+
+      <h2>7. Limitation of liability</h2>
+      <p>To the maximum extent permitted by applicable law, the Site is not liable for any indirect, incidental, special, or consequential loss arising from the use of, or inability to use, its content. The Site's total liability for any transaction is limited to the amount you actually paid for that transaction.</p>
+
+      <h2>8. Changes to these Terms</h2>
+      <p>We may revise these Terms from time to time. Revisions will be posted on this page with an updated date. Continued use after a material change constitutes acceptance.</p>
+
+      <h2>9. Governing law</h2>
+      <p>These Terms are governed by the laws of Singapore. Disputes shall first be resolved through good-faith negotiation, failing which they shall be submitted to the courts of competent jurisdiction in Singapore.</p>
+
+      <h2>10. Contact</h2>
+      <p>Operator: {SITE.operator}<br />Email: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></p>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Home from '../../components/Home.astro';
+import { getCollection } from 'astro:content';
+const posts = await getCollection('posts-en', ({ data }) => !data.draft);
+---
+<BaseLayout lang="en">
+  <Home posts={posts} lang="en" />
+</BaseLayout>

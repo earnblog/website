@@ -20,7 +20,9 @@ export async function onRequestPost({ request, env }) {
 
   const origin = new URL(request.url).origin;
   const slug = typeof body.slug === 'string' && /^[\w-]+$/.test(body.slug) ? body.slug : '';
-  const backUrl = slug ? `${origin}/posts/${slug}` : origin;
+  // 客户端带上当前页面路径(中/英文版路由不同),校验格式后用于支付完成的回跳
+  const path = typeof body.path === 'string' && /^\/(en\/)?posts\/[\w-]+\/?$/.test(body.path) ? body.path : '';
+  const backUrl = path ? `${origin}${path.replace(/\/$/, '')}` : origin;
 
   let name, cents, successUrl;
   if (body.type === 'tip') {
@@ -29,13 +31,14 @@ export async function onRequestPost({ request, env }) {
       return json({ error: '金额需在 $1 – $10,000 之间' }, 400);
     }
     cents = Math.round(amount * 100);
-    name = `打赏 · ${String(body.title || '临界').slice(0, 60)}`;
+    name = `${path.startsWith('/en/') ? 'Tip' : '打赏'} · ${String(body.title || '临界').slice(0, 60)}`;
     successUrl = `${backUrl}?thanks=1`;
   } else if (body.type === 'unlock') {
     const entry = store[slug];
     if (!entry) return json({ error: 'not found' }, 404);
     cents = Math.round(entry.price * 100);
-    name = `解锁全文 · ${entry.title.slice(0, 60)}`;
+    const label = entry.path.startsWith('/en/') ? 'Unlock article' : '解锁全文';
+    name = `${label} · ${entry.title.slice(0, 60)}`;
     successUrl = `${origin}/api/unlock?slug=${slug}&session_id={CHECKOUT_SESSION_ID}`;
   } else {
     return json({ error: 'bad type' }, 400);

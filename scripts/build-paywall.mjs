@@ -6,7 +6,11 @@ import { fileURLToPath } from 'node:url';
 import { splitBody, renderMd } from '../src/lib/paywall.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const POSTS_DIR = path.join(ROOT, 'src', 'content', 'posts');
+// 中英两个文章目录;pathPrefix 决定解锁后跳回哪个语言版面
+const SOURCES = [
+  { dir: path.join(ROOT, 'src', 'content', 'posts'), pathPrefix: '/posts/' },
+  { dir: path.join(ROOT, 'src', 'content', 'posts-en'), pathPrefix: '/en/posts/' },
+];
 const OUT = path.join(ROOT, 'functions', '_lib', 'paid-store.mjs');
 
 function parseFrontmatter(raw) {
@@ -21,15 +25,23 @@ function parseFrontmatter(raw) {
 }
 
 const store = {};
-const files = (await readdir(POSTS_DIR)).filter((f) => f.endsWith('.md'));
-for (const file of files) {
-  const raw = await readFile(path.join(POSTS_DIR, file), 'utf8');
-  const { fm, body } = parseFrontmatter(raw);
-  const price = Number(fm.price);
-  if (!Number.isFinite(price) || price <= 0 || fm.draft === 'true') continue;
-  const slug = file.replace(/\.md$/, '');
-  const { paidMd } = splitBody(body);
-  store[slug] = { title: fm.title || slug, price, html: renderMd(paidMd) };
+for (const { dir, pathPrefix } of SOURCES) {
+  let files = [];
+  try {
+    files = (await readdir(dir)).filter((f) => f.endsWith('.md'));
+  } catch {
+    continue; // 目录还不存在(如 posts-en 尚无文章)
+  }
+  for (const file of files) {
+    const raw = await readFile(path.join(dir, file), 'utf8');
+    const { fm, body } = parseFrontmatter(raw);
+    const price = Number(fm.price);
+    if (!Number.isFinite(price) || price <= 0 || fm.draft === 'true') continue;
+    const slug = file.replace(/\.md$/, '');
+    if (store[slug]) console.warn(`paywall: slug 冲突 "${slug}",${pathPrefix} 覆盖了先前条目——中英文付费文章文件名不能相同`);
+    const { paidMd } = splitBody(body);
+    store[slug] = { title: fm.title || slug, price, path: pathPrefix + slug, html: renderMd(paidMd) };
+  }
 }
 
 await mkdir(path.dirname(OUT), { recursive: true });

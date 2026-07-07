@@ -1,0 +1,71 @@
+---
+import { I18N } from '../config.mjs';
+const { posts, lang = 'zh' } = Astro.props;
+const t = I18N[lang];
+const base = lang === 'en' ? '/en/posts' : '/posts';
+const sorted = [...posts].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const [latest, ...rest] = sorted;
+const featured = rest.slice(0, 6);   // 封面卡片区
+const archive = rest.slice(6);       // 紧凑目录区
+---
+{latest && (
+  <section class="hero">
+    <div class="text">
+      <span class="label">{t.latest}</span>
+      <h1>
+        <a href={`${base}/${latest.slug}`}>{latest.data.title}</a>
+        {latest.data.price && <span class="paid-tag">{t.paidTag(latest.data.price)}</span>}
+      </h1>
+      {latest.data.description && <p class="excerpt">{latest.data.description}</p>}
+      <div class="more">
+        <span class="date">{t.dateShort(latest.data.date)}</span>
+        <a href={`${base}/${latest.slug}`}>{t.readMore}</a>
+      </div>
+    </div>
+    {latest.data.cover && (
+      <figure class="cover">
+        <a href={`${base}/${latest.slug}`}><img src={latest.data.cover} alt={latest.data.title} /></a>
+      </figure>
+    )}
+  </section>
+)}
+
+{featured.length > 0 && (
+  <section class="recent">
+    <div class="section-head">{t.recent}</div>
+    <div class="recent-grid">
+      {featured.map((post) => (
+        <a class="card" href={`${base}/${post.slug}`}>
+          {post.data.cover && (
+            <span class="card-cover"><img src={post.data.cover} alt={post.data.title} loading="lazy" /></span>
+          )}
+          <span class="card-body">
+            <h3>{post.data.title} {post.data.price && <span class="paid-tag">{t.paidTag(post.data.price)}</span>}</h3>
+            {post.data.description && <p>{post.data.description}</p>}
+            <span class="card-date">{t.dateShort(post.data.date)}</span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+{archive.length > 0 && (
+  <section class="archive">
+    <div class="section-head">{t.archive}</div>
+    <ol class="toc">
+      {archive.map((post, i) => (
+        <li>
+          <a href={`${base}/${post.slug}`}>
+            <span class="num">{String(i + 8).padStart(2, '0')}</span>
+            <span class="body">
+              <h3>{post.data.title} {post.data.price && <span class="paid-tag">{t.paidTag(post.data.price)}</span>}</h3>
+              {post.data.description && <p>{post.data.description}</p>}
+            </span>
+            <span class="date">{t.dateShort(post.data.date)}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+)}

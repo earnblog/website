@@ -14,4 +14,10 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { posts };
+// 英文版文章,schema 与中文一致,目录 src/content/posts-en/
+const postsEn = defineCollection({
+  type: 'content',
+  schema: posts.schema,
+});
+
+export const collections = { posts, 'posts-en': postsEn };

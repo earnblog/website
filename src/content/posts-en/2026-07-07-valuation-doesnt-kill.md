@@ -1,0 +1,23 @@
+---
+title: 'High Valuations Do Not Crush Markets!'
+date: 2026-07-07
+description: 'The fashionable line on Wall Street: the S&P 500''s Shiller P/E has reached 41, above its pre-Depression level, therefore a crash is imminent. This mistakes a static number for a countdown clock. High valuation has never crushed a market by itself — it tells you whether things are expensive, never when they fall. What topples a bubble is never that prices got too high. It is that the money ran out.'
+cover: /covers/2026-07-07-guzhi-ya-bu-kua.svg
+coverCaption: 'Valuation is a ruler: it measures how high, never when the fall comes. What pulls the foundation away is the invisible ceiling drawn above — the physical limit of liquidity.'
+---
+
+A line is going around Wall Street: the S&P 500's Shiller P/E (CAPE) has hit 41, above where it stood before the 1929 crash, therefore collapse is imminent. This is market timing at its most linear — treating a static valuation number as a countdown clock suspended overhead, as if the market must drop the instant the needle touches some mark.
+
+But high valuation has never crushed a market by itself. Expensive has never been the reason things turn.
+
+The error is in the mental picture. Most people imagine valuation as a ceiling pressing down from outside: the higher it gets, the closer the collapse. But valuation is not suspended outside the market — it is a node inside the credit network. Price is part of credit; valuation is part of credit. A high valuation does not sit passively waiting to be punctured. It actively supplies its own blood: high prices create collateral, collateral creates credit, credit creates buying, buying lifts prices. It is a loop climbing on its own shoulders — reflexivity in its purest form: the high valuation is manufacturing the very credit that supports the high valuation. In that sense, the moment a bubble is most "expensive" is often the moment it is self-reinforcing most fiercely — and hardest to kill.
+
+So the true reversal never arrives at "expensive reaches some number." It arrives when liquidity hits its physical limit. On the way up: (1) high valuations attract marginal money, (2) marginal money lifts collateral values, (3) collateral values carry more leverage — the higher the valuation, the happier the machine spins. Only when the marginal dollar fails to arrive, the marginal buyer disappears, and leverage is forced to unwind does the chain snap at some link — then (1′) collateral gets run on, (2′) funding drains out, (3′) valuation is punctured, and the whole loop floods back downhill. What crushes it is not that valuation got too high. It is that the money ran out. **What breaks a bubble is never price — it is liquidity.**
+
+Look back at the tops everyone cites: not one was crushed by a valuation number. In 1929, 2000, 2021, valuations had been "absurdly expensive" long before the crash — and the market climbed a great deal further anyway. Investors who time with CAPE tend to get vertigo halfway up the mountain, step off, and watch it double again. Keynes settled this long ago: "Markets can stay irrational longer than you can stay solvent." Valuation can answer is it expensive; it cannot answer when does it fall. Taking the answer to the first question as the answer to the second is itself a serious collapse of dimensions.
+
+None of this says valuation is useless. The opposite: valuation is an excellent mirror — it reflects the greed in the crowd, the looseness of credit, the temperature of the narrative. A CAPE of 41 tells you faithfully how much the market is paying for the future and how thin a cushion it has kept. But a mirror is for seeing yourself clearly, not a whip for beating the market. Recognizing "this is very expensive" is clarity; deducing "so it crashes now" is a different thing — the arrogance of believing you can compute the detonation point of a complex system. Real humility is admitting you cannot compute the top, and instead watching the one physical boundary that matters: is money still flowing in, and can the marginal unit of leverage still be added.
+
+In the end, high valuation is an effect, not a cause — a gauge of sentiment and credit expansion written into price, not a detonator that can fire itself. It crushes no one on its own. What decides life and death is always that invisible line drawn overhead — the physical limit of liquidity. Before it is breached, the most expensive market can stay expensive far longer; after it is breached, no valuation is cheap enough to catch the fall.
+
+<p class="kicker">Valuation answers only "is it expensive," never "when does it fall"; what topples a bubble is never the price being too high — it is the money, running out.</p>

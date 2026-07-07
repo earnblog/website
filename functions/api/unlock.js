@@ -8,7 +8,7 @@ export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
   const slug = url.searchParams.get('slug') || '';
   const sessionId = url.searchParams.get('session_id') || '';
-  const back = /^[\w-]+$/.test(slug) && store[slug] ? `/posts/${slug}` : '/';
+  const back = /^[\w-]+$/.test(slug) && store[slug] ? store[slug].path : '/';
   const fail = () => Response.redirect(`${url.origin}${back}?unlockfail=1`, 302);
 
   if (!store[slug] || !sessionId || !env.STRIPE_SECRET_KEY || !env.UNLOCK_SECRET) return fail();

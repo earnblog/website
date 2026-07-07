@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import PostLayout from '../../../layouts/PostLayout.astro';
+import { splitBody, renderMd } from '../../../lib/paywall.mjs';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts-en', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const isPaid = !!post.data.price;
+const previewHtml = isPaid ? renderMd(splitBody(post.body).previewMd) : '';
+const Content = isPaid ? null : (await post.render()).Content;
+---
+<PostLayout post={post} lang="en">
+  {isPaid ? <Fragment set:html={previewHtml} /> : <Content />}
+</PostLayout>

@@ -1,12 +1,15 @@
 ---
-import { SITE } from '../config.mjs';
+import { SITE, I18N } from '../config.mjs';
 import '../styles/global.css';
-const { title, description } = Astro.props;
-const pageTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} · ${SITE.tagline}`;
+const { title, description, lang = 'zh' } = Astro.props;
+const t = I18N[lang];
+const p = lang === 'en' ? '/en' : '';
+const siteName = lang === 'en' ? SITE.nameEn : SITE.name;
+const pageTitle = title ? `${title} · ${siteName}` : `${siteName} · ${t.tagline}`;
 const year = new Date().getFullYear();
 ---
 <!doctype html>
-<html lang="zh-CN">
+<html lang={lang === 'en' ? 'en' : 'zh-CN'}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,20 +27,21 @@ const year = new Date().getFullYear();
   <body>
     <div class="wrap">
       <div class="util-bar">
-        <span>独立财经分析 · INDEPENDENT RESEARCH</span>
+        <span>{t.utilbar}</span>
         <nav class="nav">
-          <a href="/">首页</a>
-          <a href="/about">关于</a>
-          <a href="/contact">联系</a>
+          <a href={p || '/'}>{t.navHome}</a>
+          <a href={`${p}/about`}>{t.navAbout}</a>
+          <a href={`${p}/contact`}>{t.navContact}</a>
+          <a href={t.langSwitchHref} class="lang-switch">{t.langSwitch}</a>
         </nav>
       </div>
 
       <header class="masthead">
-        <a href="/">
-          <div class="eyebrow">The Critical Point</div>
-          <h1 class="name">{SITE.name}</h1>
+        <a href={p || '/'}>
+          <div class="eyebrow">{lang === 'en' ? '临界' : 'The Critical Point'}</div>
+          <h1 class="name">{siteName}</h1>
         </a>
-        <div class="rule-row"><span>{SITE.tagline} · {year}</span></div>
+        <div class="rule-row"><span>{t.tagline} · {year}</span></div>
       </header>
 
       <main class="site-main">
@@ -45,16 +49,16 @@ const year = new Date().getFullYear();
       </main>
 
       <footer class="site-footer">
-        <p class="fd">{SITE.disclaimer}</p>
+        <p class="fd">{t.disclaimer}</p>
         <nav class="flinks">
-          <a href="/about">关于</a>
-          <a href="/terms">服务条款</a>
-          <a href="/privacy">隐私政策</a>
-          <a href="/refunds">退款政策</a>
-          <a href="/contact">联系我们</a>
+          <a href={`${p}/about`}>{t.fAbout}</a>
+          <a href={`${p}/terms`}>{t.fTerms}</a>
+          <a href={`${p}/privacy`}>{t.fPrivacy}</a>
+          <a href={`${p}/refunds`}>{t.fRefunds}</a>
+          <a href={`${p}/contact`}>{t.fContact}</a>
         </nav>
         <p class="fc">© {year} {SITE.author} · {SITE.name} The Critical Point · fncuthdert.com</p>
-        <p class="fop">运营者 {SITE.operator} · <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> · 支付由 Stripe 安全处理</p>
+        <p class="fop">{t.fOp(SITE.operator)} · <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> · {t.fPay}</p>
       </footer>
     </div>
   </body>

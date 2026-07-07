@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../config.mjs';
+---
+<BaseLayout title="About" description="About The Critical Point — independent financial analysis" lang="en">
+  <article class="post">
+    <h1 class="post-title">About</h1>
+    <div class="post-content">
+      <p>This is {SITE.author}'s independent financial analysis. No price predictions — only mechanisms taken apart. The market is a distributed computer run by billions of people, and what I try to do is see what it is computing.</p>
+      <p>Topics span equities, currencies, assets, macro, and occasional reflections on order and human nature. Original, independent, and representing nothing but my own biases. Updated daily; English editions of new articles are published alongside the Chinese originals.</p>
+      <h2>Content and payment</h2>
+      <p>Most articles are free. A few in-depth pieces are <strong>pay-per-article</strong>: the price is shown in USD on the article page, the opening is free to preview, and the full text unlocks instantly after payment. If a free article was valuable to you, you can also <strong>leave a tip</strong> at the end. Payments are processed by Stripe and support major cards.</p>
+      <p>For details, see the <a href="/en/terms">Terms of Service</a> and <a href="/en/refunds">Refund Policy</a>, or <a href="/en/contact">contact us</a>.</p>
+    </div>
+    <p class="post-disclaimer">Articles on this site represent the author's personal views only and do not constitute investment advice.</p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../config.mjs';
+---
+<BaseLayout title="Refund Policy" description="Refund Policy — The Critical Point (fncuthdert.com)" lang="en">
+  <article class="post">
+    <h1 class="post-title">Refund Policy</h1>
+    <div class="post-content legal">
+      <p class="legal-meta">Last updated: {SITE.legalUpdatedEn}</p>
+
+      <h2>1. General rule</h2>
+      <ul>
+        <li><strong>Paid articles</strong> are digital content, unlocked and delivered instantly upon successful payment. Because content cannot be "returned" once read, paid articles are <strong>generally non-refundable</strong>. Every paid article shows its price before payment and offers a free preview of its opening — please purchase only after confirming.</li>
+        <li><strong>Tips</strong> are voluntary gifts with no goods or services in return and are <strong>non-refundable</strong>.</li>
+      </ul>
+
+      <h2>2. Exceptions</h2>
+      <p>We will issue a full refund, after verification, in the following cases:</p>
+      <ul>
+        <li><strong>Duplicate charge</strong>: you were charged more than once for the same article;</li>
+        <li><strong>Failed delivery</strong>: payment succeeded but the content would not unlock, and we could not restore your access within 48 hours;</li>
+        <li><strong>Unauthorized transaction</strong>: a payment made with your payment instrument without your authorization (reasonable verification may be required).</li>
+      </ul>
+
+      <h2>3. How to request</h2>
+      <p>Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> within <strong>7 days</strong> of the transaction, including: your Stripe receipt (or its transaction ID), the payment time and amount, and a description of the problem. We respond within <strong>2 business days</strong>.</p>
+
+      <h2>4. Method and timing</h2>
+      <p>Approved refunds are always returned via Stripe <strong>to the original payment method</strong>, typically arriving within 5–10 business days depending on your card issuer.</p>
+
+      <h2>5. Disputes</h2>
+      <p>If you have concerns about a charge, please contact us first at the email above — most issues can be resolved directly, and usually faster than a chargeback through your card issuer.</p>
+    </div>
+  </article>
+</BaseLayout>
