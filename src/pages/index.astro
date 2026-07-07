@@ -36,7 +36,7 @@ const [latest, ...rest] = posts;
             <a href={`/posts/${post.slug}`}>
               <span class="num">{String(i + 2).padStart(2, '0')}</span>
               <span class="body">
-                <h3>{post.data.title}</h3>
+                <h3>{post.data.title} {post.data.price && <span class="paid-tag">付费 ${post.data.price}</span>}</h3>
                 {post.data.description && <p>{post.data.description}</p>}
               </span>
               <span class="date">{fmt(post.data.date)}</span>

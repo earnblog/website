@@ -2,14 +2,16 @@
 import BaseLayout from './BaseLayout.astro';
 import { SITE } from '../config.mjs';
 const { post } = Astro.props;
-const { title, date, cover, coverCaption } = post.data;
+const { title, date, cover, coverCaption, price } = post.data;
 const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 <BaseLayout title={title} description={post.data.description}>
-  <article class="post">
+  <article class="post" data-slug={post.slug} data-title={title}>
     <a class="back" href="/">← 返回目录</a>
     <div class="post-kicker">
       <span>{SITE.author}</span><span class="dot">/</span><span>{dateStr}</span>
+      {price && <span class="dot">/</span>}
+      {price && <span class="paid-tag">付费 ${price}</span>}
     </div>
     <h1 class="post-title">{title}</h1>
     {cover && (
@@ -18,9 +20,101 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long
         {coverCaption && <figcaption>{coverCaption}</figcaption>}
       </figure>
     )}
-    <div class="post-content">
+    <div class:list={['post-content', price && 'is-preview']}>
       <slot />
     </div>
+    {price && (
+      <div class="paywall" id="paywall">
+        <p class="paywall-note">—— 以下为付费内容 ——</p>
+        <button class="btn-gold" id="unlock-btn">解锁全文 · ${price}</button>
+        <p class="paywall-hint">支付后在本浏览器长期有效;支付成功页的链接可收藏,换设备时打开即恢复解锁。</p>
+      </div>
+    )}
+    {price && <div class="post-content" id="paid-content" hidden></div>}
+
+    <div class="tip-card" id="tip-card">
+      <div class="tip-head">觉得这篇有价值?请作者喝杯咖啡</div>
+      <div class="tip-row">
+        <button class="tip-btn" data-amount="2">$2</button>
+        <button class="tip-btn" data-amount="5">$5</button>
+        <button class="tip-btn" data-amount="10">$10</button>
+        <span class="tip-custom">
+          <span class="cur">$</span>
+          <input id="tip-amount" type="number" min="1" max="10000" step="1" placeholder="自定金额" />
+          <button class="tip-btn tip-go" id="tip-go">打赏</button>
+        </span>
+      </div>
+      <p class="tip-note">STRIPE 安全支付 · 支持银行卡</p>
+    </div>
+
     <p class="post-disclaimer">{SITE.disclaimer}</p>
   </article>
 </BaseLayout>
+
+<script>
+  const article = document.querySelector('article.post') as HTMLElement;
+  const slug = article.dataset.slug || '';
+  const title = article.dataset.title || '';
+
+  function toast(msg: string) {
+    const t = document.createElement('div');
+    t.className = 'toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    requestAnimationFrame(() => t.classList.add('on'));
+    setTimeout(() => { t.classList.remove('on'); setTimeout(() => t.remove(), 400); }, 4200);
+  }
+
+  async function checkout(payload: object, btn: HTMLButtonElement) {
+    btn.disabled = true;
+    try {
+      const r = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const d = await r.json();
+      if (r.ok && d.url) { location.href = d.url; return; }
+      toast(d.error || '支付通道暂时不可用,请稍后再试');
+    } catch {
+      toast('支付通道暂时不可用,请稍后再试');
+    }
+    btn.disabled = false;
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.tip-btn[data-amount]').forEach((b) =>
+    b.addEventListener('click', () =>
+      checkout({ type: 'tip', amount: Number(b.dataset.amount), slug, title }, b)),
+  );
+  const tipGo = document.getElementById('tip-go') as HTMLButtonElement | null;
+  tipGo?.addEventListener('click', () => {
+    const v = Number((document.getElementById('tip-amount') as HTMLInputElement).value);
+    if (!Number.isFinite(v) || v < 1) { toast('请输入 $1 以上的金额'); return; }
+    if (v > 10000) { toast('单笔最多 $10,000'); return; }
+    checkout({ type: 'tip', amount: v, slug, title }, tipGo);
+  });
+
+  const unlockBtn = document.getElementById('unlock-btn') as HTMLButtonElement | null;
+  unlockBtn?.addEventListener('click', () => checkout({ type: 'unlock', slug }, unlockBtn));
+
+  // 付费文章:已解锁(cookie 有效)则直接取全文替换付费墙
+  if (document.getElementById('paywall')) {
+    fetch(`/api/content?slug=${encodeURIComponent(slug)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (d && d.html) {
+          const paid = document.getElementById('paid-content')!;
+          paid.innerHTML = d.html;
+          paid.hidden = false;
+          document.getElementById('paywall')?.remove();
+          document.querySelector('.post-content.is-preview')?.classList.remove('is-preview');
+        }
+      })
+      .catch(() => {});
+  }
+
+  const q = new URLSearchParams(location.search);
+  if (q.get('thanks')) toast('收到你的打赏,谢谢支持');
+  if (q.get('unlocked')) toast('已解锁全文,感谢支持');
+  if (q.get('unlockfail')) toast('支付未完成,全文尚未解锁');
+</script>

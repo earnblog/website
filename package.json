@@ -5,10 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "node scripts/build-paywall.mjs && astro build",
+    "preview": "astro preview",
+    "preview:cf": "npx -y wrangler pages dev dist --port 8788"
   },
   "dependencies": {
-    "astro": "^4.16.18"
+    "astro": "^4.16.18",
+    "markdown-it": "^14.3.0"
   }
 }
