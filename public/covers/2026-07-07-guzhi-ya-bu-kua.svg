@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:估值只量得出多高,量不出何时塌;真正抽走地基的是顶上那条流动性物理极限">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="54" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">贵,不是逆转的原因</text>
+  <!-- 流动性物理极限:红虚线 -->
+  <line x1="40" y1="88" x2="640" y2="88" stroke="#a8453a" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="636" y="80" text-anchor="end" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">流动性物理极限</text>
+  <!-- 估值标尺:一根越垒越高的柱子 + 刻度 -->
+  <g>
+    <rect x="150" y="150" width="46" height="106" fill="#4f6b8a"/>
+    <rect x="150" y="118" width="46" height="32" fill="#c8a96a"/>
+    <line x1="150" y1="150" x2="196" y2="150" stroke="#181f2b" stroke-width="1.4"/>
+    <line x1="150" y1="184" x2="196" y2="184" stroke="#181f2b" stroke-width="1.2" opacity="0.6"/>
+    <line x1="150" y1="218" x2="196" y2="218" stroke="#181f2b" stroke-width="1.2" opacity="0.6"/>
+    <text x="173" y="278" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#c8a96a">估值:量得出多高</text>
+  </g>
+  <!-- 反身循环箭头:高价→信用→买盘→回到高价 -->
+  <g fill="none" stroke="#b07d33" stroke-width="1.6">
+    <path d="M300 150 q60 -34 120 0" marker-end="url(#ar)"/>
+    <path d="M420 150 q-60 40 -120 6" marker-end="url(#ar)"/>
+  </g>
+  <text x="360" y="132" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33">高估值自我供血</text>
+  <text x="360" y="188" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33">高价→信用→买盘</text>
+  <!-- 右侧:撞极限才塌 -->
+  <g fill="#a8453a" opacity="0.9">
+    <path d="M520 90 l40 0 l-14 40 l24 0 l-52 74 l10 -60 l-24 0 z"/>
+  </g>
+  <text x="540" y="278" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#b57d73">撞极限,才塌</text>
+  <defs>
+    <marker id="ar" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#b07d33"/></marker>
+  </defs>
+</svg>

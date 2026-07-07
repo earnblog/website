@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:终端一点需求波动,经供应链层层放大成超级周期;牛鞭甩得最远处,离回抽最近">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="54" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">牛鞭甩到最远处,离回抽最近</text>
+  <!-- 牛鞭波形:左端小振幅→右端大振幅 -->
+  <path d="M60 170 q30 -6 60 0 q30 10 60 -14 q30 -24 60 26 q30 42 60 -40 q30 -64 60 62 q30 78 60 -66"
+        fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <!-- 阶段标注 -->
+  <circle cx="90" cy="167" r="4" fill="#4f6b8a"/>
+  <text x="90" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">终端·真实需求</text>
+  <text x="240" y="228" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">模组·晶圆·逐级放大</text>
+  <circle cx="480" cy="96" r="5" fill="#a8453a"/>
+  <text x="512" y="90" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">最确定 = 甩到最远</text>
+  <!-- 顶点标注:目标价上调 -->
+  <line x1="480" y1="96" x2="480" y2="170" stroke="#a8453a" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>
+  <!-- 底部风险回报率对照 -->
+  <g font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700">
+    <rect x="60" y="250" width="250" height="30" fill="none" stroke="#4f6b8a" stroke-width="1.2"/>
+    <text x="185" y="270" text-anchor="middle" fill="#4f6b8a">没人看清时:上行敞开</text>
+    <rect x="360" y="250" width="260" height="30" fill="none" stroke="#a8453a" stroke-width="1.2"/>
+    <text x="490" y="270" text-anchor="middle" fill="#b57d73">人人看清时:下行敞开</text>
+  </g>
+</svg>
