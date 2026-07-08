@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:K型两条线从一点分叉,上支陡升下支走平,底部水位线越退越低">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">K 型分化,量的是水够不够分</text>
+
+  <!-- 分叉起点 -->
+  <circle cx="180" cy="168" r="5" fill="#c8a96a"/>
+  <text x="150" y="158" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">同一片潮水</text>
+
+  <!-- K 上支:陡升(金,抱团上涨) -->
+  <path d="M180 168 L560 78" fill="none" stroke="#c8a96a" stroke-width="2.8"/>
+  <text x="566" y="80" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">少数在涨</text>
+
+  <!-- K 下支:走平微降(红,失血) -->
+  <path d="M180 168 L560 234" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+  <text x="566" y="238" font-family="system-ui,sans-serif" font-size="12" fill="#b57d73">多数失血</text>
+
+  <!-- 水位线:退潮(蓝虚线,越来越低) -->
+  <path d="M60 250 q40 -4 80 0 q40 4 80 0 q40 -3 80 0 q40 3 80 0" fill="none" stroke="#4f6b8a" stroke-width="2" opacity="0.7"/>
+  <path d="M60 268 q40 -3 80 0 q40 3 80 0 q40 -2 80 0" fill="none" stroke="#4f6b8a" stroke-width="1.4" stroke-dasharray="5 5" opacity="0.5"/>
+  <text x="48" y="290" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">水位越退越低 —— 分化越张越大</text>
+</svg>

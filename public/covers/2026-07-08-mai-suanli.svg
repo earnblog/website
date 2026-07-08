@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:左侧囤算力堆高生产稀缺,右侧卖算力消费稀缺,中间一道红色裂缝">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">造水的人,开始卖水了</text>
+
+  <!-- 左:囤·信仰(蓝,越堆越高,向上箭头) -->
+  <g>
+    <rect x="70" y="200" width="46" height="34" fill="#4f6b8a"/>
+    <rect x="70" y="164" width="46" height="34" fill="#4f6b8a" opacity="0.85"/>
+    <rect x="70" y="128" width="46" height="34" fill="#4f6b8a" opacity="0.7"/>
+    <path d="M93 118 l0 -22 M85 104 l8 -8 8 8" fill="none" stroke="#4f6b8a" stroke-width="2.2"/>
+    <text x="93" y="256" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">囤 · 生产稀缺</text>
+  </g>
+
+  <!-- 中:红色裂缝 -->
+  <path d="M300 92 l-22 44 l20 12 l-24 46 l22 14" fill="none" stroke="#a8453a" stroke-width="3"/>
+  <text x="340" y="150" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#a8453a">第一道裂缝</text>
+
+  <!-- 右:卖·裂缝(红,向外流出的箭头) -->
+  <g>
+    <rect x="500" y="200" width="46" height="34" fill="#7f8ba0" opacity="0.5"/>
+    <rect x="500" y="164" width="46" height="34" fill="#7f8ba0" opacity="0.4"/>
+    <path d="M556 150 l70 0 M612 142 l8 8 -8 8" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+    <text x="523" y="256" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#b57d73">卖 · 消费稀缺</text>
+  </g>
+
+  <line x1="48" y1="278" x2="632" y2="278" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="294" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">边际回报掉到市价以下,他才肯把金子租出去</text>
+</svg>
