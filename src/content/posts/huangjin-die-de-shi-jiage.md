@@ -1,6 +1,7 @@
 ---
 title: 黄金跌的是价格,不是逻辑!
 date: 2026-06-29
+category: liquidity
 description: 黄金跌破4000美元、创纪录季度跌幅,看多的人慌了。但慌的人多半把黄金当成了一个会涨的东西,而不是它本来的样子——非负债资产。它抗的不是CPI,是信用体系的不确定性。
 cover: /covers/huangjin.svg
 coverCaption: 题图:价格的红线一路向下,而黄金的逻辑,是那根不动的金线。

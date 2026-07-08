@@ -1,6 +1,7 @@
 ---
 title: 'Supercycles Are Most Dangerous When Most Certain!'
 date: 2026-07-07
+category: cycles
 description: 'Morgan Stanley raises memory price targets, the NAND supercycle is proclaimed everywhere, and institutions have written 2027 growth rates into their models. But the most dangerous moment for a cyclical stock is precisely when everyone can compute its next two years. Maximum visibility is not a buy signal — it is a sell signal, because certainty was never a margin of safety. It is an illusion amplified link by link along the supply chain.'
 cover: /covers/2026-07-07-chaoji-zhouqi.svg
 coverCaption: 'A ripple at the consumer end is amplified through modules, fabs, and equipment; by the far end of the whip it reads as a "supercycle" — and the whip snaps back hardest where it was flung farthest.'

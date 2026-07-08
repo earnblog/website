@@ -1,6 +1,7 @@
 ---
 title: 看不懂的时候,空仓也是一种能力!
 date: 2026-07-01
+category: mechanics
 description: 大多数人以为投资的能力是"看得懂、敢下手"。但真正稀缺的能力恰恰相反:看不懂的时候,忍住不动,空仓等待。市场不奖励勤奋,它奖励判断力和纪律。
 cover: /covers/2026-07-01-kongcang.svg
 coverCaption: 题图:满屏噪音里,那一根不动的金线,是最难的克制。

@@ -1,6 +1,7 @@
 ---
 title: 比特币不是数字黄金,是流动性的影子!
 date: 2026-06-27
+category: liquidity
 description: 每次动荡都有人重复"比特币是数字黄金、是避险资产"。今年的走势把这句话彻底证伪了——黄金涨六成,比特币却比股票跌得还早还狠。它不是避险,是全市场最高Beta的风险资产。
 cover: /covers/bitcoin.svg
 coverCaption: 题图:比特币像潮水投下的影子——潮涨时放大,潮退时最先消失。

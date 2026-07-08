@@ -1,6 +1,7 @@
 ---
 title: 'Debt-Funded Expansion Buys You Time, Not Compute!'
 date: 2026-07-08
+category: ai-compute
 price: 3
 description: 'The five largest cloud and AI giants issued $159B of bonds in five months, 47% more than last year, while their credit spreads quietly widen. The market reads it as "smart use of cheap capital." But expanding on cash you earned is investment; expanding on borrowed money whose interest depends on revenue that has not appeared is discounting a future not yet arrived to plug a hole in the present. Debt cannot buy the return on compute — it can only buy the time you spend waiting for it.'
 cover: /covers/2026-07-08-jieqian-shijian.svg

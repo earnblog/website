@@ -1,19 +1,49 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import { SITE, I18N } from '../config.mjs';
+import { getCollection } from 'astro:content';
+import { SITE, I18N, CATEGORIES } from '../config.mjs';
 const { post, lang = 'zh' } = Astro.props;
 const t = I18N[lang];
-const { title, date, cover, coverCaption, price } = post.data;
+const { title, date, cover, coverCaption, price, category } = post.data;
 const dateStr = t.dateFmt(date);
+const base = lang === 'en' ? '/en' : '';
+const catInfo = CATEGORIES[category];
+const catName = lang === 'en' ? catInfo.en : catInfo.zh;
+
+// 相关文章:同栏目最新3篇,不足则用其他最新文章补齐
+const others = (await getCollection(lang === 'en' ? 'posts-en' : 'posts', ({ data }) => !data.draft))
+  .filter((p) => p.slug !== post.slug)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const related = [
+  ...others.filter((p) => p.data.category === category),
+  ...others.filter((p) => p.data.category !== category),
+].slice(0, 3);
+
+const jsonld = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: post.data.description || '',
+  datePublished: date.toISOString(),
+  inLanguage: lang === 'en' ? 'en' : 'zh-CN',
+  articleSection: catInfo.en,
+  isAccessibleForFree: !price,
+  author: { '@type': 'Person', name: SITE.author },
+  publisher: { '@type': 'Organization', name: `${SITE.name} ${SITE.nameEn}`, url: SITE.url },
+  mainEntityOfPage: new URL(Astro.url.pathname, SITE.url).href,
+  ...(cover ? { image: new URL(cover, SITE.url).href } : {}),
+});
 ---
 <BaseLayout title={title} description={post.data.description} lang={lang}>
   <article class="post" data-slug={post.slug} data-title={title} data-lang={lang}>
     <a class="back" href={lang === 'en' ? '/en/' : '/'}>{t.back}</a>
     <div class="post-kicker">
       <span>{SITE.author}</span><span class="dot">/</span><span>{dateStr}</span>
+      <span class="dot">/</span><a class="cat-link" href={`${base}/topics/${category}`}>{catName}</a>
       {price && <span class="dot">/</span>}
       {price && <span class="paid-tag">{t.paidTag(price)}</span>}
     </div>
+    <script is:inline type="application/ld+json" set:html={jsonld} />
     <h1 class="post-title">{title}</h1>
     {cover && (
       <figure class="post-cover">
@@ -34,6 +64,22 @@ const dateStr = t.dateFmt(date);
       </div>
     )}
     {price && <div class="post-content" id="paid-content" hidden></div>}
+
+    {related.length > 0 && (
+      <aside class="related">
+        <div class="section-head">{t.related}</div>
+        <ul class="related-list">
+          {related.map((r) => (
+            <li>
+              <a href={`${base}/posts/${r.slug}`}>
+                <span class="r-title">{r.data.title}</span>
+                <span class="r-date">{t.dateShort(r.data.date)}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )}
 
     <div class="tip-card" id="tip-card">
       <div class="tip-head">{t.tipHead}</div>

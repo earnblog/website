@@ -1,6 +1,7 @@
 ---
 title: 'A K-Shaped Market Isn''t Sorting Strength — It''s Counting Cash!'
 date: 2026-07-08
+category: liquidity
 description: 'The market''s favorite word this half is "K-shaped divergence" — AI climbing, everything old flat — read as the deepening of a great rotation, a triumph of structure. But divergence is never value stratifying; it is money getting scarcer. When the tide is high, good boats and bad rise together; only when it goes out do you see who is beached. The steeper the upper arm of the K, the lower the water.'
 cover: /covers/2026-07-08-k-xing-fenhua.svg
 coverCaption: 'A broad rally is the face of abundant money; divergence is the face of scarce money. The fork of the K measures not who is stronger, but whether there is still enough water to go around.'

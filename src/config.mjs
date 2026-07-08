@@ -13,6 +13,30 @@ export const SITE = {
   passPrice: 50,                     // 年度通行证价格(美元):一次付款解锁全站付费文章一年
 };
 
+// ===== 栏目(固定四个,每篇文章 frontmatter 的 category 必须是其中之一) =====
+export const CATEGORIES = {
+  liquidity: {
+    zh: '流动性与信用', en: 'Liquidity & Credit',
+    descZh: '钱从哪来,到哪去。央行、美元、黄金与信用的扩张收缩——资产价格的水位,由这里决定。',
+    descEn: 'Where the money comes from and where it goes: central banks, the dollar, gold, and the expansion and contraction of credit — the water level beneath every asset price.',
+  },
+  'ai-compute': {
+    zh: 'AI 与算力', en: 'AI & Compute',
+    descZh: 'AI 资本开支、算力经济与循环融资。这一轮周期最大的叙事,和叙事底下的现金流。',
+    descEn: 'AI capex, the economics of compute, and circular financing — the biggest narrative of this cycle, and the cash flows underneath it.',
+  },
+  mechanics: {
+    zh: '市场机制与心理', en: 'Market Mechanics & Psychology',
+    descZh: '价格如何形成,故事如何定价,人心如何拥挤。看懂市场这台机器,而不是预测它。',
+    descEn: 'How prices form, how narratives get priced, how crowds crowd. Understanding the machine of the market rather than predicting it.',
+  },
+  cycles: {
+    zh: '估值与周期', en: 'Valuation & Cycles',
+    descZh: '泡沫、估值、超级周期与轮回。贵不贵是一个问题,什么时候跌是另一个问题。',
+    descEn: 'Bubbles, valuations, supercycles and their recurrence. Whether it is expensive is one question; when it falls is another.',
+  },
+};
+
 // ===== 界面双语文案(zh 中文站 / en 英文站) =====
 export const I18N = {
   zh: {
@@ -22,6 +46,7 @@ export const I18N = {
     tagline: '市场 · 机制 · 秩序',
     latest: '最新', readMore: '阅读全文 →',
     recent: '近期 · RECENT', archive: '归档 · ARCHIVE',
+    topics: '栏目 · TOPICS', related: '延伸阅读 · RELATED',
     back: '← 返回目录',
     paidTag: (p) => `付费 $${p}`,
     paywallNote: '—— 以下为付费内容 ——',
@@ -51,6 +76,7 @@ export const I18N = {
     tagline: 'Markets · Mechanisms · Order',
     latest: 'Latest', readMore: 'Read article →',
     recent: 'RECENT', archive: 'ARCHIVE',
+    topics: 'TOPICS', related: 'RELATED',
     back: '← Back to index',
     paidTag: (p) => `Paid · $${p}`,
     paywallNote: '— PAID CONTENT BELOW —',

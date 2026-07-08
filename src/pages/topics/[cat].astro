@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CATEGORIES, I18N } from '../../config.mjs';
+
+export async function getStaticPaths() {
+  return Object.keys(CATEGORIES).map((cat) => ({ params: { cat } }));
+}
+
+const { cat } = Astro.params;
+const c = CATEGORIES[cat];
+const t = I18N.zh;
+const posts = (await getCollection('posts', ({ data }) => !data.draft && data.category === cat))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<BaseLayout title={c.zh} description={c.descZh}>
+  <section class="archive topic-page">
+    <a class="back" href="/">{t.back}</a>
+    <div class="section-head">{c.zh} · {c.en}</div>
+    <p class="topic-desc">{c.descZh}</p>
+    <ol class="toc">
+      {posts.map((post, i) => (
+        <li>
+          <a href={`/posts/${post.slug}`}>
+            <span class="num">{String(i + 1).padStart(2, '0')}</span>
+            <span class="body">
+              <h3>{post.data.title} {post.data.price && <span class="paid-tag">{t.paidTag(post.data.price)}</span>}</h3>
+              {post.data.description && <p>{post.data.description}</p>}
+            </span>
+            <span class="date">{t.dateShort(post.data.date)}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+</BaseLayout>

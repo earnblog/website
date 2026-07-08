@@ -1,6 +1,7 @@
 ---
 title: '卖闲置,不等于过剩!'
 date: 2026-07-03
+category: ai-compute
 description: Meta传出对外出售富余AI算力,费城半导体一天跌逾6%,市场立刻喊"算力过剩、AI退潮"。但一家公司盘活闲置产能,不等于全行业供给过剩;真正在变的不是东西的多少,是市场讲算力的那个故事。
 cover: /covers/2026-07-03-guosheng.svg
 coverCaption: 题图:货还在涨价、还得排队,喊"过剩"的只是把故事的开关扳了一下。

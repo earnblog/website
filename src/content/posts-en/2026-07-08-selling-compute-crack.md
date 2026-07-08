@@ -1,6 +1,7 @@
 ---
 title: 'Selling Your Compute Is the First Crack in the Compute Faith!'
 date: 2026-07-08
+category: ai-compute
 description: 'Meta starts renting out its AI compute, and the market reads it as "monetizing idle capacity," a maturing platform business. But a hoarder who suddenly agrees to rent out his compute is not doing it because he has surplus — he is doing it because his own calculator told him the marginal return of holding it has fallen below the market rent. The water-maker has started selling water, and the crack opens from his own hands.'
 cover: /covers/2026-07-08-mai-suanli.svg
 coverCaption: 'Hoarding compute manufactures scarcity; selling compute consumes it. When the most committed holder first lists it for rent, the crack opens from his own hands.'

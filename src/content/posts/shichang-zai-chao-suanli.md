@@ -1,6 +1,7 @@
 ---
 title: 市场在炒"算力",却不懂什么是算力!
 date: 2026-06-30
+category: mechanics
 description: 市场把"算力"当题材炒,涨停接力、自我循环。但真正的算力是市场本身那台亿万人的分布式计算机——当所有人都在炒算力时,恰恰是市场算力最低的时候。
 cover: /covers/suanli.svg
 coverCaption: 题图:涨停板墙里被反复追逐的"算力",是一场自我喂养的循环。

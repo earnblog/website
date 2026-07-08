@@ -1,8 +1,9 @@
 ---
-import { SITE, I18N } from '../config.mjs';
+import { SITE, I18N, CATEGORIES } from '../config.mjs';
 const { posts, lang = 'zh' } = Astro.props;
 const t = I18N[lang];
 const base = lang === 'en' ? '/en/posts' : '/posts';
+const topicBase = lang === 'en' ? '/en/topics' : '/topics';
 const sorted = [...posts].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const [latest, ...rest] = sorted;
 const featured = rest.slice(0, 6);   // 封面卡片区
@@ -37,6 +38,13 @@ const archive = rest.slice(6);       // 紧凑目录区
   </div>
   <a class="btn-gold sub-cta" href={`${lang === 'en' ? '/en' : ''}/subscribe`}>{t.bannerCta}</a>
 </aside>
+
+<nav class="topics-row">
+  <span class="topics-label">{t.topics}</span>
+  {Object.entries(CATEGORIES).map(([slug, c]) => (
+    <a href={`${topicBase}/${slug}`}>{lang === 'en' ? c.en : c.zh}</a>
+  ))}
+</nav>
 
 {featured.length > 0 && (
   <section class="recent">

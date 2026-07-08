@@ -1,6 +1,7 @@
 ---
 title: 泡沫的最后一公里,才最危险!
 date: 2026-06-30
+category: cycles
 description: 有机构说AI涨势接近尾声,但崩盘前还有一波"blow-off"式爆发。很多人听到"还要涨"就兴奋。但这句话真正的意思是:系统已经进入只靠上涨吸引上涨的自我循环,不再计算未来。
 cover: /covers/ai-paomo.svg
 coverCaption: 题图:超指数的曲线冲向流动性的天花板,最陡的那一截,离悬崖最近。

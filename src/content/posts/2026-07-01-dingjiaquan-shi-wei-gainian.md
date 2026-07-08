@@ -1,6 +1,7 @@
 ---
 title: '"定价权",是个伪概念!'
 date: 2026-07-01
+category: mechanics
 description: 中文语境里有个流行词叫"定价权",仿佛谁抢到它就能拿捏价格。但只要市场是公开的,定价权根本就是个伪概念——价格是供需博弈的结果,不是谁说了算的一项权力。
 cover: /covers/2026-07-01-dingjiaquan.svg
 coverCaption: 题图:价格坐在供与需的天平中间,不听命于任何一方。

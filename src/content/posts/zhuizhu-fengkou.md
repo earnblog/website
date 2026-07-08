@@ -1,6 +1,7 @@
 ---
 title: 追逐风口,是对世界算力的僭越!
 date: 2026-06-29
+category: mechanics
 description: 市场是一台亿万人的分布式计算机,它的算力远超任何个体。追逐风口的人,本质上是在赌自己一个人能算赢这台机器。这就是僭越。
 cover: /covers/fengkou.svg
 coverCaption: 题图:市场是亿万节点汇聚的算力核心;红点,是试图逆流的僭越者。

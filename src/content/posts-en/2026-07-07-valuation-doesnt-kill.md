@@ -1,6 +1,7 @@
 ---
 title: 'High Valuations Do Not Crush Markets!'
 date: 2026-07-07
+category: cycles
 description: 'The fashionable line on Wall Street: the S&P 500''s Shiller P/E has reached 41, above its pre-Depression level, therefore a crash is imminent. This mistakes a static number for a countdown clock. High valuation has never crushed a market by itself — it tells you whether things are expensive, never when they fall. What topples a bubble is never that prices got too high. It is that the money ran out.'
 cover: /covers/2026-07-07-guzhi-ya-bu-kua.svg
 coverCaption: 'Valuation is a ruler: it measures how high, never when the fall comes. What pulls the foundation away is the invisible ceiling drawn above — the physical limit of liquidity.'

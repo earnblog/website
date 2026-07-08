@@ -1,6 +1,7 @@
 ---
 title: 通缩,是信用在收缩!
 date: 2026-07-01
+category: liquidity
 description: 到底是通缩还是通胀,总有人争论不休。但只要想明白一件事,争论根本不必发生:通缩不是价格在跌,是信用在收缩。盯着CPI是看表面,底下那张信用的网才是真正在动的东西。
 cover: /covers/2026-07-01-tongsuo.svg
 coverCaption: 题图:信用的潮水退去,价格只是最先干涸的那片滩。

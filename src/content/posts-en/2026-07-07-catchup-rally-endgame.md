@@ -1,6 +1,7 @@
 ---
 title: 'The Catch-Up Rally Is an Ending, Not a Beginning!'
 date: 2026-07-07
+category: cycles
 description: '"Hard tech has peaked; the AI-application catch-up rally may be starting" — the market treats rotation as a relay race, as if capital passing between sectors were value being passed along. But a catch-up rally is not new computing power discovering new value. It is the same stock of liquidity making its final handoff at the end of the chain. What it fills was never a value trough — it is a sentiment trough; and the moment every trough is filled, the market has nothing left to compute but "who hasn''t gone up yet."'
 cover: /covers/2026-07-07-buzhang.svg
 coverCaption: 'Leaders overdraw first, forcing capital downhill to fill the last sentiment trough; once every trough is level, all that remains computable is sequence — not value.'
