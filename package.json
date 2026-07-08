@@ -10,6 +10,8 @@
     "preview:cf": "npx -y wrangler pages dev dist --port 8788"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.2.1",
     "astro": "^4.16.18",
     "markdown-it": "^14.3.0"
   }

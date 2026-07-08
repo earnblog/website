@@ -7,6 +7,7 @@ const p = lang === 'en' ? '/en' : '';
 const siteName = lang === 'en' ? SITE.nameEn : SITE.name;
 const pageTitle = title ? `${title} · ${siteName}` : `${siteName} · ${t.tagline}`;
 const year = new Date().getFullYear();
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
 ---
 <!doctype html>
 <html lang={lang === 'en' ? 'en' : 'zh-CN'}>
@@ -16,6 +17,9 @@ const year = new Date().getFullYear();
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.nameEn} href="/en/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
