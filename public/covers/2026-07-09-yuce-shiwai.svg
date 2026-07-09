@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:市场是把你也算进去的分布式计算,手指是握拳的一部分算不出拳">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">你不在市场之外,你就是市场</text>
+
+  <!-- 众多节点汇聚成一个"市场"结果,其中一个节点(红=你)想跳出去预测 -->
+  <g stroke="#33404f" stroke-width="1">
+    <line x1="340" y1="175" x2="150" y2="110"/>
+    <line x1="340" y1="175" x2="210" y2="90"/>
+    <line x1="340" y1="175" x2="300" y2="80"/>
+    <line x1="340" y1="175" x2="430" y2="82"/>
+    <line x1="340" y1="175" x2="520" y2="98"/>
+    <line x1="340" y1="175" x2="560" y2="140"/>
+    <line x1="340" y1="175" x2="180" y2="230"/>
+    <line x1="340" y1="175" x2="290" y2="248"/>
+    <line x1="340" y1="175" x2="420" y2="248"/>
+    <line x1="340" y1="175" x2="520" y2="232"/>
+  </g>
+
+  <!-- 周边节点(参与者) -->
+  <g fill="#4f6b8a">
+    <circle cx="150" cy="110" r="5"/>
+    <circle cx="210" cy="90" r="5"/>
+    <circle cx="300" cy="80" r="5"/>
+    <circle cx="430" cy="82" r="5"/>
+    <circle cx="520" cy="98" r="5"/>
+    <circle cx="560" cy="140" r="5"/>
+    <circle cx="180" cy="230" r="5"/>
+    <circle cx="290" cy="248" r="5"/>
+    <circle cx="420" cy="248" r="5"/>
+  </g>
+
+  <!-- 中心=市场(合力算出的结果) -->
+  <circle cx="340" cy="175" r="13" fill="#c8a96a"/>
+  <text x="340" y="205" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a" text-anchor="middle">市场 = 千万节点的合力</text>
+
+  <!-- "你"这个节点(红),想跳出去预测全体,却被连线拴在里面 -->
+  <circle cx="520" cy="232" r="6" fill="#a8453a"/>
+  <text x="500" y="262" font-family="system-ui,sans-serif" font-size="12" fill="#b57d73" text-anchor="middle">"你"也是其中一粒</text>
+  <text x="360" y="288" font-family="system-ui,sans-serif" font-size="11.5" fill="#7f8ba0" text-anchor="middle">手指是握拳的一部分,它算不出拳</text>
+</svg>

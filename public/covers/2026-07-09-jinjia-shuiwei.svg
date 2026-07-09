@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:金价不是插在恐惧里的温度计,是漂在信用潮水上的水位线">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">金价,是信用的水位线</text>
+
+  <!-- 潮水波形(信用) -->
+  <path d="M48 190 q60 -46 120 0 t120 0 t120 0 t120 0 t120 0" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <path d="M48 190 q60 -46 120 0 t120 0 t120 0 t120 0 t120 0 L648 260 L48 260 Z" fill="#4f6b8a" opacity="0.14"/>
+
+  <!-- 金价点漂在波面上,而非上方 -->
+  <circle cx="168" cy="190" r="6" fill="#c8a96a"/>
+  <circle cx="288" cy="167" r="6" fill="#c8a96a"/>
+  <circle cx="408" cy="190" r="6" fill="#c8a96a"/>
+  <circle cx="528" cy="167" r="6" fill="#c8a96a"/>
+
+  <!-- 涨潮/退潮标注 -->
+  <text x="250" y="128" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">涨潮 = 纸变毛 → 金价升</text>
+  <text x="352" y="238" font-family="system-ui,sans-serif" font-size="12" fill="#7f8ba0">退潮 = 纸变硬 → 金价落</text>
+
+  <!-- 被划掉的温度计比喻 -->
+  <text x="48" y="286" font-family="system-ui,sans-serif" font-size="11.5" fill="#b57d73">不是恐惧的温度计</text>
+  <line x1="46" y1="282" x2="188" y2="282" stroke="#a8453a" stroke-width="1.4"/>
+  <text x="210" y="286" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">是信用的水位线 · 量对面那张纸的成色</text>
+</svg>

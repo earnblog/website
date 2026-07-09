@@ -1,0 +1,25 @@
+---
+title: 'Cheap Is Not a Margin of Safety!'
+date: 2026-07-09
+category: cycles
+price: 3
+description: 'A comforting line is making the rounds again: A-share P/E ratios have fallen to historic lows, book values are near their floor, so "opportunity now outweighs risk" and "the bull market is at the door." The logic reduces investing to arithmetic — the thing got cheap, so you should buy it. But a low valuation was never a dated promissory note that the price will rise. Cheap only tells you whether something is expensive. It can never tell you whether it will go up. And a margin of safety never lived inside a price.'
+cover: /covers/2026-07-09-bianyi-bushi-anquan.svg
+coverCaption: 'The same low P/E can be a spring compressed to the floor, coiled to launch — or a stone dropped down a well, still falling. Identical number, opposite risk-reward.'
+---
+
+A comforting line is making the rounds again: A-share average P/E ratios have fallen to historic lows, book values sit near their floor, and so the conclusion writes itself — "opportunity now outweighs risk," "the bull market is at the door." The seduction of this logic is that it reduces investing to a single sum: the thing got cheap, therefore you should buy it. As if a low valuation were, by itself, a promissory note with a date already written on it.
+
+It sounds self-evidently true. Buy the cheap thing, sell the dear one — that is nearly everyone's first instinct about investing. And yet it is precisely that first instinct that has buried the deepest losses of retail investors across decades. Because it quietly folds two entirely different things into one: a thing being *cheap*, and that thing *going up*, are separated not by a pane of glass but by a canyon.
+
+Cheap is not a margin of safety. Growth is. A low valuation does only half the job — it tells you whether something is expensive right now; it can never tell you whether it will rise later. A P/E is today's price divided by past earnings; it is a rear-view mirror, and everything it captures has already happened. But for a stock to rise, it depends on what has *not* happened yet — future growth. Betting on the road ahead by staring into the rear-view mirror is, in itself, the worst risk-reward wager there is.
+
+Run it through the risk-reward lattice and "cheap" splits into two. A company can be cheap because it is still growing and the market simply hasn't caught up — that is a genuine margin of safety, upside open, downside floored. Or it can be cheap because it is decaying and the market has already voted with its feet — that is a cigar butt, cheap indeed, but upside sealed and downside gaping. The same "low P/E" is, in one case, a spring compressed to the floor and coiled to launch; in the other, a stone dropped down a well and still falling. Identical number, and yet the risk-reward is a world apart. Whoever watches only the cheapness and never the growth cannot tell whether the thing he just picked up is a spring or a stone.
+
+Worse still, a low valuation is often not the cause but the *result*. A sector is cheap frequently *because* the market has judged its growth about to stall. You think you're "bottom-fishing a low valuation"; the market is showing you what "cheap for a reason" means. Mistake the effect for the cause, wade in clutching the thought "it's already this cheap, it can't fall further," and what you catch is usually a knife still on its way down. Cheap has never once stopped things from getting cheaper.
+
+Early and late tell opposite stories through the same number. In the early stage — economy rising, earnings expanding — a low valuation means the market hasn't caught up to reality; it is genuine opportunity. In the late stage — economy sinking, earnings contracting — a low valuation means the market has already glimpsed the coming collapse in earnings: the denominator, earnings, is about to shrink on its own and lift that "low" P/E right back up. The cheapness is merely a fall not yet finished. The same figure, placed at the two ends of a cycle, writes two contradictory stories — and whoever can't tell which end he stands on is the one most likely, in the late stage, to misread the final leg down as a discount.
+
+So the real question was never "is it cheap," but "is it growing." The phrase *margin of safety* has been misread by too many as "buy it cheap enough and you're safe." But no price, however low, can lock down the steady bleed of a company's value; the only thing that truly hedges risk is whether the value itself is still growing. A nation's stock market is, in the end, a collective ballot cast on that nation's future growth — you are voting on the *direction* of growth, not the *degree* of cheapness. To treat cheap as safe is to try to earn compound returns with a simple-interest mind; it is to mistake the price tag on the shelf for the worth of the thing itself.
+
+<p class="kicker">Cheap is only a price; growth is a direction — and safety has always lived in the direction, never in the price.</p>

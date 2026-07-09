@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:同一个低市盈率,一个是压到底蓄势的弹簧,一个是掉进井还在下坠的石头">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">同一个"便宜",两个相反的故事</text>
+
+  <line x1="60" y1="250" x2="620" y2="250" stroke="#33404f" stroke-width="1.2"/>
+  <text x="60" y="278" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">低市盈率 · 同一个数字</text>
+
+  <!-- 弹簧:压到底,蓄势待发,向上箭头(蓝=真安全边际) -->
+  <g stroke="#4f6b8a" stroke-width="2.4" fill="none">
+    <path d="M180 232 l40 -10 l-40 -10 l40 -10 l-40 -10 l40 -10"/>
+  </g>
+  <path d="M200 168 l0 -60" stroke="#4f6b8a" stroke-width="2.4" fill="none"/>
+  <path d="M200 100 l-8 16 l16 0 z" fill="#4f6b8a"/>
+  <text x="150" y="98" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">增长撑起 · 上行敞开</text>
+  <text x="150" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">弹簧:压到底,蓄势待发</text>
+
+  <!-- 石头:掉进井,还在下坠,向下箭头(红=烟蒂) -->
+  <circle cx="470" cy="120" r="16" fill="#a8453a"/>
+  <path d="M470 142 l0 82" stroke="#a8453a" stroke-width="2.4" fill="none" stroke-dasharray="6 5"/>
+  <path d="M470 232 l-8 -16 l16 0 z" fill="#a8453a"/>
+  <text x="410" y="98" font-family="system-ui,sans-serif" font-size="12" fill="#b57d73">衰退压出 · 下行敞开</text>
+  <text x="405" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#b57d73">石头:掉进井,还在下坠</text>
+</svg>
