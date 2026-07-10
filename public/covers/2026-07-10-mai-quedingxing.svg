@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一次募资有两个方向,买方买上行的想象,卖方卖手里的确定性">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">IPO,卖的是确定性</text>
+
+  <!-- 周期曲线:上行加速到峰,后回落 -->
+  <path d="M56 234 C 150 226, 220 200, 280 158 C 330 122, 366 100, 406 96 C 452 92, 500 132, 548 186 C 580 220, 610 234, 632 240"
+        fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <!-- 峰值处卖出 -->
+  <circle cx="406" cy="96" r="6.5" fill="#c8a96a"/>
+  <line x1="406" y1="96" x2="406" y2="246" stroke="#c8a96a" stroke-width="1" stroke-dasharray="3 4" opacity="0.6"/>
+  <text x="418" y="90" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">此处出让股权 · $28B</text>
+
+  <text x="132" y="196" font-family="system-ui,sans-serif" font-size="11.5" fill="#7f8ba0">涨价 → 扩产 → 资本开支</text>
+  <text x="500" y="150" font-family="system-ui,sans-serif" font-size="11.5" fill="#b57d73">产能落地 → 价格松动</text>
+
+  <!-- 底部两栏对照 -->
+  <line x1="48" y1="262" x2="632" y2="262" stroke="#3a465a" stroke-width="1"/>
+  <text x="48" y="284" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">买方买:上行需要信仰</text>
+  <text x="360" y="284" font-family="system-ui,sans-serif" font-size="11.5" fill="#b57d73">卖方卖:下行只需要日历</text>
+</svg>

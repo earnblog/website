@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一笔募资的两张风险回报率格栅,买方买上行的想象,卖方卖手里的确定性">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">同一笔交易,两张风险回报率格栅</text>
+
+  <!-- 中轴 -->
+  <line x1="340" y1="64" x2="340" y2="322" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="4 5"/>
+
+  <!-- 左:买方 -->
+  <text x="40" y="72" font-family="system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#33404f">买方(二级市场)</text>
+  <line x1="150" y1="86" x2="150" y2="300" stroke="#33404f" stroke-width="1.2"/>
+  <rect x="110" y="104" width="80" height="72" fill="#c8a96a" opacity="0.55"/>
+  <text x="200" y="134" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33">上行空间</text>
+  <text x="200" y="152" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">需要"这次不一样"</text>
+  <rect x="110" y="196" width="80" height="104" fill="#a8453a" opacity="0.55"/>
+  <text x="200" y="234" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">下行空间</text>
+  <text x="200" y="252" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">只需要三年产能落地</text>
+  <line x1="100" y1="186" x2="292" y2="186" stroke="#33404f" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="40" y="326" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">买的是上行的想象</text>
+
+  <!-- 右:卖方 -->
+  <text x="392" y="72" font-family="system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#33404f">卖方(最上游)</text>
+  <line x1="502" y1="86" x2="502" y2="300" stroke="#33404f" stroke-width="1.2"/>
+  <rect x="462" y="140" width="80" height="36" fill="#c8a96a" opacity="0.35"/>
+  <text x="552" y="160" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a7c66">让渡的上行(有限)</text>
+  <rect x="462" y="196" width="80" height="104" fill="#4f6b8a" opacity="0.55"/>
+  <text x="552" y="234" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a">锁定的现金 $28B</text>
+  <text x="552" y="252" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">不随周期回落而消失</text>
+  <line x1="452" y1="186" x2="644" y2="186" stroke="#33404f" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="392" y="326" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">卖的是自己的确定性</text>
+
+  <text x="40" y="350" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">上行需要信仰,下行只需要日历。金=上行 · 红=下行 · 蓝=已锁定的现金</text>
+</svg>
