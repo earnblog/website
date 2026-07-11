@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:资本开支押注需求永续,折旧却按固定时钟归零;两条曲线朝相反方向走">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">两条时间轴:需求要永续,折旧只认日历</text>
+
+  <!-- 坐标轴 -->
+  <line x1="72" y1="300" x2="640" y2="300" stroke="#33404f" stroke-width="1.4"/>
+  <line x1="72" y1="80" x2="72" y2="300" stroke="#33404f" stroke-width="1.4"/>
+  <text x="600" y="322" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a7c66">时间(年)</text>
+  <text x="40" y="76" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a7c66">价值</text>
+
+  <!-- 折旧曲线:从满值直线下滑到零(按时钟) -->
+  <line x1="72" y1="104" x2="560" y2="292" stroke="#a8453a" stroke-width="2.6"/>
+  <circle cx="72" cy="104" r="4.5" fill="#a8453a"/>
+  <circle cx="560" cy="292" r="4.5" fill="#a8453a"/>
+  <text x="90" y="122" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">GPU 账面价值:开机即开始归零</text>
+  <text x="470" y="284" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">3–4 年 → 0</text>
+
+  <!-- 需求曲线:必须持续上行才能覆盖(信仰) -->
+  <path d="M72 260 C 200 250, 320 236, 420 210 C 500 188, 560 160, 632 128"
+        fill="none" stroke="#4f6b8a" stroke-width="2.6" stroke-dasharray="1 0"/>
+  <text x="360" y="176" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">变现需求:必须一直向上,才追得平折旧</text>
+
+  <!-- 分叉阴影:需求一旦走平 -->
+  <path d="M420 210 C 480 208, 540 208, 632 206" fill="none" stroke="#b07d33" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="470" y="224" font-family="system-ui,sans-serif" font-size="11" fill="#b07d33">需求只要走平…</text>
+  <line x1="500" y1="206" x2="500" y2="252" stroke="#8a7c66" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="452" y="270" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">…缺口在这里张开</text>
+
+  <text x="40" y="348" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">红=折旧(只认日历,不停) · 蓝=需求(要永续上行) · 金=需求走平,缺口张开</text>
+</svg>

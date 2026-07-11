@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:资本开支押注需求永续,折旧只认日历,两条曲线朝相反方向走">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">上行需要信仰,下行只需要日历</text>
+
+  <!-- 折旧线:满值直线下滑归零 -->
+  <line x1="60" y1="86" x2="470" y2="244" stroke="#a8453a" stroke-width="2.6"/>
+  <circle cx="60" cy="86" r="5" fill="#a8453a"/>
+  <circle cx="470" cy="244" r="5" fill="#a8453a"/>
+  <text x="70" y="104" font-family="system-ui,sans-serif" font-size="11.5" fill="#b57d73">折旧:开机即归零 · 只认日历</text>
+  <text x="392" y="238" font-family="system-ui,sans-serif" font-size="10.5" fill="#b57d73">3–4 年 → 0</text>
+
+  <!-- 需求线:必须持续上行 -->
+  <path d="M60 226 C 180 218, 300 206, 400 184 C 480 166, 560 138, 632 112"
+        fill="none" stroke="#4f6b8a" stroke-width="2.6"/>
+  <text x="330" y="150" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a">需求:必须永续上行才追得平</text>
+
+  <!-- 需求走平的虚线分叉 -->
+  <path d="M400 184 C 480 182, 560 182, 632 182" fill="none" stroke="#b07d33" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="470" y="200" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33">一旦走平,缺口张开</text>
+
+  <line x1="48" y1="264" x2="632" y2="264" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">红=折旧(不停) · 蓝=需求(要永续) · 金=需求走平后的缺口</text>
+</svg>
