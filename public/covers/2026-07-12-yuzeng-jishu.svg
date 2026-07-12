@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:去年砸到谷底今年爬回半山腰,同比却显示暴增数十倍">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">量的不是高度,是落差</text>
+
+  <!-- 基线 -->
+  <line x1="90" y1="228" x2="600" y2="228" stroke="#2a3342" stroke-width="1.2"/>
+
+  <!-- 去年:贴地矮柱(分母) -->
+  <rect x="150" y="216" width="70" height="12" fill="#4f6b8a"/>
+  <text x="128" y="248" font-family="system-ui,sans-serif" font-size="11.5" fill="#6f8199">去年:谷底(分母)</text>
+
+  <!-- 今年:半山腰中柱(分子) -->
+  <rect x="410" y="128" width="70" height="100" fill="#b07d33"/>
+  <text x="392" y="248" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33">今年:半山腰(分子)</text>
+
+  <!-- 落差箭头 -->
+  <line x1="330" y1="222" x2="330" y2="134" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#u)"/>
+  <defs><marker id="u" markerWidth="9" markerHeight="9" refX="4" refY="6" orient="auto"><path d="M0 6 L4 0 L8 6 z" fill="#a8453a"/></marker></defs>
+  <text x="250" y="110" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">同比"暴增数十倍"</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">蓝=去年的低基数 · 赭=今年的回升 · 红=被读成"成长"的那段落差</text>
+</svg>

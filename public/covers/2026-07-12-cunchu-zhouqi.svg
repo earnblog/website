@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:存储周期是一只钟摆,涨价扩产与过剩跌价是同一只钟摆的两半">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">告别不了周期,它就是周期本身</text>
+
+  <!-- 钟摆支点 -->
+  <circle cx="340" cy="96" r="4" fill="#7f8ba0"/>
+  <!-- 摆臂(停在偏右高位) -->
+  <line x1="340" y1="96" x2="470" y2="210" stroke="#7f8ba0" stroke-width="1.6"/>
+  <circle cx="470" cy="210" r="12" fill="#a8453a"/>
+  <text x="452" y="248" font-family="system-ui,sans-serif" font-size="11" fill="#b57d73">此刻:涨价·扩产</text>
+
+  <!-- 摆动弧 -->
+  <path d="M210 210 A 145 145 0 0 1 470 210" fill="none" stroke="#2a3342" stroke-width="1.4" stroke-dasharray="4 5"/>
+  <!-- 左侧回摆位置 -->
+  <circle cx="210" cy="210" r="9" fill="#33404f" stroke="#4f6b8a" stroke-width="1.4"/>
+  <text x="150" y="248" font-family="system-ui,sans-serif" font-size="11" fill="#6f8199">下一程:过剩·跌价</text>
+
+  <!-- 回摆箭头 -->
+  <path d="M452 204 A 150 150 0 0 0 228 204" fill="none" stroke="#b07d33" stroke-width="1.8" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6 z" fill="#b07d33"/></marker></defs>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">红=繁荣顶点(涨价催生过剩) · 蓝=回摆(过剩酝酿下一轮短缺) · 金=注定的回程</text>
+</svg>

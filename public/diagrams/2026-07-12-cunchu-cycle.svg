@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:存储周期是一只钟摆,左半环涨价扩产,右半环过剩跌价,同一只钟摆的两个方向">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">同一只钟摆:繁荣孕育过剩,过剩孕育短缺</text>
+
+  <!-- 中轴 -->
+  <line x1="340" y1="70" x2="340" y2="310" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="4 5"/>
+
+  <!-- 左半环:现在大家看到的(上行) -->
+  <path d="M340 300 A 150 150 0 0 1 340 70" fill="none" stroke="#4f6b8a" stroke-width="2.6" marker-end="url(#up)"/>
+  <text x="150" y="120" font-family="system-ui,sans-serif" font-size="12.5" fill="#4f6b8a" font-weight="700">上行:大家现在看到的一半</text>
+  <text x="150" y="150" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a7c66">缺口 → 涨价 → 暴利 → 扩产·锁单</text>
+  <text x="150" y="170" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">涨价本身,在制造下一轮过剩</text>
+
+  <!-- 右半环:没人看的(下行) -->
+  <path d="M340 70 A 150 150 0 0 1 340 300" fill="none" stroke="#a8453a" stroke-width="2.6" marker-end="url(#dn)"/>
+  <text x="378" y="220" font-family="system-ui,sans-serif" font-size="12.5" fill="#a8453a" font-weight="700">下行:没人愿看的另一半</text>
+  <text x="378" y="250" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a7c66">产能落地 → 过剩 → 跌价 → 减产</text>
+  <text x="378" y="270" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">过剩本身,在酝酿下一轮短缺</text>
+
+  <!-- 顶点标注 -->
+  <circle cx="340" cy="70" r="5" fill="#b07d33"/>
+  <text x="300" y="60" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33">"告别周期"= 钟摆最高点</text>
+
+  <defs>
+    <marker id="up" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L8 5 L0 10 z" fill="#4f6b8a"/></marker>
+    <marker id="dn" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L8 5 L0 10 z" fill="#a8453a"/></marker>
+  </defs>
+
+  <text x="40" y="342" font-family="system-ui,sans-serif" font-size="11" fill="#8a7c66">蓝=涨价扩产(上行) · 红=过剩跌价(下行) · 金=繁荣顶点,也是回摆起点</text>
+</svg>
