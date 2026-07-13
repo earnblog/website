@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:需求是常年平线供给曲线的出清才决定猪价拐点">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">拐的不是需求,是产能出清到了尽头</text>
+
+  <!-- 需求:常年平线 -->
+  <line x1="70" y1="150" x2="610" y2="150" stroke="#4f6b8a" stroke-width="2"/>
+  <text x="510" y="142" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a">需求:常年一条平线</text>
+
+  <!-- 供给/产能:磨底后出清、缺口张开,价格随之拐头 -->
+  <polyline points="70,120 130,150 200,185 280,205 360,208 430,200 500,175 560,135 610,105"
+            fill="none" stroke="#b07d33" stroke-width="2.4"/>
+  <text x="150" y="235" font-family="system-ui,sans-serif" font-size="11" fill="#b07d33">磨底:产能一批批退出</text>
+
+  <!-- 拐点 -->
+  <circle cx="360" cy="208" r="4.5" fill="#a8453a"/>
+  <text x="335" y="228" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">出清到尽头 → 缺口张开</text>
+
+  <!-- 价格拐头箭头 -->
+  <line x1="500" y1="175" x2="600" y2="112" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#z1)"/>
+  <defs><marker id="z1" markerWidth="9" markerHeight="9" refX="4" refY="6" orient="auto"><path d="M0 6 L4 0 L8 6 z" fill="#a8453a"/></marker></defs>
+  <text x="512" y="205" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">价格拐头</text>
+
+  <line x1="48" y1="262" x2="632" y2="262" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="286" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">蓝=几乎不动的需求 · 赭=真正翻江倒海的供给 · 红=供给出清带来的价格拐点</text>
+</svg>

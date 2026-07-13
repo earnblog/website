@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:牛熊线是一面镜子只因所有人盯着它才有临界力量">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">临界点不在线上,在共识里</text>
+
+  <!-- 价格曲线跌破年线 -->
+  <polyline points="80,120 140,110 200,135 260,115 320,145 380,130 430,170 480,205 540,225 600,210"
+            fill="none" stroke="#cdd6e2" stroke-width="2"/>
+  <!-- 牛熊线(年线) -->
+  <line x1="80" y1="160" x2="600" y2="160" stroke="#c8a96a" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="500" y="152" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">牛熊线(年线)</text>
+
+  <!-- 跌破点标注 -->
+  <circle cx="455" cy="187" r="4.5" fill="#a8453a"/>
+  <text x="430" y="248" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">跌破 → 信它的人一起砍仓</text>
+
+  <!-- 反身循环小箭头 -->
+  <path d="M150 205 q40 -18 80 0" stroke="#4f6b8a" stroke-width="1.5" fill="none" marker-end="url(#n1)"/>
+  <path d="M230 205 q-40 18 -80 0" stroke="#4f6b8a" stroke-width="1.5" fill="none" marker-end="url(#n1)"/>
+  <defs><marker id="n1" markerWidth="9" markerHeight="9" refX="4" refY="6" orient="auto"><path d="M0 6 L4 0 L8 6 z" fill="#4f6b8a"/></marker></defs>
+  <text x="120" y="238" font-family="system-ui,sans-serif" font-size="11" fill="#6f8199">信念→行动→兑现信念</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">金=被膜拜的那条线 · 红=跌破触发的集体砍仓 · 蓝=浇灌它的反身循环</text>
+</svg>
