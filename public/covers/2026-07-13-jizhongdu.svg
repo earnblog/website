@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:同一集中度左边是分布式计算右边是节点停止计算的自循环">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">危险的不是集中,是节点停止了计算</text>
+
+  <line x1="340" y1="72" x2="340" y2="248" stroke="#2a3342" stroke-width="1"/>
+
+  <!-- 左:健康的集中,节点仍在各自计算 -->
+  <text x="60" y="96" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">健康:节点仍在计算未来</text>
+  <g fill="#4f6b8a">
+    <circle cx="90" cy="140" r="6"/><circle cx="140" cy="120" r="7"/><circle cx="120" cy="175" r="6"/>
+    <circle cx="185" cy="150" r="9"/><circle cx="235" cy="130" r="7"/><circle cx="215" cy="185" r="6"/>
+    <circle cx="270" cy="165" r="8"/><circle cx="160" cy="200" r="5"/>
+  </g>
+  <g stroke="#3c5570" stroke-width="1" fill="none" opacity="0.8">
+    <line x1="90" y1="140" x2="185" y2="150"/><line x1="140" y1="120" x2="185" y2="150"/>
+    <line x1="185" y1="150" x2="235" y2="130"/><line x1="185" y1="150" x2="270" y2="165"/>
+    <line x1="120" y1="175" x2="185" y2="150"/><line x1="215" y1="185" x2="270" y2="165"/>
+  </g>
+  <text x="60" y="232" font-family="system-ui,sans-serif" font-size="11" fill="#6f8199">集中=判断的结果,答案本身就集中</text>
+
+  <!-- 右:危险的集中,算力压进少数节点自循环 -->
+  <text x="378" y="96" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">危险:退化成"因为涨所以买"</text>
+  <circle cx="470" cy="150" r="22" fill="#a8453a"/>
+  <circle cx="540" cy="150" r="18" fill="#b07d33"/>
+  <!-- 自循环弧 -->
+  <path d="M470 128 Q505 105 540 132" stroke="#a8453a" stroke-width="2" fill="none" marker-end="url(#c1)"/>
+  <path d="M540 172 Q505 195 470 172" stroke="#a8453a" stroke-width="2" fill="none" marker-end="url(#c1)"/>
+  <defs><marker id="c1" markerWidth="9" markerHeight="9" refX="4" refY="6" orient="auto"><path d="M0 6 L4 0 L8 6 z" fill="#a8453a"/></marker></defs>
+  <!-- 稀疏黯淡的其余节点 -->
+  <g fill="#3a4453"><circle cx="600" cy="120" r="3"/><circle cx="610" cy="180" r="3"/><circle cx="590" cy="205" r="3"/></g>
+  <text x="378" y="232" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">集中=追逐的结果,左脚踩右脚的自循环</text>
+
+  <line x1="48" y1="262" x2="632" y2="262" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="286" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">同一个"集中度"读数 · 蓝=仍在计算未来 · 红=停止计算、只剩价格撑价格</text>
+</svg>
