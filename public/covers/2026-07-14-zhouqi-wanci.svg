@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:超级周期是周期见顶时给自己写的墓志铭">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">"超级"两字,是墓志铭</text>
+
+  <!-- 周期价格曲线:平缓→凸性加速→尖峰→崩塌 -->
+  <path d="M70 210 C150 205 200 200 250 175 C300 150 330 120 360 78 C378 108 392 150 420 200 C445 232 500 236 610 232"
+        fill="none" stroke="#cdd6e2" stroke-width="2.2"/>
+  <!-- 顶点标注 -->
+  <circle cx="360" cy="78" r="4.5" fill="#c8a96a"/>
+  <text x="300" y="70" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">被冠名"超级周期"</text>
+  <!-- 崩塌段标注 -->
+  <text x="452" y="215" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">两日 -20% · 较高点近 -40%</text>
+
+  <!-- 产能堆积虚线(超指数供给) -->
+  <path d="M70 235 C220 232 320 220 610 150" fill="none" stroke="#b07d33" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="450" y="140" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33">产能超指数灌入</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">金=加冕的顶 · 赭=灌进来的产能 · 红=凹性位置迟早要交的账</text>
+</svg>

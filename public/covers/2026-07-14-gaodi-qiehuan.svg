@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:高低切换只是把同一批拥挤从一个板块搬到另一个板块">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">拥挤不消失,只搬家</text>
+
+  <!-- 高位板块:下泄 -->
+  <rect x="90" y="110" width="150" height="70" rx="4" fill="#222c3a" stroke="#a8453a" stroke-width="1.4"/>
+  <text x="105" y="100" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">高位板块 · 杀跌</text>
+  <!-- 低位板块:承接 -->
+  <rect x="440" y="150" width="150" height="70" rx="4" fill="#222c3a" stroke="#4f6b8a" stroke-width="1.4"/>
+  <text x="455" y="140" font-family="system-ui,sans-serif" font-size="12" fill="#6f8bab">低位板块 · 逆势翻红</text>
+
+  <!-- 迁徙的拥挤(潮水箭头) -->
+  <path d="M240 150 C320 150 360 185 438 185" fill="none" stroke="#c8a96a" stroke-width="2.4" marker-end="url(#a1)"/>
+  <defs><marker id="a1" markerWidth="11" markerHeight="11" refX="6" refY="5.5" orient="auto"><path d="M0 0 L10 5.5 L0 11 z" fill="#c8a96a"/></marker></defs>
+  <text x="300" y="140" font-family="system-ui,sans-serif" font-size="12.5" fill="#c8a96a">同一批钱夺路而出</text>
+
+  <!-- 三股力量小注 -->
+  <text x="105" y="205" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">获利兑现·割肉·破位</text>
+  <text x="455" y="245" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">抄底·轮动·跟风</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">红=被切走的高位 · 蓝=承接的低位 · 金=平移的拥挤:总量一点没少</text>
+</svg>
