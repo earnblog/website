@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:逆回购是借不是给,到期要还">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">放的不是水,是要还的债</text>
+
+  <!-- 上游阀门 -->
+  <circle cx="96" cy="150" r="20" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <text x="96" y="155" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a" text-anchor="middle">央行</text>
+  <text x="96" y="192" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0" text-anchor="middle">阀门·水压</text>
+
+  <!-- 去程:借出(实线,金) -->
+  <path d="M120 142 L300 142" fill="none" stroke="#c8a96a" stroke-width="2.4"/>
+  <polygon points="300,142 290,137 290,147" fill="#c8a96a"/>
+  <text x="150" y="132" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">借出 · 6个月</text>
+
+  <!-- 回程:连本带利抽回(虚线,红) -->
+  <path d="M300 162 L120 162" fill="none" stroke="#a8453a" stroke-width="2" stroke-dasharray="6 4"/>
+  <polygon points="120,162 130,157 130,167" fill="#a8453a"/>
+  <text x="150" y="180" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">到期连本带利收回</text>
+
+  <!-- 田地(终端信用) -->
+  <rect x="330" y="120" width="300" height="64" rx="4" fill="#1c2330" stroke="#2a3342" stroke-width="1.2"/>
+  <text x="480" y="146" font-family="'Noto Serif SC',serif" font-size="13" fill="#cdd6e2" text-anchor="middle">田里长不长收成?</text>
+  <text x="480" y="168" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0" text-anchor="middle">终端信用 = 无数节点各自的决定</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">金=借出的流动性 · 红=到期要还的钱 · 灰框=央行给不了的信用</text>
+</svg>
