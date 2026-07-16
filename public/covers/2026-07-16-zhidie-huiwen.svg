@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:止跌回稳,稳的不是供需,是信用的潮水">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">止跌回稳,稳的是信用的潮水</text>
+
+  <!-- 信用潮水波形 -->
+  <path d="M48 168 C120 132, 200 132, 272 168 S424 204, 496 168 S632 132, 632 150" fill="none" stroke="#4f6b8a" stroke-width="2.6"/>
+  <!-- 退潮侧标注 -->
+  <text x="150" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">← 信用收缩(退潮)</text>
+  <!-- 涨潮侧标注 -->
+  <text x="540" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">信用扩张(涨潮)→</text>
+
+  <!-- 房价点:画在波面上而非上方 -->
+  <circle cx="272" cy="168" r="6" fill="#c8a96a"/>
+  <text x="272" y="196" font-family="'Noto Serif SC',serif" font-size="12" fill="#cdd6e2" text-anchor="middle">房价</text>
+
+  <circle cx="424" cy="204" r="5" fill="#7f8ba0"/>
+  <circle cx="496" cy="168" r="5" fill="#7f8ba0"/>
+
+  <line x1="48" y1="238" x2="632" y2="238" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">价格不是漂在供需水位上方的点,它就画在信用潮水的波面上</text>
+  <text x="48" y="282" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">潮退它跟着落,潮涨它跟着起——稳住它的从来不是人,是水</text>
+</svg>

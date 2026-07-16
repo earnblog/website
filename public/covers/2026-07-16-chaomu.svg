@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:超募300亿,买的是周期的顶点">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">超募300亿,买的是周期的顶点</text>
+
+  <!-- 周期盈利曲线:爬升到顶点 -->
+  <path d="M88 200 C160 196, 240 188, 320 120 S440 60, 470 78 C520 108, 560 168, 600 200" fill="none" stroke="#b07d33" stroke-width="2.6"/>
+  <!-- 顶点标记 -->
+  <circle cx="440" cy="72" r="6" fill="#a8453a"/>
+  <text x="440" y="58" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">盈利+719% · 上市点</text>
+
+  <!-- 超募溢价箭头,加在顶点上方 -->
+  <path d="M440 96 L440 130" fill="none" stroke="#c8a96a" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="452" y="118" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a">超募溢价</text>
+
+  <!-- 左侧上行(已兑现) / 右侧下行(敞开) 标注 -->
+  <text x="150" y="150" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">上行已兑现</text>
+  <text x="560" y="150" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="end">下行才打开</text>
+
+  <line x1="48" y1="238" x2="632" y2="238" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">赭=DRAM周期盈利曲线 · 红=顶点即上市点 · 金=多付的超募溢价</text>
+  <text x="48" y="282" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">看起来最便宜(低PE)的一刻,恰是风险回报率最差的一刻</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:通胀没有降温,它搬进了算力">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">通胀没有降温,它搬进了算力</text>
+
+  <!-- 左:传统需求退潮(下行,红,虚) -->
+  <path d="M96 120 C150 130, 200 160, 300 176" fill="none" stroke="#a8453a" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <polygon points="300,176 289,170 291,180" fill="#a8453a"/>
+  <text x="96" y="108" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">传统需求 · 退潮</text>
+
+  <!-- 右:算力开支涨潮(上行,金) -->
+  <path d="M380 176 C440 160, 500 128, 584 112" fill="none" stroke="#c8a96a" stroke-width="2.6"/>
+  <polygon points="584,112 573,114 578,123" fill="#c8a96a"/>
+  <text x="500" y="102" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">算力开支 · 涨潮</text>
+
+  <!-- 中:平均线走平(灰) -->
+  <line x1="300" y1="176" x2="380" y2="176" stroke="#7f8ba0" stroke-width="2.4"/>
+  <text x="340" y="200" font-family="system-ui,sans-serif" font-size="11.5" fill="#cdd6e2" text-anchor="middle">PPI 平均 = 走平</text>
+  <circle cx="340" cy="176" r="4.5" fill="#cdd6e2"/>
+
+  <line x1="48" y1="238" x2="632" y2="238" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">红=退潮的旧需求 · 金=涨潮的算力 · 灰=把两股对流抹平的平均数</text>
+  <text x="48" y="282" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">平均线走平的那一刻,恰是通胀完成搬家的那一刻</text>
+</svg>
