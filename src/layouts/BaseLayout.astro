@@ -61,6 +61,8 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
           <a href={`${p}/privacy`}>{t.fPrivacy}</a>
           <a href={`${p}/refunds`}>{t.fRefunds}</a>
           <a href={`${p}/contact`}>{t.fContact}</a>
+          <a href={SITE.telegram} target="_blank" rel="noopener noreferrer">{t.fTelegram}</a>
+          <a href={SITE.kofi} target="_blank" rel="noopener noreferrer">{t.fKofi}</a>
         </nav>
         <p class="fc">© {year} {SITE.author} · {SITE.name} The Critical Point · fncuthdert.com</p>
         <p class="fop">{t.fOp(SITE.operator)} · <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> · {t.fPay}</p>

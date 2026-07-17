@@ -12,6 +12,7 @@ export const SITE = {
   legalUpdatedEn: 'July 7, 2026',
   passPrice: 50,                     // 年度通行证价格(美元):一次付款解锁全站付费文章一年
   kofi: 'https://ko-fi.com/linjie',  // Ko-fi 页面(月度会员入口)
+  telegram: 'https://t.me/linjieblog', // Telegram 频道(每日文章自动推送)
 };
 
 // ===== 栏目(固定四个,每篇文章 frontmatter 的 category 必须是其中之一) =====
@@ -67,6 +68,7 @@ export const I18N = {
     bannerCta: '订阅全文 →',
     disclaimer: '本站文章仅代表作者个人观点,是探索世界、追寻真相的过程,不构成任何投资建议。',
     fAbout: '关于', fTerms: '服务条款', fPrivacy: '隐私政策', fRefunds: '退款政策', fContact: '联系我们',
+    fTelegram: 'TELEGRAM 频道', fKofi: 'KO-FI 会员',
     fOp: (op) => `运营者 ${op}`,
     fPay: '支付由 Stripe 安全处理',
     dateFmt: (d) => d.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' }),
@@ -99,6 +101,7 @@ export const I18N = {
     bannerCta: 'Subscribe →',
     disclaimer: "Articles on this site represent the author's personal views only — a process of exploring the world in pursuit of truth. Nothing here constitutes investment advice.",
     fAbout: 'About', fTerms: 'Terms of Service', fPrivacy: 'Privacy Policy', fRefunds: 'Refund Policy', fContact: 'Contact',
+    fTelegram: 'TELEGRAM', fKofi: 'KO-FI MEMBERSHIP',
     fOp: (op) => `Operated by ${op}`,
     fPay: 'Payments securely processed by Stripe',
     dateFmt: (d) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
