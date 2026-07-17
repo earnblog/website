@@ -11,6 +11,7 @@ export const SITE = {
   legalUpdated: '2026年7月7日',       // 法务页面最近更新日期
   legalUpdatedEn: 'July 7, 2026',
   passPrice: 50,                     // 年度通行证价格(美元):一次付款解锁全站付费文章一年
+  kofi: 'https://ko-fi.com/linjie',  // Ko-fi 页面(月度会员入口)
 };
 
 // ===== 栏目(固定四个,每篇文章 frontmatter 的 category 必须是其中之一) =====
@@ -59,6 +60,8 @@ export const I18N = {
     passBtn: (p) => `$${p} 订阅全站 · 一年内所有付费文章`,
     passLine: (p) => `订阅全文:$${p} 年度通行证,一年内解锁全站所有付费文章`,
     passGo: '开通 →',
+    memberLine: '想走得近一些:Ko-fi 会员每周多读一篇专享深度文,每月 $3 起',
+    memberGo: '加入会员 →',
     bannerTitle: '年度通行证',
     bannerDesc: (p) => `$${p} 一年,解锁全站所有付费文章(含订阅期内新发布)。一次付款,不自动续费。`,
     bannerCta: '订阅全文 →',
@@ -89,6 +92,8 @@ export const I18N = {
     passBtn: (p) => `Annual pass $${p} · every paid article for one year`,
     passLine: (p) => `Subscribe: $${p} annual pass unlocks every paid article on this site for one year`,
     passGo: 'Get the pass →',
+    memberLine: 'Go deeper: Ko-fi members get a weekly members-only deep dive, from $3/month',
+    memberGo: 'Become a member →',
     bannerTitle: 'Annual Pass',
     bannerDesc: (p) => `$${p} for one year of every paid article on this site, including those published during your term. One payment, no auto-renewal.`,
     bannerCta: 'Subscribe →',

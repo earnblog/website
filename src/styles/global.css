@@ -335,6 +335,8 @@ a { color: inherit; text-decoration: none; }
 }
 .pass-line .pass-link:hover { color: var(--gold-bright); }
 .pass-line .pass-link:disabled { opacity: .55; cursor: wait; }
+.pass-line a.pass-link { text-decoration: none; }
+.member-line { margin-top: 10px; }
 
 /* ===== 打赏卡片 ===== */
 .tip-card {
