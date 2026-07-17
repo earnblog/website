@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:融资创纪录和芯片股杀跌是同一件事">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">融资创纪录,和杀跌,是同一件事</text>
+
+  <!-- 左:融资柱 295 -> 579 -->
+  <rect x="72" y="168" width="34" height="62" fill="#4f6b8a"/>
+  <text x="89" y="244" font-family="system-ui,sans-serif" font-size="10" fill="#7f8ba0" text-anchor="middle">原计划295亿</text>
+  <rect x="120" y="108" width="34" height="122" fill="#c8a96a"/>
+  <text x="137" y="244" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a" text-anchor="middle">募579亿</text>
+  <text x="113" y="96" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">一级:给钱</text>
+
+  <!-- 中:传导箭头 钱→产能→供给 -->
+  <path d="M172 150 L246 150" fill="none" stroke="#b07d33" stroke-width="2" marker-end="url(#a17)"/>
+  <text x="209" y="142" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">变成产能</text>
+  <path d="M320 150 L394 150" fill="none" stroke="#b07d33" stroke-width="2" marker-end="url(#a17)"/>
+  <text x="357" y="142" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">变成供给</text>
+  <rect x="250" y="132" width="66" height="36" fill="none" stroke="#b07d33" stroke-width="1.4"/>
+  <text x="283" y="155" font-family="system-ui,sans-serif" font-size="11" fill="#b07d33" text-anchor="middle">扩产</text>
+
+  <!-- 右:二级杀跌 -->
+  <path d="M400 116 L470 132 L530 160 L600 214" fill="none" stroke="#a8453a" stroke-width="2.6"/>
+  <text x="500" y="108" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">二级:同日杀跌</text>
+  <text x="604" y="232" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="end">费半 −4.29%</text>
+
+  <defs>
+    <marker id="a17" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 z" fill="#b07d33"/>
+    </marker>
+  </defs>
+
+  <line x1="48" y1="252" x2="632" y2="252" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">金=募资额(未来供给的公告) · 赭=传导 · 红=同日回报被折价</text>
+  <text x="48" y="289" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">给钱的那一秒,系统就把这笔钱将造出的供给,折进了今天的价格</text>
+</svg>
