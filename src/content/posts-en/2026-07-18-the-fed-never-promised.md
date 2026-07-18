@@ -10,9 +10,9 @@ coverCaption: The market thinks it is forecasting the central bank. It is actual
 
 An expectation of rate cuts is not a forecast about the Fed. It is a requirement of asset prices.
 
-Put two numbers side by side. On June 17, the Federal Open Market Committee decided to maintain the target range for the federal funds rate at 3.50% to 3.75%. The midpoint of that range is 3.625%. In the Summary of Economic Projections released the same day, the median participant projection for the federal funds rate at end-2026 was 3.8%; the central tendency was 3.6% to 4.1%, and the full range of projections ran from 3.4% to 4.4%.
+Put two numbers side by side. On June 17, the Federal Open Market Committee decided to maintain the target range for the federal funds rate at 3.50% to 3.75%. The midpoint of that range is 3.625%. In the Summary of Economic Projections released the same day, the median participant projection for end-2026 was 3.8%.
 
-Align them: current midpoint 3.625%, median year-end projection 3.8%. **The median sits above the current rate.** On the Fed's own table, the median points to a hike, not a cut.
+Align them: current midpoint 3.625%, median year-end projection 3.8%. **The median sits above the current rate.** Line every official's forecast up from lowest to highest, and the one standing in the middle is not thinking about a cut. They are thinking about a hike. The Fed's own table points the other way.
 
 And the market has been pricing "they will eventually cut" for most of a year.
 
@@ -34,7 +34,11 @@ This is textbook reflexivity: expectation moves price, price reinforces expectat
 
 Now back to the dot plot. It did something rather ungracious: it swapped out the market's denominator.
 
-Not through a surprise hike, not through a hawkish speech, but by laying the participants' own projections on paper — median 3.8%, central tendency 3.6% to 4.1%, full range 3.4% to 4.4%. Note the shape of that distribution. Its lower bound of 3.4% sits barely a notch below today's midpoint, while its upper bound of 4.4% sits more than seventy basis points above it. **The distribution is skewed upward.** Even on the reading most flattering to the bulls, the room below is thin and the tail above is long.
+Not through a surprise hike, not through a hawkish speech, but by laying the participants' own projections on paper.
+
+Take that same line of officials. The one standing at the far left — the most dovish in the room — sits less than a single step from where we are today, not even one standard cut away. The one at the far right, the most hawkish, sits a full three steps out. The lowest projection on the table is 3.4%, the highest 4.4%, against 3.625% today. **The whole line leans toward hikes.**
+
+Which means that even reading the most bull-friendly official in the room, the most he offers is a single step down. And if the most hawkish one turns out to be right, what comes due is three steps up. **The best case is painfully thin. The worst case is frighteningly long.**
 
 That is what the risk-reward grid looks like in the rates cell, and it propagates layer by layer into every asset leaning on the future.
 
