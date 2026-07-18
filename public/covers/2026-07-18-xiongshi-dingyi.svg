@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:芯片跌进熊市,熊的不是芯片,是6月22日那个点">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">回撤量的不是资产,是最高点</text>
+
+  <!-- 坐标基线 -->
+  <line x1="72" y1="232" x2="620" y2="232" stroke="#2a3342" stroke-width="1"/>
+
+  <!-- 价格曲线:3月低点 → 6月22日高点 → 回落 -->
+  <path d="M96 214 C150 206, 196 190, 240 168 C288 144, 330 116, 372 92 C396 80, 414 76, 430 82"
+        fill="none" stroke="#4f6b8a" stroke-width="2.2"/>
+  <path d="M430 82 C452 96, 470 140, 492 176 C508 200, 524 210, 540 196"
+        fill="none" stroke="#a8453a" stroke-width="2.2"/>
+
+  <!-- 3月低点 -->
+  <circle cx="96" cy="214" r="3.4" fill="#4f6b8a"/>
+  <text x="96" y="252" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">3月低点</text>
+
+  <!-- 6月22日高点:被当成尺子的锚 -->
+  <circle cx="430" cy="82" r="5" fill="#c8a96a"/>
+  <line x1="430" y1="82" x2="620" y2="82" stroke="#c8a96a" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="430" y="68" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">6月22日高点</text>
+  <text x="624" y="86" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a">分母</text>
+
+  <!-- 105% 涨幅标注 -->
+  <path d="M104 224 L422 224" fill="none" stroke="#4f6b8a" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="263" y="221" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">涨时没人拿尺子量这一段(+105%)</text>
+
+  <!-- 20% 回撤区间 -->
+  <line x1="566" y1="82" x2="566" y2="152" stroke="#a8453a" stroke-width="1.4"/>
+  <path d="M562 86 L566 80 L570 86" fill="none" stroke="#a8453a" stroke-width="1.4"/>
+  <path d="M562 148 L566 154 L570 148" fill="none" stroke="#a8453a" stroke-width="1.4"/>
+  <line x1="540" y1="152" x2="620" y2="152" stroke="#a8453a" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="576" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">-20%「熊市」线</text>
+
+  <!-- 盘中触及 vs 收盘 -->
+  <circle cx="492" cy="176" r="4" fill="#a8453a"/>
+  <text x="492" y="196" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">盘中触到</text>
+  <circle cx="540" cy="196" r="4.4" fill="#c8a96a"/>
+  <text x="556" y="216" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a">收盘 11,673.89(-1.58%)</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="286" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">金=被当作尺子的最高点 · 红=只在下跌时才拿出来的百分比 · 那个「熊市」盘中存在了几小时</text>
+</svg>

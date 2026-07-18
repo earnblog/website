@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:Netflix 杀掉的不是业绩,是二阶导数">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">估值买的不是增长,是加速度</text>
+
+  <line x1="80" y1="234" x2="620" y2="234" stroke="#2a3342" stroke-width="1"/>
+
+  <!-- 一阶:营收仍在增长(凹性上行) -->
+  <path d="M100 208 C170 186, 250 164, 330 148 C410 132, 490 122, 578 116"
+        fill="none" stroke="#4f6b8a" stroke-width="2.2"/>
+  <text x="586" y="112" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a">营收</text>
+  <text x="100" y="196" font-family="system-ui,sans-serif" font-size="10" fill="#4f6b8a">一阶:还在长</text>
+
+  <!-- 二阶:增速在掉头 -->
+  <path d="M100 158 C170 152, 240 150, 310 154 C380 160, 460 182, 578 208"
+        fill="none" stroke="#a8453a" stroke-width="2.2"/>
+  <text x="586" y="212" font-family="system-ui,sans-serif" font-size="10.5" fill="#a8453a">增速</text>
+
+  <!-- 拐点 -->
+  <circle cx="310" cy="154" r="4.6" fill="#c8a96a"/>
+  <line x1="310" y1="154" x2="310" y2="234" stroke="#c8a96a" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="310" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">拐点:价格在这里跌</text>
+
+  <!-- 两个季度读数 -->
+  <text x="120" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">Q2 实际 +13%</text>
+  <path d="M212 258 L268 258" fill="none" stroke="#b07d33" stroke-width="1.4"/>
+  <path d="M262 254 L270 258 L262 262" fill="#b07d33"/>
+  <text x="280" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">Q3 指引 +11.7%</text>
+  <text x="418" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">= 股价 -逾一成</text>
+
+  <line x1="48" y1="278" x2="632" y2="278" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="294" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0">蓝=规模仍在扩张 · 红=增速已掉头 · 报表写的是一阶,价格贴的是二阶</text>
+</svg>

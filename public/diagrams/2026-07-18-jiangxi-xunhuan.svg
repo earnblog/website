@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="降息预期与估值的反身性循环">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">降息预期与估值:一个互为因果的环</text>
+
+  <!-- 四个节点 -->
+  <rect x="252" y="72" width="176" height="46" rx="3" fill="none" stroke="#c8a96a" stroke-width="1.5"/>
+  <text x="340" y="100" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#33404f" text-anchor="middle">高估值成立</text>
+
+  <rect x="452" y="158" width="176" height="46" rx="3" fill="none" stroke="#b07d33" stroke-width="1.5"/>
+  <text x="540" y="180" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#33404f" text-anchor="middle">需要一个低分母</text>
+  <text x="540" y="196" font-family="system-ui,sans-serif" font-size="10" fill="#8a7a5e" text-anchor="middle">来解释这个价格</text>
+
+  <rect x="252" y="244" width="176" height="46" rx="3" fill="none" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="340" y="272" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#33404f" text-anchor="middle">形成「终将降息」预期</text>
+
+  <rect x="52" y="158" width="176" height="46" rx="3" fill="none" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="140" y="180" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#33404f" text-anchor="middle">预期本身支撑估值</text>
+  <text x="140" y="196" font-family="system-ui,sans-serif" font-size="10" fill="#5f7086" text-anchor="middle">于是价格再上一层</text>
+
+  <!-- 顺时针箭头 -->
+  <path d="M428 100 C480 108, 520 130, 536 156" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <path d="M530 146 L538 160 L524 157" fill="#b07d33"/>
+
+  <path d="M536 206 C520 232, 480 254, 428 264" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <path d="M438 256 L424 265 L437 270" fill="#b07d33"/>
+
+  <path d="M252 264 C200 254, 160 232, 144 206" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <path d="M150 216 L142 202 L156 205" fill="#b07d33"/>
+
+  <path d="M144 156 C160 130, 200 108, 252 100" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <path d="M242 108 L256 99 L243 94" fill="#b07d33"/>
+
+  <!-- 中心 -->
+  <text x="340" y="176" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a" text-anchor="middle">正反馈</text>
+  <text x="340" y="196" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a7a5e" text-anchor="middle">每绕一圈,所需的</text>
+  <text x="340" y="211" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a7a5e" text-anchor="middle">降息幅度更大一点</text>
+
+  <line x1="48" y1="316" x2="632" y2="316" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="48" y="336" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a7a5e">环里没有一步是「预测」——每一步都是上一步的价格所必需的。当央行自己的中位数指向反方向,环的燃料就断了。</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:美联储从来没答应过降息,是你的估值需要它降">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">降息预期不是预测,是需要</text>
+
+  <!-- 左:美联储自己的那张表 -->
+  <text x="96" y="86" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">美联储的点阵(2026年底)</text>
+  <line x1="96" y1="100" x2="96" y2="236" stroke="#2a3342" stroke-width="1"/>
+
+  <!-- 当前中点 3.625% -->
+  <line x1="88" y1="196" x2="268" y2="196" stroke="#4f6b8a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="274" y="200" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a">当前中点 3.625%</text>
+
+  <!-- 中位数 3.8% 在上方 -->
+  <line x1="88" y1="170" x2="268" y2="170" stroke="#c8a96a" stroke-width="2"/>
+  <text x="274" y="174" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a">预测中位数 3.8%</text>
+
+  <!-- 分布区间 3.4 - 4.4 -->
+  <rect x="150" y="118" width="60" height="104" fill="#4f6b8a" opacity="0.14"/>
+  <line x1="150" y1="118" x2="210" y2="118" stroke="#a8453a" stroke-width="1.2"/>
+  <text x="216" y="122" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a">上沿 4.4%</text>
+  <line x1="150" y1="222" x2="210" y2="222" stroke="#7f8ba0" stroke-width="1.2"/>
+  <text x="216" y="226" font-family="system-ui,sans-serif" font-size="10" fill="#7f8ba0">下沿 3.4%</text>
+
+  <!-- 向上偏的箭头 -->
+  <path d="M124 196 L124 150" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <path d="M119 156 L124 146 L129 156" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+
+  <!-- 右:市场自己写的那张 -->
+  <line x1="392" y1="92" x2="392" y2="244" stroke="#2a3342" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="424" y="86" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">市场为自己开的那张</text>
+
+  <rect x="424" y="106" width="184" height="46" fill="none" stroke="#c8a96a" stroke-width="1.3"/>
+  <text x="516" y="134" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a" text-anchor="middle">高估值</text>
+
+  <rect x="424" y="196" width="184" height="46" fill="none" stroke="#a8453a" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="516" y="224" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a" text-anchor="middle">「终将降息」</text>
+
+  <!-- 闭环箭头 -->
+  <path d="M436 152 C412 168, 412 180, 436 196" fill="none" stroke="#b07d33" stroke-width="1.5"/>
+  <path d="M431 190 L437 199 L440 189" fill="#b07d33"/>
+  <path d="M596 196 C620 180, 620 168, 596 152" fill="none" stroke="#b07d33" stroke-width="1.5"/>
+  <path d="M601 158 L595 149 L592 159" fill="#b07d33"/>
+  <text x="516" y="178" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">互为前提</text>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="286" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">左:中位数在当前利率之上,分布向上偏 · 右:估值与降息预期互为因果的自循环</text>
+</svg>
