@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:资金流回正,回来的不是信仰,是别人的风险预算">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">定价它的,是别人表格里的那一行</text>
+
+  <!-- 风险预算总量条 -->
+  <text x="48" y="88" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">一张配置表的风险预算(总量固定,要抢)</text>
+
+  <rect x="48" y="100" width="584" height="46" fill="none" stroke="#2a3342" stroke-width="1"/>
+  <rect x="48" y="100" width="212" height="46" fill="#22303f"/>
+  <rect x="260" y="100" width="180" height="46" fill="#223243"/>
+  <rect x="440" y="100" width="146" height="46" fill="#1f2937"/>
+  <rect x="586" y="100" width="46" height="46" fill="#2e2020" stroke="#a8453a" stroke-width="1.4"/>
+
+  <text x="154" y="128" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a" text-anchor="middle">算力资本开支</text>
+  <text x="350" y="128" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a" text-anchor="middle">AI 股权故事</text>
+  <text x="513" y="128" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a" text-anchor="middle">现金 · 利率仍高</text>
+  <text x="609" y="125" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">卫星</text>
+  <text x="609" y="138" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">BTC</text>
+
+  <!-- 挤压箭头 -->
+  <path d="M566 163 L610 163" fill="none" stroke="#b07d33" stroke-width="1.4"/>
+  <path d="M604 159 L612 163 L604 167" fill="#b07d33"/>
+  <text x="556" y="167" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="end">预算被前三格填满时,先砍最后一格</text>
+
+  <!-- 双向管道 -->
+  <line x1="48" y1="200" x2="632" y2="200" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="192" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">ETF:这条管道是双向的</text>
+
+  <path d="M120 224 L300 224" fill="none" stroke="#c8a96a" stroke-width="2"/>
+  <path d="M294 219 L303 224 L294 229" fill="#c8a96a"/>
+  <text x="120" y="243" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">资金顺着它进来</text>
+
+  <path d="M560 262 L380 262" fill="none" stroke="#a8453a" stroke-width="2"/>
+  <path d="M386 257 L377 262 L386 267" fill="#a8453a"/>
+  <text x="560" y="281" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="end">排序规则也顺着它进来</text>
+
+  <!-- 价格读数 -->
+  <text x="332" y="228" font-family="system-ui,sans-serif" font-size="11.5" fill="#7f8ba0">今日约 64,600</text>
+  <text x="332" y="245" font-family="system-ui,sans-serif" font-size="11.5" fill="#7f8ba0">2025-10-06 峰值 126,080</text>
+</svg>
