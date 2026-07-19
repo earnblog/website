@@ -21,7 +21,7 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft && data.ca
     <ol class="toc">
       {posts.map((post, i) => (
         <li>
-          <a href={`/posts/${post.slug}`}>
+          <a href={`/posts/${post.slug}/`}>
             <span class="num">{String(i + 1).padStart(2, '0')}</span>
             <span class="body">
               <h3>{post.data.title} {post.data.price && <span class="paid-tag">{t.paidTag(post.data.price)}</span>}</h3>

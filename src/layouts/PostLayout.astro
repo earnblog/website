@@ -39,7 +39,7 @@ const jsonld = JSON.stringify({
     <a class="back" href={lang === 'en' ? '/en/' : '/'}>{t.back}</a>
     <div class="post-kicker">
       <span>{SITE.author}</span><span class="dot">/</span><span>{dateStr}</span>
-      <span class="dot">/</span><a class="cat-link" href={`${base}/topics/${category}`}>{catName}</a>
+      <span class="dot">/</span><a class="cat-link" href={`${base}/topics/${category}/`}>{catName}</a>
       {price && <span class="dot">/</span>}
       {price && <span class="paid-tag">{t.paidTag(price)}</span>}
     </div>
@@ -71,7 +71,7 @@ const jsonld = JSON.stringify({
         <ul class="related-list">
           {related.map((r) => (
             <li>
-              <a href={`${base}/posts/${r.slug}`}>
+              <a href={`${base}/posts/${r.slug}/`}>
                 <span class="r-title">{r.data.title}</span>
                 <span class="r-date">{t.dateShort(r.data.date)}</span>
               </a>

@@ -34,9 +34,9 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
         <span>{t.utilbar}</span>
         <nav class="nav">
           <a href={p || '/'}>{t.navHome}</a>
-          <a href={`${p}/about`}>{t.navAbout}</a>
-          <a href={`${p}/subscribe`} class="nav-sub">{t.navSubscribe}</a>
-          <a href={`${p}/contact`}>{t.navContact}</a>
+          <a href={`${p}/about/`}>{t.navAbout}</a>
+          <a href={`${p}/subscribe/`} class="nav-sub">{t.navSubscribe}</a>
+          <a href={`${p}/contact/`}>{t.navContact}</a>
           <a href={t.langSwitchHref} class="lang-switch">{t.langSwitch}</a>
         </nav>
       </div>
@@ -56,11 +56,11 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
       <footer class="site-footer">
         <p class="fd">{t.disclaimer}</p>
         <nav class="flinks">
-          <a href={`${p}/about`}>{t.fAbout}</a>
-          <a href={`${p}/terms`}>{t.fTerms}</a>
-          <a href={`${p}/privacy`}>{t.fPrivacy}</a>
-          <a href={`${p}/refunds`}>{t.fRefunds}</a>
-          <a href={`${p}/contact`}>{t.fContact}</a>
+          <a href={`${p}/about/`}>{t.fAbout}</a>
+          <a href={`${p}/terms/`}>{t.fTerms}</a>
+          <a href={`${p}/privacy/`}>{t.fPrivacy}</a>
+          <a href={`${p}/refunds/`}>{t.fRefunds}</a>
+          <a href={`${p}/contact/`}>{t.fContact}</a>
           <a href={SITE.telegram} target="_blank" rel="noopener noreferrer">{t.fTelegram}</a>
           <a href={SITE.kofi} target="_blank" rel="noopener noreferrer">{t.fKofi}</a>
         </nav>

@@ -14,18 +14,18 @@ const archive = rest.slice(6);       // 紧凑目录区
     <div class="text">
       <span class="label">{t.latest}</span>
       <h1>
-        <a href={`${base}/${latest.slug}`}>{latest.data.title}</a>
+        <a href={`${base}/${latest.slug}/`}>{latest.data.title}</a>
         {latest.data.price && <span class="paid-tag">{t.paidTag(latest.data.price)}</span>}
       </h1>
       {latest.data.description && <p class="excerpt">{latest.data.description}</p>}
       <div class="more">
         <span class="date">{t.dateShort(latest.data.date)}</span>
-        <a href={`${base}/${latest.slug}`}>{t.readMore}</a>
+        <a href={`${base}/${latest.slug}/`}>{t.readMore}</a>
       </div>
     </div>
     {latest.data.cover && (
       <figure class="cover">
-        <a href={`${base}/${latest.slug}`}><img src={latest.data.cover} alt={latest.data.title} /></a>
+        <a href={`${base}/${latest.slug}/`}><img src={latest.data.cover} alt={latest.data.title} /></a>
       </figure>
     )}
   </section>
@@ -36,13 +36,13 @@ const archive = rest.slice(6);       // 紧凑目录区
     <span class="sub-badge">{t.bannerTitle}</span>
     <p>{t.bannerDesc(SITE.passPrice)}</p>
   </div>
-  <a class="btn-gold sub-cta" href={`${lang === 'en' ? '/en' : ''}/subscribe`}>{t.bannerCta}</a>
+  <a class="btn-gold sub-cta" href={`${lang === 'en' ? '/en' : ''}/subscribe/`}>{t.bannerCta}</a>
 </aside>
 
 <nav class="topics-row">
   <span class="topics-label">{t.topics}</span>
   {Object.entries(CATEGORIES).map(([slug, c]) => (
-    <a href={`${topicBase}/${slug}`}>{lang === 'en' ? c.en : c.zh}</a>
+    <a href={`${topicBase}/${slug}/`}>{lang === 'en' ? c.en : c.zh}</a>
   ))}
 </nav>
 
@@ -51,7 +51,7 @@ const archive = rest.slice(6);       // 紧凑目录区
     <div class="section-head">{t.recent}</div>
     <div class="recent-grid">
       {featured.map((post) => (
-        <a class="card" href={`${base}/${post.slug}`}>
+        <a class="card" href={`${base}/${post.slug}/`}>
           {post.data.cover && (
             <span class="card-cover"><img src={post.data.cover} alt={post.data.title} loading="lazy" /></span>
           )}
@@ -72,7 +72,7 @@ const archive = rest.slice(6);       // 紧凑目录区
     <ol class="toc">
       {archive.map((post, i) => (
         <li>
-          <a href={`${base}/${post.slug}`}>
+          <a href={`${base}/${post.slug}/`}>
             <span class="num">{String(i + 8).padStart(2, '0')}</span>
             <span class="body">
               <h3>{post.data.title} {post.data.price && <span class="paid-tag">{t.paidTag(post.data.price)}</span>}</h3>
