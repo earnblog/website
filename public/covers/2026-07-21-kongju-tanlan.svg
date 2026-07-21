@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:恐惧贪婪指数量的不是情绪,是价格">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">那个"极度恐惧",是价格自己的影子</text>
+
+  <!-- 左:价格线(原料) -->
+  <text x="48" y="90" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">原料:价格 · 波动率 · 成交动量</text>
+  <polyline points="48,170 82,150 116,178 150,140 184,196 218,158 252,132 286,120"
+            fill="none" stroke="#4f6b8a" stroke-width="2"/>
+  <circle cx="286" cy="120" r="3.5" fill="#4f6b8a"/>
+  <text x="48" y="215" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a">今天:比特币 +约2%,以太坊 +约3.5%(价在涨)</text>
+
+  <!-- 中:改名的箱子 -->
+  <rect x="312" y="120" width="56" height="60" fill="#1f2937" stroke="#b07d33" stroke-width="1.4"/>
+  <text x="340" y="146" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">抄下来</text>
+  <text x="340" y="162" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">改名叫</text>
+  <text x="340" y="176" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">情绪</text>
+  <path d="M286 150 L312 150" fill="none" stroke="#b07d33" stroke-width="1.4"/>
+  <path d="M306 146 L314 150 L306 154" fill="#b07d33"/>
+  <path d="M368 150 L398 150" fill="none" stroke="#b07d33" stroke-width="1.4"/>
+  <path d="M392 146 L400 150 L392 154" fill="#b07d33"/>
+
+  <!-- 右:递回的读数 -->
+  <rect x="402" y="112" width="230" height="76" fill="#2e2020" stroke="#a8453a" stroke-width="1.4"/>
+  <text x="517" y="142" font-family="'Noto Serif SC',serif" font-size="20" font-weight="700" fill="#a8453a" text-anchor="middle">极度恐惧 · 25</text>
+  <text x="517" y="166" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0" text-anchor="middle">昨天 29「恐惧」→ 今天更深</text>
+  <text x="517" y="180" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0" text-anchor="middle">读的是上周的跌,不是今天的情绪</text>
+
+  <!-- 底部注:唯一独立人声已停用 -->
+  <line x1="48" y1="238" x2="632" y2="238" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">权重:波动率 25% + 成交动量 25% = 过半来自价格 ·</text>
+  <text x="452" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">唯一由真人回答的「问卷」已停用</text>
+  <text x="48" y="283" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">你以为在逆着人群,其实在跟着价格——它只是换了个名字。</text>
+</svg>
