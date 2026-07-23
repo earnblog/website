@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" role="img" aria-label="示意图:资本开支到别人的收入到我的浮盈到我的利润到我的信用构成闭环,唯一的外部开口是现金">
+  <rect width="680" height="320" fill="#fbf9f4"/>
+
+  <text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">环里的五步,与环外的一步</text>
+
+  <!-- 环 -->
+  <circle cx="300" cy="180" r="92" fill="none" stroke="#c8a96a" stroke-width="1.8"/>
+
+  <!-- 五个节点 -->
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#3f4653">
+    <circle cx="300" cy="88" r="4.5" fill="#c8a96a"/>
+    <text x="300" y="74" text-anchor="middle">① 我的资本开支</text>
+
+    <circle cx="387" cy="151" r="4.5" fill="#c8a96a"/>
+    <text x="404" y="145">② 别人的收入</text>
+
+    <circle cx="354" cy="254" r="4.5" fill="#c8a96a"/>
+    <text x="372" y="272">③ 别人的估值</text>
+
+    <circle cx="246" cy="254" r="4.5" fill="#c8a96a"/>
+    <text x="228" y="272" text-anchor="end">④ 我的浮盈与利润</text>
+
+    <circle cx="213" cy="151" r="4.5" fill="#c8a96a"/>
+    <text x="196" y="145" text-anchor="end">⑤ 我的估值与信用</text>
+  </g>
+
+  <!-- 环向箭头 -->
+  <g fill="#c8a96a">
+    <path d="M362 106 L372 116 L359 118"/>
+    <path d="M392 216 L385 229 L378 217"/>
+    <path d="M282 288 L268 283 L279 275"/>
+    <path d="M198 208 L206 196 L212 209"/>
+    <path d="M246 100 L259 96 L252 108"/>
+  </g>
+
+  <text x="300" y="176" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#2b2b2b" text-anchor="middle">环内自我喂养</text>
+  <text x="300" y="198" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">每一步都为下一步提供理由</text>
+  <text x="300" y="216" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">全程不产生一分净现金</text>
+
+  <!-- 环外现金 -->
+  <rect x="486" y="158" width="154" height="52" rx="3" fill="#fff" stroke="#4f6b8a" stroke-width="1.3"/>
+  <text x="563" y="180" font-family="system-ui,sans-serif" font-size="12" fill="#3f4653" text-anchor="middle">环外的现金</text>
+  <text x="563" y="198" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280" text-anchor="middle">发股 · 发债 · 别人的储蓄</text>
+  <path d="M486 184 L406 184" fill="none" stroke="#4f6b8a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M417 179 L404 184 L417 189" fill="#4f6b8a"/>
+  <text x="446" y="174" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">唯一开口</text>
+
+  <!-- 左侧标注 -->
+  <text x="40" y="180" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">环一旦转反</text>
+  <text x="40" y="200" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">同一组齿轮,反向咬合</text>
+  <path d="M40 212 L150 212" fill="none" stroke="#a8453a" stroke-width="1.2"/>
+
+  <line x1="40" y1="292" x2="640" y2="292" stroke="#e3ded2" stroke-width="1"/>
+  <text x="40" y="312" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">数据来源:Alphabet 2026年二季度业绩公告(2026年7月22日)</text>
+</svg>

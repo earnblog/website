@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:利润可以由价格生出来,现金不能">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">环里什么都能长出来,除了现金</text>
+
+  <!-- 闭环 -->
+  <circle cx="300" cy="168" r="72" fill="none" stroke="#c8a96a" stroke-width="1.6"/>
+  <!-- 环上四个节点 -->
+  <circle cx="300" cy="96" r="4" fill="#c8a96a"/>
+  <circle cx="372" cy="168" r="4" fill="#c8a96a"/>
+  <circle cx="300" cy="240" r="4" fill="#c8a96a"/>
+  <circle cx="228" cy="168" r="4" fill="#c8a96a"/>
+  <text x="300" y="84" font-family="system-ui,sans-serif" font-size="11.5" fill="#9fb0c4" text-anchor="middle">资本开支</text>
+  <text x="392" y="172" font-family="system-ui,sans-serif" font-size="11.5" fill="#9fb0c4">别人的收入</text>
+  <text x="300" y="260" font-family="system-ui,sans-serif" font-size="11.5" fill="#9fb0c4" text-anchor="middle">我的浮盈</text>
+  <text x="208" y="172" font-family="system-ui,sans-serif" font-size="11.5" fill="#9fb0c4" text-anchor="end">我的利润</text>
+  <!-- 环向箭头 -->
+  <path d="M356 124 L366 133 L353 136" fill="#c8a96a"/>
+  <path d="M244 212 L234 203 L247 200" fill="#c8a96a"/>
+  <text x="300" y="164" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#c8a96a" text-anchor="middle">自我喂养</text>
+  <text x="300" y="184" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0" text-anchor="middle">不产生一分现金</text>
+
+  <!-- 环外唯一开口:外部现金 -->
+  <rect x="500" y="146" width="140" height="44" rx="3" fill="#22303f" stroke="#4f6b8a" stroke-width="1.2"/>
+  <text x="570" y="166" font-family="system-ui,sans-serif" font-size="12" fill="#9fb0c4" text-anchor="middle">环外的现金</text>
+  <text x="570" y="182" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0" text-anchor="middle">发股 · 发债</text>
+  <path d="M500 168 L392 168" fill="none" stroke="#4f6b8a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <path d="M403 163 L390 168 L403 173" fill="#4f6b8a"/>
+  <text x="446" y="160" font-family="system-ui,sans-serif" font-size="10" fill="#7f8ba0" text-anchor="middle">唯一开口</text>
+
+  <!-- 左侧:被切断的自给现金 -->
+  <text x="48" y="150" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">自由现金流</text>
+  <text x="48" y="172" font-family="'Noto Serif SC',serif" font-size="20" font-weight="700" fill="#a8453a">− 58.55亿</text>
+  <text x="48" y="192" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f8ba0">上市以来首次转负</text>
+
+  <line x1="48" y1="252" x2="632" y2="252" stroke="#2a3342" stroke-width="1"/>
+  <text x="340" y="278" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#a8453a" text-anchor="middle">利润可以由价格生出来,现金不能</text>
+</svg>
