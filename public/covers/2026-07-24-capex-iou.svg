@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:资本开支是一张等人认领的欠条">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="52" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">同一天,两笔一样凶的烧钱,两种判决</text>
+
+  <!-- 上排:有人认账,链条走到一枚金币 -->
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#9fb0c4" text-anchor="middle">
+    <rect x="48" y="96" width="78" height="34" rx="3" fill="#22303f" stroke="#4f6b8a" stroke-width="1.2"/><text x="87" y="117">开支</text>
+    <rect x="166" y="96" width="78" height="34" rx="3" fill="#22303f" stroke="#4f6b8a" stroke-width="1.2"/><text x="205" y="117">产能</text>
+    <rect x="284" y="96" width="78" height="34" rx="3" fill="#22303f" stroke="#4f6b8a" stroke-width="1.2"/><text x="323" y="117">订单</text>
+  </g>
+  <g stroke="#4f6b8a" stroke-width="1.4" fill="#4f6b8a">
+    <path d="M126 113 L162 113" fill="none"/><path d="M158 108 L168 113 L158 118"/>
+    <path d="M244 113 L280 113" fill="none"/><path d="M158 108 L168 113 L158 118"/>
+    <path d="M362 113 L410 113" fill="none"/><path d="M406 108 L416 113 L406 118"/>
+  </g>
+  <circle cx="446" cy="113" r="20" fill="#181f2b" stroke="#c8a96a" stroke-width="2"/>
+  <text x="446" y="118" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#c8a96a" text-anchor="middle">¥</text>
+  <text x="486" y="110" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">一个付钱的人</text>
+  <text x="486" y="126" font-family="system-ui,sans-serif" font-size="10" fill="#7f8ba0">开支 = 增长</text>
+
+  <!-- 下排:没人认账,链条断在空位 -->
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#9fb0c4" text-anchor="middle">
+    <rect x="48" y="186" width="78" height="34" rx="3" fill="#2a1e1c" stroke="#a8453a" stroke-width="1.2"/><text x="87" y="207">开支</text>
+    <rect x="166" y="186" width="78" height="34" rx="3" fill="#2a1e1c" stroke="#a8453a" stroke-width="1.2"/><text x="205" y="207">产能</text>
+    <rect x="284" y="186" width="78" height="34" rx="3" fill="#2a1e1c" stroke="#a8453a" stroke-width="1.2"/><text x="323" y="207">承诺</text>
+  </g>
+  <g stroke="#a8453a" stroke-width="1.4" fill="#a8453a">
+    <path d="M126 203 L162 203" fill="none"/><path d="M158 198 L168 203 L158 208"/>
+    <path d="M244 203 L280 203" fill="none"/><path d="M240 198 L250 203 L240 208"/>
+    <path d="M362 203 L410 203" fill="none" stroke-dasharray="5 4"/><path d="M406 198 L416 203 L406 208"/>
+  </g>
+  <circle cx="446" cy="203" r="20" fill="none" stroke="#a8453a" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="446" y="208" font-family="system-ui,sans-serif" font-size="18" fill="#a8453a" text-anchor="middle">?</text>
+  <text x="486" y="200" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">空着的位子</text>
+  <text x="486" y="216" font-family="system-ui,sans-serif" font-size="10" fill="#7f8ba0">开支 = 黑洞</text>
+
+  <line x1="48" y1="252" x2="632" y2="252" stroke="#2a3342" stroke-width="1"/>
+  <text x="340" y="279" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#c8a96a" text-anchor="middle">资本开支不是成本,是一张等人认领的欠条</text>
+</svg>

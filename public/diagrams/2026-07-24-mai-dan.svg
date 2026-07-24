@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一条资本开支链,另一头站着买单人则被追认为增长,站着空位则从资产变负债">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f">同一笔开支,由链条另一头决定它是增长还是黑洞</text>
+
+  <!-- 图例 -->
+  <rect x="470" y="30" width="12" height="12" fill="#4f6b8a"/>
+  <text x="488" y="40" font-family="system-ui,sans-serif" font-size="11" fill="#5b6675">有人认账</text>
+  <rect x="560" y="30" width="12" height="12" fill="#a8453a"/>
+  <text x="578" y="40" font-family="system-ui,sans-serif" font-size="11" fill="#5b6675">没人认账</text>
+
+  <!-- 上链:有买单人 -->
+  <text x="40" y="98" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a">链条闭合 · 开支被追认为增长</text>
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f" text-anchor="middle">
+    <rect x="40" y="112" width="96" height="40" rx="3" fill="#eaf0f6" stroke="#4f6b8a" stroke-width="1.2"/>
+    <text x="88" y="136">我的开支</text>
+    <rect x="176" y="112" width="96" height="40" rx="3" fill="#eaf0f6" stroke="#4f6b8a" stroke-width="1.2"/>
+    <text x="224" y="136">变成产能</text>
+    <rect x="312" y="112" width="96" height="40" rx="3" fill="#eaf0f6" stroke="#4f6b8a" stroke-width="1.2"/>
+    <text x="360" y="136">别人下单</text>
+    <rect x="448" y="112" width="120" height="40" rx="3" fill="#dfe7f0" stroke="#4f6b8a" stroke-width="1.8"/>
+    <text x="508" y="130" font-weight="700" fill="#33404f">一个付钱的人</text>
+    <text x="508" y="145" font-size="9.5" fill="#5b6675">真实需求 · 造不了假</text>
+  </g>
+  <g stroke="#4f6b8a" stroke-width="1.5" fill="#4f6b8a">
+    <path d="M136 132 L172 132" fill="none"/><path d="M168 127 L178 132 L168 137"/>
+    <path d="M272 132 L308 132" fill="none"/><path d="M304 127 L314 132 L304 137"/>
+    <path d="M408 132 L444 132" fill="none"/><path d="M440 127 L450 132 L440 137"/>
+  </g>
+
+  <line x1="40" y1="192" x2="640" y2="192" stroke="#ddd4c4" stroke-width="1"/>
+
+  <!-- 下链:没买单人 -->
+  <text x="40" y="238" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a">链条断口 · 开支同时变回负债</text>
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f" text-anchor="middle">
+    <rect x="40" y="252" width="96" height="40" rx="3" fill="#f6ece9" stroke="#a8453a" stroke-width="1.2"/>
+    <text x="88" y="276">我的开支</text>
+    <rect x="176" y="252" width="96" height="40" rx="3" fill="#f6ece9" stroke="#a8453a" stroke-width="1.2"/>
+    <text x="224" y="276">变成产能</text>
+    <rect x="312" y="252" width="96" height="40" rx="3" fill="#f6ece9" stroke="#a8453a" stroke-width="1.2"/>
+    <text x="360" y="270">一个承诺</text>
+    <text x="360" y="285" font-size="9.5" fill="#8a4a40">"未来会有人买"</text>
+    <rect x="448" y="252" width="120" height="40" rx="3" fill="none" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="508" y="277" font-weight="700" fill="#a8453a">空 位</text>
+  </g>
+  <g stroke="#a8453a" stroke-width="1.5" fill="#a8453a">
+    <path d="M136 272 L172 272" fill="none"/><path d="M168 267 L178 272 L168 277"/>
+    <path d="M272 272 L308 272" fill="none"/><path d="M304 267 L314 272 L304 277"/>
+    <path d="M408 272 L444 272" fill="none" stroke-dasharray="5 4"/><path d="M440 267 L450 272 L440 277"/>
+  </g>
+
+  <line x1="40" y1="322" x2="640" y2="322" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="340" y="348" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#33404f" text-anchor="middle">市场数的不是你花了多少,是另一头有没有人</text>
+</svg>
