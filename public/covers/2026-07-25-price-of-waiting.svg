@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:利率不是成本,是等待的价格">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">折扣一变大,越远的未来,越不值钱</text>
+
+  <!-- 时间轴 -->
+  <line x1="60" y1="212" x2="608" y2="212" stroke="#2f3b4c" stroke-width="1.4"/>
+  <text x="72" y="232" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0" text-anchor="middle">今天</text>
+  <text x="590" y="232" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0" text-anchor="middle">很多年后</text>
+
+  <!-- 远处的未来金币 -->
+  <circle cx="590" cy="118" r="23" fill="#181f2b" stroke="#c8a96a" stroke-width="2.2"/>
+  <text x="590" y="124" font-family="'Noto Serif SC',serif" font-size="18" font-weight="700" fill="#c8a96a" text-anchor="middle">¥</text>
+  <text x="590" y="92" font-family="system-ui,sans-serif" font-size="10.5" fill="#8f9bb0" text-anchor="middle">一块钱的回报</text>
+
+  <!-- 温柔折扣:近乎平的蓝线 → 高柱 -->
+  <path d="M569 118 Q320 128 96 138" fill="none" stroke="#4f6b8a" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <rect x="66" y="138" width="34" height="74" fill="#22303f" stroke="#4f6b8a" stroke-width="1.8"/>
+  <text x="83" y="128" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#7fa0c2" text-anchor="middle">九毛</text>
+
+  <!-- 陡折扣:大幅下坠的红线 → 矮柱 -->
+  <path d="M569 118 Q330 210 156 190" fill="none" stroke="#a8453a" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <rect x="126" y="190" width="34" height="22" fill="#2a1e1c" stroke="#a8453a" stroke-width="1.8"/>
+  <text x="143" y="180" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700" fill="#c56a5c" text-anchor="middle">五毛</text>
+
+  <!-- 注 -->
+  <text x="210" y="150" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a">折扣温柔:同一块钱贴回今天,几乎不缩</text>
+  <text x="230" y="196" font-family="system-ui,sans-serif" font-size="10.5" fill="#a8453a">折扣变大:同一块钱贴回今天,只剩一截</text>
+
+  <line x1="48" y1="256" x2="632" y2="256" stroke="#2a3342" stroke-width="1"/>
+  <text x="340" y="282" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a" text-anchor="middle">利率不是成本,是等待的价格</text>
+</svg>

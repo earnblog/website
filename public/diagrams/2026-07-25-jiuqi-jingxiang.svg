@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一枚落在很多年后的金币,折扣温柔时贴回今天几乎不缩水,折扣变大时贴回今天只剩一截">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="40" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f">同一枚金币,两种折扣,两截现值</text>
+
+  <!-- 中线 -->
+  <line x1="340" y1="66" x2="340" y2="322" stroke="#ddd4c4" stroke-width="1.4" stroke-dasharray="4 4"/>
+
+  <!-- ===== 左:折扣温柔 ===== -->
+  <text x="40" y="92" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#4f6b8a">折扣温柔 · 久期被奖励</text>
+
+  <!-- 基线 -->
+  <line x1="52" y1="262" x2="300" y2="262" stroke="#ddd4c4" stroke-width="1.2"/>
+  <text x="60" y="280" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6675" text-anchor="middle">今天</text>
+  <text x="284" y="280" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6675" text-anchor="middle">很多年后</text>
+
+  <!-- 未来金币 -->
+  <circle cx="284" cy="150" r="18" fill="#181f2b" stroke="#c8a96a" stroke-width="2"/>
+  <text x="284" y="155" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a" text-anchor="middle">¥</text>
+  <text x="284" y="128" font-family="system-ui,sans-serif" font-size="10" fill="#5b6675" text-anchor="middle">一块钱</text>
+
+  <!-- 温柔折扣曲线:近乎平 -->
+  <path d="M266 150 Q170 158 74 168" fill="none" stroke="#4f6b8a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M84 164 L70 168 L82 174" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+
+  <!-- 现值高柱(蓝) -->
+  <rect x="52" y="168" width="34" height="94" fill="#dfe7f0" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="69" y="158" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#4f6b8a" text-anchor="middle">九毛</text>
+  <text x="150" y="228" font-family="system-ui,sans-serif" font-size="11" fill="#5b6675">贴回今天,几乎不缩水</text>
+
+  <!-- ===== 右:折扣变大 ===== -->
+  <text x="360" y="92" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#a8453a">折扣变大 · 久期被惩罚</text>
+
+  <line x1="372" y1="262" x2="640" y2="262" stroke="#ddd4c4" stroke-width="1.2"/>
+  <text x="384" y="280" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6675" text-anchor="middle">今天</text>
+  <text x="624" y="280" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6675" text-anchor="middle">很多年后</text>
+
+  <!-- 同一枚未来金币 -->
+  <circle cx="624" cy="150" r="18" fill="#181f2b" stroke="#c8a96a" stroke-width="2"/>
+  <text x="624" y="155" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a" text-anchor="middle">¥</text>
+  <text x="624" y="128" font-family="system-ui,sans-serif" font-size="10" fill="#5b6675" text-anchor="middle">同一块钱</text>
+
+  <!-- 参考:本该有的高度(虚线幽灵柱) -->
+  <rect x="384" y="168" width="34" height="94" fill="none" stroke="#c3b79d" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- 陡折扣曲线:大幅下坠 -->
+  <path d="M606 150 Q500 210 402 226" fill="none" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M412 220 L398 226 L410 232" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+
+  <!-- 现值矮柱(红) -->
+  <rect x="384" y="226" width="34" height="36" fill="#f2ddd8" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="401" y="216" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#a8453a" text-anchor="middle">五毛</text>
+  <text x="470" y="238" font-family="system-ui,sans-serif" font-size="11" fill="#5b6675">贴回今天,只剩一截</text>
+
+  <line x1="40" y1="322" x2="640" y2="322" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="340" y="348" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#33404f" text-anchor="middle">距离一样,变的是折扣 —— 久期越长,越随折扣一起放大</text>
+</svg>
