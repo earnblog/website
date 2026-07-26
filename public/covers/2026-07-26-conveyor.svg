@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:现货ETF不是比特币的地板,是双向传送带">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">同一条传送带,两个方向一样快</text>
+
+  <!-- 两端滚轮 -->
+  <circle cx="120" cy="150" r="30" fill="#1c2330" stroke="#7f8ba0" stroke-width="2"/>
+  <circle cx="560" cy="150" r="30" fill="#1c2330" stroke="#7f8ba0" stroke-width="2"/>
+  <text x="120" y="205" font-family="system-ui,sans-serif" font-size="11" fill="#8f9bb0" text-anchor="middle">场外的钱</text>
+  <text x="560" y="205" font-family="system-ui,sans-serif" font-size="11" fill="#8f9bb0" text-anchor="middle">比特币现货</text>
+
+  <!-- 传送带上下沿 -->
+  <line x1="120" y1="120" x2="560" y2="120" stroke="#2f3b4c" stroke-width="2"/>
+  <line x1="120" y1="180" x2="560" y2="180" stroke="#2f3b4c" stroke-width="2"/>
+
+  <!-- 上沿:申购,向右(蓝) -->
+  <line x1="150" y1="120" x2="520" y2="120" stroke="#4f6b8a" stroke-width="3"/>
+  <path d="M520 113 L536 120 L520 127 Z" fill="#4f6b8a"/>
+  <text x="335" y="110" font-family="system-ui,sans-serif" font-size="11.5" font-weight="700" fill="#7fa0c2" text-anchor="middle">涨时 · 申购 · 钱被送进去</text>
+
+  <!-- 下沿:赎回,向左(红) -->
+  <line x1="530" y1="180" x2="160" y2="180" stroke="#a8453a" stroke-width="3"/>
+  <path d="M160 173 L144 180 L160 187 Z" fill="#a8453a"/>
+  <text x="345" y="198" font-family="system-ui,sans-serif" font-size="11.5" font-weight="700" fill="#c56a5c" text-anchor="middle">跌时 · 赎回 · 钱被卸出来</text>
+
+  <!-- 中心马达标注 -->
+  <text x="340" y="154" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0" text-anchor="middle">同一台马达 · 没有偏好的方向</text>
+
+  <line x1="48" y1="248" x2="632" y2="248" stroke="#2a3342" stroke-width="1"/>
+  <text x="340" y="278" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a" text-anchor="middle">现货ETF不是地板,是双向传送带</text>
+</svg>
