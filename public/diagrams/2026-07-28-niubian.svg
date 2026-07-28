@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:牛鞭效应。AI算力需求在鞭柄端只是小幅波动,一级级向上游传递,到存储大宗颗粒这一鞭梢端被放大成剧烈的暴涨暴跌。跌得最凶的不是需求最弱处,是离手最远、被放大最多处">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f">同一下抖动,越到上游甩得越狠</text>
+
+  <!-- 图例 -->
+  <rect x="470" y="30" width="12" height="12" fill="#4f6b8a"/>
+  <text x="488" y="40" font-family="system-ui,sans-serif" font-size="11" fill="#5b6675">脱销·涨</text>
+  <rect x="558" y="30" width="12" height="12" fill="#a8453a"/>
+  <text x="576" y="40" font-family="system-ui,sans-serif" font-size="11" fill="#5b6675">过剩·崩</text>
+
+  <!-- 中轴基线 -->
+  <line x1="60" y1="190" x2="620" y2="190" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- 阶段一:鞭柄 小波 -->
+  <path d="M70 190 C 100 178, 130 202, 160 190" fill="none" stroke="#4f6b8a" stroke-width="2.6"/>
+  <text x="115" y="248" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#33404f" text-anchor="middle">AI算力需求</text>
+  <text x="115" y="266" font-family="system-ui,sans-serif" font-size="10" fill="#5b6675" text-anchor="middle">鞭柄 · 只抖一寸</text>
+
+  <!-- 阶段二:鞭身 中波 -->
+  <path d="M230 190 C 268 150, 306 232, 346 190" fill="none" stroke="#c8a96a" stroke-width="2.8"/>
+  <text x="288" y="270" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#33404f" text-anchor="middle">系统与模组</text>
+  <text x="288" y="288" font-family="system-ui,sans-serif" font-size="10" fill="#5b6675" text-anchor="middle">鞭身 · 摆幅变大</text>
+
+  <!-- 阶段三:鞭梢 大波(蓝冲顶→红崩) -->
+  <path d="M420 190 C 470 92, 512 92, 540 118" fill="none" stroke="#4f6b8a" stroke-width="3.2"/>
+  <path d="M540 118 C 568 144, 590 300, 612 300" fill="none" stroke="#a8453a" stroke-width="3.2"/>
+  <circle cx="480" cy="100" r="4" fill="#4f6b8a"/>
+  <text x="480" y="86" font-family="system-ui,sans-serif" font-size="10" fill="#4f6b8a" text-anchor="middle">脱销·创纪录</text>
+  <circle cx="612" cy="300" r="4.5" fill="#a8453a"/>
+  <text x="606" y="322" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#a8453a" text-anchor="end">跌下悬崖</text>
+  <text x="516" y="200" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#33404f" text-anchor="middle">存储大宗颗粒</text>
+  <text x="516" y="218" font-family="system-ui,sans-serif" font-size="10" fill="#5b6675" text-anchor="middle">鞭梢 · 甩出一丈</text>
+
+  <!-- 传递箭头 -->
+  <path d="M168 190 L206 190" stroke="#8a8372" stroke-width="1.4"/>
+  <path d="M206 184 L220 190 L206 196 Z" fill="#8a8372"/>
+  <path d="M354 190 L396 190" stroke="#8a8372" stroke-width="1.4"/>
+  <path d="M396 184 L410 190 L396 196 Z" fill="#8a8372"/>
+
+  <line x1="40" y1="330" x2="640" y2="330" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="40" y="352" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#33404f">跌得最凶的,不是需求最弱处,是离手最远、被放大最多处。</text>
+</svg>

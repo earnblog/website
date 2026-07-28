@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:存储不是AI的体温计,是牛鞭的鞭梢。握鞭的手只轻动一寸,鞭梢却甩出一丈、也摔得最狠">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="48" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">握鞭的手只轻动一寸,鞭梢却甩上了天</text>
+
+  <!-- 鞭柄:手(蓝) -->
+  <rect x="60" y="150" width="30" height="12" rx="3" fill="#33404f" stroke="#4f6b8a" stroke-width="1.4"/>
+  <circle cx="66" cy="156" r="9" fill="#1c2330" stroke="#4f6b8a" stroke-width="2"/>
+  <text x="86" y="192" font-family="system-ui,sans-serif" font-size="11" fill="#7fa0c2">手只动一寸</text>
+
+  <!-- 鞭身:振幅由小到大,蓝→金→红 -->
+  <path d="M90 156 C 128 150, 158 164, 195 157" fill="none" stroke="#4f6b8a" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M195 157 C 240 137, 292 183, 352 150" fill="none" stroke="#c8a96a" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M352 150 C 424 96, 472 214, 548 116 S 604 214, 614 208" fill="none" stroke="#a8453a" stroke-width="3.6" stroke-linecap="round"/>
+
+  <!-- 鞭梢 -->
+  <circle cx="614" cy="208" r="6" fill="#a8453a"/>
+  <text x="612" y="234" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#c56a5c" text-anchor="end">鞭梢甩出一丈,摔得最狠</text>
+
+  <!-- 阶段标注 -->
+  <text x="140" y="128" font-family="system-ui,sans-serif" font-size="10.5" fill="#8f9bb0" text-anchor="middle">AI算力需求·鞭柄</text>
+  <text x="470" y="86" font-family="system-ui,sans-serif" font-size="10.5" fill="#8f9bb0" text-anchor="middle">存储大宗颗粒·鞭梢</text>
+
+  <line x1="48" y1="252" x2="632" y2="252" stroke="#2a3342" stroke-width="1"/>
+  <text x="340" y="280" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a" text-anchor="middle">存储不是AI的体温计,是牛鞭的鞭梢</text>
+</svg>
