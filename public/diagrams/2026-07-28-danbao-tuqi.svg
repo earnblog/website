@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" role="img" aria-label="卖方担保买方的损益形状:上行封顶在一笔有限的订单毛利,下行沿租约本金敞开,触发点与自身订单崩塌重合">
+  <rect width="680" height="380" fill="#fbf9f4"/>
+  <text x="340" y="34" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f" text-anchor="middle">上行封了顶,下行没有底</text>
+
+  <!-- 坐标轴 -->
+  <line x1="90" y1="200" x2="620" y2="200" stroke="#c9bda6" stroke-width="1.2"/>
+  <line x1="90" y1="80" x2="90" y2="316" stroke="#c9bda6" stroke-width="1.2"/>
+  <text x="620" y="222" font-family="system-ui,sans-serif" font-size="11" fill="#8a7a5c" text-anchor="end">AI需求最终兑现了多少 →</text>
+  <text x="90" y="70" font-family="system-ui,sans-serif" font-size="11" fill="#8a7a5c" text-anchor="middle">盈亏</text>
+  <text x="98" y="196" font-family="system-ui,sans-serif" font-size="10.5" fill="#a89a7c" text-anchor="start">0</text>
+
+  <!-- 触发线 -->
+  <line x1="300" y1="80" x2="300" y2="316" stroke="#a8453a" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <text x="300" y="334" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">赔付触发点</text>
+  <text x="300" y="350" font-family="system-ui,sans-serif" font-size="10.5" fill="#a8453a" text-anchor="middle">买家付不出租金的那一天</text>
+
+  <!-- 损益曲线:左侧敞开下行 -->
+  <path d="M120 316 L300 200 L620 176" fill="none" stroke="#33404f" stroke-width="2.4"/>
+
+  <!-- 右侧平台的高度标注 -->
+  <line x1="440" y1="180" x2="440" y2="200" stroke="#4f6b8a" stroke-width="1.1"/>
+  <text x="452" y="172" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">封顶:一笔早在预期里的订单毛利</text>
+  <text x="452" y="190" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7688">需求再好,也不会更多</text>
+
+  <!-- 左侧敞口标注 -->
+  <text x="126" y="290" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">不封底:租约本金</text>
+  <text x="126" y="308" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a5b54">要用现金兑付</text>
+  <path d="M186 250 L152 284" fill="none" stroke="#a8453a" stroke-width="1.1"/>
+  <path d="M150 276 L150 288 L162 288" fill="none" stroke="#a8453a" stroke-width="1.1"/>
+
+  <!-- 相关性注:同一天 -->
+  <rect x="330" y="94" width="278" height="58" rx="3" fill="#f2ece0" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="344" y="116" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">赔付被触发的那一天,也正是它自己的</text>
+  <text x="344" y="134" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">订单在塌、股价在塌、发债最贵的那一天。</text>
+  <path d="M330 122 L306 122" fill="none" stroke="#a8453a" stroke-width="1.1" stroke-dasharray="3 3"/>
+
+  <!-- 底部注 -->
+  <line x1="90" y1="362" x2="620" y2="362" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="340" y="378" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a7a5c" text-anchor="middle">这不是一笔生意的形状,是卖出一份期权的形状——收的权利金,是自己的销售额</text>
+</svg>
