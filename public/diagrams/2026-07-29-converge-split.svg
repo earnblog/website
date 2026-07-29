@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Converged vs split meeting: the rate is computed by the market first; the Fed only reads the machine's output and stamps it">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="32" font-family="Georgia,'Times New Roman',serif" font-size="16" font-weight="700" fill="#33404f" text-anchor="middle">The number it stamps is computed first — off the floor, by the machine</text>
+
+  <line x1="340" y1="52" x2="340" y2="300" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- Left: converged meeting -->
+  <text x="175" y="74" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#4f6b8a" text-anchor="middle">Ordinary: already computed</text>
+  <rect x="140" y="100" width="70" height="200" fill="#4f6b8a" opacity="0.85"/>
+  <rect x="140" y="90" width="70" height="10" fill="#a8453a" opacity="0.9"/>
+  <text x="175" y="205" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">nearly all on</text>
+  <text x="175" y="222" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">"hold"</text>
+  <text x="175" y="322" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7688" text-anchor="middle">machine converged to one answer</text>
+  <text x="175" y="340" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#4f6b8a" text-anchor="middle">stamp = non-event</text>
+
+  <!-- Right: split meeting -->
+  <text x="505" y="74" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#a8453a" text-anchor="middle">Today 7/29: not yet finished</text>
+  <rect x="470" y="163" width="70" height="137" fill="#4f6b8a" opacity="0.85"/>
+  <rect x="470" y="90" width="70" height="73" fill="#a8453a" opacity="0.9"/>
+  <text x="505" y="238" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">two-thirds</text>
+  <text x="505" y="255" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">on hold</text>
+  <text x="505" y="132" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">one-third</text>
+  <text x="505" y="149" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">on a hike</text>
+  <text x="505" y="322" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7688" text-anchor="middle">machine still split, unresolved</text>
+  <text x="505" y="340" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#a8453a" text-anchor="middle">volatility is the disagreement, not the decision</text>
+
+  <!-- legend -->
+  <rect x="214" y="44" width="12" height="9" fill="#4f6b8a" opacity="0.85"/>
+  <text x="232" y="52" font-family="system-ui,sans-serif" font-size="10" fill="#6b7688">bet on hold</text>
+  <rect x="316" y="44" width="12" height="9" fill="#a8453a" opacity="0.9"/>
+  <text x="334" y="52" font-family="system-ui,sans-serif" font-size="10" fill="#6b7688">bet on hike (bar height = the market's own wager)</text>
+</svg>

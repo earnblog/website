@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="收敛的会议与分裂的会议对照:利率是市场先算出来的,美联储只读输出、盖章">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="32" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f" text-anchor="middle">盖章的那个数,是场外这台机器先算出来的</text>
+
+  <!-- 分隔线 -->
+  <line x1="340" y1="52" x2="340" y2="300" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+  <!-- 左:收敛的会议 -->
+  <text x="175" y="74" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#4f6b8a" text-anchor="middle">平常:算完了</text>
+  <!-- 概率柱 100%=210px,底 y=300 顶 y=90 -->
+  <rect x="140" y="100" width="70" height="200" fill="#4f6b8a" opacity="0.85"/>
+  <rect x="140" y="90" width="70" height="10" fill="#a8453a" opacity="0.9"/>
+  <text x="175" y="205" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">几乎一边倒</text>
+  <text x="175" y="222" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">押"不变"</text>
+  <text x="175" y="322" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7688" text-anchor="middle">机器收敛成一个答案</text>
+  <text x="175" y="340" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#4f6b8a" text-anchor="middle">盖章 = 非事件</text>
+
+  <!-- 右:分裂的会议 -->
+  <text x="505" y="74" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#a8453a" text-anchor="middle">今天 7/29:还没算完</text>
+  <!-- 概率柱:蓝 65%=137px (y163..300),红 35%=73px (y90..163) -->
+  <rect x="470" y="163" width="70" height="137" fill="#4f6b8a" opacity="0.85"/>
+  <rect x="470" y="90" width="70" height="73" fill="#a8453a" opacity="0.9"/>
+  <text x="505" y="238" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">三分之二</text>
+  <text x="505" y="255" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">押不变</text>
+  <text x="505" y="132" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">三分之一</text>
+  <text x="505" y="149" font-family="system-ui,sans-serif" font-size="11" fill="#fff" text-anchor="middle">押加息</text>
+  <text x="505" y="322" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7688" text-anchor="middle">机器还没收敛,当场分裂</text>
+  <text x="505" y="340" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#a8453a" text-anchor="middle">真波动来自分歧,不是决定</text>
+
+  <!-- 顶部图例 -->
+  <rect x="248" y="44" width="12" height="9" fill="#4f6b8a" opacity="0.85"/>
+  <text x="266" y="52" font-family="system-ui,sans-serif" font-size="10" fill="#6b7688">押不变</text>
+  <rect x="330" y="44" width="12" height="9" fill="#a8453a" opacity="0.9"/>
+  <text x="348" y="52" font-family="system-ui,sans-serif" font-size="10" fill="#6b7688">押加息（柱高=市场自己下的赌注）</text>
+</svg>

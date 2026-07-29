@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:利率不是美联储定的,是市场算出来的;那张分歧的赌注早已成形,美联储的章只是压在一个算好的数上">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="18" font-weight="700" fill="#c8a96a">利率不是定出来的,是算出来的</text>
+
+  <!-- 市场早已算好的那张赌注(概率条) -->
+  <text x="48" y="150" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">市场半个月来自己算出的分歧:</text>
+  <!-- 蓝=押不变 约2/3 ; 红=押加息 约1/3 ; 总宽 x60..620 = 560 -->
+  <rect x="60" y="162" width="373" height="40" fill="#4f6b8a" opacity="0.9"/>
+  <rect x="433" y="162" width="187" height="40" fill="#a8453a" opacity="0.92"/>
+  <text x="246" y="187" font-family="system-ui,sans-serif" font-size="12" fill="#e8eaed" text-anchor="middle">三分之二 · 押不变</text>
+  <text x="526" y="187" font-family="system-ui,sans-serif" font-size="11.5" fill="#f2e9df" text-anchor="middle">三分之一 · 押加息</text>
+
+  <!-- 悬在半空的金色印章:还没落下,数已成形 -->
+  <g opacity="0.95">
+    <rect x="322" y="86" width="36" height="14" rx="2" fill="#c8a96a"/>
+    <rect x="333" y="72" width="14" height="16" rx="2" fill="#c8a96a"/>
+    <circle cx="340" cy="68" r="7" fill="#c8a96a"/>
+  </g>
+  <line x1="340" y1="104" x2="340" y2="156" stroke="#c8a96a" stroke-width="1.4" stroke-dasharray="4 5"/>
+  <path d="M335 150 L340 160 L345 150" fill="#c8a96a"/>
+  <text x="372" y="96" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">美联储的章还没落下——</text>
+  <text x="372" y="112" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">而它要压的那个数,早已成形</text>
+
+  <!-- 底部注 -->
+  <line x1="48" y1="238" x2="632" y2="238" stroke="#2a3342" stroke-width="1"/>
+  <text x="48" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#7f8ba0">7/29 决议前:利率停在 3.50%–3.75% 已第五次;两周里押加息从约一成升到三分之一</text>
+  <text x="48" y="284" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">屏息等的不是一个答案,是一场还没收敛的计算。</text>
+</svg>
