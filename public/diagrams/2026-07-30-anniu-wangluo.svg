@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:美联储手里是一个按钮,面对的是一整条曲线;按钮只连着最近的短端节点,越往长端越够不着,长端自己窜过2007年高点">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="42" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#33404f">一个按钮,撬不动整条曲线</text>
+
+  <!-- 2007 高点线 -->
+  <line x1="150" y1="96" x2="648" y2="96" stroke="#a8453a" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="648" y="90" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="end">长钱 · 2007 年以来最贵</text>
+
+  <!-- 曲线节点:短端低平,长端窜高 -->
+  <path d="M170 300 L250 296 L330 288 L410 272 L490 236 L570 168 L636 108" fill="none" stroke="#c8b48a" stroke-width="2"/>
+  <path d="M410 272 L490 236 L570 168 L636 108" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+
+  <!-- 按钮 -->
+  <rect x="40" y="276" width="96" height="48" rx="4" fill="#33404f"/>
+  <text x="88" y="298" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#f2ede1" text-anchor="middle">美联储</text>
+  <text x="88" y="315" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a" text-anchor="middle">一个按钮</text>
+  <!-- 只连最近一格 -->
+  <line x1="136" y1="300" x2="166" y2="300" stroke="#4f6b8a" stroke-width="2.2"/>
+  <text x="150" y="333" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">只连最近一格</text>
+
+  <!-- 节点圆 -->
+  <circle cx="170" cy="300" r="6.5" fill="#4f6b8a"/>
+  <circle cx="250" cy="296" r="5" fill="#8a99a8"/>
+  <circle cx="330" cy="288" r="5" fill="#8a99a8"/>
+  <circle cx="410" cy="272" r="5" fill="#b07d33"/>
+  <circle cx="490" cy="236" r="5.5" fill="#b07d33"/>
+  <circle cx="570" cy="168" r="6" fill="#a8453a"/>
+  <circle cx="636" cy="108" r="7" fill="#a8453a"/>
+
+  <text x="170" y="326" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">隔夜(摁住)</text>
+  <text x="636" y="132" font-family="system-ui,sans-serif" font-size="10.5" fill="#a8453a" text-anchor="middle">三十年(窜上去)</text>
+
+  <!-- 鞭长莫及 箭头 -->
+  <path d="M200 210 L560 150" fill="none" stroke="#b9a98a" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="360" y="196" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#8a6a2f" text-anchor="middle">越往远,越是市场自己算,手越够不着</text>
+
+  <!-- 图例 -->
+  <rect x="40" y="344" width="600" height="0.6" fill="#ddd4c4"/>
+  <circle cx="180" cy="354" r="4.5" fill="#4f6b8a"/>
+  <text x="192" y="358" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6472">美联储摁得住</text>
+  <circle cx="420" cy="354" r="4.5" fill="#a8453a"/>
+  <text x="432" y="358" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6472">经济真正付的价 · 手够不着</text>
+</svg>
