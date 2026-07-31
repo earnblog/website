@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:暴跌的隔天暴涨,价格根本没在读基本面">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="50" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">价格暴涨暴跌,读的从来不是财报,是仓位</text>
+
+  <!-- 中轴:基本面几乎没动 -->
+  <line x1="340" y1="80" x2="340" y2="256" stroke="#3a4556" stroke-width="1.3" stroke-dasharray="4 4"/>
+  <text x="340" y="274" font-family="system-ui,sans-serif" font-size="10.5" fill="#5f6b80" text-anchor="middle">基本面 · 几乎没动</text>
+
+  <!-- 左环:下跌自循环(红) -->
+  <path d="M150 205 A 62 62 0 1 1 210 150" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+  <path d="M210 150 l -3 -12 l 12 5 z" fill="#a8453a"/>
+  <text x="150" y="150" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#c56a5c" text-anchor="middle">跌</text>
+  <text x="150" y="167" font-family="system-ui,sans-serif" font-size="9.5" fill="#8f5a52" text-anchor="middle">制造更多的跌</text>
+  <text x="150" y="248" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">恐惧 → 减仓 → 更低</text>
+
+  <!-- 右环:反弹自循环(蓝金) -->
+  <path d="M530 205 A 62 62 0 1 0 470 150" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <path d="M470 150 l 3 -12 l -12 5 z" fill="#c8a96a"/>
+  <text x="530" y="150" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#c8a96a" text-anchor="middle">涨</text>
+  <text x="530" y="167" font-family="system-ui,sans-serif" font-size="9.5" fill="#7fa0c2" text-anchor="middle">制造更多的涨</text>
+  <text x="530" y="248" font-family="system-ui,sans-serif" font-size="10" fill="#7fa0c2" text-anchor="middle">回补 → 推高 → 逼平</text>
+
+  <!-- 底部标注 -->
+  <text x="340" y="292" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">同一台机器,两个方向 · 动的从来是仓位</text>
+</svg>

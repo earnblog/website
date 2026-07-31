@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一台自我强化的机器,左环下跌自循环,右环反弹自循环,中轴基本面几乎没动">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="40" font-family="'Noto Serif SC',serif" font-size="18" font-weight="700" fill="#33404f" text-anchor="middle">同一台机器,两个方向</text>
+  <text x="340" y="62" font-family="system-ui,sans-serif" font-size="12" fill="#8a7f6a" text-anchor="middle">价格短期不算公司,只算仓位</text>
+
+  <!-- 中轴:基本面几乎没动 -->
+  <line x1="340" y1="92" x2="340" y2="312" stroke="#ddd4c4" stroke-width="1.6" stroke-dasharray="5 5"/>
+  <text x="340" y="332" font-family="system-ui,sans-serif" font-size="12" fill="#a99a7d" text-anchor="middle">基本面 · 几乎没挪窝</text>
+
+  <!-- 左环:下跌自循环(红) -->
+  <circle cx="170" cy="200" r="88" fill="none" stroke="#a8453a" stroke-width="2.6"/>
+  <path d="M170 112 l -12 6 l 8 9 z" fill="#a8453a"/>
+  <text x="170" y="150" font-family="system-ui,sans-serif" font-size="12.5" fill="#a8453a" text-anchor="middle">恐惧</text>
+  <text x="248" y="205" font-family="system-ui,sans-serif" font-size="12.5" fill="#a8453a" text-anchor="middle">减仓</text>
+  <text x="170" y="262" font-family="system-ui,sans-serif" font-size="12.5" fill="#a8453a" text-anchor="middle">价格更低</text>
+  <text x="92" y="205" font-family="system-ui,sans-serif" font-size="12.5" fill="#a8453a" text-anchor="middle">浮亏</text>
+  <text x="170" y="196" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#a8453a" text-anchor="middle">跌</text>
+  <text x="170" y="216" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">跌制造更多的跌</text>
+
+  <!-- 右环:反弹自循环(蓝金) -->
+  <circle cx="510" cy="200" r="88" fill="none" stroke="#4f6b8a" stroke-width="2.6"/>
+  <path d="M510 112 l 12 6 l -8 9 z" fill="#c8a96a"/>
+  <text x="510" y="150" font-family="system-ui,sans-serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">空头回补</text>
+  <text x="588" y="205" font-family="system-ui,sans-serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">推高</text>
+  <text x="510" y="262" font-family="system-ui,sans-serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">价格更高</text>
+  <text x="432" y="205" font-family="system-ui,sans-serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">逼平仓</text>
+  <text x="510" y="196" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#b07d33" text-anchor="middle">涨</text>
+  <text x="510" y="216" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">涨制造更多的涨</text>
+
+  <!-- 图例 -->
+  <line x1="120" y1="348" x2="150" y2="348" stroke="#a8453a" stroke-width="3"/>
+  <text x="156" y="352" font-family="system-ui,sans-serif" font-size="11" fill="#7a6f5c">连跌六天 · 踩住油门</text>
+  <line x1="400" y1="348" x2="430" y2="348" stroke="#4f6b8a" stroke-width="3"/>
+  <text x="436" y="352" font-family="system-ui,sans-serif" font-size="11" fill="#7a6f5c">一天跳涨 · 踩反向油门</text>
+</svg>
