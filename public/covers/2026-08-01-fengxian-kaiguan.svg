@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:反弹回来的不是风险偏好,是钱挤向了一个故事">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="46" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">涨的从来不是"风险",是钱挤向了一个故事</text>
+
+  <!-- 基线 -->
+  <line x1="88" y1="248" x2="624" y2="248" stroke="#3a4556" stroke-width="1.2"/>
+  <text x="92" y="86" font-family="system-ui,sans-serif" font-size="10.5" fill="#5f6b80">美东 7/31 · 同一个交易日</text>
+
+  <!-- 平均成本线(红虚线),比特币压在它下方 -->
+  <line x1="88" y1="196" x2="624" y2="196" stroke="#a8453a" stroke-width="1.3" stroke-dasharray="5 5"/>
+  <text x="624" y="192" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="end">大半年买家的平均成本线</text>
+
+  <!-- 股票:井喷上冲(金) -->
+  <path d="M96 202 L 250 188 L 400 132 L 560 74" fill="none" stroke="#c8a96a" stroke-width="3"/>
+  <circle cx="560" cy="74" r="4.5" fill="#c8a96a"/>
+  <text x="548" y="64" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a" text-anchor="end">股票 · 抢 AI 那个故事,井喷</text>
+
+  <!-- 比特币:趴在均线下方,反而收跌(蓝灰) -->
+  <path d="M96 206 L 250 209 L 400 212 L 560 216" fill="none" stroke="#4f6b8a" stroke-width="3"/>
+  <circle cx="560" cy="216" r="4.5" fill="#4f6b8a"/>
+  <text x="548" y="234" font-family="system-ui,sans-serif" font-size="11.5" fill="#7fa0c2" text-anchor="end">比特币 · 泊在别处,当天下跌</text>
+
+  <!-- 底部标注 -->
+  <text x="340" y="288" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">一边欢呼反弹,一边最高风险的那个在跌 · 相关性,是同一批钱的影子</text>
+</svg>

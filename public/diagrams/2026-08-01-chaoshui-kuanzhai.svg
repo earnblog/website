@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:钱铺开时潮水抬起所有船,钱收窄时潮水挤成一道窄渠只抬起泊在渠里的船,别处的船原地不动">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="38" font-family="'Noto Serif SC',serif" font-size="18" font-weight="700" fill="#33404f" text-anchor="middle">相关性,是同一批钱的影子</text>
+  <text x="340" y="60" font-family="system-ui,sans-serif" font-size="12" fill="#8a7f6a" text-anchor="middle">钱铺得开,一起涨;钱收窄挤一个故事,就散了</text>
+
+  <line x1="340" y1="82" x2="340" y2="322" stroke="#ddd4c4" stroke-width="1.4"/>
+
+  <!-- 左:钱铺开(宽潮水,蓝)——所有船一起抬起 -->
+  <text x="172" y="102" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#4f6b8a" text-anchor="middle">钱铺得开</text>
+  <text x="172" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#7a6f5c" text-anchor="middle">无数人各押各的未来 · 潮水摊开</text>
+  <!-- 宽潮水波面 -->
+  <path d="M40 258 Q 90 244 140 258 T 240 258 T 304 258" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <path d="M40 278 Q 90 264 140 278 T 240 278 T 304 278" fill="none" stroke="#7fa0c2" stroke-width="1.6" opacity="0.7"/>
+  <!-- 四条船(资产)一起被抬到同一高度 -->
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#33404f" text-anchor="middle">
+    <rect x="58" y="196" width="34" height="20" rx="3" fill="#e8eef4" stroke="#4f6b8a"/><text x="75" y="210">股票</text>
+    <rect x="118" y="196" width="34" height="20" rx="3" fill="#e8eef4" stroke="#4f6b8a"/><text x="135" y="210">芯片</text>
+    <rect x="192" y="196" width="34" height="20" rx="3" fill="#e8eef4" stroke="#4f6b8a"/><text x="209" y="210">黄金</text>
+    <rect x="252" y="196" width="40" height="20" rx="3" fill="#e8eef4" stroke="#4f6b8a"/><text x="272" y="210">比特币</text>
+  </g>
+  <text x="172" y="240" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">↑ 一起被抬起 · 你以为它们是一回事</text>
+
+  <!-- 右:钱收窄(窄渠,金+红)——只抬起渠里的船,别处不动 -->
+  <text x="508" y="102" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#b07d33" text-anchor="middle">钱收窄</text>
+  <text x="508" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#7a6f5c" text-anchor="middle">一窝蜂挤向一个故事 · AI 还要砸钱</text>
+  <!-- 窄渠:一道上冲的金色水道 -->
+  <path d="M470 300 L 470 150 L 546 150 L 546 300 Z" fill="#f4ead2" stroke="#c8a96a" stroke-width="1.6"/>
+  <!-- 渠里的两条船被抬高 -->
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#33404f" text-anchor="middle">
+    <rect x="474" y="158" width="30" height="18" rx="3" fill="#c8a96a" stroke="#b07d33"/><text x="489" y="171" fill="#33404f">股票</text>
+    <rect x="512" y="158" width="30" height="18" rx="3" fill="#c8a96a" stroke="#b07d33"/><text x="527" y="171" fill="#33404f">芯片</text>
+  </g>
+  <text x="508" y="312" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">泊在渠里 · 井喷</text>
+  <!-- 渠外的比特币:趴在均线下,原地不动 -->
+  <line x1="566" y1="250" x2="648" y2="250" stroke="#a8453a" stroke-width="1.3" stroke-dasharray="5 5"/>
+  <text x="648" y="244" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="end">平均成本线</text>
+  <rect x="590" y="264" width="36" height="18" rx="3" fill="#eee2dd" stroke="#a8453a"/>
+  <text x="608" y="277" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">比特币</text>
+  <text x="608" y="300" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">泊在别处 · 原地不动</text>
+
+  <!-- 图例 -->
+  <text x="340" y="346" font-family="system-ui,sans-serif" font-size="11" fill="#7a6f5c" text-anchor="middle">同一批钱在哪儿,影子就往哪儿倒 · 相关性说断就断</text>
+</svg>
