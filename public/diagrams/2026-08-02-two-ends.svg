@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一场芯片短缺,一端记成收入,一端记成成本">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="38" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f" text-anchor="middle">同一场短缺,营收和成本是它的两面</text>
+
+  <!-- 中间:有限的一笔稀缺 -->
+  <rect x="278" y="150" width="124" height="60" rx="6" fill="#f3ecda" stroke="#b07d33" stroke-width="1.6"/>
+  <text x="340" y="176" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#b07d33" text-anchor="middle">被 AI 抢购的算力</text>
+  <text x="340" y="196" font-family="system-ui,sans-serif" font-size="10.5" fill="#7a6a44" text-anchor="middle">一笔有限的稀缺</text>
+
+  <!-- 左箭头:流向卖算力的一端 -->
+  <line x1="278" y1="180" x2="150" y2="180" stroke="#4f6b8a" stroke-width="2.4"/>
+  <polygon points="150,180 162,174 162,186" fill="#4f6b8a"/>
+  <text x="214" y="168" font-family="system-ui,sans-serif" font-size="10" fill="#4f6b8a" text-anchor="middle">流向</text>
+
+  <!-- 左端:卖算力 -->
+  <rect x="40" y="140" width="104" height="80" rx="6" fill="#eef2f6" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="92" y="166" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#33404f" text-anchor="middle">卖算力的一端</text>
+  <text x="92" y="184" font-family="system-ui,sans-serif" font-size="10" fill="#5b6b7d" text-anchor="middle">云 · 芯片厂</text>
+  <text x="92" y="205" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#4f6b8a" text-anchor="middle">记成收入</text>
+  <text x="92" y="248" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">股价 ↑</text>
+  <text x="92" y="268" font-family="'Noto Serif SC',serif" font-size="22" font-weight="700" fill="#4f6b8a" text-anchor="middle">＋</text>
+
+  <!-- 右箭头:流向用算力的一端 -->
+  <line x1="402" y1="180" x2="530" y2="180" stroke="#a8453a" stroke-width="2.4"/>
+  <polygon points="530,180 518,174 518,186" fill="#a8453a"/>
+  <text x="466" y="168" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">离开</text>
+
+  <!-- 右端:用算力 -->
+  <rect x="536" y="140" width="104" height="80" rx="6" fill="#f6ecea" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="588" y="166" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#33404f" text-anchor="middle">用算力的一端</text>
+  <text x="588" y="184" font-family="system-ui,sans-serif" font-size="10" fill="#8a5a52" text-anchor="middle">造终端设备</text>
+  <text x="588" y="205" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#a8453a" text-anchor="middle">记成成本</text>
+  <text x="588" y="248" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">股价 ↓</text>
+  <text x="588" y="268" font-family="'Noto Serif SC',serif" font-size="22" font-weight="700" fill="#a8453a" text-anchor="middle">－</text>
+
+  <!-- 底部配平线 -->
+  <line x1="92" y1="300" x2="588" y2="300" stroke="#ddd4c4" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="340" y="326" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#33404f" text-anchor="middle">同一场短缺,一头加号,一头减号 —— 没有裁判,始终配平</text>
+  <text x="340" y="346" font-family="system-ui,sans-serif" font-size="10" fill="#8a7f6a" text-anchor="middle">苹果付出去的成本,正是亚马逊赚进来的收入</text>
+</svg>

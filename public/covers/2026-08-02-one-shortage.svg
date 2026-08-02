@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:苹果付的成本,正是亚马逊赚的收入">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="46" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">苹果付的那笔成本,正是亚马逊赚的那笔收入</text>
+  <text x="48" y="70" font-family="system-ui,sans-serif" font-size="10.5" fill="#5f6b80">美东 7/31 · 同一个交易日 · 同一批被 AI 抢空的芯片</text>
+
+  <!-- 中间:一块有限的稀缺 -->
+  <rect x="300" y="150" width="80" height="30" rx="4" fill="#1c2330" stroke="#b07d33" stroke-width="1.3"/>
+  <text x="340" y="169" font-family="'Noto Serif SC',serif" font-size="11" fill="#c8a96a" text-anchor="middle">被抢空的芯片</text>
+
+  <!-- 左:亚马逊,记成收入,股价上行(金) -->
+  <path d="M300 158 L 150 120" fill="none" stroke="#c8a96a" stroke-width="1.4"/>
+  <path d="M96 172 L 190 150 L 260 96" fill="none" stroke="#c8a96a" stroke-width="3"/>
+  <circle cx="260" cy="96" r="4.5" fill="#c8a96a"/>
+  <text x="96" y="112" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">亚马逊 · 卖算力</text>
+  <text x="96" y="128" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">记成收入 · 井喷 <tspan fill="#c8a96a">＋</tspan></text>
+
+  <!-- 右:苹果,记成成本,股价下行(红) -->
+  <path d="M380 172 L 530 210" fill="none" stroke="#a8453a" stroke-width="1.4"/>
+  <path d="M420 150 L 500 200 L 584 236" fill="none" stroke="#a8453a" stroke-width="3"/>
+  <circle cx="584" cy="236" r="4.5" fill="#a8453a"/>
+  <text x="584" y="150" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a" text-anchor="end">苹果 · 用算力</text>
+  <text x="584" y="166" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="end"><tspan fill="#a8453a">－</tspan> 记成成本 · 挨刀</text>
+
+  <text x="340" y="288" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">同一场短缺,一头加号,一头减号 · 一涨一跌从不是谁胜谁负,是同一笔账的两端</text>
+</svg>
