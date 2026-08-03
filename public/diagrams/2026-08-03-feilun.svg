@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:囤币公司的反身性飞轮——溢价发股、买入比特币、账面上行、溢价自我兑现,四步顺时针成环;币跌破成本则同一台机器反向咬合">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <text x="40" y="40" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">一台只有油门、没有刹车的放大器</text>
+
+  <!-- 环 -->
+  <circle cx="278" cy="192" r="96" fill="none" stroke="#c8a96a" stroke-width="1.8"/>
+
+  <!-- 四个节点 -->
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#3f4653">
+    <circle cx="278" cy="96" r="4.6" fill="#c8a96a"/>
+    <text x="278" y="80" text-anchor="middle">① 股价溢价:1元的币,市场付1.2元</text>
+
+    <circle cx="374" cy="192" r="4.6" fill="#c8a96a"/>
+    <text x="392" y="188">② 增发新股</text>
+    <text x="392" y="204">募回现金</text>
+
+    <circle cx="278" cy="288" r="4.6" fill="#c8a96a"/>
+    <text x="278" y="312" text-anchor="middle">③ 买入更多比特币</text>
+
+    <circle cx="182" cy="192" r="4.6" fill="#c8a96a"/>
+    <text x="164" y="188" text-anchor="end">④ 每股背后</text>
+    <text x="164" y="204" text-anchor="end">的币变多</text>
+  </g>
+
+  <!-- 顺时针箭头 -->
+  <g fill="#c8a96a">
+    <path d="M347 118 L358 128 L345 131 Z"/>
+    <path d="M360 258 L349 268 L346 255 Z"/>
+    <path d="M209 266 L198 256 L211 253 Z"/>
+    <path d="M196 126 L207 116 L210 129 Z"/>
+  </g>
+
+  <text x="278" y="186" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#2b2b2b" text-anchor="middle">反身·正反馈</text>
+  <text x="278" y="207" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">左脚踩右脚</text>
+  <text x="278" y="224" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">越转越快</text>
+
+  <!-- 反向:币跌破成本 -->
+  <path d="M556 118 A 150 150 0 0 1 556 266" fill="none" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <path d="M556 118 L549 106 L562 108 Z" fill="#a8453a"/>
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">
+    <text x="512" y="176">币跌破成本</text>
+    <text x="512" y="194">溢价收窄</text>
+    <text x="512" y="212">同一台机器</text>
+    <text x="512" y="230">反着咬合</text>
+  </g>
+
+  <line x1="40" y1="332" x2="640" y2="332" stroke="#e3ded2" stroke-width="1"/>
+  <text x="40" y="351" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 涨时放大上涨,跌时放大下跌</text>
+</svg>

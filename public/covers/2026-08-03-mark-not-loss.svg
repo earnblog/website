@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:它没有亏钱,是比特币的价格记进了它的账本">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="46" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">那不是一家公司在亏钱,是比特币的价格,记进了账本</text>
+
+  <!-- 基线 -->
+  <line x1="88" y1="248" x2="624" y2="248" stroke="#3a4556" stroke-width="1.2"/>
+  <text x="92" y="86" font-family="system-ui,sans-serif" font-size="10.5" fill="#5f6b80">2026 二季度末 · 按市价重估的一刻</text>
+
+  <!-- 成本线(金虚线),高高在上 -->
+  <line x1="88" y1="118" x2="624" y2="118" stroke="#c8a96a" stroke-width="1.3" stroke-dasharray="5 5"/>
+  <text x="624" y="112" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a" text-anchor="end">买币成本线 · 一枚七万五</text>
+
+  <!-- 比特币市价:从成本线上方滑落到下方(蓝→红) -->
+  <path d="M96 104 L 230 122 L 380 168 L 560 206" fill="none" stroke="#a8453a" stroke-width="3"/>
+  <circle cx="560" cy="206" r="4.5" fill="#a8453a"/>
+  <text x="548" y="224" font-family="system-ui,sans-serif" font-size="11.5" fill="#c06a5e" text-anchor="end">市价滑到成本线下 · 账面转红</text>
+
+  <!-- 账本里的一行红字 -->
+  <rect x="360" y="150" width="150" height="30" rx="3" fill="none" stroke="#a8453a" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <text x="435" y="170" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">利润表:−八十多亿</text>
+
+  <!-- 底部标注 -->
+  <text x="356" y="288" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">一分钱没出门 · 那笔红字记的不是过去,是此刻的币价</text>
+</svg>
