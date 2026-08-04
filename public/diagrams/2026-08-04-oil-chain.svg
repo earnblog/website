@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:一条从油价出发的链子,油价往哪动整串就往哪动;而三十年期国债那更深的一票,没跟着一天的油价掉头">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="36" font-family="'Noto Serif SC',serif" font-size="18" font-weight="700" fill="#33404f" text-anchor="middle">一条链子,挂在油价这一个钩子上</text>
+  <text x="340" y="58" font-family="system-ui,sans-serif" font-size="12" fill="#8a7f6a" text-anchor="middle">油价往哪动,这一整串就往哪动 —— 涨时放大恐慌,跌时放大狂欢</text>
+
+  <!-- 四个节点 -->
+  <g font-family="'Noto Serif SC',serif" font-size="13" fill="#33404f" text-anchor="middle">
+    <rect x="34" y="120" width="112" height="52" rx="5" fill="#f4ead2" stroke="#c8a96a" stroke-width="1.6"/>
+    <text x="90" y="151">油价</text>
+    <rect x="196" y="120" width="132" height="52" rx="5" fill="#eef2f6" stroke="#4f6b8a" stroke-width="1.4"/>
+    <text x="262" y="145">通胀预期</text>
+    <text x="262" y="163" font-family="system-ui,sans-serif" font-size="10.5" fill="#7a6f5c">市场的读数</text>
+    <rect x="378" y="120" width="112" height="52" rx="5" fill="#eef2f6" stroke="#4f6b8a" stroke-width="1.4"/>
+    <text x="434" y="151">加息押注</text>
+    <rect x="540" y="120" width="128" height="52" rx="5" fill="#eef2f6" stroke="#4f6b8a" stroke-width="1.4"/>
+    <text x="604" y="145">长债收益率</text>
+    <text x="604" y="163" font-family="system-ui,sans-serif" font-size="10.5" fill="#7a6f5c">·股票的涨跌</text>
+  </g>
+
+  <!-- 双向箭头 -->
+  <defs>
+    <marker id="r" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#8a7f6a"/></marker>
+    <marker id="l" markerWidth="9" markerHeight="9" refX="2" refY="4.5" orient="auto"><path d="M9 0 L0 4.5 L9 9 z" fill="#8a7f6a"/></marker>
+  </defs>
+  <g stroke="#8a7f6a" stroke-width="1.5">
+    <line x1="152" y1="146" x2="190" y2="146" marker-end="url(#r)" marker-start="url(#l)"/>
+    <line x1="334" y1="146" x2="372" y2="146" marker-end="url(#r)" marker-start="url(#l)"/>
+    <line x1="496" y1="146" x2="534" y2="146" marker-end="url(#r)" marker-start="url(#l)"/>
+  </g>
+
+  <!-- 两个方向的注解 -->
+  <text x="340" y="206" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a" text-anchor="middle">油涨那几周 → 整串上冲 → 从等着降两三次息,反手押加息 → 股票挨砸</text>
+  <text x="340" y="228" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33" text-anchor="middle">油跌这一天 → 整串回落 → 加息的赌注松了口 → 股票井喷</text>
+
+  <line x1="60" y1="256" x2="620" y2="256" stroke="#ddd4c4" stroke-width="1.2"/>
+
+  <!-- 更深的一票:30年期国债,高位,没跟着一天的油价掉头 -->
+  <text x="340" y="284" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#a8453a" text-anchor="middle">而更深、更长的那一票,没跟着一天的油价掉头</text>
+  <line x1="70" y1="312" x2="610" y2="306" stroke="#a8453a" stroke-width="3"/>
+  <line x1="360" y1="306" x2="610" y2="306" stroke="#a8453a" stroke-width="1.1" stroke-dasharray="5 5"/>
+  <circle cx="610" cy="306" r="4" fill="#a8453a"/>
+  <text x="70" y="330" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">三十年期国债 · 押的是往后三十年的通胀与信用</text>
+  <text x="610" y="330" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="end">爬到2007年以来最高</text>
+  <text x="340" y="350" font-family="system-ui,sans-serif" font-size="10.5" fill="#7a6f5c" text-anchor="middle">上面那串一天一个样;这一票爬了近二十年,才到今天这位置</text>
+</svg>

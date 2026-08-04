@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:市场读的不是通胀,是一桶油今天的价">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">市场盯着最跳的那根线读通胀,却把最深的一票晾在一边</text>
+
+  <line x1="88" y1="252" x2="624" y2="252" stroke="#3a4556" stroke-width="1.2"/>
+
+  <!-- 30年期国债:高位、近乎平、爬了十九年,没跟着一天的油价掉头 -->
+  <line x1="96" y1="98" x2="624" y2="86" stroke="#a8453a" stroke-width="3"/>
+  <line x1="360" y1="86" x2="624" y2="86" stroke="#a8453a" stroke-width="1.1" stroke-dasharray="5 5"/>
+  <text x="624" y="78" font-family="system-ui,sans-serif" font-size="10.5" fill="#c06a5e" text-anchor="end">30年期国债 · 2007年以来最高 · 没掉头</text>
+
+  <!-- 油价:一条头条就掀翻它,一天上蹿下跳,末端一记暴跌 -->
+  <path d="M96 176 L140 150 L172 200 L212 138 L252 206 L300 150 L350 200 L398 152 L448 192 L500 150 L544 168 L600 236" fill="none" stroke="#c8a96a" stroke-width="2.6"/>
+  <circle cx="600" cy="236" r="4.5" fill="#c8a96a"/>
+  <text x="588" y="230" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a" text-anchor="end">油价 · 这天跌约二十分之一</text>
+
+  <!-- 市场读数:一只箭头把油价那根线读成"通胀" -->
+  <text x="150" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">市场:把这根线读成"通胀"</text>
+  <path d="M182 126 L214 148" stroke="#4f6b8a" stroke-width="1.3" fill="none" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#4f6b8a"/></marker></defs>
+
+  <text x="356" y="286" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">一天一个样的是油价;爬了十九年才到今天这位置的,才是那片天气</text>
+</svg>
