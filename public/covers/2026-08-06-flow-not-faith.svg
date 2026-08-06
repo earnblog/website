@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:钱从以太的基金退出来,挤进比特币的基金,同一池子换了个地方停">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">看着像信仰涌进比特币,拆开是同一池子的钱换了个地方停</text>
+
+  <!-- 左:以太的基金 —— 水位往下退,红色流出 -->
+  <rect x="96" y="120" width="120" height="120" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+  <rect x="96" y="196" width="120" height="44" fill="#3a4556" opacity="0.55"/>
+  <line x1="96" y1="196" x2="216" y2="196" stroke="#8a94a6" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="156" y="258" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a94a6" text-anchor="middle">以太的基金 · 在往外退</text>
+  <text x="156" y="112" font-family="system-ui,sans-serif" font-size="10.5" fill="#a8453a" text-anchor="middle">流出</text>
+  <path d="M156 118 L156 100" stroke="#a8453a" stroke-width="2.4"/>
+  <path d="M150 106 L156 98 L162 106" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+
+  <!-- 右:比特币的基金 —— 水位往上涨,金色流入 -->
+  <rect x="464" y="120" width="120" height="120" fill="none" stroke="#c8a96a" stroke-width="1.6"/>
+  <rect x="464" y="150" width="120" height="90" fill="#c8a96a" opacity="0.22"/>
+  <line x1="464" y1="150" x2="584" y2="150" stroke="#c8a96a" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="524" y="258" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a" text-anchor="middle">比特币的基金 · 在往里涨</text>
+  <text x="524" y="112" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a" text-anchor="middle">流入</text>
+  <path d="M524 100 L524 118" stroke="#c8a96a" stroke-width="2.4"/>
+  <path d="M518 112 L524 120 L530 112" fill="none" stroke="#c8a96a" stroke-width="2.4"/>
+
+  <!-- 中间的弧:同一池子的钱,从左搬到右 -->
+  <path d="M222 180 C300 132, 380 132, 458 180" fill="none" stroke="#b07d33" stroke-width="2.2" stroke-dasharray="1 0"/>
+  <path d="M450 172 L460 181 L448 186" fill="none" stroke="#b07d33" stroke-width="2.2"/>
+  <text x="340" y="150" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" text-anchor="middle">同一池子的钱</text>
+  <text x="340" y="205" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">一进一出,方向正相反</text>
+
+  <text x="340" y="286" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">净流入不是信仰在涌进来,是钱换了个地方停;旋转门只数进门人数,不做表决</text>
+</svg>

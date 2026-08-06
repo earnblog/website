@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一池子的钱,从以太的基金流出,流进比特币的基金,一进一出方向相反">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="44" font-family="'Noto Serif SC',serif" font-size="18" font-weight="700" fill="#33404f">一进一出:不是信仰涌进来,是钱换了个地方停</text>
+
+  <!-- 中间:同一池子的钱 -->
+  <ellipse cx="340" cy="192" rx="86" ry="52" fill="#eef0e6" stroke="#c8a96a" stroke-width="2"/>
+  <text x="340" y="188" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#b07d33" text-anchor="middle">同一池子的钱</text>
+  <text x="340" y="210" font-family="system-ui,sans-serif" font-size="11.5" fill="#7a8290" text-anchor="middle">存量,再分配</text>
+  <text x="340" y="266" font-family="system-ui,sans-serif" font-size="11.5" fill="#7a8290" text-anchor="middle">旋转门只数进门人数,不做表决</text>
+
+  <!-- 左:以太的基金(流出,红) -->
+  <rect x="52" y="140" width="150" height="104" rx="4" fill="#fff" stroke="#a8453a" stroke-width="1.8"/>
+  <rect x="52" y="212" width="150" height="32" rx="0" fill="#a8453a" opacity="0.16"/>
+  <line x1="52" y1="212" x2="202" y2="212" stroke="#a8453a" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="127" y="128" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#a8453a" text-anchor="middle">以太的基金</text>
+  <text x="127" y="264" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a" text-anchor="middle">净流出 · 水位在退</text>
+  <!-- 箭头:以太 → 中间池 -->
+  <path d="M206 180 C240 176, 250 186, 252 190" fill="none" stroke="#a8453a" stroke-width="2.6"/>
+  <path d="M246 182 L254 191 L243 193" fill="none" stroke="#a8453a" stroke-width="2.6"/>
+  <text x="228" y="164" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">流出</text>
+
+  <!-- 右:比特币的基金(流入,金) -->
+  <rect x="478" y="140" width="150" height="104" rx="4" fill="#fff" stroke="#b07d33" stroke-width="1.8"/>
+  <rect x="478" y="176" width="150" height="68" rx="0" fill="#c8a96a" opacity="0.28"/>
+  <line x1="478" y1="176" x2="628" y2="176" stroke="#b07d33" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="553" y="128" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#b07d33" text-anchor="middle">比特币的基金</text>
+  <text x="553" y="264" font-family="system-ui,sans-serif" font-size="11.5" fill="#b07d33" text-anchor="middle">净流入 · 水位在涨</text>
+  <!-- 箭头:中间池 → 比特币 -->
+  <path d="M428 190 C430 186, 440 176, 474 180" fill="none" stroke="#b07d33" stroke-width="2.6"/>
+  <path d="M466 172 L476 181 L465 184" fill="none" stroke="#b07d33" stroke-width="2.6"/>
+  <text x="452" y="164" font-family="system-ui,sans-serif" font-size="11" fill="#b07d33" text-anchor="middle">流入</text>
+
+  <!-- 底部注解 -->
+  <line x1="40" y1="304" x2="640" y2="304" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="40" y="328" font-family="system-ui,sans-serif" font-size="12.5" fill="#33404f">要是净流入真是"对加密货币的信仰",它不该在两个币之间指着相反的方向。</text>
+  <text x="40" y="348" font-family="system-ui,sans-serif" font-size="12.5" fill="#7a8290">一进一出,是同一池子的钱在搬家;不是新增的相信涌进这个门类。增量的信念,和存量的搬运,长得太像。</text>
+</svg>
