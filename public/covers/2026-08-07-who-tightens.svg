@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:市场利率一路自己往上爬,末端一枚美联储的印章落下,只是替早已抬起的线盖个章">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="46" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">动手把钱收紧的是市场,美联储只是最后落下的那一枚印章</text>
+
+  <line x1="88" y1="242" x2="624" y2="242" stroke="#3a4556" stroke-width="1.2"/>
+
+  <!-- 市场利率:金线,一路自己爬升 -->
+  <path d="M96 214 C 220 196, 340 154, 452 120 C 496 106, 520 100, 540 98" fill="none" stroke="#c8a96a" stroke-width="3"/>
+  <text x="150" y="188" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">市场利率 · 几百万张赌注一分一分抬上去</text>
+
+  <!-- 利率敏感资产:蓝虚线,随折扣变大一路下滑 -->
+  <path d="M120 150 C 240 168, 360 196, 520 220" fill="none" stroke="#4f6b8a" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <text x="356" y="212" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a">利率敏感资产 · 不等议息,已一路在跌</text>
+
+  <!-- 美联储的印章:红,落在早已抬起的金线末端 -->
+  <rect x="512" y="60" width="96" height="30" rx="3" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="560" y="80" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#c06a5e" text-anchor="middle">美联储</text>
+  <path d="M560 90 L544 96" stroke="#a8453a" stroke-width="1.4" fill="none" marker-end="url(#a)"/>
+  <text x="608" y="112" font-family="system-ui,sans-serif" font-size="10.5" fill="#c06a5e" text-anchor="end">落章 · 追认</text>
+  <circle cx="540" cy="98" r="5" fill="#c8a96a"/>
+
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#a8453a"/></marker></defs>
+
+  <text x="356" y="280" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">收紧沿着整条金线一路发生;那枚印章落下时,现场早已被市场自己收紧过了</text>
+</svg>
