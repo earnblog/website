@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:左侧现金驱动的正反馈环,右侧多接入英伟达代客户垫债一环的信用驱动正反馈环,两环对照,标注抵押品缩水会同速反向拖累右环">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">两个环转得一样快,支撑它们的东西不一样</text>
+
+  <!-- 左环:早期·现金驱动 -->
+  <text x="168" y="66" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#4f6b8a" text-anchor="middle">早期 · 现实驱动</text>
+  <circle cx="168" cy="180" r="86" fill="none" stroke="#4f6b8a" stroke-width="2"/>
+  <text x="168" y="104" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">客户现金</text>
+  <text x="248" y="184" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">芯片订单</text>
+  <text x="168" y="264" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">营收 · 资本开支</text>
+  <text x="88" y="184" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">更多订单</text>
+  <path d="M 168 118 A 86 86 0 0 1 226 152" stroke="#4f6b8a" stroke-width="2" fill="none" marker-end="url(#m1)"/>
+  <path d="M 226 208 A 86 86 0 0 1 168 242" stroke="#4f6b8a" stroke-width="2" fill="none" marker-end="url(#m1)"/>
+  <path d="M 110 208 A 86 86 0 0 1 110 152" stroke="#4f6b8a" stroke-width="2" fill="none" marker-end="url(#m1)"/>
+
+  <!-- 右环:现在·信用驱动,多一节点 -->
+  <text x="512" y="66" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#a8453a" text-anchor="middle">现在 · 信用驱动</text>
+  <circle cx="512" cy="180" r="86" fill="none" stroke="#c8a96a" stroke-width="2"/>
+  <text x="512" y="100" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">英伟达代客户垫债</text>
+  <text x="586" y="140" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">客户借更多钱</text>
+  <text x="586" y="228" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">买更多芯片</text>
+  <text x="512" y="264" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">营收 · 抵押品估值</text>
+  <text x="438" y="228" font-family="system-ui,sans-serif" font-size="10.5" fill="#b07d33" text-anchor="middle">更大规模发债</text>
+  <path d="M 550 108 A 86 86 0 0 1 570 158" stroke="#c8a96a" stroke-width="2" fill="none" marker-end="url(#m2)"/>
+  <path d="M 570 202 A 86 86 0 0 1 550 252" stroke="#c8a96a" stroke-width="2" fill="none" marker-end="url(#m2)"/>
+  <path d="M 474 252 A 86 86 0 0 1 454 202" stroke="#c8a96a" stroke-width="2" fill="none" marker-end="url(#m2)"/>
+  <path d="M 454 158 A 86 86 0 0 1 474 108" stroke="#c8a96a" stroke-width="2" fill="none" marker-end="url(#m2)"/>
+
+  <defs>
+    <marker id="m1" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#4f6b8a"/></marker>
+    <marker id="m2" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#c8a96a"/></marker>
+  </defs>
+
+  <line x1="40" y1="318" x2="640" y2="318" stroke="#e3ded2" stroke-width="1"/>
+  <text x="340" y="338" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280" text-anchor="middle">左环靠客户自有现金转动;右环多接入"代客户垫债"一环,靠算力抵押品的估值转动</text>
+  <text x="340" y="354" font-family="system-ui,sans-serif" font-size="10.5" fill="#a8453a" text-anchor="middle">抵押品一旦缩水,右环会用同样的速度,反过来拖累每一环</text>
+</svg>

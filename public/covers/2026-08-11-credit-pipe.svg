@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一根管子从现金水源接到芯片,中段被接入一段信用弯管,标注英伟达搭的桥">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="46" font-family="'Noto Serif SC',serif" font-size="16.5" font-weight="700" fill="#c8a96a">跌的不是需求,是那根一直藏着的信用管子</text>
+
+  <!-- 左:早期,现金直连 -->
+  <text x="60" y="96" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">早期</text>
+  <rect x="56" y="108" width="70" height="34" rx="4" fill="none" stroke="#4f6b8a" stroke-width="1.4"/>
+  <text x="91" y="129" font-family="'Noto Serif SC',serif" font-size="12" fill="#7f97ae" text-anchor="middle">现金</text>
+  <path d="M126 125 L232 125" stroke="#4f6b8a" stroke-width="3" fill="none" marker-end="url(#b)"/>
+
+  <!-- 中段:信用弯管接入 -->
+  <path d="M232 125 C 280 125, 280 190, 340 190 C 400 190, 400 125, 452 125" fill="none" stroke="#c8a96a" stroke-width="3.4"/>
+  <text x="340" y="215" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#c8a96a" text-anchor="middle">英伟达搭的信用弯管</text>
+  <text x="340" y="232" font-family="system-ui,sans-serif" font-size="10" fill="#a08a5e" text-anchor="middle">算力作抵押 · 特殊目的实体发债</text>
+
+  <!-- 右:芯片 -->
+  <path d="M452 125 L558 125" stroke="#c8a96a" stroke-width="3" fill="none" marker-end="url(#g)"/>
+  <rect x="558" y="108" width="70" height="34" rx="4" fill="none" stroke="#c8a96a" stroke-width="1.4"/>
+  <text x="593" y="129" font-family="'Noto Serif SC',serif" font-size="12" fill="#c8a96a" text-anchor="middle">芯片</text>
+
+  <defs>
+    <marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#4f6b8a"/></marker>
+    <marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#c8a96a"/></marker>
+  </defs>
+
+  <text x="340" y="272" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6" text-anchor="middle">管子看着还是那根管子,水源已经从现金换成了信用</text>
+</svg>
