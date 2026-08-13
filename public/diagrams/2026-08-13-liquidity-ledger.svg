@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:一根标着流动性宽松预期的水管向下分出三条支流,黄金和AI股两条通畅直抵价格柱,比特币这条中间多接一道红色闸门,标注先偿还6月清算欠下的杠杆,水先填坑,价格柱因此矮了一截">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">同一根水管,三条支流,水位却不一样高</text>
+
+  <!-- 源头 -->
+  <text x="340" y="66" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">同一场流动性宽松预期</text>
+  <rect x="280" y="76" width="120" height="24" rx="3" fill="none" stroke="#8a94a6" stroke-width="1.4"/>
+  <path d="M340 100 L340 118 M170 118 L510 118 M170 118 L170 140 M340 118 L340 140 M510 118 L510 140" stroke="#8a94a6" stroke-width="1.6" fill="none"/>
+
+  <!-- 黄金支流 -->
+  <path d="M170 140 L170 220" stroke="#b07d33" stroke-width="3.4" fill="none" marker-end="url(#mg)"/>
+  <text x="170" y="236" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#b07d33" text-anchor="middle">黄金</text>
+  <rect x="146" y="244" width="48" height="70" fill="#c8a96a"/>
+  <text x="170" y="330" font-family="system-ui,sans-serif" font-size="10" fill="#8a7248" text-anchor="middle">无仓位要平·账本干净</text>
+
+  <!-- AI股支流 -->
+  <path d="M340 140 L340 220" stroke="#4f6b8a" stroke-width="3.4" fill="none" marker-end="url(#mb)"/>
+  <text x="340" y="236" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#4f6b8a" text-anchor="middle">AI股</text>
+  <rect x="316" y="238" width="48" height="76" fill="#4f6b8a"/>
+  <text x="340" y="330" font-family="system-ui,sans-serif" font-size="10" fill="#5c7086" text-anchor="middle">现金订单撑着·正反馈顺畅</text>
+
+  <!-- 比特币支流,闸门截流 -->
+  <path d="M510 140 L510 172" stroke="#a8453a" stroke-width="3.4" fill="none"/>
+  <rect x="484" y="170" width="52" height="20" rx="2" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="510" y="164" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">闸门:先偿还6月清算的杠杆</text>
+  <path d="M510 190 L510 220" stroke="#a8453a" stroke-width="3.4" fill="none" marker-end="url(#mr)"/>
+  <text x="510" y="236" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#a8453a" text-anchor="middle">比特币</text>
+  <rect x="486" y="284" width="48" height="30" fill="#a8453a"/>
+  <text x="510" y="330" font-family="system-ui,sans-serif" font-size="10" fill="#8a5850" text-anchor="middle">水先填坑·价格柱矮了一截</text>
+
+  <defs>
+    <marker id="mg" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#b07d33"/></marker>
+    <marker id="mb" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#4f6b8a"/></marker>
+    <marker id="mr" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#a8453a"/></marker>
+  </defs>
+
+  <line x1="40" y1="336" x2="640" y2="336" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="340" y="352" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280" text-anchor="middle">三条支流的水源相同,只是比特币那条,得先把6月的账还清,才能把水留给价格</text>
+</svg>

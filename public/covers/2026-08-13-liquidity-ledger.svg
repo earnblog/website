@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一根标着流动性宽松预期的水管分出三条支流,黄金和AI股两条通畅,比特币这条中间多接一道闸门,标注先偿还6月清算欠下的杠杆">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">黄金AI股在收钱,比特币还在还账</text>
+
+  <!-- 源头水管 -->
+  <text x="48" y="72" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">同一场流动性宽松预期</text>
+  <path d="M60 84 L60 108" stroke="#8a94a6" stroke-width="2.4" fill="none"/>
+  <path d="M60 108 L 168 108 M 60 108 L 340 108 M 60 108 L 560 108" stroke="#8a94a6" stroke-width="2" fill="none"/>
+
+  <!-- 黄金支流 -->
+  <path d="M168 108 L168 178" stroke="#c8a96a" stroke-width="4" fill="none" marker-end="url(#g)"/>
+  <rect x="140" y="190" width="56" height="66" fill="#c8a96a" opacity="0.85"/>
+  <text x="168" y="276" font-family="'Noto Serif SC',serif" font-size="12" fill="#c8a96a" text-anchor="middle">黄金</text>
+
+  <!-- AI股支流 -->
+  <path d="M340 108 L340 178" stroke="#4f6b8a" stroke-width="4" fill="none" marker-end="url(#b)"/>
+  <rect x="312" y="188" width="56" height="68" fill="#4f6b8a" opacity="0.9"/>
+  <text x="340" y="276" font-family="'Noto Serif SC',serif" font-size="12" fill="#7f97ae" text-anchor="middle">AI股</text>
+
+  <!-- 比特币支流:中途被闸门截走 -->
+  <path d="M560 108 L560 150" stroke="#a8453a" stroke-width="4" fill="none"/>
+  <rect x="536" y="148" width="48" height="16" rx="2" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="560" y="140" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">先偿还6月清算的杠杆</text>
+  <path d="M560 164 L560 228" stroke="#a8453a" stroke-width="4" fill="none" marker-end="url(#r)"/>
+  <rect x="532" y="230" width="56" height="26" fill="#a8453a" opacity="0.85"/>
+  <text x="560" y="276" font-family="'Noto Serif SC',serif" font-size="12" fill="#c07a70" text-anchor="middle">比特币</text>
+
+  <defs>
+    <marker id="g" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#c8a96a"/></marker>
+    <marker id="b" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#4f6b8a"/></marker>
+    <marker id="r" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#a8453a"/></marker>
+  </defs>
+</svg>
