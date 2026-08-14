@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:一根横梁被两股力量撑平,左边秤盘写能源食品贸易服务,箭头向下标退烧;右边秤盘写核心PPI资产管理服务费,箭头向上标发烧;横梁正中标环比打平;下方虚线指向8月26日核心PCE">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <text x="40" y="40" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">横梁是平的,不代表两头没有重量</text>
+
+  <!-- 支点 -->
+  <path d="M340 200 L320 232 L360 232 Z" fill="#9a927f"/>
+  <line x1="300" y1="232" x2="380" y2="232" stroke="#9a927f" stroke-width="2"/>
+
+  <!-- 横梁 -->
+  <path d="M120 168 C 220 190, 260 200, 340 200 C 420 200, 460 190, 560 168" stroke="#b07d33" stroke-width="3" fill="none"/>
+
+  <!-- 中点净数标注 -->
+  <rect x="284" y="128" width="112" height="34" rx="4" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <text x="340" y="150" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#b07d33" text-anchor="middle">PPI环比:打平</text>
+  <path d="M340 162 L340 188" stroke="#b07d33" stroke-width="1.4" fill="none"/>
+
+  <!-- 左盘:退烧 -->
+  <path d="M120 168 L120 208" stroke="#4f6b8a" stroke-width="2" fill="none"/>
+  <path d="M76 208 L164 208 L150 240 L90 240 Z" fill="#4f6b8a" opacity="0.85"/>
+  <text x="120" y="264" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">能源 · 食品</text>
+  <text x="120" y="280" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">贸易服务</text>
+  <text x="120" y="298" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a" text-anchor="middle">↓ 退烧,拉着总数往下走</text>
+
+  <!-- 右盘:发烧 -->
+  <path d="M560 168 L560 200" stroke="#a8453a" stroke-width="2" fill="none"/>
+  <path d="M516 200 L604 200 L590 232 L530 232 Z" fill="#a8453a" opacity="0.9"/>
+  <text x="560" y="256" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a8453a" text-anchor="middle">核心PPI</text>
+  <text x="560" y="272" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a8453a" text-anchor="middle">资产管理服务费 +6.5%</text>
+  <text x="560" y="290" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">↑ 发烧,环比+0.4%</text>
+
+  <line x1="40" y1="316" x2="640" y2="316" stroke="#e3ded2" stroke-width="1"/>
+  <text x="40" y="336" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 净数是相抵之后的结果,不是没有天气发生</text>
+  <text x="40" y="352" font-family="system-ui,sans-serif" font-size="10.5" fill="#9a927f">8月26日核心PCE公布,这支发烧的探针躲不过去 →</text>
+</svg>

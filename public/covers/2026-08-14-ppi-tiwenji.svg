@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一根横梁被两股力量在正中间撑平,左边秤盘写能源食品贸易服务箭头向下标退烧,右边秤盘写核心PPI资产管理服务费箭头向上标发烧,横梁正中标环比打平">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">PPI不是退烧,是体温计被做平了</text>
+  <text x="48" y="68" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-13 · 七月PPI · 一支退烧,一支发烧</text>
+
+  <!-- 支点与横梁 -->
+  <path d="M340 176 L322 202 L358 202 Z" fill="#8a94a6"/>
+  <path d="M150 152 C 230 168, 260 176, 340 176 C 420 176, 450 168, 530 152" stroke="#c8a96a" stroke-width="3" fill="none"/>
+
+  <!-- 中点净数标注 -->
+  <rect x="296" y="118" width="88" height="28" rx="4" fill="none" stroke="#c8a96a" stroke-width="1.4"/>
+  <text x="340" y="137" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#c8a96a" text-anchor="middle">环比:打平</text>
+  <path d="M340 146 L340 168" stroke="#c8a96a" stroke-width="1.4" fill="none"/>
+
+  <!-- 左盘:退烧 -->
+  <path d="M150 152 L150 196" stroke="#4f6b8a" stroke-width="2" fill="none"/>
+  <path d="M112 196 L188 196 L176 224 L124 224 Z" fill="#4f6b8a" opacity="0.85"/>
+  <text x="150" y="246" font-family="'Noto Serif SC',serif" font-size="12" fill="#7f97ae" text-anchor="middle">能源·食品·贸易服务</text>
+  <text x="150" y="262" font-family="system-ui,sans-serif" font-size="10.5" fill="#7f97ae" text-anchor="middle">↓ 退烧</text>
+
+  <!-- 右盘:发烧 -->
+  <path d="M530 152 L530 188" stroke="#a8453a" stroke-width="2" fill="none"/>
+  <path d="M492 188 L568 188 L556 216 L504 216 Z" fill="#a8453a" opacity="0.9"/>
+  <text x="530" y="238" font-family="'Noto Serif SC',serif" font-size="12" fill="#c07a70" text-anchor="middle">核心PPI·资产管理服务费</text>
+  <text x="530" y="254" font-family="system-ui,sans-serif" font-size="10.5" fill="#c07a70" text-anchor="middle">↑ 发烧 +0.4%</text>
+
+  <line x1="48" y1="272" x2="632" y2="272" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="290" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">横梁看着是平的,两头却各自在使劲</text>
+</svg>
