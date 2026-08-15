@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:四个节点首尾相接成环,①零售转弱指向②降息预期升温,②指向③贴现率下调撑住估值,③指向④指数只跌0.2%,④用箭头绕回①标注经济没那么糟,中心写正反馈,没人回头核对控制组这一项">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="40" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">用结果证明原因的一个圈</text>
+  <text x="40" y="62" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b6b6b">没人回头核对那把真正转弱的尺子——零售控制组</text>
+
+  <!-- 中心标注 -->
+  <circle cx="340" cy="200" r="46" fill="none" stroke="#c8a96a" stroke-width="1.6" stroke-dasharray="3,3"/>
+  <text x="340" y="196" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#b07d33" text-anchor="middle">正反馈</text>
+  <text x="340" y="212" font-family="system-ui,sans-serif" font-size="9.5" fill="#b07d33" text-anchor="middle">自我验证</text>
+
+  <!-- 四个节点:上下左右 -->
+  <!-- ①上:零售转弱 -->
+  <rect x="270" y="60" width="140" height="46" rx="4" fill="#a8453a" opacity="0.14" stroke="#a8453a" stroke-width="1.4"/>
+  <text x="340" y="80" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#8a3128" text-anchor="middle">①零售转弱</text>
+  <text x="340" y="96" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a3128" text-anchor="middle">控制组环比-0.4%</text>
+
+  <!-- ②右:降息预期升温 -->
+  <rect x="470" y="177" width="150" height="46" rx="4" fill="#4f6b8a" opacity="0.14" stroke="#4f6b8a" stroke-width="1.4"/>
+  <text x="545" y="197" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#385170" text-anchor="middle">②降息预期升温</text>
+  <text x="545" y="213" font-family="system-ui,sans-serif" font-size="9.5" fill="#385170" text-anchor="middle">贴现率被压低</text>
+
+  <!-- ③下:估值撑住,指数抗跌 -->
+  <rect x="270" y="254" width="140" height="46" rx="4" fill="#c8a96a" opacity="0.18" stroke="#b07d33" stroke-width="1.4"/>
+  <text x="340" y="274" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#8a6423" text-anchor="middle">③指数只跌0.2%</text>
+  <text x="340" y="290" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a6423" text-anchor="middle">估值先被托住</text>
+
+  <!-- ④左:被读成经济没事 -->
+  <rect x="60" y="177" width="150" height="46" rx="4" fill="#33404f" opacity="0.12" stroke="#33404f" stroke-width="1.4"/>
+  <text x="135" y="197" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#33404f" text-anchor="middle">④读成"没那么糟"</text>
+  <text x="135" y="213" font-family="system-ui,sans-serif" font-size="9.5" fill="#33404f" text-anchor="middle">反过来验证①的乐观</text>
+
+  <!-- 弧形箭头连接,顺时针 ①→②→③→④→① -->
+  <path d="M405 96 A 210 210 0 0 1 500 185" stroke="#8a94a6" stroke-width="2" fill="none" marker-end="url(#a1)"/>
+  <path d="M540 224 A 210 210 0 0 1 400 262" stroke="#8a94a6" stroke-width="2" fill="none" marker-end="url(#a1)"/>
+  <path d="M275 268 A 210 210 0 0 1 148 224" stroke="#8a94a6" stroke-width="2" fill="none" marker-end="url(#a1)"/>
+  <path d="M138 176 A 210 210 0 0 1 278 100" stroke="#8a94a6" stroke-width="2" fill="none" marker-end="url(#a1)"/>
+
+  <defs>
+    <marker id="a1" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto"><path d="M0 0 L8 0 L4 8 z" fill="#8a94a6"/></marker>
+  </defs>
+</svg>

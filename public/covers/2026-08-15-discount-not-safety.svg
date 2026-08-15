@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一架天平,左边托盘写分母贴现率正在轻轻上浮变便宜被市场稳稳接住,右边托盘写分子增长正在下沉却几乎没人称重,中间指针只多偏了0.2格像是什么都没发生">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">便宜的是贴现率,没打折的是安全边际</text>
+  <text x="48" y="68" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-15 · 零售转弱,标普只跌0.2%出头</text>
+
+  <!-- 天平支架 -->
+  <path d="M340 92 L340 130" stroke="#8a94a6" stroke-width="2.4" fill="none"/>
+  <circle cx="340" cy="88" r="4.5" fill="#8a94a6"/>
+  <!-- 横梁:略微向左下倾斜,右重左轻 -->
+  <path d="M170 150 L 340 130 L 510 178" stroke="#8a94a6" stroke-width="2.6" fill="none"/>
+
+  <!-- 左托盘:贴现率(变便宜,上浮) -->
+  <path d="M170 150 L170 186" stroke="#4f6b8a" stroke-width="2" fill="none"/>
+  <path d="M132 186 Q170 210 208 186" stroke="#4f6b8a" stroke-width="2.4" fill="none"/>
+  <rect x="130" y="186" width="80" height="10" fill="#4f6b8a" opacity="0.85"/>
+  <text x="170" y="222" font-family="'Noto Serif SC',serif" font-size="12" fill="#7f97ae" text-anchor="middle">分母·贴现率</text>
+  <text x="170" y="240" font-family="system-ui,sans-serif" font-size="10" fill="#7f97ae" text-anchor="middle">降息预期压低,变便宜</text>
+  <path d="M170 176 L164 160 M170 176 L176 160" stroke="#4f6b8a" stroke-width="2"/>
+
+  <!-- 右托盘:增长(下沉,几乎没人称重) -->
+  <path d="M510 178 L510 226" stroke="#a8453a" stroke-width="2" fill="none"/>
+  <path d="M468 226 Q510 254 552 226" stroke="#a8453a" stroke-width="2.4" fill="none"/>
+  <rect x="466" y="226" width="88" height="12" fill="#a8453a" opacity="0.85"/>
+  <text x="510" y="266" font-family="'Noto Serif SC',serif" font-size="12" fill="#c07a70" text-anchor="middle">分子·增长</text>
+  <text x="510" y="284" font-family="system-ui,sans-serif" font-size="10" fill="#c07a70" text-anchor="middle">零售控制组转负,在下沉</text>
+  <path d="M510 200 L504 216 M510 200 L516 216" stroke="#a8453a" stroke-width="2"/>
+
+  <!-- 指针刻度:几乎没变 -->
+  <text x="340" y="112" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a" text-anchor="middle">指数只挪了0.2%</text>
+</svg>
