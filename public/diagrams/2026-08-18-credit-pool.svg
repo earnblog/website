@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:一座水塔标着全球信用资金池,水位线下降;两根水管分别通向财政部大楼和AI数据中心机架,都在抽水;塔顶量表被顶起,标着长端利率5.31%,近十九年新高">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <text x="40" y="40" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">水塔只有一座,管子接了两根</text>
+
+  <!-- 水塔 -->
+  <ellipse cx="340" cy="126" rx="98" ry="18" fill="#e9e2d2" stroke="#b07d33" stroke-width="1.6"/>
+  <path d="M242 126 L242 172 L438 172 L438 126" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <ellipse cx="340" cy="172" rx="98" ry="18" fill="#fbf9f4" stroke="#b07d33" stroke-width="1.6"/>
+  <line x1="264" y1="142" x2="416" y2="142" stroke="#9a927f" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="340" y="112" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#b07d33" text-anchor="middle">全球信用资金池</text>
+  <text x="340" y="160" font-family="system-ui,sans-serif" font-size="10.5" fill="#9a927f" text-anchor="middle">水位线在降</text>
+
+  <!-- 左管:财政部,蓝色 -->
+  <path d="M270 168 C 220 200, 190 216, 160 238" stroke="#4f6b8a" stroke-width="4" fill="none"/>
+  <rect x="90" y="238" width="140" height="56" rx="4" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="160" y="262" font-family="'Noto Serif SC',serif" font-size="13" fill="#4f6b8a" text-anchor="middle">美国财政部</text>
+  <text x="160" y="280" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a" text-anchor="middle">赤字发债 · 老管子</text>
+
+  <!-- 右管:AI,红色 -->
+  <path d="M410 168 C 460 200, 490 216, 520 238" stroke="#a8453a" stroke-width="4" fill="none"/>
+  <rect x="450" y="238" width="140" height="56" rx="4" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="520" y="262" font-family="'Noto Serif SC',serif" font-size="13" fill="#a8453a" text-anchor="middle">AI数据中心</text>
+  <text x="520" y="280" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" text-anchor="middle">企业发债 · 新管子,劲更大</text>
+
+  <!-- 顶部量表 -->
+  <path d="M340 96 L340 56" stroke="#c8a96a" stroke-width="2.4"/>
+  <path d="M328 66 L340 48 L352 66 Z" fill="#c8a96a"/>
+  <rect x="286" y="24" width="108" height="30" rx="4" fill="none" stroke="#c8a96a" stroke-width="1.6"/>
+  <text x="340" y="45" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#b07d33" text-anchor="middle">长端利率 5.31%</text>
+
+  <line x1="40" y1="316" x2="640" y2="316" stroke="#e3ded2" stroke-width="1"/>
+  <text x="40" y="336" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 30年期美债收益率2007年以来新高,近十九年最高</text>
+  <text x="40" y="352" font-family="system-ui,sans-serif" font-size="10.5" fill="#9a927f">两根管子抽的是同一池水,谁舀得凶,价格就替所有人一起抬 →</text>
+</svg>

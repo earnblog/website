@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一座水塔标着全球信用资金池,水位下降,两根水管分别通向美国财政部和AI数据中心,塔顶量表被顶起标着长端利率">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">不是政府挤占了企业,是AI挤占了政府</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-17 · 三十年期美债5.31% · 十九年新高</text>
+
+  <!-- 水塔 -->
+  <ellipse cx="340" cy="120" rx="86" ry="16" fill="#22304a" stroke="#4f6b8a" stroke-width="1.4"/>
+  <path d="M254 120 L254 156 L426 156 L426 120" fill="none" stroke="#4f6b8a" stroke-width="1.4"/>
+  <ellipse cx="340" cy="156" rx="86" ry="16" fill="#1c2635" stroke="#4f6b8a" stroke-width="1.4"/>
+  <line x1="270" y1="132" x2="410" y2="132" stroke="#c8a96a" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="340" y="103" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#c8a96a" text-anchor="middle">全球信用资金池</text>
+
+  <!-- 左管:财政部 -->
+  <path d="M284 150 C 240 176, 220 190, 200 210" stroke="#4f6b8a" stroke-width="4" fill="none"/>
+  <rect x="150" y="210" width="100" height="46" rx="4" fill="#22304a" stroke="#4f6b8a" stroke-width="1.2"/>
+  <text x="200" y="232" font-family="'Noto Serif SC',serif" font-size="11" fill="#9fb2c6" text-anchor="middle">美国财政部</text>
+  <text x="200" y="248" font-family="system-ui,sans-serif" font-size="10" fill="#7f97ae" text-anchor="middle">赤字发债</text>
+
+  <!-- 右管:AI -->
+  <path d="M396 150 C 440 176, 460 190, 480 210" stroke="#a8453a" stroke-width="4" fill="none"/>
+  <rect x="430" y="210" width="100" height="46" rx="4" fill="#2a1f22" stroke="#a8453a" stroke-width="1.2"/>
+  <text x="480" y="232" font-family="'Noto Serif SC',serif" font-size="11" fill="#d38f85" text-anchor="middle">AI数据中心</text>
+  <text x="480" y="248" font-family="system-ui,sans-serif" font-size="10" fill="#c07a70" text-anchor="middle">企业发债</text>
+
+  <!-- 顶部量表被顶起 -->
+  <path d="M340 92 L340 60" stroke="#c8a96a" stroke-width="2"/>
+  <path d="M332 68 L340 54 L348 68 Z" fill="#c8a96a"/>
+  <text x="356" y="60" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a">长端利率 ↑</text>
+
+  <line x1="48" y1="272" x2="632" y2="272" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="290" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">水塔只有一座,管子却接了两根</text>
+</svg>
