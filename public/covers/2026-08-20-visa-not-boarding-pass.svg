@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:两道门并排,左边SEC的门大敞着写资格已放行,右边美联储的门只留一道缝写资金仍关着,一枚比特币图标卡在两道门中间只挪动了很小一步">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">SEC放行加密资产,比特币只涨了0.3%</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-19 · 签证不是登机牌</text>
+
+  <!-- 左门:SEC,大敞开 -->
+  <g>
+    <rect x="118" y="104" width="150" height="150" rx="4" fill="#1c2330" stroke="#c8a96a" stroke-width="1.6"/>
+    <path d="M132 250 L132 118 L200 104 L200 250 Z" fill="#22304a" stroke="#c8a96a" stroke-width="1.4" opacity="0.9"/>
+    <text x="193" y="96" font-family="'Noto Serif SC',serif" font-size="12" fill="#c8a96a" text-anchor="middle">SEC · 资格</text>
+    <text x="193" y="270" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a" text-anchor="middle">已放行</text>
+  </g>
+
+  <!-- 右门:美联储,只留一道缝 -->
+  <g>
+    <rect x="412" y="104" width="150" height="150" rx="4" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.6"/>
+    <path d="M418 250 L418 108 L480 104 L480 250 Z" fill="#22304a" stroke="#4f6b8a" stroke-width="1.4" opacity="0.9"/>
+    <text x="487" y="96" font-family="'Noto Serif SC',serif" font-size="12" fill="#9fb2c6" text-anchor="middle">美联储 · 资金</text>
+    <text x="487" y="270" font-family="system-ui,sans-serif" font-size="10.5" fill="#9fb2c6" text-anchor="middle">仍关着</text>
+  </g>
+
+  <!-- 中间:比特币图标,只挪了一小步 -->
+  <circle cx="330" cy="178" r="15" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="330" y="183" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#a8453a" text-anchor="middle">₿</text>
+  <path d="M300 178 L316 178" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="2 3"/>
+  <text x="340" y="210" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">只挪了0.3%</text>
+
+  <line x1="48" y1="278" x2="632" y2="278" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="294" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">门开了,不代表钱已经进场</text>
+</svg>
