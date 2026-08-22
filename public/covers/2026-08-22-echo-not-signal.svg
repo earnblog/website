@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一枚石子投进水面,靠近落点的水纹很快被抹平,可最外圈的涟漪还在朝着远处一根不断爬升的比特币价格曲线扩散,落点那里其实早就静止">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">价格追的不是信号,是信号的回声</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-22 · 债市两天算穿 · 比特币涨出三年最大一周</text>
+
+  <!-- water surface line -->
+  <line x1="40" y1="150" x2="640" y2="150" stroke="#2a3648" stroke-width="1"/>
+
+  <!-- drop point, near-source ripples already flat -->
+  <circle cx="130" cy="150" r="3.5" fill="#c8a96a"/>
+  <circle cx="130" cy="150" r="16" fill="none" stroke="#4f6b8a" stroke-width="1.2" opacity="0.55"/>
+  <circle cx="130" cy="150" r="30" fill="none" stroke="#4f6b8a" stroke-width="1" opacity="0.3"/>
+  <text x="130" y="180" font-family="system-ui,sans-serif" font-size="9.5" fill="#7f97ae" text-anchor="middle">落点·国债回购公告</text>
+  <text x="130" y="192" font-family="system-ui,sans-serif" font-size="9" fill="#5c6a78" text-anchor="middle">两天后·水面已静</text>
+
+  <!-- outgoing ripple rings, expanding rightward, fading -->
+  <ellipse cx="130" cy="150" rx="120" ry="10" fill="none" stroke="#a8453a" stroke-width="1.6" opacity="0.85"/>
+  <ellipse cx="130" cy="150" rx="220" ry="14" fill="none" stroke="#a8453a" stroke-width="1.3" opacity="0.6"/>
+  <ellipse cx="130" cy="150" rx="330" ry="18" fill="none" stroke="#a8453a" stroke-width="1" opacity="0.4"/>
+  <ellipse cx="130" cy="150" rx="440" ry="22" fill="none" stroke="#a8453a" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- distant rising price curve riding the outer ripple -->
+  <path d="M 420 220 C 470 200, 500 150, 540 110 S 600 60, 630 40" fill="none" stroke="#c8a96a" stroke-width="2.6"/>
+  <circle cx="630" cy="40" r="4" fill="#c8a96a"/>
+  <text x="560" y="235" font-family="'Noto Serif SC',serif" font-size="11" fill="#e7d9b8" text-anchor="middle">比特币</text>
+  <text x="560" y="250" font-family="system-ui,sans-serif" font-size="9.5" fill="#9fb2c6" text-anchor="middle">还在回声上爬升</text>
+
+  <line x1="48" y1="272" x2="632" y2="272" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="290" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">落点早已安静,涟漪还在替它走完全程</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="早期末期镜像图:左侧周三信号刚出现,债市股市币价三条独立箭头同时汇入价格,是分布式计算;右侧周五,债市股市已经把信号算穿收回,只剩比特币一个节点还在价格到价格的自我循环里打转">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="38" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#33404f" text-anchor="middle">同一条信号,两种活法</text>
+  <text x="340" y="58" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a7f6a" text-anchor="middle">左:周三·信号刚发布 —— 右:周五·信号已被债市算穿</text>
+
+  <line x1="340" y1="80" x2="340" y2="330" stroke="#ddd4c4" stroke-width="1.4" stroke-dasharray="3 4"/>
+
+  <!-- LEFT: early, distributed computing -->
+  <text x="170" y="90" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a" text-anchor="middle">早期 · 分布式计算</text>
+
+  <g fill="#4f6b8a">
+    <circle cx="60" cy="140" r="4"/>
+    <circle cx="60" cy="200" r="4"/>
+    <circle cx="60" cy="260" r="4"/>
+  </g>
+  <text x="60" y="125" font-family="system-ui,sans-serif" font-size="10" fill="#5c6a78" text-anchor="middle">债市</text>
+  <text x="60" y="185" font-family="system-ui,sans-serif" font-size="10" fill="#5c6a78" text-anchor="middle">股市</text>
+  <text x="60" y="245" font-family="system-ui,sans-serif" font-size="10" fill="#5c6a78" text-anchor="middle">币价</text>
+
+  <path d="M 66 140 C 140 140, 190 190, 240 200" fill="none" stroke="#4f6b8a" stroke-width="1.6" marker-end="url(#arrL)"/>
+  <path d="M 66 200 C 140 200, 190 200, 240 200" fill="none" stroke="#4f6b8a" stroke-width="1.6" marker-end="url(#arrL)"/>
+  <path d="M 66 260 C 140 260, 190 210, 240 200" fill="none" stroke="#4f6b8a" stroke-width="1.6" marker-end="url(#arrL)"/>
+
+  <circle cx="252" cy="200" r="12" fill="#c8a96a" stroke="#33404f" stroke-width="1"/>
+  <text x="252" y="204" font-family="system-ui,sans-serif" font-size="9" fill="#33404f" text-anchor="middle">价</text>
+  <text x="170" y="300" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#6b7280" text-anchor="middle">三张独立网络,同时计算同一条新闻</text>
+
+  <!-- RIGHT: late, self-loop -->
+  <text x="510" y="90" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a" text-anchor="middle">末期 · 自我循环</text>
+
+  <g fill="#c9bfa8">
+    <circle cx="420" cy="140" r="4"/>
+    <circle cx="420" cy="260" r="4"/>
+  </g>
+  <text x="420" y="125" font-family="system-ui,sans-serif" font-size="10" fill="#9a8f78" text-anchor="middle">债市·已算穿</text>
+  <text x="420" y="245" font-family="system-ui,sans-serif" font-size="10" fill="#9a8f78" text-anchor="middle">股市·当周收跌</text>
+  <path d="M 426 140 C 470 150, 500 180, 520 190" fill="none" stroke="#c9bfa8" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <path d="M 426 260 C 470 250, 500 220, 520 210" fill="none" stroke="#c9bfa8" stroke-width="1.4" stroke-dasharray="3 3"/>
+
+  <circle cx="540" cy="200" r="14" fill="#a8453a" stroke="#33404f" stroke-width="1"/>
+  <text x="540" y="204" font-family="system-ui,sans-serif" font-size="9" fill="#fbf9f4" text-anchor="middle">价</text>
+  <path d="M 552 190 C 590 160, 590 240, 552 210" fill="none" stroke="#a8453a" stroke-width="1.8" marker-end="url(#arrR)"/>
+  <text x="608" y="200" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">价格</text>
+  <text x="608" y="213" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">喂价格</text>
+  <text x="510" y="300" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#6b7280" text-anchor="middle">源头已经安静,只剩回声自己喂自己</text>
+
+  <defs>
+    <marker id="arrL" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4f6b8a"/>
+    </marker>
+    <marker id="arrR" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#a8453a"/>
+    </marker>
+  </defs>
+
+  <line x1="40" y1="330" x2="640" y2="330" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="340" y="350" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a7f6a" text-anchor="middle">同一条国债回购公告 —— 两天后,只有一个节点还在替它辩护</text>
+</svg>
