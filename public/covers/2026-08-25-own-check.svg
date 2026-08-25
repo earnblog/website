@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一张支票从英伟达的账本里飞出去,绕成一个圆圈,又落回英伟达自己的收入栏,圆圈中央写着循环,圆圈外沿一道价格曲线连跌七天">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">跌的不是信心,是自己开的支票要到期了</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-24 · 英伟达连跌七天 · 循环支票超5400亿美元</text>
+
+  <!-- looping check path -->
+  <path d="M 160 190 C 100 150, 110 90, 175 78 C 250 64, 300 110, 260 150 C 230 180, 175 168, 175 130" fill="none" stroke="#4f6b8a" stroke-width="2" opacity="0.8"/>
+  <circle cx="175" cy="130" r="4" fill="#4f6b8a"/>
+
+  <!-- check icon at start -->
+  <rect x="118" y="176" width="70" height="42" rx="3" fill="#1c2330" stroke="#c8a96a" stroke-width="1.4"/>
+  <line x1="128" y1="190" x2="178" y2="190" stroke="#c8a96a" stroke-width="1"/>
+  <line x1="128" y1="200" x2="160" y2="200" stroke="#c8a96a" stroke-width="1"/>
+  <text x="153" y="230" font-family="system-ui,sans-serif" font-size="9.5" fill="#9fb2c6" text-anchor="middle">出资 / 担保</text>
+
+  <!-- center loop label -->
+  <circle cx="205" cy="128" r="30" fill="#181f2b" stroke="#a8453a" stroke-width="1.3" opacity="0.9"/>
+  <text x="205" y="124" font-family="'Noto Serif SC',serif" font-size="11.5" font-weight="700" fill="#c8a96a" text-anchor="middle">循环</text>
+  <text x="205" y="138" font-family="system-ui,sans-serif" font-size="8" fill="#8a94a6" text-anchor="middle">自己转自己</text>
+
+  <!-- falling price curve, seven down steps -->
+  <path d="M 380 96 L 420 110 L 450 120 L 480 138 L 510 150 L 540 168 L 570 182 L 600 200" fill="none" stroke="#a8453a" stroke-width="2.6"/>
+  <circle cx="380" cy="96" r="3.5" fill="#a8453a"/>
+  <circle cx="600" cy="200" r="4" fill="#a8453a"/>
+  <text x="500" y="225" font-family="'Noto Serif SC',serif" font-size="11" fill="#e0b3a8" text-anchor="middle">连跌七个交易日</text>
+  <text x="500" y="240" font-family="system-ui,sans-serif" font-size="9.5" fill="#9fb2c6" text-anchor="middle">2022年9月以来最长</text>
+
+  <line x1="48" y1="264" x2="632" y2="264" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="282" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">自己给自己写的信用,终究要拿去邮局,盖一个陌生人的戳</text>
+</svg>

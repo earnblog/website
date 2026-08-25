@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:四个节点围成一个闭环——英伟达出资或担保,下游客户采购芯片,订单变成英伟达自己的营收并推高股价,股价又扩大英伟达继续开支票的能力,箭头首尾相接指回起点,中心写着正反馈,自己转账给自己">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <defs>
+    <marker id="ock-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#33404f"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="34" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">一张支票,绕一圈,变成自己的营收</text>
+
+  <!-- loop arrows, clockwise -->
+  <path d="M 330 88 C 420 92, 520 130, 556 182" fill="none" stroke="#4f6b8a" stroke-width="2.4" marker-end="url(#ock-arrow)"/>
+  <path d="M 556 224 C 540 272, 480 306, 436 314" fill="none" stroke="#b07d33" stroke-width="2.4" marker-end="url(#ock-arrow)"/>
+  <path d="M 244 314 C 190 304, 130 270, 118 224" fill="none" stroke="#a8453a" stroke-width="2.4" marker-end="url(#ock-arrow)"/>
+  <path d="M 118 182 C 130 130, 200 92, 300 88" fill="none" stroke="#33404f" stroke-width="2.4" marker-end="url(#ock-arrow)"/>
+
+  <!-- center label -->
+  <circle cx="338" cy="198" r="44" fill="#fbf9f4" stroke="#c8a96a" stroke-width="1.4"/>
+  <text x="338" y="193" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#a8453a" text-anchor="middle">正反馈</text>
+  <text x="338" y="211" font-family="system-ui,sans-serif" font-size="10" fill="#9a927f" text-anchor="middle">自己转给自己</text>
+
+  <!-- Node 1: top -->
+  <rect x="238" y="46" width="200" height="42" rx="4" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="338" y="64" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">①英伟达出资 / 担保</text>
+  <text x="338" y="80" font-family="system-ui,sans-serif" font-size="10" fill="#4f6b8a" text-anchor="middle">CoreWeave · OpenAI · Nebius…</text>
+
+  <!-- Node 2: right -->
+  <rect x="456" y="182" width="200" height="42" rx="4" fill="none" stroke="#b07d33" stroke-width="1.6"/>
+  <text x="556" y="200" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#b07d33" text-anchor="middle">②下游客户采购芯片</text>
+  <text x="556" y="216" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">拿到的钱,转身买回英伟达</text>
+
+  <!-- Node 3: bottom -->
+  <rect x="238" y="272" width="200" height="42" rx="4" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="338" y="290" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a8453a" text-anchor="middle">③订单变成营收 · 股价上涨</text>
+  <text x="338" y="306" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">循环贡献计入英伟达自己的财报</text>
+
+  <!-- Node 4: left -->
+  <rect x="20" y="182" width="200" height="42" rx="4" fill="none" stroke="#33404f" stroke-width="1.6"/>
+  <text x="120" y="200" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#33404f" text-anchor="middle">④硬通货更足 · 再开支票</text>
+  <text x="120" y="216" font-family="system-ui,sans-serif" font-size="10" fill="#33404f" text-anchor="middle">股价越高,能开的支票越大</text>
+
+  <text x="40" y="336" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 2026年内循环支票官宣总额超5400亿美元,比英伟达上一财年全部收入还多逾一倍</text>
+  <text x="40" y="352" font-family="system-ui,sans-serif" font-size="10.5" fill="#9a927f">这不是四个互不相识的买家在算需求,是同一份资产负债表在给自己转账 →</text>
+</svg>
