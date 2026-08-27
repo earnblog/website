@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一架天平,一边托着写着70%的证词纸,另一边空荡荡地悬着,等一个不相干的人来签字">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">需求比七成还高,是口供不是判决</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-26 · 英伟达财报 · 首次给出跨财年前瞻指引</text>
+
+  <!-- balance scale -->
+  <line x1="340" y1="90" x2="340" y2="120" stroke="#8a94a6" stroke-width="2.5"/>
+  <line x1="255" y1="120" x2="425" y2="120" stroke="#8a94a6" stroke-width="2.5"/>
+  <circle cx="340" cy="86" r="4" fill="#c8a96a"/>
+
+  <!-- left pan: weighted down with testimony -->
+  <line x1="255" y1="120" x2="255" y2="168" stroke="#8a94a6" stroke-width="1.4"/>
+  <line x1="230" y1="168" x2="280" y2="168" stroke="#8a94a6" stroke-width="1.4"/>
+  <rect x="222" y="168" width="66" height="42" rx="3" fill="#1c2330" stroke="#c8a96a" stroke-width="1.4"/>
+  <text x="255" y="185" font-family="'Noto Serif SC',serif" font-size="12" font-weight="700" fill="#c8a96a" text-anchor="middle">70%</text>
+  <text x="255" y="200" font-family="system-ui,sans-serif" font-size="8.5" fill="#9fb2c6" text-anchor="middle">供给的口供</text>
+
+  <!-- right pan: empty, tilted up, waiting for signature -->
+  <line x1="425" y1="120" x2="425" y2="150" stroke="#8a94a6" stroke-width="1.4"/>
+  <line x1="400" y1="150" x2="450" y2="150" stroke="#8a94a6" stroke-width="1.4"/>
+  <rect x="392" y="150" width="66" height="34" rx="3" fill="none" stroke="#4f6b8a" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <text x="425" y="171" font-family="system-ui,sans-serif" font-size="8.5" fill="#6b8299" text-anchor="middle">等一个签名</text>
+
+  <!-- fulcrum triangle -->
+  <path d="M 340 120 L 320 138 L 360 138 Z" fill="#33404f"/>
+
+  <!-- right side: AWS real order as counterweight reference -->
+  <text x="565" y="150" font-family="'Noto Serif SC',serif" font-size="12" fill="#e0b3a8" text-anchor="middle">AWS·200万颗GPU</text>
+  <text x="565" y="166" font-family="system-ui,sans-serif" font-size="9.5" fill="#9fb2c6" text-anchor="middle">外人自己批的预算</text>
+
+  <line x1="48" y1="264" x2="632" y2="264" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="282" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">自己写的口供,定不了自己的罪与非罪</text>
+</svg>
