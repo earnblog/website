@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="早期与末期对照示意图:左栏是7月29日议息会议,通胀数据、能源价格、政策立场等多路独立输入汇聚成三位委员各自算出的反对票;右栏是8月28日之后,概率的跳升只剩仓位对仓位互相押注的单一自循环箭头">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <defs>
+    <marker id="bnf-arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4f6b8a"/>
+    </marker>
+    <marker id="bnf-arrow-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#a8453a"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="34" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">同一个分歧,两种算法</text>
+
+  <line x1="340" y1="52" x2="340" y2="330" stroke="#ddd4c4" stroke-width="1.4" stroke-dasharray="3,4"/>
+
+  <!-- LEFT: 7/29 distributed dissent -->
+  <text x="170" y="64" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a" text-anchor="middle">7月29日·三票各自算出来</text>
+
+  <rect x="50" y="82" width="130" height="34" rx="4" fill="none" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="115" y="103" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">通胀数据</text>
+
+  <rect x="50" y="132" width="130" height="34" rx="4" fill="none" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="115" y="153" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">能源与供给价格</text>
+
+  <rect x="50" y="182" width="130" height="34" rx="4" fill="none" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="115" y="203" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">各辖区经济状况</text>
+
+  <path d="M 180 99 L 228 132" fill="none" stroke="#4f6b8a" stroke-width="1.8" marker-end="url(#bnf-arrow-blue)"/>
+  <path d="M 180 149 L 228 145" fill="none" stroke="#4f6b8a" stroke-width="1.8" marker-end="url(#bnf-arrow-blue)"/>
+  <path d="M 180 199 L 228 158" fill="none" stroke="#4f6b8a" stroke-width="1.8" marker-end="url(#bnf-arrow-blue)"/>
+
+  <circle cx="253" cy="150" r="30" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="253" y="146" font-family="'Noto Serif SC',serif" font-size="11" font-weight="700" fill="#4f6b8a" text-anchor="middle">三票反对</text>
+  <text x="253" y="162" font-family="system-ui,sans-serif" font-size="8.5" fill="#6b8299" text-anchor="middle">各自算完账</text>
+
+  <text x="170" y="240" font-family="'Noto Serif SC',serif" font-size="11" fill="#4f6b8a" text-anchor="middle">分布式计算</text>
+  <text x="170" y="256" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6" text-anchor="middle">分歧来自三个互不相同的</text>
+  <text x="170" y="270" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6" text-anchor="middle">现实判断,基于现实</text>
+
+  <!-- RIGHT: 8/28 self-referential loop -->
+  <text x="510" y="64" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a" text-anchor="middle">8月28日后·仓位对仓位</text>
+
+  <circle cx="465" cy="165" r="34" fill="none" stroke="#a8453a" stroke-width="1.8"/>
+  <text x="465" y="161" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">我猜你</text>
+  <text x="465" y="174" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">先调仓</text>
+
+  <circle cx="565" cy="165" r="34" fill="none" stroke="#a8453a" stroke-width="1.8"/>
+  <text x="565" y="161" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">你猜我</text>
+  <text x="565" y="174" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">先调仓</text>
+
+  <path d="M 497 152 C 520 138, 530 138, 533 152" fill="none" stroke="#a8453a" stroke-width="1.8" marker-end="url(#bnf-arrow-red)"/>
+  <path d="M 533 179 C 530 194, 520 194, 497 179" fill="none" stroke="#a8453a" stroke-width="1.8" marker-end="url(#bnf-arrow-red)"/>
+
+  <text x="515" y="226" font-family="'Noto Serif SC',serif" font-size="11" font-weight="700" fill="#a8453a" text-anchor="middle">自我循环</text>
+  <text x="515" y="242" font-family="system-ui,sans-serif" font-size="9" fill="#a8453a" text-anchor="middle">同一份数据两天前就在那儿</text>
+
+  <text x="515" y="286" font-family="'Noto Serif SC',serif" font-size="11" fill="#a8453a" text-anchor="middle">算力压缩</text>
+  <text x="515" y="302" font-family="system-ui,sans-serif" font-size="9.5" fill="#c58c82" text-anchor="middle">不再计算基本面,只计算</text>
+  <text x="515" y="316" font-family="system-ui,sans-serif" font-size="9.5" fill="#c58c82" text-anchor="middle">彼此的反应速度</text>
+
+  <text x="40" y="346" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 左边是三个人各自算完账才投出的反对票,右边是所有人只在猜别人会不会先动手</text>
+</svg>

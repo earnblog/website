@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一块指针刻度盘,指针从刻度35甩向刻度55,旁边一块钉死的牌子写着3.50%到3.75%没挪动,一个对话气泡从右上角吹来风让指针晃动">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">概率不是预测,是仓位</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-28 · 加息概率一天冲过五成 · 利率一个基点没挪</text>
+
+  <!-- gauge dial -->
+  <g>
+    <path d="M 130 180 A 90 90 0 0 1 310 180" fill="none" stroke="#33404f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 183.7 108.7 A 90 90 0 0 1 232.5 101" fill="none" stroke="#a8453a" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="220" cy="180" r="6" fill="#c8a96a"/>
+    <!-- old needle position (dashed, 35) -->
+    <line x1="220" y1="180" x2="187" y2="112" stroke="#8a94a6" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="168" y="128" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">周四·35%</text>
+    <!-- new needle position (solid, 55) -->
+    <line x1="220" y1="180" x2="235" y2="99" stroke="#a8453a" stroke-width="3"/>
+    <text x="246" y="92" font-family="system-ui,sans-serif" font-size="10.5" fill="#e0b3a8">周五·过半</text>
+    <text x="220" y="205" font-family="'Noto Serif SC',serif" font-size="11" fill="#c8a96a" text-anchor="middle">9月加息概率</text>
+  </g>
+
+  <!-- fixed rate plaque, nailed -->
+  <g>
+    <rect x="430" y="130" width="200" height="70" rx="4" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.6"/>
+    <circle cx="446" cy="146" r="3.2" fill="#8a94a6"/>
+    <circle cx="614" cy="146" r="3.2" fill="#8a94a6"/>
+    <text x="530" y="163" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#4f6b8a" text-anchor="middle">3.50%–3.75%</text>
+    <text x="530" y="182" font-family="system-ui,sans-serif" font-size="10.5" fill="#9fb2c6" text-anchor="middle">连续五次会议,没挪动</text>
+  </g>
+
+  <!-- speech bubble blowing wind at the needle -->
+  <g>
+    <path d="M 470 48 h 120 a 8 8 0 0 1 8 8 v 26 a 8 8 0 0 1 -8 8 h -70 l -18 16 v -16 h -32 a 8 8 0 0 1 -8 -8 v -26 a 8 8 0 0 1 8 -8 z" fill="#1c2330" stroke="#c8a96a" stroke-width="1.4"/>
+    <text x="530" y="70" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#c8a96a" text-anchor="middle">"潜在趋势</text>
+    <text x="530" y="84" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#c8a96a" text-anchor="middle">没有真正改善"</text>
+    <path d="M 460 108 C 420 118, 380 100, 300 108" fill="none" stroke="#8a94a6" stroke-width="1.3" stroke-dasharray="2,3"/>
+  </g>
+
+  <line x1="48" y1="248" x2="632" y2="248" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="268" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">刻度盘钉在墙上没挪一寸,是指针自己先替所有人投了一次票</text>
+</svg>
