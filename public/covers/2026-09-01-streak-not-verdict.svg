@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一块巨大记分牌正中央亮着数字5和一排金色星标,记分牌背后并排立着三条跑道,只有最左边一条跑道的灯是亮的,中间和右边两条跑道的灯还暗着刚从谷底爬起来">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">连胜不是保证书,是记分牌</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-08-31 · 道指五连涨 · 标普纳指才刚爬出两个月连跌</text>
+
+  <!-- scoreboard -->
+  <g>
+    <rect x="230" y="86" width="220" height="96" rx="6" fill="#1c2330" stroke="#c8a96a" stroke-width="1.6"/>
+    <text x="340" y="140" font-family="'Noto Serif SC',serif" font-size="42" font-weight="700" fill="#c8a96a" text-anchor="middle">5</text>
+    <text x="340" y="162" font-family="system-ui,sans-serif" font-size="10" fill="#9fb2c6" text-anchor="middle">连胜 · 道指专属</text>
+    <text x="252" y="106" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">★ ★ ★ ★ ★</text>
+  </g>
+
+  <!-- three tracks below -->
+  <g>
+    <!-- track 1: lit, dow -->
+    <rect x="120" y="210" width="140" height="10" rx="5" fill="#33404f"/>
+    <rect x="120" y="210" width="140" height="10" rx="5" fill="#c8a96a"/>
+    <circle cx="252" cy="215" r="7" fill="#c8a96a"/>
+    <text x="190" y="236" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8a96a" text-anchor="middle">道指 · 8月+1.3%</text>
+    <text x="190" y="250" font-family="system-ui,sans-serif" font-size="9" fill="#9fb2c6" text-anchor="middle">连续第五个月上涨</text>
+
+    <!-- track 2: dim, sp500 climbing from bottom -->
+    <rect x="290" y="210" width="140" height="10" rx="5" fill="#33404f"/>
+    <rect x="290" y="210" width="70" height="10" rx="5" fill="#4f6b8a"/>
+    <circle cx="360" cy="215" r="7" fill="#4f6b8a" opacity="0.6"/>
+    <text x="360" y="236" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">标普500 · 8月+2.6%</text>
+    <text x="360" y="250" font-family="system-ui,sans-serif" font-size="9" fill="#7d8ba0" text-anchor="middle">三个月来头一次收阳</text>
+
+    <!-- track 3: dim, nasdaq climbing -->
+    <rect x="460" y="210" width="140" height="10" rx="5" fill="#33404f"/>
+    <rect x="460" y="210" width="76" height="10" rx="5" fill="#4f6b8a"/>
+    <circle cx="536" cy="215" r="7" fill="#4f6b8a" opacity="0.6"/>
+    <text x="530" y="236" font-family="system-ui,sans-serif" font-size="10.5" fill="#4f6b8a" text-anchor="middle">纳指 · 8月+3.9%</text>
+    <text x="530" y="250" font-family="system-ui,sans-serif" font-size="9" fill="#7d8ba0" text-anchor="middle">同样刚从坑里爬出来</text>
+  </g>
+
+  <line x1="48" y1="266" x2="632" y2="266" stroke="#33404f" stroke-width="1"/>
+  <text x="48" y="284" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">记分牌记的是打完的仗,判决书要审的,永远是还没开打的下一场</text>
+</svg>
