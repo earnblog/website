@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一条收益率曲线已经冲到纸面最高处,一支笔悬在曲线末端上方;远处一张空会议桌,麦克风还没打开,墙上日历圈着9月16日,落满灰尘">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">价格先签字,会议后盖章</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-02 · 十年期收益率创近三年新高 · 加息还没投票</text>
+
+  <!-- yield curve rising to top -->
+  <g>
+    <line x1="48" y1="230" x2="380" y2="230" stroke="#33404f" stroke-width="1"/>
+    <line x1="48" y1="110" x2="48" y2="230" stroke="#33404f" stroke-width="1"/>
+    <path d="M 48 220 C 120 216, 170 205, 210 180 C 250 152, 290 128, 340 112" fill="none" stroke="#a8453a" stroke-width="3"/>
+    <circle cx="340" cy="112" r="4.5" fill="#a8453a"/>
+    <text x="180" y="248" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6">十年期美债收益率</text>
+    <text x="300" y="100" font-family="'Noto Serif SC',serif" font-size="11" fill="#e0b3a8">4.81% · 近三年最高</text>
+
+    <!-- pen hovering, signing -->
+    <g transform="translate(340,112) rotate(40)">
+      <rect x="-3" y="-46" width="6" height="46" rx="2" fill="#c8a96a"/>
+      <path d="M -3 -46 L 3 -46 L 0 -58 Z" fill="#c8a96a"/>
+    </g>
+    <path d="M 320 88 C 328 78, 340 76, 350 82" fill="none" stroke="#c8a96a" stroke-width="1.2" stroke-dasharray="2,3"/>
+  </g>
+
+  <!-- empty meeting table, far side -->
+  <g>
+    <rect x="440" y="150" width="192" height="80" rx="4" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.4"/>
+    <rect x="460" y="168" width="60" height="8" rx="2" fill="#33404f"/>
+    <circle cx="536" cy="172" r="7" fill="none" stroke="#8a94a6" stroke-width="1.4"/>
+    <line x1="536" y1="179" x2="536" y2="192" stroke="#8a94a6" stroke-width="1.4"/>
+    <text x="536" y="210" font-family="system-ui,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">麦克风还没打开</text>
+    <!-- wall calendar -->
+    <rect x="560" y="60" width="70" height="60" rx="3" fill="#1c2330" stroke="#c8a96a" stroke-width="1.3" opacity="0.9"/>
+    <text x="595" y="82" font-family="'Noto Serif SC',serif" font-size="10" fill="#c8a96a" text-anchor="middle">9月16日</text>
+    <circle cx="595" cy="98" r="14" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+    <text x="595" y="112" font-family="system-ui,sans-serif" font-size="14" fill="#a8453a" text-anchor="middle">?</text>
+  </g>
+
+  <line x1="48" y1="248" x2="632" y2="248" stroke="#33404f" stroke-width="1" opacity="0.5"/>
+  <text x="48" y="268" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">曲线自己先冲到了最高处,会议室的灯,还没亮</text>
+</svg>
