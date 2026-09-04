@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="反身性双向闭环示意图:左环是业绩跑赢价格里的预期,股价上涨,下一次的及格线被抬高,变得更难跑赢,闭环自我强化;右环是业绩没跑赢预期,股价下跌,下一次的及格线被下修,变得更容易跑赢,闭环自我修正">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <defs>
+    <marker id="gng-arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4f6b8a"/>
+    </marker>
+    <marker id="gng-arrow-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#a8453a"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="34" font-family="'Noto Serif SC',serif" font-size="14.5" font-weight="700" fill="#2b2b2b">同一把尺子,两种走向</text>
+
+  <line x1="340" y1="52" x2="340" y2="336" stroke="#ddd4c4" stroke-width="1.4" stroke-dasharray="3,4"/>
+
+  <!-- LEFT: beat expectation, self-reinforcing loop, bar keeps rising -->
+  <text x="168" y="62" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a" text-anchor="middle">跑赢预期·门槛抬高</text>
+
+  <g>
+    <path d="M 90 100 A 78 78 0 1 1 89 101" fill="none" stroke="#4f6b8a" stroke-width="1.8" marker-end="url(#gng-arrow-blue)"/>
+  </g>
+
+  <rect x="52" y="88" width="108" height="30" rx="4" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="106" y="107" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a" text-anchor="middle">业绩跑赢了尺子</text>
+
+  <rect x="200" y="140" width="108" height="30" rx="4" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="254" y="159" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a" text-anchor="middle">股价当场上涨</text>
+
+  <rect x="150" y="198" width="108" height="30" rx="4" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="204" y="217" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a" text-anchor="middle">尺子悄悄抬高</text>
+
+  <rect x="40" y="198" width="98" height="30" rx="4" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="89" y="217" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a" text-anchor="middle">下次更难跑赢</text>
+
+  <circle cx="106" cy="270" r="34" fill="none" stroke="#4f6b8a" stroke-width="1.8"/>
+  <text x="106" y="266" font-family="'Noto Serif SC',serif" font-size="10.5" font-weight="700" fill="#4f6b8a" text-anchor="middle">下一季</text>
+  <text x="106" y="280" font-family="system-ui,sans-serif" font-size="9" fill="#4f6b8a" text-anchor="middle">门槛更高</text>
+
+  <text x="170" y="322" font-family="'Noto Serif SC',serif" font-size="11" fill="#4f6b8a" text-anchor="middle">跑赢一次,把自己下一次跑赢的路,变窄一点</text>
+
+  <!-- RIGHT: miss expectation, self-correcting loop, bar comes back down -->
+  <text x="512" y="62" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a" text-anchor="middle">落空预期·门槛松动</text>
+
+  <g>
+    <path d="M 590 100 A 78 78 0 1 1 589 101" fill="none" stroke="#a8453a" stroke-width="1.8" marker-end="url(#gng-arrow-red)"/>
+  </g>
+
+  <rect x="552" y="88" width="108" height="30" rx="4" fill="#fbf9f4" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="606" y="107" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">业绩没跑赢尺子</text>
+
+  <rect x="486" y="140" width="120" height="30" rx="4" fill="#fbf9f4" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="546" y="159" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">股价当场下跌</text>
+
+  <rect x="440" y="198" width="120" height="30" rx="4" fill="#fbf9f4" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="500" y="217" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">尺子悄悄松动</text>
+
+  <rect x="580" y="198" width="98" height="30" rx="4" fill="#fbf9f4" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="629" y="217" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">下次更容易跑赢</text>
+
+  <circle cx="606" cy="270" r="34" fill="none" stroke="#a8453a" stroke-width="1.8"/>
+  <text x="606" y="266" font-family="'Noto Serif SC',serif" font-size="10.5" font-weight="700" fill="#a8453a" text-anchor="middle">下一季</text>
+  <text x="606" y="280" font-family="system-ui,sans-serif" font-size="9" fill="#a8453a" text-anchor="middle">门槛更低</text>
+
+  <text x="546" y="322" font-family="'Noto Serif SC',serif" font-size="11" fill="#a8453a" text-anchor="middle">落空一次,反而给下一次让出一点空间</text>
+
+  <text x="40" y="346" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 涨跌量的都不是业绩本身,是业绩和这把会自己挪动的尺子之间的差</text>
+</svg>

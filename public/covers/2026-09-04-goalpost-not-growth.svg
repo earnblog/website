@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一排代表AI芯片收入的金色柱子一根比一根高,最新一根已经冲得很高;柱子上方悬着一条红色虚线门槛,门槛比柱顶还要再高一小截,柱顶与门槛之间露出一道红色缺口">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">跑赢的是业绩,还是这把尺子</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-03 · 博通AI芯片收入同比涨221% · 股价当天收跌超3%</text>
+
+  <!-- baseline -->
+  <line x1="48" y1="240" x2="632" y2="240" stroke="#33404f" stroke-width="1"/>
+
+  <!-- ascending bars: AI revenue by quarter -->
+  <g>
+    <rect x="90" y="200" width="46" height="40" fill="#4f6b8a"/>
+    <rect x="160" y="168" width="46" height="72" fill="#4f6b8a"/>
+    <rect x="230" y="122" width="46" height="118" fill="#c8a96a"/>
+    <rect x="300" y="90" width="46" height="150" fill="#c8a96a"/>
+    <text x="323" y="78" font-family="'Noto Serif SC',serif" font-size="11" fill="#e6d3a8" text-anchor="middle">167亿·同比+221%</text>
+  </g>
+
+  <!-- the goalpost: dashed threshold line just above the last bar -->
+  <line x1="270" y1="72" x2="600" y2="72" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="5,4"/>
+  <text x="606" y="76" font-family="'Noto Serif SC',serif" font-size="11" fill="#e0b3a8">价格早就写好的那道门槛</text>
+
+  <!-- gap indicator between bar top and threshold -->
+  <g>
+    <line x1="323" y1="90" x2="323" y2="72" stroke="#a8453a" stroke-width="2"/>
+    <path d="M 323 72 L 319 80 L 327 80 Z" fill="#a8453a"/>
+    <text x="336" y="66" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a">差这一截,股价跌超3%</text>
+  </g>
+
+  <!-- small forward guide bar, dashed outline, taller but still under a higher implied bar of expectation -->
+  <g opacity="0.85">
+    <rect x="370" y="60" width="46" height="180" fill="none" stroke="#8a94a6" stroke-width="1.4" stroke-dasharray="3,3"/>
+    <text x="393" y="52" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6" text-anchor="middle">下季指引·仍在涨</text>
+  </g>
+
+  <text x="48" y="268" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">业绩自己越跑越快,量它的那把尺子,跑得更快</text>
+</svg>
