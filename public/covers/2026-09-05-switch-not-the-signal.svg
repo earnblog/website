@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一个悬在半空的巨大拨杆开关,左边刻着怕衰退,右边刻着怕收紧,开关已经拨向右边;开关下方两张成绩单,一张写着3.8万却顶着绿色向上箭头,一张写着16.2万却压着红色向下箭头">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">好坏不是数字定的,是开关定的</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-02 ADP 3.8万 · 2026-09-04 非农16.2万</text>
+
+  <!-- overhead switch -->
+  <g>
+    <line x1="340" y1="86" x2="340" y2="112" stroke="#4f6b8a" stroke-width="2"/>
+    <rect x="270" y="112" width="140" height="34" rx="17" fill="#1c2330" stroke="#c8a96a" stroke-width="1.6"/>
+    <text x="296" y="134" font-family="system-ui,sans-serif" font-size="10" fill="#6b8299" text-anchor="middle">怕衰退</text>
+    <text x="384" y="134" font-family="system-ui,sans-serif" font-size="10" fill="#e0b3a8" text-anchor="middle">怕收紧</text>
+    <circle cx="384" cy="129" r="11" fill="#a8453a"/>
+    <path d="M 384 129 L 392 121" stroke="#181f2b" stroke-width="2"/>
+  </g>
+
+  <!-- left card: weak data, up arrow -->
+  <g>
+    <rect x="86" y="176" width="200" height="86" rx="8" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.4"/>
+    <text x="106" y="206" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#e6e9ee">ADP 3.8万</text>
+    <text x="106" y="224" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6">年内最弱读数之一</text>
+    <path d="M 240 240 L 240 200 M 240 200 L 230 212 M 240 200 L 250 212" stroke="#5c9a6a" stroke-width="3.4" fill="none"/>
+    <text x="240" y="256" font-family="system-ui,sans-serif" font-size="9" fill="#5c9a6a" text-anchor="middle">当天美股收涨</text>
+  </g>
+
+  <!-- right card: strong data, down arrow -->
+  <g>
+    <rect x="394" y="176" width="200" height="86" rx="8" fill="#1c2330" stroke="#a8453a" stroke-width="1.4"/>
+    <text x="414" y="206" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#e6e9ee">非农 16.2万</text>
+    <text x="414" y="224" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6">接近预期三倍</text>
+    <path d="M 548 200 L 548 240 M 548 240 L 538 228 M 548 240 L 558 228" stroke="#a8453a" stroke-width="3.4" fill="none"/>
+    <text x="548" y="256" font-family="system-ui,sans-serif" font-size="9" fill="#a8453a" text-anchor="middle">道指当天跌271点</text>
+  </g>
+
+  <line x1="48" y1="278" x2="632" y2="278" stroke="#33404f" stroke-width="1" opacity="0.5"/>
+  <text x="48" y="292" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">数据没变方向,变的是那个决定"这算好消息还是坏消息"的开关</text>
+</svg>

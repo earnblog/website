@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="开关翻转对照示意图:左栏是怕衰退这一档,弱数据被判为利空、强数据被判为利好;右栏是怕收紧这一档,弱数据被判为利好、强数据被判为利空,同一份数据在开关两侧读出相反方向">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f" text-anchor="middle">同一份数据,开关两侧读出相反方向</text>
+
+  <!-- switch icon top center -->
+  <g>
+    <rect x="300" y="46" width="80" height="26" rx="13" fill="#1c2330" stroke="#c8a96a" stroke-width="1.4"/>
+    <circle cx="358" cy="59" r="9" fill="#a8453a"/>
+    <text x="320" y="63" font-family="system-ui,sans-serif" font-size="8.5" fill="#8a94a6" text-anchor="middle">怕衰退</text>
+    <text x="360" y="63" font-family="system-ui,sans-serif" font-size="8.5" fill="#e0b3a8" text-anchor="middle">怕收紧</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="340" y1="86" x2="340" y2="332" stroke="#ddd4c4" stroke-width="1.5"/>
+
+  <!-- LEFT: 怕衰退 regime -->
+  <text x="170" y="100" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a" text-anchor="middle">开关朝左 · 怕衰退</text>
+
+  <rect x="60" y="120" width="220" height="46" rx="6" fill="#eef1ea" stroke="#4f6b8a" stroke-width="1.2"/>
+  <text x="72" y="140" font-family="'Noto Serif SC',serif" font-size="11" fill="#33404f">弱数据(如3.8万)</text>
+  <text x="72" y="156" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a">→ 判为利空:经济要凉</text>
+
+  <rect x="60" y="180" width="220" height="46" rx="6" fill="#eef1ea" stroke="#4f6b8a" stroke-width="1.2"/>
+  <text x="72" y="200" font-family="'Noto Serif SC',serif" font-size="11" fill="#33404f">强数据(如16.2万)</text>
+  <text x="72" y="216" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a">→ 判为利好:经济扛住了</text>
+
+  <text x="170" y="256" font-family="system-ui,sans-serif" font-size="9.5" fill="#6b8299" text-anchor="middle">(几个月前的读法)</text>
+
+  <!-- RIGHT: 怕收紧 regime, current -->
+  <text x="510" y="100" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a" text-anchor="middle">开关朝右 · 怕收紧(现在)</text>
+
+  <rect x="400" y="120" width="220" height="46" rx="6" fill="#f7ece9" stroke="#a8453a" stroke-width="1.4"/>
+  <text x="412" y="140" font-family="'Noto Serif SC',serif" font-size="11" fill="#33404f">弱数据 · ADP 3.8万</text>
+  <text x="412" y="156" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a">→ 判为利好:股指当天收涨</text>
+
+  <rect x="400" y="180" width="220" height="46" rx="6" fill="#f7ece9" stroke="#a8453a" stroke-width="1.4"/>
+  <text x="412" y="200" font-family="'Noto Serif SC',serif" font-size="11" fill="#33404f">强数据 · 非农16.2万</text>
+  <text x="412" y="216" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a">→ 判为利空:道指跌271点</text>
+
+  <text x="510" y="256" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">(这一周的读法)</text>
+
+  <text x="170" y="286" font-family="'Noto Serif SC',serif" font-size="11" font-weight="700" fill="#4f6b8a" text-anchor="middle">数据没变</text>
+  <text x="510" y="286" font-family="'Noto Serif SC',serif" font-size="11" font-weight="700" fill="#a8453a" text-anchor="middle">开关变了</text>
+
+  <text x="40" y="346" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7280">机制示意 · 左右两栏是同一份强弱数据,决定它算好消息还是坏消息的,不是数据本身,是开关拨在哪一档</text>
+</svg>
