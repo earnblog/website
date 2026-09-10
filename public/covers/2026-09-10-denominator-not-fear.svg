@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一道巨大的除法算式悬在深墨色背景中央,上方的分子稳稳停在原处,下方的分母被一支金红色箭头顶着往上顶,除号右边的结果箭头随之向下弯折">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">跌的不是人心,是分母</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-09 布伦特+3.4% · 十年期美债收益率4.86%</text>
+
+  <!-- division fraction, centered -->
+  <g text-anchor="middle">
+    <!-- numerator box -->
+    <rect x="270" y="92" width="140" height="46" rx="6" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.6"/>
+    <text x="340" y="112" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#e6e9ee">分子</text>
+    <text x="340" y="130" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6">未来能挣到的钱 · 没动</text>
+
+    <!-- fraction bar -->
+    <line x1="252" y1="150" x2="428" y2="150" stroke="#c8a96a" stroke-width="2.4"/>
+
+    <!-- denominator box, pushed up -->
+    <rect x="270" y="160" width="140" height="46" rx="6" fill="#1c2330" stroke="#a8453a" stroke-width="1.8"/>
+    <text x="340" y="180" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#e6e9ee">分母</text>
+    <text x="340" y="198" font-family="system-ui,sans-serif" font-size="9.5" fill="#e0b3a8">今天借钱的价格 · 涨了</text>
+
+    <!-- upward push arrow into denominator -->
+    <path d="M 340 238 L 340 212 M 340 212 L 331 222 M 340 212 L 349 222" stroke="#a8453a" stroke-width="3.2" fill="none"/>
+    <text x="340" y="256" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a">一桶油 · 收益率新高</text>
+  </g>
+
+  <!-- equals + result -->
+  <g>
+    <text x="452" y="156" font-family="'Noto Serif SC',serif" font-size="20" fill="#8a94a6">=</text>
+    <path d="M 490 132 L 540 168" stroke="#a8453a" stroke-width="3" fill="none"/>
+    <path d="M 540 168 L 528 164 M 540 168 L 536 156" stroke="#a8453a" stroke-width="3" fill="none"/>
+    <text x="560" y="150" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a">估值</text>
+  </g>
+
+  <line x1="48" y1="278" x2="632" y2="278" stroke="#33404f" stroke-width="1" opacity="0.5"/>
+  <text x="48" y="292" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">分子没变,分母被重新算了一遍——这不是避险情绪,是一道除法</text>
+</svg>
