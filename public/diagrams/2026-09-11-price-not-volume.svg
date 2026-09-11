@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:暖纸底色上,左侧'趋势早期'区块显示产能与需求同步爬升、价格只是配角;右侧'趋势末期/当下'区块显示产能曲线贴着红色虚线物理极限走平,金色营收曲线穿线继续上冲,两线间的缺口标注为价格,并画出价格拉动资本承诺、承诺两到三年后才变成产能的延迟反身循环箭头">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f" text-anchor="middle">产能先撞墙,价格才接班</text>
+
+  <!-- grid -->
+  <line x1="40" y1="60" x2="640" y2="60" stroke="#ddd4c4" stroke-width="1"/>
+  <line x1="340" y1="60" x2="340" y2="330" stroke="#ddd4c4" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- LEFT: early stage -->
+  <text x="180" y="80" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle">趋势早期 · 量价同涨</text>
+  <line x1="60" y1="300" x2="300" y2="300" stroke="#33404f" stroke-width="1"/>
+  <path d="M 65 296 C 130 270, 200 220, 296 176" fill="none" stroke="#4f6b8a" stroke-width="3"/>
+  <text x="150" y="260" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#4f6b8a">产能</text>
+  <path d="M 65 296 C 130 264, 200 210, 296 168" fill="none" stroke="#c8a96a" stroke-width="3" stroke-dasharray="1,0"/>
+  <text x="230" y="152" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#b07d33">营收</text>
+  <text x="180" y="320" font-family="system-ui,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">两条线几乎贴在一起,价格只是配角</text>
+
+  <!-- RIGHT: late stage / now -->
+  <text x="500" y="80" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a8453a" text-anchor="middle">趋势末期 · 当下</text>
+  <line x1="380" y1="300" x2="620" y2="300" stroke="#33404f" stroke-width="1"/>
+  <!-- physical limit -->
+  <line x1="380" y1="150" x2="620" y2="150" stroke="#a8453a" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <text x="624" y="146" font-family="'Noto Serif SC',serif" font-size="9.5" fill="#a8453a" text-anchor="end">产能的物理极限</text>
+  <!-- capacity flattens -->
+  <path d="M 385 296 C 440 240, 490 160, 560 152 C 585 150, 600 150, 615 150" fill="none" stroke="#4f6b8a" stroke-width="3"/>
+  <text x="430" y="210" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#4f6b8a">产能 · 走平</text>
+  <!-- revenue keeps climbing past the line -->
+  <path d="M 385 296 C 445 230, 500 130, 560 90 C 585 72, 600 62, 615 54" fill="none" stroke="#c8a96a" stroke-width="3.4"/>
+  <text x="480" y="70" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#b07d33">营收 · 穿线上冲</text>
+  <!-- gap markers -->
+  <g stroke="#a8453a" stroke-width="1.4">
+    <line x1="560" y1="90" x2="560" y2="152"/>
+    <line x1="595" y1="66" x2="595" y2="151"/>
+  </g>
+  <text x="500" y="290" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">缺口越拉越宽 = 价格独自扛增长</text>
+
+  <!-- bottom: delayed reflexive loop -->
+  <g font-family="system-ui,sans-serif" font-size="10" fill="#33404f">
+    <text x="340" y="345" text-anchor="middle">价格涨 → 拉动资本开支承诺 → 承诺两到三年后才变成产能 → 若需求增速回落,原样变成过剩</text>
+  </g>
+  <path d="M 190 335 C 260 350, 420 350, 490 335" fill="none" stroke="#b07d33" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#b07d33"/>
+    </marker>
+  </defs>
+</svg>
