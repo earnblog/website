@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上并排立着两块屏幕,左边一块画着一条向右上方爬升的金色曲线标注股指,右边一块画着一条同样向右上方爬升的红色曲线标注加息概率,顶端一支共同的输入箭头指向两块屏幕,两块屏幕却各自朝反方向下了判决">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">两台机器,两张判决书</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-11 CPI 0.4% · 加息概率逼近九成 · 股指同日收涨</text>
+
+  <!-- shared input arrow -->
+  <g text-anchor="middle">
+    <rect x="270" y="80" width="140" height="34" rx="6" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.2"/>
+    <text x="340" y="102" font-family="system-ui,sans-serif" font-size="10" fill="#e6e9ee">同一份 CPI + 原油数据</text>
+    <path d="M 300 114 L 210 148 M 210 148 L 218 140 M 210 148 L 222 152" stroke="#8a94a6" stroke-width="1.6" fill="none"/>
+    <path d="M 380 114 L 470 148 M 470 148 L 462 140 M 470 148 L 458 152" stroke="#8a94a6" stroke-width="1.6" fill="none"/>
+  </g>
+
+  <!-- left screen: equities -->
+  <rect x="86" y="152" width="200" height="112" rx="8" fill="#1c2330" stroke="#4f6b8a" stroke-width="1.8"/>
+  <text x="186" y="174" font-family="'Noto Serif SC',serif" font-size="12" fill="#8fb0cc" text-anchor="middle">股指</text>
+  <path d="M 104 244 C 140 236, 175 210, 268 190" fill="none" stroke="#c8a96a" stroke-width="3"/>
+  <text x="186" y="256" font-family="system-ui,sans-serif" font-size="9.5" fill="#c8a96a" text-anchor="middle">收涨近1%</text>
+
+  <!-- right screen: rate odds -->
+  <rect x="394" y="152" width="200" height="112" rx="8" fill="#1c2330" stroke="#a8453a" stroke-width="1.8"/>
+  <text x="494" y="174" font-family="'Noto Serif SC',serif" font-size="12" fill="#e0b3a8" text-anchor="middle">加息概率</text>
+  <path d="M 412 244 C 448 234, 480 202, 582 178" fill="none" stroke="#a8453a" stroke-width="3.2"/>
+  <text x="494" y="256" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">逼近九成</text>
+
+  <line x1="48" y1="278" x2="632" y2="278" stroke="#33404f" stroke-width="1" opacity="0.5"/>
+  <text x="48" y="292" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">同一份输入,两张互不通气的账本,各自交了卷</text>
+</svg>

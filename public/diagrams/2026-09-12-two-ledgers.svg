@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:暖纸底色上,顶端一支共同输入箭头(CPI数据与原油单日振幅)分岔指向左右两张互不通气的账本;左边股票定价账本吃进原油回落,输出股指上涨;右边利率期货账本吃进通胀成色,输出加息概率上涨;两张账本之间没有连线,底部标注同一份输入,两套算力,两个判决">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f" text-anchor="middle">同一份输入,两张不通气的账本</text>
+
+  <!-- shared input box -->
+  <rect x="255" y="52" width="170" height="42" rx="6" fill="#1c2330"/>
+  <text x="340" y="74" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#e6e9ee" text-anchor="middle">CPI数据 + 原油单日急涨急落</text>
+  <text x="340" y="88" font-family="system-ui,sans-serif" font-size="9" fill="#8a94a6" text-anchor="middle">同一个上午,同一份原始输入</text>
+
+  <!-- forking arrows -->
+  <path d="M 300 94 C 250 120, 200 130, 175 148" fill="none" stroke="#b07d33" stroke-width="2"/>
+  <path d="M 175 148 L 183 140 M 175 148 L 186 152" stroke="#b07d33" stroke-width="2" fill="none"/>
+  <path d="M 380 94 C 430 120, 480 130, 505 148" fill="none" stroke="#b07d33" stroke-width="2"/>
+  <path d="M 505 148 L 497 140 M 505 148 L 494 152" stroke="#b07d33" stroke-width="2" fill="none"/>
+
+  <!-- LEFT ledger: equities -->
+  <rect x="60" y="150" width="230" height="130" rx="8" fill="#ffffff" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="175" y="174" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#4f6b8a" text-anchor="middle" font-weight="700">股票定价账本</text>
+  <text x="175" y="194" font-family="system-ui,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">主要吃:原油成本 · 盈利预期</text>
+  <!-- mini uptrend line -->
+  <path d="M 85 255 C 130 250, 170 220, 265 205" fill="none" stroke="#c8a96a" stroke-width="3"/>
+  <text x="175" y="270" font-family="system-ui,sans-serif" font-size="10" fill="#b07d33" text-anchor="middle">输出:股指收涨</text>
+
+  <!-- RIGHT ledger: rate futures -->
+  <rect x="390" y="150" width="230" height="130" rx="8" fill="#ffffff" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="505" y="174" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a8453a" text-anchor="middle" font-weight="700">利率期货账本</text>
+  <text x="505" y="194" font-family="system-ui,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">主要吃:通胀成色 · 央行表态</text>
+  <!-- mini uptrend line, red -->
+  <path d="M 415 255 C 460 248, 500 218, 595 202" fill="none" stroke="#a8453a" stroke-width="3"/>
+  <text x="505" y="270" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="middle">输出:加息概率上冲</text>
+
+  <!-- no connecting line between ledgers, explicit gap marker -->
+  <line x1="300" y1="215" x2="380" y2="215" stroke="#ddd4c4" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <text x="340" y="230" font-family="system-ui,sans-serif" font-size="9" fill="#a8a08c" text-anchor="middle">彼此不通气</text>
+
+  <line x1="48" y1="310" x2="632" y2="310" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="340" y="330" font-family="system-ui,sans-serif" font-size="10.5" fill="#33404f" text-anchor="middle">同一份输入,两套算力,两个判决——不是矛盾,是分布式计算的常态</text>
+</svg>
