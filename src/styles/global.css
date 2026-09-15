@@ -405,6 +405,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--mono); text-align: center; font-size: 11px; letter-spacing: .1em; color: var(--cream-soft);
 }
 .site-footer .fd { line-height: 1.8; margin: 0 0 10px; text-transform: none; letter-spacing: .03em; }
+.site-footer .fai { opacity: .78; }
 .site-footer .fc { color: var(--gold); }
 .site-footer .flinks { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 22px; margin: 4px 0 14px; }
 .site-footer .flinks a { color: var(--cream-soft); letter-spacing: .12em; transition: color .2s; }
