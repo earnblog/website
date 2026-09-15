@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上,左端卖铲子的一侧向下坠,右端买铲子的一侧向上抬,中间一道金色箭头标着转账;横贯画面的红色虚线标着资金的价格5%,同时压在两端头顶">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">定的不是AI的价,是账单的价</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-14 美东周一 · 费城半导体指数 −5.9% · Alphabet／微软／Meta 同日收涨</text>
+
+  <!-- the price of money: one dashed line pressing across the whole frame -->
+  <line x1="48" y1="106" x2="632" y2="106" stroke="#a8453a" stroke-width="1.6" stroke-dasharray="5,4"/>
+  <text x="48" y="99" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#e0b3a8">资金的价格 · 十年期美债 5%</text>
+  <g stroke="#a8453a" stroke-width="1.4">
+    <line x1="170" y1="106" x2="170" y2="126"/><line x1="166" y1="120" x2="170" y2="127"/><line x1="174" y1="120" x2="170" y2="127"/>
+    <line x1="340" y1="106" x2="340" y2="126"/><line x1="336" y1="120" x2="340" y2="127"/><line x1="344" y1="120" x2="340" y2="127"/>
+    <line x1="510" y1="106" x2="510" y2="126"/><line x1="506" y1="120" x2="510" y2="127"/><line x1="514" y1="120" x2="510" y2="127"/>
+  </g>
+  <text x="632" y="99" font-family="system-ui,sans-serif" font-size="10" fill="#a8453a" text-anchor="end">不问任何人同不同意</text>
+
+  <!-- baseline -->
+  <line x1="48" y1="252" x2="632" y2="252" stroke="#33404f" stroke-width="1"/>
+
+  <!-- left node: sellers of shovels, falling -->
+  <rect x="86" y="168" width="150" height="56" rx="3" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="161" y="192" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#e0b3a8" text-anchor="middle">卖铲子的</text>
+  <text x="161" y="211" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6" text-anchor="middle">订单变薄</text>
+  <path d="M 161 228 L 161 246" stroke="#a8453a" stroke-width="2.4"/>
+  <path d="M 154 239 L 161 248 L 168 239" fill="none" stroke="#a8453a" stroke-width="2.4"/>
+
+  <!-- transfer arrow -->
+  <path d="M 248 196 L 424 196" stroke="#c8a96a" stroke-width="2.4"/>
+  <path d="M 414 189 L 424 196 L 414 203" fill="none" stroke="#c8a96a" stroke-width="2.4"/>
+  <text x="336" y="186" font-family="'Noto Serif SC',serif" font-size="13" fill="#c8a96a" text-anchor="middle">转账</text>
+  <text x="336" y="216" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6" text-anchor="middle">同一句"该慢下来"</text>
+
+  <!-- right node: buyers of shovels, rising -->
+  <rect x="436" y="168" width="150" height="56" rx="3" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="511" y="192" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a9bdd1" text-anchor="middle">买铲子的</text>
+  <text x="511" y="211" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6" text-anchor="middle">开销变轻</text>
+  <path d="M 511 164 L 511 146" stroke="#4f6b8a" stroke-width="2.4"/>
+  <path d="M 504 153 L 511 144 L 518 153" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+
+  <text x="48" y="290" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">一句话在链条两端符号相反——那不是判决,是转账</text>
+  <text x="632" y="290" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280" text-anchor="end">标普500 当日 −0.48%</text>
+</svg>
