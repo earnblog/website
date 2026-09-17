@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="加息周期早期与末期对照图:左侧早期,存款成本慢、贷款收益快、坏账低,三支输入汇成利差变宽,银行是赢家;右侧末期,存款成本已到位、债券账面再亏一刀、借款人利息负担上升,三支输入汇成还得起的那部分变薄,银行先受力;底部标注同一句话,早期是真理,末期是陷阱">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+
+  <text x="40" y="34" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#33404f">同一次加息,落在周期的两头</text>
+  <text x="40" y="54" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a8272">进的是两本完全不同的账</text>
+
+  <line x1="340" y1="72" x2="340" y2="312" stroke="#ddd4c4" stroke-width="1"/>
+
+  <!-- LEFT: early cycle -->
+  <text x="40" y="92" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#4f6b8a">加息周期·早期</text>
+  <text x="40" y="110" font-family="system-ui,sans-serif" font-size="10" fill="#8a8272">利率从低处起步 · 借款人绰绰有余</text>
+
+  <g font-family="system-ui,sans-serif" font-size="10.5" fill="#33404f">
+    <text x="40" y="146">存款成本 · 慢</text>
+    <text x="40" y="180">贷款收益 · 快</text>
+    <text x="40" y="214">坏账 · 低位</text>
+  </g>
+  <g stroke="#4f6b8a" stroke-width="1.6" fill="none">
+    <path d="M 150 142 C 190 142, 200 176, 236 176"/>
+    <path d="M 150 176 L 236 176"/>
+    <path d="M 150 210 C 190 210, 200 176, 236 176"/>
+    <path d="M 228 170 L 238 176 L 228 182"/>
+  </g>
+  <rect x="244" y="156" width="74" height="40" rx="3" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="281" y="173" font-family="'Noto Serif SC',serif" font-size="11" fill="#4f6b8a" text-anchor="middle">利差变宽</text>
+  <text x="281" y="188" font-family="system-ui,sans-serif" font-size="9.5" fill="#4f6b8a" text-anchor="middle">进的是自己的账</text>
+  <path d="M 281 200 L 281 232" stroke="#4f6b8a" stroke-width="2.2"/>
+  <path d="M 274 224 L 281 234 L 288 224" fill="none" stroke="#4f6b8a" stroke-width="2.2"/>
+  <text x="281" y="252" font-family="'Noto Serif SC',serif" font-size="11.5" font-weight="700" fill="#4f6b8a" text-anchor="middle">银行是赢家</text>
+
+  <text x="40" y="290" font-family="'Noto Serif SC',serif" font-size="11" fill="#4f6b8a">"加息利好银行"——在这里是真理</text>
+
+  <!-- RIGHT: late cycle -->
+  <text x="368" y="92" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#a8453a">加息周期·末期</text>
+  <text x="368" y="110" font-family="system-ui,sans-serif" font-size="10" fill="#8a8272">资金价格已在高位 · 十年期美债 5% 附近</text>
+
+  <g font-family="system-ui,sans-serif" font-size="10.5" fill="#33404f">
+    <text x="368" y="146">存款成本 · 早已到位</text>
+    <text x="368" y="180">债券账面 · 再亏一刀</text>
+    <text x="368" y="214">借款人利息负担 · 上升</text>
+  </g>
+  <g stroke="#a8453a" stroke-width="1.6" fill="none">
+    <path d="M 500 142 C 530 142, 536 176, 564 176"/>
+    <path d="M 500 176 L 564 176"/>
+    <path d="M 500 210 C 530 210, 536 176, 564 176"/>
+    <path d="M 556 170 L 566 176 L 556 182"/>
+  </g>
+  <rect x="572" y="150" width="76" height="52" rx="3" fill="none" stroke="#a8453a" stroke-width="1.6"/>
+  <text x="610" y="167" font-family="'Noto Serif SC',serif" font-size="11" fill="#a8453a" text-anchor="middle">还得起的</text>
+  <text x="610" y="181" font-family="'Noto Serif SC',serif" font-size="11" fill="#a8453a" text-anchor="middle">那部分变薄</text>
+  <text x="610" y="195" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8453a" text-anchor="middle">进的是别人的账单</text>
+  <path d="M 610 206 L 610 232" stroke="#a8453a" stroke-width="2.2"/>
+  <path d="M 603 224 L 610 234 L 617 224" fill="none" stroke="#a8453a" stroke-width="2.2"/>
+  <text x="610" y="252" font-family="'Noto Serif SC',serif" font-size="11.5" font-weight="700" fill="#a8453a" text-anchor="middle">银行先受力</text>
+
+  <text x="368" y="290" font-family="'Noto Serif SC',serif" font-size="11" fill="#a8453a">同一句话——在这里是陷阱</text>
+
+  <line x1="40" y1="312" x2="640" y2="312" stroke="#ddd4c4" stroke-width="1"/>
+  <text x="40" y="340" font-family="system-ui,sans-serif" font-size="10" fill="#8a8272">银行赚的从来不是利率,是别人还得起的那部分利率</text>
+  <text x="640" y="340" font-family="system-ui,sans-serif" font-size="10" fill="#8a8272" text-anchor="end">2026-09-16 美东周三 · 3.50–3.75% → 3.75–4.00%</text>
+</svg>
