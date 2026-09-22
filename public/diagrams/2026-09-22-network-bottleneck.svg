@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="算力网络从单点入口到多点分布的镜像图:左侧训练期,唯一入口GPU汇聚所有资金,标为单点瓶颈;右侧推理期,GPU、CPU、内存三个节点并存,其中CPU节点被标红加粗,标注产能缺口最深,资金优先涌入">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f" text-anchor="middle">网络自己找瓶颈,不是资金认名字</text>
+
+  <!-- divider -->
+  <line x1="340" y1="56" x2="340" y2="322" stroke="#ddd4c4" stroke-width="1"/>
+
+  <!-- left panel: training era, single entry point -->
+  <text x="170" y="66" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a" text-anchor="middle">训练期 · 单点瓶颈</text>
+
+  <circle cx="170" cy="200" r="40" fill="none" stroke="#4f6b8a" stroke-width="2"/>
+  <text x="170" y="196" font-family="'Noto Serif SC',serif" font-size="12" fill="#4f6b8a" text-anchor="middle">GPU</text>
+  <text x="170" y="212" font-family="system-ui,sans-serif" font-size="9" fill="#4f6b8a" text-anchor="middle">唯一入口</text>
+
+  <path d="M 80 130 L 138 178" stroke="#8a94a6" stroke-width="1.4"/>
+  <path d="M 260 130 L 202 178" stroke="#8a94a6" stroke-width="1.4"/>
+  <path d="M 80 270 L 138 222" stroke="#8a94a6" stroke-width="1.4"/>
+  <path d="M 260 270 L 202 222" stroke="#8a94a6" stroke-width="1.4"/>
+  <text x="170" y="290" font-family="system-ui,sans-serif" font-size="9.5" fill="#7a8496" text-anchor="middle">所有资金只认一个代号</text>
+
+  <!-- right panel: inference era, distributed nodes -->
+  <text x="510" y="66" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a" text-anchor="middle">推理期 · 多点分布</text>
+
+  <circle cx="440" cy="150" r="30" fill="none" stroke="#4f6b8a" stroke-width="1.6"/>
+  <text x="440" y="154" font-family="'Noto Serif SC',serif" font-size="11" fill="#4f6b8a" text-anchor="middle">GPU</text>
+
+  <circle cx="560" cy="200" r="36" fill="#fbf9f4" stroke="#a8453a" stroke-width="2.6"/>
+  <text x="560" y="197" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#a8453a" text-anchor="middle">CPU</text>
+  <text x="560" y="211" font-family="system-ui,sans-serif" font-size="8.5" fill="#a8453a" text-anchor="middle">缺口最深</text>
+
+  <circle cx="450" cy="270" r="28" fill="none" stroke="#c8a96a" stroke-width="1.6"/>
+  <text x="450" y="274" font-family="'Noto Serif SC',serif" font-size="10.5" fill="#b07d33" text-anchor="middle">内存</text>
+
+  <path d="M 500 130 L 615 170" stroke="#c8a96a" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <path d="M 605 165 L 615 170 L 609 180" fill="none" stroke="#c8a96a" stroke-width="1.8"/>
+  <text x="622" y="160" font-family="system-ui,sans-serif" font-size="9" fill="#b07d33" text-anchor="start">资金优先</text>
+  <text x="622" y="172" font-family="system-ui,sans-serif" font-size="9" fill="#b07d33" text-anchor="start">涌入</text>
+
+  <text x="510" y="316" font-family="system-ui,sans-serif" font-size="9.5" fill="#7a8496" text-anchor="middle">网络露出第二个瓶颈,资金随即分流</text>
+
+  <text x="340" y="345" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f" text-anchor="middle">入口越多,越不是哪一个名字说了算</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上三根从同一条基线升起的柱子代表当天涨幅,英伟达最矮几乎贴着基线,英特尔明显更高,AMD最高顶端标市值破万亿;一支金色虚线箭头从上方斜插而下穿过英特尔与AMD两根柱子,标注资金涌向缺口最深处">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">定价的不是名字,是缺口</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2026-09-21 美东周一 · Meta agent「Muse」十天登顶App Store · 英特尔+12% · AMD市值破万亿 · 英伟达涨幅被甩开</text>
+
+  <!-- baseline -->
+  <line x1="48" y1="248" x2="632" y2="248" stroke="#33404f" stroke-width="1"/>
+
+  <!-- NVDA bar: short -->
+  <g>
+    <rect x="150" y="228" width="70" height="20" fill="none" stroke="#4f6b8a" stroke-width="1.8"/>
+    <text x="185" y="266" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#a9bdd1" text-anchor="middle">英伟达</text>
+    <text x="185" y="282" font-family="system-ui,sans-serif" font-size="9.5" fill="#8a94a6" text-anchor="middle">涨幅垫底</text>
+  </g>
+
+  <!-- INTC bar: medium-tall -->
+  <g>
+    <rect x="300" y="160" width="70" height="88" fill="none" stroke="#c8a96a" stroke-width="2"/>
+    <text x="335" y="266" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#e8d3ae" text-anchor="middle">英特尔</text>
+    <text x="335" y="282" font-family="system-ui,sans-serif" font-size="9.5" fill="#c8a96a" text-anchor="middle">+12%</text>
+  </g>
+
+  <!-- AMD bar: tallest -->
+  <g>
+    <rect x="450" y="122" width="70" height="126" fill="none" stroke="#b07d33" stroke-width="2.2"/>
+    <text x="485" y="112" font-family="system-ui,sans-serif" font-size="9.5" fill="#b07d33" text-anchor="middle">市值破万亿</text>
+    <text x="485" y="266" font-family="'Noto Serif SC',serif" font-size="12.5" fill="#e8d3ae" text-anchor="middle">AMD</text>
+    <text x="485" y="282" font-family="system-ui,sans-serif" font-size="9.5" fill="#c8a96a" text-anchor="middle">近+10%</text>
+  </g>
+
+  <!-- gold dashed arrow pointing to the tallest bars: money flows to the deepest gap -->
+  <path d="M 560 96 L 400 150" stroke="#c8a96a" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <path d="M 408 142 L 400 150 L 411 154" fill="none" stroke="#c8a96a" stroke-width="1.6"/>
+  <text x="632" y="92" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a" text-anchor="end">资金涌向缺口最深处</text>
+
+  <text x="48" y="300" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">同一天的行情,资金没有认准名字,只认准了缺口本身</text>
+</svg>
