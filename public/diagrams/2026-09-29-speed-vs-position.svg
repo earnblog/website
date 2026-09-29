@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="速度与位置对照图:每日净流入柱逐日变矮,累计折线上升但趋平">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <g stroke="#ddd4c4" stroke-width="1"><line x1="60" y1="300" x2="640" y2="300"/><line x1="60" y1="220" x2="640" y2="220"/><line x1="60" y1="140" x2="640" y2="140"/></g>
+  <text x="60" y="30" font-family="'Noto Serif SC',serif" font-size="14" fill="#33404f" font-weight="700">位置(累计)在涨,速度(每日流入)在死</text>
+  <rect x="100" y="200" width="60" height="100" fill="#c8a96a"/>
+  <rect x="210" y="228" width="60" height="72" fill="#c8a96a"/>
+  <rect x="320" y="265" width="60" height="35" fill="#b07d33"/>
+  <rect x="430" y="281" width="60" height="19" fill="#b07d33"/>
+  <rect x="540" y="287" width="60" height="13" fill="#a8453a"/>
+  <path d="M 130 130 L 240 100 L 350 86 L 460 80 L 570 77" fill="none" stroke="#4f6b8a" stroke-width="2.6"/>
+  <g fill="#4f6b8a"><circle cx="130" cy="130" r="4"/><circle cx="240" cy="100" r="4"/><circle cx="350" cy="86" r="4"/><circle cx="460" cy="80" r="4"/><circle cx="570" cy="77" r="4"/></g>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#33404f" text-anchor="middle"><text x="130" y="322">周一 ~10亿</text><text x="240" y="322">周二 ~7亿</text><text x="350" y="322">周三 ~3.5亿</text><text x="460" y="322">周四 ~1.9亿</text><text x="570" y="322">周五 ~1.3亿</text></g>
+  <text x="60" y="350" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">图例:柱=每日净流入(美元);蓝线=累计流入,示意走势</text>
+</svg>

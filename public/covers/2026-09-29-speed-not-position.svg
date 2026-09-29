@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上,五根金色柱子从左到右逐根变矮,代表每日净流入;一条蓝色折线在柱顶之上持续爬升,代表累计流入;缺口标注位置在涨,速度在死">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">位置在涨,速度在死</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">比特币现货ETF · 上周每日净流入 vs 累计流入 · 周一约10亿 → 周五约1.3亿</text>
+  <line x1="48" y1="256" x2="632" y2="256" stroke="#33404f" stroke-width="1"/>
+  <rect x="90" y="156" width="56" height="100" fill="#c8a96a"/>
+  <rect x="190" y="184" width="56" height="72" fill="#c8a96a"/>
+  <rect x="290" y="221" width="56" height="35" fill="#c8a96a"/>
+  <rect x="390" y="237" width="56" height="19" fill="#c8a96a"/>
+  <rect x="490" y="243" width="56" height="13" fill="#c8a96a"/>
+  <path d="M 118 130 L 218 104 L 318 92 L 418 86 L 518 83" fill="none" stroke="#4f6b8a" stroke-width="2.4"/>
+  <circle cx="518" cy="83" r="3.5" fill="#4f6b8a"/>
+  <text x="530" y="80" font-family="system-ui,sans-serif" font-size="10" fill="#8fa8c2">累计流入·仍在爬</text>
+  <text x="118" y="150" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a" text-anchor="middle">周一</text>
+  <text x="518" y="272" font-family="system-ui,sans-serif" font-size="10" fill="#c8a96a" text-anchor="middle">周五</text>
+  <line x1="518" y1="90" x2="518" y2="238" stroke="#a8453a" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="530" y="170" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#a8453a">缺口越拉越大</text>
+</svg>
