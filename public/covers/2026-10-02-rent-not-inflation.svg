@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上,一根竖条分为蓝色通胀补偿与金色时间的租金,红色箭头指向金色段">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">涨的是时间的租金</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">十年期美债收益率 · 核心PCE低于预期,收益率仍创2007年以来新高</text>
+  <rect x="120" y="170" width="110" height="86" fill="#4f6b8a"/>
+  <rect x="120" y="84" width="110" height="86" fill="#c8a96a"/>
+  <line x1="60" y1="256" x2="632" y2="256" stroke="#33404f" stroke-width="1"/>
+  <text x="175" y="218" font-family="system-ui,sans-serif" font-size="11" fill="#fbf9f4" text-anchor="middle">通胀补偿 ≈2.3</text>
+  <text x="175" y="132" font-family="system-ui,sans-serif" font-size="11" fill="#181f2b" text-anchor="middle">时间的租金 ≈2.9</text>
+  <path d="M 340 127 L 244 127" stroke="#a8453a" stroke-width="2.4" fill="none"/>
+  <path d="M 244 127 L 254 121 M 244 127 L 254 133" stroke="#a8453a" stroke-width="2.4" fill="none"/>
+  <text x="350" y="124" font-family="'Noto Serif SC',serif" font-size="13" fill="#a8453a">涨的是这一块</text>
+  <text x="350" y="212" font-family="system-ui,sans-serif" font-size="11" fill="#8fa8c2">PCE只管得了这一块</text>
+</svg>

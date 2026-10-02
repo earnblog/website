@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="十年期美债收益率拆解图:下段蓝色为通胀补偿约2.3%,上段金色为时间的租金约2.9%">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <g stroke="#ddd4c4" stroke-width="1"><line x1="60" y1="320" x2="640" y2="320"/><line x1="60" y1="200" x2="640" y2="200"/><line x1="60" y1="80" x2="640" y2="80"/></g>
+  <text x="60" y="30" font-family="'Noto Serif SC',serif" font-size="14" fill="#33404f" font-weight="700">十年期收益率 ≈ 5.2%:两块租金,PCE只管一块</text>
+  <rect x="200" y="214" width="130" height="106" fill="#4f6b8a"/>
+  <rect x="200" y="80" width="130" height="134" fill="#c8a96a"/>
+  <g font-family="system-ui,sans-serif" font-size="12" text-anchor="middle"><text x="265" y="272" fill="#fbf9f4">通胀补偿 约2.3%</text><text x="265" y="152" fill="#33404f">时间的租金 约2.9%</text></g>
+  <path d="M 400 270 L 345 270" stroke="#33404f" stroke-width="1.6" fill="none"/>
+  <text x="408" y="266" font-family="system-ui,sans-serif" font-size="12" fill="#33404f">核心PCE低于预期,只作用于这一块</text>
+  <path d="M 400 120 L 345 120" stroke="#a8453a" stroke-width="2" fill="none"/>
+  <text x="408" y="116" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a" font-weight="700">近几周涨的是这一块</text>
+  <text x="408" y="136" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">9月中旬通胀保值国债拍卖约2.65% → 月底约2.9%</text>
+  <text x="60" y="350" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">图例:蓝=通胀补偿(倒推,示意);金=实际利率(时间的租金)。数值为约数。</text>
+</svg>
