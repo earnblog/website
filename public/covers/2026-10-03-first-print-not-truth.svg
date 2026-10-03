@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上,三根竖条表示七月非农的三次公布,红、金、红,正负号换了两回">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">初值是报价,修正值才是账本</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">七月非农新增就业 · 三次公布</text>
+  <line x1="60" y1="170" x2="632" y2="170" stroke="#8a94a6" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="628" y="164" text-anchor="end" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">零轴</text>
+  <rect x="120" y="170" width="70" height="46" fill="#a8453a"/>
+  <rect x="250" y="124" width="70" height="46" fill="#c8a96a"/>
+  <rect x="380" y="170" width="70" height="20" fill="#a8453a"/>
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#fbf9f4" text-anchor="middle">
+    <text x="155" y="234">8月初 –2.3万</text>
+    <text x="285" y="112">9月4日 +2.1万</text>
+    <text x="415" y="208">10月2日 –1万</text>
+  </g>
+  <text x="480" y="250" font-family="'Noto Serif SC',serif" font-size="13" fill="#a8453a">正负号换了两回</text>
+</svg>
