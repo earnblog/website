@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="反身性循环示意图:AI资本开支推高需求,需求推高价格与利率,利率抬高折现率压低估值,估值回落又影响融资和下一轮开支">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="30" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">同一笔钱 · 一头是增长,一头是价格</text>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a8453a"/></marker></defs>
+  <g font-family="'Noto Serif SC',serif" font-size="13" text-anchor="middle">
+    <rect x="80" y="70" width="150" height="56" rx="4" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.6"/>
+    <text x="155" y="94" fill="#4f6b8a" font-weight="700">AI资本开支</text><text x="155" y="114" fill="#8a8170" font-size="11.5">买芯片 · 电力 · 土地</text>
+    <rect x="450" y="70" width="150" height="56" rx="4" fill="#fbf9f4" stroke="#b07d33" stroke-width="1.6"/>
+    <text x="525" y="94" fill="#b07d33" font-weight="700">需求推高价格</text><text x="525" y="114" fill="#8a8170" font-size="11.5">供给短期固定</text>
+    <rect x="450" y="230" width="150" height="56" rx="4" fill="#fbf9f4" stroke="#a8453a" stroke-width="1.6"/>
+    <text x="525" y="254" fill="#a8453a" font-weight="700">利率维持高位</text><text x="525" y="274" fill="#8a8170" font-size="11.5">折现率上升</text>
+    <rect x="80" y="230" width="150" height="56" rx="4" fill="#fbf9f4" stroke="#33404f" stroke-width="1.6"/>
+    <text x="155" y="254" fill="#33404f" font-weight="700">估值与融资</text><text x="155" y="274" fill="#8a8170" font-size="11.5">决定下一轮开支</text>
+  </g>
+  <g stroke="#a8453a" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <path d="M232 98 L446 98"/><path d="M525 128 L525 226"/><path d="M448 258 L234 258"/><path d="M155 228 L155 130"/>
+  </g>
+  <text x="340" y="190" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a">不在利率之外,是利率的出价人</text>
+</svg>

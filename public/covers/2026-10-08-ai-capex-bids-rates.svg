@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底色上,金色圆环四个节点首尾相接,AI投资、需求、利率、估值,下方红字:花出去的每一笔钱,都在给利率出价">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">AI投资是利率的出价人</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">FOMC纪要 · AI资本开支 · 反身性</text>
+  <circle cx="340" cy="150" r="62" fill="none" stroke="#c8a96a" stroke-width="2.5"/>
+  <g fill="#181f2b" stroke="#4f6b8a" stroke-width="1.6">
+    <circle cx="340" cy="88" r="7"/><circle cx="402" cy="150" r="7"/><circle cx="340" cy="212" r="7"/><circle cx="278" cy="150" r="7"/>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#fbf9f4">
+    <text x="340" y="78" text-anchor="middle">AI投资</text>
+    <text x="416" y="154">需求</text>
+    <text x="340" y="236" text-anchor="middle">利率</text>
+    <text x="264" y="154" text-anchor="end">估值</text>
+  </g>
+  <text x="340" y="270" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" fill="#a8453a">花出去的每一笔钱,都在给利率出价</text>
+</svg>
