@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="两把尺子示意图:同一笔客户付款,按毛额记账显示约700亿美元,按净额记账显示约500亿美元,差额是云伙伴留下的部分">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="40" y="30" font-family="system-ui,sans-serif" font-size="11.5" fill="#8a8170">同一笔客户付款 · 两种量法</text>
+  <g font-family="'Noto Serif SC',serif" font-size="13" text-anchor="middle">
+    <rect x="120" y="70" width="120" height="210" fill="#fbf9f4" stroke="#b07d33" stroke-width="1.6"/>
+    <rect x="120" y="70" width="120" height="60" fill="#ddd4c4"/>
+    <rect x="120" y="130" width="120" height="150" fill="#c8a96a"/>
+    <text x="180" y="105" fill="#33404f" font-size="12">云伙伴留下的</text>
+    <text x="180" y="210" fill="#33404f" font-weight="700">OpenAI到手的</text>
+    <text x="180" y="308" fill="#b07d33" font-weight="700">毛额 · 约700亿</text>
+    <rect x="440" y="130" width="120" height="150" fill="#fbf9f4" stroke="#4f6b8a" stroke-width="1.6"/>
+    <rect x="440" y="130" width="120" height="150" fill="#c8a96a"/>
+    <text x="500" y="210" fill="#33404f" font-weight="700">OpenAI到手的</text>
+    <text x="500" y="308" fill="#4f6b8a" font-weight="700">净额 · 约500亿</text>
+  </g>
+  <text x="340" y="190" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a">少的不是钱,是量法</text>
+  <text x="340" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a8170">差额约200亿</text>
+</svg>
