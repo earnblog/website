@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="成本线示意图:价格站上ETF持有人平均成本线时资金流入,九月下旬两天约17亿美元;价格退回成本线脚时资金流出,十月两天约7.3亿美元">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <g stroke="#ddd4c4" stroke-width="1"><line x1="40" y1="300" x2="640" y2="300"/><line x1="40" y1="60" x2="40" y2="300"/></g>
+  <line x1="40" y1="170" x2="640" y2="170" stroke="#b07d33" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="636" y="162" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#b07d33">平均成本线(估算约8.17万美元)</text>
+  <polyline points="50,260 130,235 210,205 280,150 340,112 400,100 460,125 520,160 580,180 630,190" fill="none" stroke="#4f6b8a" stroke-width="3" stroke-linejoin="round"/>
+  <g font-family="system-ui,sans-serif" font-size="12">
+    <text x="215" y="86" fill="#4f6b8a" text-anchor="middle">九月下旬 · 站上线</text>
+    <text x="215" y="104" fill="#33404f" text-anchor="middle">两天流入约17亿美元</text>
+    <text x="545" y="232" fill="#a8453a" text-anchor="middle">十月 · 退回线脚</text>
+    <text x="545" y="250" fill="#33404f" text-anchor="middle">两天流出约7.3亿美元</text>
+  </g>
+  <g fill="#a8453a"><circle cx="500" cy="186" r="4"/><circle cx="522" cy="196" r="4"/><circle cx="546" cy="190" r="4"/><circle cx="568" cy="202" r="4"/><circle cx="590" cy="198" r="4"/></g>
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#33404f"><circle cx="60" cy="330" r="4" fill="#a8453a"/><text x="70" y="334">线下被套、想回本离场的持有人</text><text x="640" y="334" text-anchor="end">示意图,非真实价格路径</text></g>
+</svg>
