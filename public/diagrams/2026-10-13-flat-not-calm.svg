@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="持平示意图:同一天里,能源等上涨的股票和存储、科技等下跌的股票方向相反,被指数这个平均数抵消成一条几乎水平的线">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <g stroke="#ddd4c4" stroke-width="1"><line x1="40" y1="300" x2="640" y2="300"/><line x1="40" y1="50" x2="40" y2="300"/></g>
+  <polyline points="60,175 150,150 240,120 330,100 420,90 520,84 620,80" fill="none" stroke="#4f6b8a" stroke-width="3" stroke-linejoin="round"/>
+  <polyline points="60,175 150,200 240,230 330,250 420,262 520,270 620,276" fill="none" stroke="#a8453a" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="60" y1="175" x2="620" y2="177" stroke="#b07d33" stroke-width="3" stroke-dasharray="8 5"/>
+  <g font-family="system-ui,sans-serif" font-size="12">
+    <text x="620" y="68" text-anchor="end" fill="#4f6b8a">上涨的一半(如能源)</text>
+    <text x="620" y="296" text-anchor="end" fill="#a8453a">下跌的一半(如存储、科技)</text>
+    <text x="330" y="166" text-anchor="middle" fill="#b07d33">指数(平均数):几乎一条平线</text>
+  </g>
+  <text x="640" y="334" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">示意图,非真实价格路径</text>
+</svg>
