@@ -1,9 +1,10 @@
 // 月度数据包:从一手源取数、算好、画图,给研究档会员的月度数据包文章用。
 // 用法: node scripts/datapack.mjs [YYYY-MM]   (不写月份 = 上个月)
+//       node scripts/datapack.mjs --etf-sync  只把最新的 ETF 每日净流入并进 src/data/etf-daily.json(每日发文任务调用)
 // 产出: src/data/datapack/<月>.json(全部数字 + 出处)
 //       public/datapack/<月>/inflation.svg  yields.svg  etf.svg  capex.svg
 // 各块独立容错:哪个源取不到,JSON 里记 errors,对应的图不出,文章里照实说明。
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -11,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const UA = 'TheCriticalPoint research (fncuthdert.com) contact@fncuthdert.com';
 
-const month = process.argv[2] || (() => {
+const month = process.argv.slice(2).find((a) => !a.startsWith('--')) || (() => {
   const d = new Date();
   d.setUTCDate(1);
   d.setUTCMonth(d.getUTCMonth() - 1);
@@ -30,9 +31,13 @@ async function get(url, { curlFirst = false } = {}) {
   };
   // curl 走系统代理,也更容易过 Cloudflare 的浏览器检查
   const viaCurl = async () => execFileSync('curl', ['-s', '-m', '30', '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', url], { maxBuffer: 50 * 1024 * 1024 }).toString();
+  // 两轮:云端偶尔第一次请求就超时(2026-11 FRED 实测),隔几秒再试一轮
   let last;
-  for (const f of curlFirst ? [viaCurl, viaFetch] : [viaFetch, viaCurl]) {
-    try { const t = await f(); if (t) return t; } catch (e) { last = e; }
+  for (let round = 0; round < 2; round++) {
+    if (round) await new Promise((r) => setTimeout(r, 4000));
+    for (const f of curlFirst ? [viaCurl, viaFetch] : [viaFetch, viaCurl]) {
+      try { const t = await f(); if (t) return t; } catch (e) { last = e; }
+    }
   }
   throw last ?? new Error('empty');
 }
@@ -106,26 +111,82 @@ await attempt('yields', async () => {
 const MON = { Jan: '01', Feb: '02', Mar: '03', Apr: '04', May: '05', Jun: '06', Jul: '07', Aug: '08', Sep: '09', Oct: '10', Nov: '11', Dec: '12' };
 const toNum = (s) => { const n = +String(s).replace(/,/g, '').replace(/^\((.*)\)$/, '-$1'); return isNaN(n) ? null : n; };
 const cellsOf = (row) => [...row.matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map((m) => m[1].replace(/<[^>]+>/g, '').replace(/&nbsp;/g, '').trim());
-await attempt('etf', async () => {
-  const html = await get('https://farside.co.uk/bitcoin-etf-flow-all-data/', { curlFirst: true });
-  if (!html.includes('<table class="etf"')) throw new Error('Farside 页面被挡或改版');
-  const rows = html.split('<table class="etf"')[1].split('</table>')[0].split('<tr').slice(1);
-  const byMonth = {};
-  let days = 0;
-  for (const r of rows) {
+// ETF 每日净流入存在仓库里的 src/data/etf-daily.json({ "YYYY-MM-DD": 百万美元 })。
+// Farside 挡云端机房 IP(2026-11 实测,本机能开),bitbo.io 只留最近约 10 个交易日,
+// 所以每日发文任务跑 `node scripts/datapack.mjs --etf-sync` 把能拿到的天数并进来,
+// 月度数据包从这份累积记录按月加总,不会因为某一天哪个源被挡就缺半个月。
+const ETF_STORE = path.join(ROOT, 'src', 'data', 'etf-daily.json');
+const loadStore = () => { try { return JSON.parse(readFileSync(ETF_STORE, 'utf8')); } catch { return {}; } };
+async function etfFromFarside() {
+  if (process.env.DATAPACK_NO_FARSIDE) return null; // 模拟被挡,测退路用
+  const html = await get('https://farside.co.uk/bitcoin-etf-flow-all-data/', { curlFirst: true }).catch(() => '');
+  if (!html.includes('<table class="etf"')) return null;
+  const days = {};
+  for (const r of html.split('<table class="etf"')[1].split('</table>')[0].split('<tr').slice(1)) {
     const c = cellsOf(r);
     const m = /^(\d{2}) (\w{3}) (\d{4})$/.exec(c[0] || '');
-    if (!m || !MON[m[2]]) continue;
-    const key = `${m[3]}-${MON[m[2]]}`;
     const v = toNum(c.at(-1));
-    if (v === null || key > month) continue;
-    byMonth[key] = (byMonth[key] || 0) + v;
-    days++;
+    if (m && MON[m[2]] && v !== null) days[`${m[3]}-${MON[m[2]]}-${m[1]}`] = v;
   }
-  const months = Object.keys(byMonth).sort().slice(-12).map((k) => ({ month: k, netM: Math.round(byMonth[k]) }));
-  if (!days || !months.length) throw new Error('Farside 表格解析为空');
-  out.sources.etf = 'Farside Investors 美国现货比特币 ETF 每日净流入(百万美元),本脚本按月加总';
-  return { months, cumulativeM: Math.round(Object.values(byMonth).reduce((a, b) => a + b, 0)) };
+  return Object.keys(days).length ? days : null;
+}
+async function etfFromBitbo() {
+  const html = await get('https://bitbo.io/treasuries/etf-flows/', { curlFirst: true });
+  const days = {};
+  for (const r of html.split('<tr').slice(1)) {
+    const c = cellsOf(r);
+    if (!/^\w{3} \d{1,2}, \d{4}$/.test(c[0] ?? '')) continue;
+    const v = toNum(c.at(-1));
+    if (v !== null) days[new Date(c[0] + ' UTC').toISOString().slice(0, 10)] = v;
+  }
+  if (!Object.keys(days).length) throw new Error('bitbo 表格解析为空');
+  return days;
+}
+// 把能拿到的每日数并进记录;最新一天若是 0 多半是当天还没更新,不收
+async function syncEtfStore() {
+  const store = loadStore();
+  let fresh = await etfFromFarside(), source = 'Farside';
+  if (!fresh) { fresh = await etfFromBitbo(); source = 'bitbo.io'; }
+  const latest = Object.keys(fresh).sort().at(-1);
+  if (fresh[latest] === 0) delete fresh[latest];
+  // Farside 是主源,会修正历史数,覆盖;bitbo 和 Farside 同一天的数略有出入(如 2026-10-30 -667.7 vs -671.8),只补缺的天
+  let added = 0;
+  for (const [d, v] of Object.entries(fresh)) {
+    if (!(d in store)) { added++; store[d] = v; } else if (source === 'Farside') store[d] = v;
+  }
+  const sorted = Object.fromEntries(Object.entries(store).sort(([a], [b]) => a.localeCompare(b)));
+  writeFileSync(ETF_STORE, JSON.stringify(sorted, null, 0).replace(/,"/g, ',\n"') + '\n');
+  return { source, added, total: Object.keys(sorted).length, latest: Object.keys(sorted).at(-1) };
+}
+if (process.argv.includes('--etf-sync')) {
+  const r = await syncEtfStore();
+  console.log(`etf-sync: 来源 ${r.source},新增 ${r.added} 天,共 ${r.total} 天,最新 ${r.latest}`);
+  process.exit(0);
+}
+await attempt('etf', async () => {
+  const sync = await syncEtfStore().catch((e) => { out.errors.push(`etf-sync: ${e.message}`); return null; });
+  const store = loadStore();
+  const byMonth = {}, count = {};
+  for (const [d, v] of Object.entries(store)) {
+    const k = d.slice(0, 7);
+    if (k > month) continue;
+    byMonth[k] = (byMonth[k] || 0) + v;
+    count[k] = (count[k] || 0) + 1;
+  }
+  const keys = Object.keys(byMonth).sort();
+  if (!keys.length) throw new Error('ETF 每日记录为空');
+  if (keys.at(-1) !== month) throw new Error(`ETF 每日记录里没有 ${month} 的数据`);
+  // 本月记录天数明显少于工作日数,说明中间断档:照实标出来,文章里要写明
+  let weekdays = 0;
+  for (let d = new Date(month + '-01T00:00:00Z'); d.toISOString().slice(0, 7) === month; d.setUTCDate(d.getUTCDate() + 1)) if (d.getUTCDay() % 6) weekdays++;
+  const gap = weekdays - (count[month] || 0) > 3;
+  out.sources.etf = `Farside Investors / bitbo.io 美国现货比特币 ETF 每日净流入(百万美元),逐日存档于 src/data/etf-daily.json,本脚本按月加总;本次同步来源 ${sync?.source || '同步失败,用已存记录'}` +
+    (gap ? `;注意 ${month} 只有 ${count[month]} 个交易日的记录(工作日 ${weekdays} 天),当月合计不完整` : '');
+  return {
+    months: keys.slice(-12).map((k) => ({ month: k, netM: Math.round(byMonth[k]), days: count[k] })),
+    cumulativeM: Math.round(Object.entries(store).filter(([d]) => d <= monthEnd).reduce((a, [, v]) => a + v, 0)),
+    incomplete: gap,
+  };
 });
 
 // ---------------- 4. 四大云厂商资本开支(SEC 10-Q/10-K XBRL) ----------------

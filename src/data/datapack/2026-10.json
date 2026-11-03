@@ -1,12 +1,12 @@
 {
   "month": "2026-10",
   "monthEnd": "2026-10-31",
-  "generatedAt": "2026-11-03T13:55:58.574Z",
+  "generatedAt": "2026-11-03T21:20:50.522Z",
   "errors": [],
   "sources": {
     "inflation": "BLS CPI-U,经 FRED 下载;同比按未季调序列、环比按季调序列计算(与 BLS 公告口径一致)",
     "yields": "美国财政部每日收益率曲线,经 FRED 下载(各期限最后一个可得交易日)",
-    "etf": "Farside Investors 美国现货比特币 ETF 每日净流入(百万美元),本脚本按月加总",
+    "etf": "Farside Investors / bitbo.io 美国现货比特币 ETF 每日净流入(百万美元),逐日存档于 src/data/etf-daily.json,本脚本按月加总;本次同步来源 Farside",
     "capex": "SEC EDGAR XBRL(各公司 10-Q/10-K 现金流量表\"购置物业与设备\"那一行),年初累计数相减得单季;季度按财季截止日归入自然季度。注意:不含融资租赁本金,所以会比公司自己口径的\"资本开支\"略低(如 Meta 2026Q3 本口径 339 亿美元,公司口径含融资租赁为 349 亿)"
   },
   "inflation": {
@@ -1022,54 +1022,67 @@
     "months": [
       {
         "month": "2025-11",
-        "netM": -3467
+        "netM": -3467,
+        "days": 19
       },
       {
         "month": "2025-12",
-        "netM": -1092
+        "netM": -1092,
+        "days": 22
       },
       {
         "month": "2026-01",
-        "netM": -1605
+        "netM": -1605,
+        "days": 20
       },
       {
         "month": "2026-02",
-        "netM": -207
+        "netM": -207,
+        "days": 19
       },
       {
         "month": "2026-03",
-        "netM": 1316
+        "netM": 1316,
+        "days": 22
       },
       {
         "month": "2026-04",
-        "netM": 2022
+        "netM": 2022,
+        "days": 21
       },
       {
         "month": "2026-05",
-        "netM": -2406
+        "netM": -2406,
+        "days": 20
       },
       {
         "month": "2026-06",
-        "netM": -4510
+        "netM": -4510,
+        "days": 21
       },
       {
         "month": "2026-07",
-        "netM": 173
+        "netM": 173,
+        "days": 22
       },
       {
         "month": "2026-08",
-        "netM": 3539
+        "netM": 3539,
+        "days": 21
       },
       {
         "month": "2026-09",
-        "netM": 2648
+        "netM": 2648,
+        "days": 21
       },
       {
         "month": "2026-10",
-        "netM": -516
+        "netM": -516,
+        "days": 22
       }
     ],
-    "cumulativeM": 57048
+    "cumulativeM": 57048,
+    "incomplete": false
   },
   "capex": {
     "companies": [
