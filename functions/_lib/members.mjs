@@ -23,7 +23,13 @@ export async function ensureSchema(env) {
     env.DB.prepare(`CREATE TABLE IF NOT EXISTS topics (
       id INTEGER PRIMARY KEY AUTOINCREMENT, sub_id TEXT NOT NULL, email TEXT, body TEXT NOT NULL,
       created INTEGER NOT NULL, done INTEGER NOT NULL DEFAULT 0)`),
+    env.DB.prepare(`CREATE TABLE IF NOT EXISTS questions (
+      id INTEGER PRIMARY KEY AUTOINCREMENT, sub_id TEXT NOT NULL, email TEXT, body TEXT NOT NULL,
+      created INTEGER NOT NULL, answer TEXT, answered INTEGER)`),
+    env.DB.prepare('CREATE INDEX IF NOT EXISTS questions_sub ON questions (sub_id)'),
   ]);
+  // topics 表先上线、后加的列:写完的点题记下文章 slug,会员面板好给链接
+  try { await env.DB.prepare('ALTER TABLE topics ADD COLUMN slug TEXT').run(); } catch { /* 已有这一列 */ }
   schemaReady.add(env.DB);
 }
 

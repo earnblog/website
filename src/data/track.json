@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "2026-10-02-rent-not-inflation", "date": "2026-10-02",
+    "claim": { "zh": "十年期美债收益率这一轮上涨,主要是\"时间的租金\"(实际利率/期限溢价),不是通胀预期;通胀数据走软也压不下来。", "en": "The latest leg up in the 10-year yield is mostly rent on time (real yields / term premium), not inflation expectations; softer inflation prints will not pull it down." },
+    "test": { "zh": "到 11 月初:十年期收益率仍在 5% 以上,且 10 月 1 日以来十年期实际利率(DFII10)的变动大于十年期通胀预期(T10YIE)的变动。", "en": "By early November: the 10-year yield is still above 5%, and since October 1 the 10-year real yield (DFII10) has moved more than 10-year breakeven inflation (T10YIE)." },
+    "checkBy": "2026-11-02", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-03-first-print-not-truth", "date": "2026-10-03",
+    "claim": { "zh": "九月非农初值 2.9 万只是第一次报价,后续修正幅度会大到改变解读。", "en": "September's +29k payrolls print is only a first quote; later revisions will be large enough to change the story." },
+    "test": { "zh": "11 月初公布十月非农时,九月数据的修正幅度达到 3 万人以上(上修或下修都算)。", "en": "When October payrolls are released in early November, September is revised by 30k or more in either direction." },
+    "checkBy": "2026-11-07", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-06-one-rack-counted-twice", "date": "2026-10-06",
+    "claim": { "zh": "富士康营收大增验证不了 AI 需求,同一条供应链上的数字是回声;真正的证据在链条另一头的终端收入。", "en": "Foxconn's revenue surge cannot verify AI demand — numbers on the same supply chain echo each other; the real evidence sits at the far end, in end-customer revenue." },
+    "test": { "zh": "十月底三季报季:微软、谷歌、亚马逊、Meta 的资本开支同比增速,仍明显高于它们云业务/AI 相关收入的同比增速。", "en": "In the late-October earnings season, capex growth at Microsoft, Alphabet, Amazon and Meta still clearly outpaces growth in their cloud / AI-related revenue." },
+    "checkBy": "2026-11-06", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-08-ai-capex-bids-rates", "date": "2026-10-08",
+    "claim": { "zh": "AI 资本开支本身就是利率的出价人,和房贷、国债抢同一批储蓄,会让长端利率更难降。", "en": "AI capex is itself a bidder for rates, competing with mortgages and Treasuries for the same savings, which makes long rates harder to bring down." },
+    "test": { "zh": "到 11 月底:大型科技公司第四季度发债规模明显放大,同时十年期收益率没有回到 10 月 7 日以下。", "en": "By end-November: big-tech bond issuance in Q4 clearly picks up, while the 10-year yield has not fallen back below its October 7 level." },
+    "checkBy": "2026-11-30", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-09-gross-not-net", "date": "2026-10-09",
+    "claim": { "zh": "OpenAI 收入\"从 700 亿降到 500 亿\"主要是毛额和净额两种记法的差,不是需求下修。", "en": "The OpenAI revenue \"cut\" from about $70B to $50B is mostly gross-versus-net accounting, not a demand downgrade." },
+    "test": { "zh": "后续报道或披露确认两个数字口径不同(毛额/净额),且没有出现 OpenAI 下调收入预期的消息。", "en": "Later reporting or disclosure confirms the two figures use different bases (gross vs net), and no report emerges of OpenAI cutting its revenue outlook." },
+    "checkBy": "2026-12-08", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-10-cost-line-exit", "date": "2026-10-10",
+    "claim": { "zh": "比特币回到 ETF 持有人平均成本附近时,流出主要是回本离场的人;价格离成本线越远,流出越少。", "en": "When bitcoin returns to ETF holders' average cost, outflows are mostly break-even sellers leaving; the further price moves above that line, the smaller the outflows." },
+    "test": { "zh": "10 月 10 日到 11 月 10 日:比特币收在 ETF 平均成本附近的交易日,现货 ETF 净流出的天数多于价格明显高于成本线的交易日。", "en": "From October 10 to November 10: on days bitcoin closes near the ETF average cost, net outflow days are more frequent than on days it closes clearly above that line." },
+    "checkBy": "2026-11-10", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-13-flat-not-calm", "date": "2026-10-13",
+    "claim": { "zh": "指数持平藏着撕裂:当天领跌的存储股不是一日噪音,是资金在板块间换手。", "en": "A flat index hid a split: the memory stocks that led the decline that day were not one-day noise but money rotating between sectors." },
+    "test": { "zh": "10 月 12 日收盘到 11 月 12 日收盘,美光跑输标普 500。", "en": "From the October 12 close to the November 12 close, Micron underperforms the S&P 500." },
+    "checkBy": "2026-11-12", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-14-reach-not-truth", "date": "2026-10-14",
+    "claim": { "zh": "被剔掉的能源通胀不会消失,会通过预期和二轮成本绕回核心通胀。", "en": "The energy inflation that core strips out does not disappear; it loops back into core through expectations and second-round costs." },
+    "test": { "zh": "十月 CPI(11 月中公布):核心 CPI 同比不低于九月的 2.6%。", "en": "October CPI (released mid-November): core CPI year-over-year is no lower than September's 2.6%." },
+    "checkBy": "2026-11-14", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-18-receipt-not-news", "date": "2026-10-18",
+    "claim": { "zh": "趋势走到后段,好财报只是收据:台积电再好的成绩也换不回加速度,股价难回前高。", "en": "Late in a trend, a strong report is only a receipt: TSMC's results cannot buy back acceleration, and the stock will struggle to regain its high." },
+    "test": { "zh": "到 11 月 18 日,台积电 ADR 收盘仍低于 10 月 5 日的收盘高点。", "en": "By November 18, TSMC's ADR still closes below its October 5 closing high." },
+    "checkBy": "2026-11-18", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-21-ceiling-not-midpoint", "date": "2026-10-21",
+    "claim": { "zh": "指引区间被定价的是上沿:通用汽车收窄区间、砍掉上沿,中点不变也是利空。", "en": "Guidance is priced at the ceiling: by narrowing its range and trimming the top, GM delivered bad news even with an unchanged midpoint." },
+    "test": { "zh": "到 11 月 20 日,通用汽车股价仍收在财报前(10 月 17 日)收盘价下方。", "en": "By November 20, GM still closes below its pre-earnings close of October 17." },
+    "checkBy": "2026-11-20", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-25-new-payer-not-burn", "date": "2026-10-25",
+    "claim": { "zh": "Meta 自由现金流转负是换了出资人:AI 开支的钱从自己的现金流转到债券市场。", "en": "Meta's negative free cash flow means a new payer: AI spending is being funded by the bond market instead of its own cash flow." },
+    "test": { "zh": "到年底前,Meta 再次发行长期债券(或公告发债计划),且四季度没有恢复回购。", "en": "Before year-end, Meta issues long-term bonds again (or announces a plan to), and does not resume buybacks in Q4." },
+    "checkBy": "2026-12-31", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-10-28-curve-hikes-first", "date": "2026-10-28",
+    "claim": { "zh": "加息先发生在曲线上:两年期比联邦基金利率高出八十多个基点,美联储迟早要跟上。", "en": "Hikes happen on the curve first: with the 2-year 80-plus basis points above fed funds, the Fed will follow." },
+    "test": { "zh": "12 月 FOMC 加息;或者 12 月会议前两年期收益率与有效联邦基金利率的差距收窄到 30 个基点以内(说明曲线回头了,判断错)。", "en": "The December FOMC hikes; if instead the 2-year/effective fed funds gap narrows below 30bp before that meeting, the curve backed off and the call was wrong." },
+    "checkBy": "2026-12-17", "verdict": "pending", "note": { "zh": "", "en": "" }
+  },
+  {
+    "slug": "2026-11-01-made-not-bought", "date": "2026-11-01",
+    "claim": { "zh": "进口那一行的减号不是拖累,是退货:美国本土需求依然强,GDP 只是扣掉了外国造的部分。", "en": "The minus sign on imports is not a drag but a refund: US domestic demand is still strong, and GDP simply subtracts what was made abroad." },
+    "test": { "zh": "三季度 GDP 第二次估算(11 月下旬):私人国内最终销售增速仍在 4% 以上。", "en": "Q3 GDP second estimate (late November): final sales to private domestic purchasers still grow above 4%." },
+    "checkBy": "2026-11-27", "verdict": "pending", "note": { "zh": "", "en": "" }
+  }
+]

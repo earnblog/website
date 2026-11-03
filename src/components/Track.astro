@@ -1,0 +1,77 @@
+---
+// 观点追踪表(中英共用):汇总人人可见,逐条明细给研究档以上会员
+import { TIERS } from '../config.mjs';
+const { lang = 'zh' } = Astro.props;
+const en = lang === 'en';
+const p = en ? '/en' : '';
+const research = TIERS.find((t) => t.level === 2);
+const T = en
+  ? {
+      eyebrow: 'TRACK RECORD', title: 'Track Record',
+      lead: 'Every article makes one core call, written down with a concrete test and a date to check it. When the date comes, it gets scored against the data — right is right, wrong is wrong.',
+      right: 'Right', wrong: 'Wrong', mixed: 'Partly', pending: 'Pending',
+      locked: `The full call-by-call record is for ${research.en.name} members and above.`,
+      cta: `${research.en.name} membership · $${research.price}/month →`,
+      call: 'Call', test: 'Test', checkBy: 'Check by', verdict: 'Verdict',
+    }
+  : {
+      eyebrow: 'TRACK RECORD', title: '观点追踪表',
+      lead: '每篇文章落一个核心判断,写下怎么验证、哪天验证。到了日子按数据打分——对了是对了,错了就是错了。',
+      right: '对', wrong: '错', mixed: '部分对', pending: '待验证',
+      locked: `逐条明细是「${research.zh.name}」档及以上会员的内容。`,
+      cta: `「${research.zh.name}」会员 · 每月 $${research.price} →`,
+      call: '判断', test: '验证方法', checkBy: '验证日', verdict: '结果',
+    };
+---
+<article class="post track-page" data-lang={lang} data-base={p}>
+  <div class="sub-head">
+    <div class="sub-eyebrow">{T.eyebrow}</div>
+    <h1 class="post-title">{T.title}</h1>
+    <p class="sub-lead">{T.lead}</p>
+  </div>
+
+  <div class="track-summary" id="track-summary">
+    <div><b id="s-right">–</b><span>{T.right}</span></div>
+    <div><b id="s-wrong">–</b><span>{T.wrong}</span></div>
+    <div><b id="s-mixed">–</b><span>{T.mixed}</span></div>
+    <div><b id="s-pending">–</b><span>{T.pending}</span></div>
+  </div>
+
+  <div class="paywall" id="track-lock" hidden>
+    <p class="paywall-tier">{T.locked}</p>
+    <a class="btn-gold member-cta" href={`${p}/subscribe/`}>{T.cta}</a>
+  </div>
+
+  <div class="track-list" id="track-list" hidden></div>
+</article>
+
+<script>
+  const page = document.querySelector('.track-page') as HTMLElement;
+  const isEn = page.dataset.lang === 'en';
+  const base = page.dataset.base || '';
+  const L = isEn
+    ? { right: 'Right', wrong: 'Wrong', mixed: 'Partly', pending: 'Pending', test: 'Test', checkBy: 'Check by' }
+    : { right: '对', wrong: '错', mixed: '部分对', pending: '待验证', test: '验证方法', checkBy: '验证日' };
+  const esc = (s: string) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
+
+  fetch('/api/pp/track').then((r) => r.json()).then((d) => {
+    for (const k of ['right', 'wrong', 'mixed', 'pending']) document.getElementById('s-' + k)!.textContent = String(d.summary?.[k] ?? 0);
+    if (!d.rows) { document.getElementById('track-lock')!.hidden = false; return; }
+    const list = document.getElementById('track-list')!;
+    list.hidden = false;
+    list.innerHTML = d.rows.map((t: any) => {
+      const lang = isEn ? 'en' : 'zh';
+      const slug = isEn ? t.slugEn : t.slug;
+      const title = isEn ? (t.titleEn || t.title) : t.title;
+      const href = slug ? `${base}/posts/${slug}/` : '';
+      const v = t.verdict in L ? t.verdict : 'pending';
+      return `<section class="track-row v-${v}">
+        <div class="track-meta"><span>${esc(t.date)}</span><span class="track-verdict">${esc((L as any)[v])}</span></div>
+        <h3>${esc(t.claim?.[lang])}</h3>
+        <p><b>${L.test}:</b>${esc(t.test?.[lang])} <span class="track-due">${L.checkBy} ${esc(t.checkBy)}</span></p>
+        ${t.note?.[lang] ? `<p class="track-note">${esc(t.note[lang])}</p>` : ''}
+        ${href ? `<a class="pass-link" href="${href}">${esc(title)}</a>` : ''}
+      </section>`;
+    }).join('');
+  }).catch(() => {});
+</script>

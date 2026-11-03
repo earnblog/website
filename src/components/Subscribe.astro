@@ -12,6 +12,9 @@ const T = en
       youAre: 'Your membership', manage: 'Manage or cancel in PayPal →', logout: 'Sign out on this browser',
       upgradeNote: 'To change tier: subscribe to the new tier above, then cancel the old one in PayPal.',
       topicHead: 'Topic request (once a month)', topicPh: 'What should I write about? A question, a chart, a narrative you want taken apart…', topicGo: 'Send request',
+      trackLink: 'Open the track record →',
+      askHead: 'Ask a question (answered within 48 hours, up to 10 a month)', askPh: 'Your question about markets, data, or a piece you read here…', askGo: 'Ask',
+      historyHead: 'Your questions and topic requests',
       recoverHead: 'Restore access on this device',
       recoverMember: 'Members: your subscription ID (starts with I-, in the PayPal receipt email and under Automatic payments) plus your PayPal email.',
       recoverSingle: 'Single articles: the order ID or transaction ID from your PayPal receipt.',
@@ -25,6 +28,9 @@ const T = en
       youAre: '你的会员', manage: '在 PayPal 管理或退订 →', logout: '在本浏览器退出',
       upgradeNote: '换档:在上面订阅新的档位,再到 PayPal 里退订旧的。',
       topicHead: '点题(每月 1 次)', topicPh: '想让我写什么?一个问题、一张图、一个你想拆的流行说法……', topicGo: '提交',
+      trackLink: '打开观点追踪表 →',
+      askHead: '留言提问(48 小时内回复,每月最多 10 条)', askPh: '关于市场、数据,或者你在这里读到的某篇文章……', askGo: '提问',
+      historyHead: '你的提问与点题',
       recoverHead: '在这台设备上恢复访问',
       recoverMember: '会员:填订阅号(I- 开头,在 PayPal 付款邮件和「自动付款」里能看到)和 PayPal 邮箱。',
       recoverSingle: '单篇:填 PayPal 收据上的订单号或交易号。',
@@ -55,10 +61,20 @@ const T = en
     <p id="member-status"></p>
     <p><a href="https://www.paypal.com/myaccount/autopay/" target="_blank" rel="noopener noreferrer">{T.manage}</a></p>
     <p>{T.upgradeNote}</p>
+    <p id="track-link" hidden><a href={`${p}/track/`}>{T.trackLink}</a></p>
+    <div id="ask-box" hidden>
+      <h2>{T.askHead}</h2>
+      <textarea id="ask-text" maxlength="2000" placeholder={T.askPh}></textarea>
+      <div class="form-row"><button class="btn-gold" id="ask-go">{T.askGo}</button></div>
+    </div>
     <div id="topic-box" hidden>
       <h2>{T.topicHead}</h2>
       <textarea id="topic-text" maxlength="2000" placeholder={T.topicPh}></textarea>
       <div class="form-row"><button class="btn-gold" id="topic-go">{T.topicGo}</button></div>
+    </div>
+    <div id="qa-history" hidden>
+      <h2>{T.historyHead}</h2>
+      <div id="qa-list"></div>
     </div>
     <p><button class="btn-ghost" id="logout">{T.logout}</button></p>
   </section>
@@ -97,8 +113,10 @@ const T = en
         status: (n: string, d: string, active: boolean) => active ? `${n} member · access through ${d}` : `${n} membership ended on ${d}`,
         badId: 'Check the ID format', email: 'That email does not match the PayPal account on this subscription',
         notFound: 'Not found — check the ID', inactive: 'This subscription is no longer active',
-        restored: 'Access restored', topicSent: 'Request received — I will reply by email', quota: 'You have already used this month\'s request',
+        restored: 'Access restored', topicSent: 'Request received — it will appear below once the piece is written', quota: 'You have already used this month\'s request',
         signedOut: 'Signed out on this browser',
+        asked: 'Question received — the answer will appear below within 48 hours', askQuota: 'You have used this month\'s 10 questions',
+        waiting: 'Awaiting reply', topicTag: 'Topic request', topicPending: 'In the queue', topicDone: 'Written:', answered: 'Answered',
       }
     : {
         unavailable: '支付通道暂时不可用,请稍后再试',
@@ -107,9 +125,12 @@ const T = en
         status: (n: string, d: string, active: boolean) => active ? `「${n}」会员 · 有效至 ${d}` : `「${n}」会员已于 ${d} 到期`,
         badId: '号码格式不对,检查一下', email: '邮箱和这份订阅的 PayPal 账户对不上',
         notFound: '没查到,检查一下号码', inactive: '这份订阅已经不在有效期内',
-        restored: '已恢复访问', topicSent: '收到你的点题,我会邮件回复', quota: '这个月的点题已经用过了',
+        restored: '已恢复访问', topicSent: '收到你的点题,写好后会在下面显示链接', quota: '这个月的点题已经用过了',
         signedOut: '已在本浏览器退出',
+        asked: '收到你的问题,48 小时内会在下面回复', askQuota: '这个月的 10 条提问已经用完了',
+        waiting: '等待回复', topicTag: '点题', topicPending: '排队中', topicDone: '已写成:', answered: '回复于',
       };
+  const esc = (s: string) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
   const fmt = (s: number) => new Date(s * 1000).toLocaleDateString(isEn ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
 
   async function showMember() {
@@ -119,8 +140,30 @@ const T = en
     if (!m) { panel.hidden = true; return; }
     panel.hidden = false;
     document.getElementById('member-status')!.textContent = M.status(NAMES[m.tier] || m.tier, fmt(m.until), m.active);
-    document.getElementById('topic-box')!.hidden = !(m.active && m.level >= 3);
+    const inner = m.active && m.level >= 3;
+    document.getElementById('topic-box')!.hidden = !inner;
+    document.getElementById('ask-box')!.hidden = !inner;
+    document.getElementById('track-link')!.hidden = !(m.active && m.level >= 2);
     document.querySelectorAll('.tier-card').forEach((c) => c.classList.toggle('current', m.active && (c as HTMLElement).dataset.tier === m.tier));
+    if (inner) loadQA();
+  }
+
+  // 内圈:自己的提问(含回复)和点题(写成后给文章链接)
+  async function loadQA() {
+    const r = await api('qa');
+    if (!r.ok) return;
+    const day = (s: number) => fmt(s);
+    const items = [
+      ...(r.data.questions || []).map((q: any) => ({ t: q.created, html:
+        `<div class="qa-item"><p class="qa-q">${esc(q.body)}</p>` +
+        (q.answer ? `<p class="qa-a">${esc(q.answer)}</p><p class="qa-meta">${M.answered} ${day(q.answered)}</p>`
+                  : `<p class="qa-meta">${day(q.created)} · ${M.waiting}</p>`) + '</div>' })),
+      ...(r.data.topics || []).map((t: any) => ({ t: t.created, html:
+        `<div class="qa-item"><p class="qa-q">${M.topicTag}:${esc(t.body)}</p><p class="qa-meta">${day(t.created)} · ` +
+        (t.done && t.path ? `${M.topicDone} <a href="${t.path}">${esc(t.slug)}</a>` : M.topicPending) + '</p></div>' })),
+    ].sort((a, b) => b.t - a.t);
+    document.getElementById('qa-history')!.hidden = !items.length;
+    document.getElementById('qa-list')!.innerHTML = items.map((x) => x.html).join('');
   }
 
   const errText = (d: any) => ({ id: M.badId, email: M.email, not_found: M.notFound, inactive: M.inactive } as any)[d?.error] || M.unavailable;
@@ -181,8 +224,20 @@ const T = en
     b.disabled = true;
     const r = await api('topic', { text });
     b.disabled = false;
-    if (r.ok) { toast(M.topicSent); (document.getElementById('topic-text') as HTMLTextAreaElement).value = ''; }
+    if (r.ok) { toast(M.topicSent); (document.getElementById('topic-text') as HTMLTextAreaElement).value = ''; loadQA(); }
     else toast(r.data?.error === 'quota' ? M.quota : M.unavailable);
+  });
+
+  document.getElementById('ask-go')!.addEventListener('click', async (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    const box = document.getElementById('ask-text') as HTMLTextAreaElement;
+    const text = box.value.trim();
+    if (text.length < 4) return;
+    b.disabled = true;
+    const r = await api('question', { text });
+    b.disabled = false;
+    if (r.ok) { toast(M.asked); box.value = ''; loadQA(); }
+    else toast(r.data?.error === 'quota' ? M.askQuota : M.unavailable);
   });
 
   document.getElementById('logout')!.addEventListener('click', async () => {

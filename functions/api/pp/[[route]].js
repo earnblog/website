@@ -6,12 +6,33 @@
 //   POST /api/pp/recover-order   换设备找回单篇:{ id: 订单号或交易号 }
 //   POST /api/pp/sub/activate    订阅批准后开通会员:{ id: 订阅号 I-… }
 //   POST /api/pp/sub/recover     换设备找回会员:{ id: 订阅号, email: PayPal 邮箱 }
-//   POST /api/pp/topic           内圈会员点题:{ text }
+//   POST /api/pp/topic           内圈会员点题:{ text }(每 30 天 1 次)
+//   POST /api/pp/question        内圈会员提问:{ text }(每 30 天 10 条)
+//   GET  /api/pp/qa              当前会员自己的点题和提问(含回复)
+//   GET  /api/pp/track           观点追踪表:人人可见汇总,研究档以上看逐条明细
+//   GET  /api/pp/admin/pending   答疑任务取待办(请求头 x-admin-key)
+//   POST /api/pp/admin/answer    答疑任务写回复:{ id, answer }
+//   POST /api/pp/admin/topic     点题写完后登记:{ id, slug }
 //   POST /api/pp/logout          清掉本浏览器的会员 cookie
-import store, { tiers } from '../../_lib/paid-store.mjs';
+import store, { tiers, track } from '../../_lib/paid-store.mjs';
 import { json, paypal, paypalReady } from '../../_lib/paypal.mjs';
 import { sign } from '../../_lib/sign.mjs';
 import { ensureSchema, ensurePlans, syncMember, currentMember, memberCookie, levelOf } from '../../_lib/members.mjs';
+import { notifyOwner } from '../../_lib/notify.mjs';
+
+const QUESTIONS_PER_MONTH = 10;
+
+// 观点追踪表汇总:已判定的对/错/部分对,以及待验证条数
+function trackSummary() {
+  const s = { total: track.length, right: 0, wrong: 0, mixed: 0, pending: 0 };
+  for (const t of track) s[t.verdict in s ? t.verdict : 'pending']++;
+  return s;
+}
+
+const isAdmin = (env, request) => {
+  const k = request.headers.get('x-admin-key') || '';
+  return !!env.ADMIN_KEY && k.length === env.ADMIN_KEY.length && k === env.ADMIN_KEY;
+};
 
 const ready = (env) => paypalReady(env) && !!env.DB && !!env.UNLOCK_SECRET;
 const now = () => Math.floor(Date.now() / 1000);
@@ -74,6 +95,48 @@ export async function onRequest({ request, env, params }) {
       const m = await currentMember(env, request);
       if (!m) return json({ member: null });
       return json({ member: { tier: m.tier, level: m.level || 0, active: m.active, until: m.until, status: m.status, email: m.email } });
+    }
+    if (request.method === 'GET' && route === 'track') {
+      const m = await currentMember(env, request);
+      const full = !!m?.active && (m.level || 0) >= 2;
+      return json({ summary: trackSummary(), rows: full ? track : null, need: 2 });
+    }
+    if (request.method === 'GET' && route === 'qa') {
+      const m = await currentMember(env, request);
+      if (!m?.active) return json({ error: 'member' }, 403);
+      await ensureSchema(env);
+      const q = await env.DB.prepare('SELECT id, body, created, answer, answered FROM questions WHERE sub_id = ? ORDER BY created DESC LIMIT 50').bind(m.sub_id).all();
+      const t = await env.DB.prepare('SELECT id, body, created, done, slug FROM topics WHERE sub_id = ? ORDER BY created DESC LIMIT 24').bind(m.sub_id).all();
+      return json({ questions: q.results || [], topics: (t.results || []).map((x) => ({ ...x, path: x.slug && store[x.slug]?.path })) });
+    }
+    if (route.startsWith('admin/')) {
+      if (!isAdmin(env, request)) return json({ error: 'forbidden' }, 403);
+      if (!env.DB) return json({ error: 'closed' }, 503);
+      await ensureSchema(env);
+      // 不返回会员邮箱:答疑任务只需要问题本身
+      if (request.method === 'GET' && route === 'admin/pending') {
+        const q = await env.DB.prepare('SELECT id, body, created FROM questions WHERE answer IS NULL ORDER BY created LIMIT 50').all();
+        const t = await env.DB.prepare('SELECT id, body, created FROM topics WHERE done = 0 ORDER BY created LIMIT 20').all();
+        return json({ questions: q.results || [], topics: t.results || [] });
+      }
+      if (request.method === 'POST') {
+        const b = await request.json().catch(() => ({}));
+        const id = Number(b.id);
+        if (!Number.isInteger(id) || id < 1) return json({ error: 'id' }, 400);
+        if (route === 'admin/answer') {
+          const answer = String(b.answer || '').trim();
+          if (answer.length < 10 || answer.length > 20000) return json({ error: 'answer' }, 400);
+          const r = await env.DB.prepare('UPDATE questions SET answer = ?, answered = ? WHERE id = ?').bind(answer, now(), id).run();
+          return json({ ok: (r.meta?.changes ?? r.changes ?? 1) > 0 });
+        }
+        if (route === 'admin/topic') {
+          const slug = String(b.slug || '');
+          if (!store[slug]) return json({ error: 'slug' }, 400);
+          await env.DB.prepare('UPDATE topics SET done = 1, slug = ? WHERE id = ?').bind(slug, id).run();
+          return json({ ok: true });
+        }
+      }
+      return json({ error: 'route' }, 404);
     }
     if (request.method !== 'POST') return json({ error: 'method' }, 405);
     const body = await request.json().catch(() => ({}));
@@ -152,6 +215,21 @@ export async function onRequest({ request, env, params }) {
       if (Number(recent?.n || 0) >= 1) return json({ error: 'quota' }, 409);
       await env.DB.prepare('INSERT INTO topics (sub_id, email, body, created) VALUES (?, ?, ?, ?)')
         .bind(m.sub_id, m.email, text, now()).run();
+      await notifyOwner(env, `【临界·内圈点题】${m.email}\n${text}`);
+      return json({ ok: true });
+    }
+
+    if (route === 'question') {
+      const m = await currentMember(env, request);
+      if (!m?.active || (m.level || 0) < 3) return json({ error: 'tier' }, 403);
+      const text = String(body.text || '').trim();
+      if (text.length < 4 || text.length > 2000) return json({ error: 'text' }, 400);
+      const recent = await env.DB.prepare('SELECT COUNT(*) AS n FROM questions WHERE sub_id = ? AND created > ?')
+        .bind(m.sub_id, now() - 30 * 86400).first();
+      if (Number(recent?.n || 0) >= QUESTIONS_PER_MONTH) return json({ error: 'quota' }, 409);
+      await env.DB.prepare('INSERT INTO questions (sub_id, email, body, created) VALUES (?, ?, ?, ?)')
+        .bind(m.sub_id, m.email, text, now()).run();
+      await notifyOwner(env, `【临界·内圈提问】${m.email}\n${text}`);
       return json({ ok: true });
     }
 
