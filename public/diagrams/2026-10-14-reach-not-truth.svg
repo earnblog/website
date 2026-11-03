@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:温度计下半截是核心,央行够得着;上半截是能源,央行够不着;能源经汽油价格、通胀预期、工资与定价绕回核心">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <rect x="80" y="40" width="60" height="270" rx="30" fill="#fff" stroke="#33404f" stroke-width="1.5"/>
+  <rect x="92" y="54" width="36" height="110" rx="14" fill="#a8453a"/>
+  <rect x="92" y="170" width="36" height="126" rx="14" fill="#4f6b8a"/>
+  <g font-family="system-ui,sans-serif" font-size="12">
+    <text x="152" y="104" fill="#a8453a">能源:剔出尺子</text>
+    <text x="152" y="120" fill="#a8453a">(加息够不着)</text>
+    <text x="152" y="236" fill="#4f6b8a">核心:管辖范围</text>
+    <text x="152" y="252" fill="#4f6b8a">(加息够得着)</text>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#33404f">
+    <rect x="330" y="50" width="150" height="40" rx="6" fill="#f3ece0" stroke="#b07d33"/><text x="405" y="75" text-anchor="middle">① 汽油变贵</text>
+    <rect x="490" y="140" width="150" height="40" rx="6" fill="#f3ece0" stroke="#b07d33"/><text x="565" y="165" text-anchor="middle">② 通胀预期上挪</text>
+    <rect x="330" y="230" width="150" height="40" rx="6" fill="#f3ece0" stroke="#b07d33"/><text x="405" y="255" text-anchor="middle">③ 工资与定价跟涨</text>
+  </g>
+  <g fill="none" stroke="#a8453a" stroke-width="2">
+    <path d="M140 80 L 326 70"/>
+    <path d="M480 76 C 540 86, 566 110, 566 136"/>
+    <path d="M566 182 C 566 220, 530 248, 484 250"/>
+    <path d="M330 252 L 144 236" stroke-dasharray="6 4"/>
+  </g>
+  <g fill="#a8453a"><polygon points="326,70 316,64 316,76"/><polygon points="566,136 560,126 572,126"/><polygon points="484,250 494,244 494,256"/><polygon points="144,236 154,231 153,243"/></g>
+  <text x="238" y="300" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">④ 绕回核心</text>
+  <text x="640" y="340" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">示意图,非真实数据</text>
+</svg>

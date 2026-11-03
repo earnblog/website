@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="早期与后段镜像示意图:左侧趋势早期,价格低位,财报公布后价格被推高;右侧趋势后段,价格提前涨到高位,财报公布时价格开始回落">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <line x1="340" y1="30" x2="340" y2="320" stroke="#ddd4c4" stroke-width="1"/>
+  <g font-family="'Noto Serif SC',serif" font-size="14" font-weight="700">
+    <text x="170" y="40" text-anchor="middle" fill="#4f6b8a">趋势早期:财报是新闻</text>
+    <text x="510" y="40" text-anchor="middle" fill="#a8453a">趋势后段:财报是收据</text>
+  </g>
+  <g stroke="#ddd4c4" stroke-width="1"><line x1="30" y1="290" x2="320" y2="290"/><line x1="360" y1="290" x2="650" y2="290"/></g>
+  <polyline points="40,260 100,256 160,252 180,250" fill="none" stroke="#4f6b8a" stroke-width="3"/>
+  <polyline points="180,250 220,190 260,150 310,120" fill="none" stroke="#4f6b8a" stroke-width="3"/>
+  <line x1="180" y1="80" x2="180" y2="290" stroke="#b07d33" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="180" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#b07d33">财报公布</text>
+  <text x="250" y="232" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">价格被财报推着走</text>
+  <polyline points="370,260 420,220 470,160 510,110" fill="none" stroke="#4f6b8a" stroke-width="3"/>
+  <polyline points="510,110 560,128 600,150 640,166" fill="none" stroke="#a8453a" stroke-width="3"/>
+  <line x1="560" y1="80" x2="560" y2="290" stroke="#b07d33" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="560" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#b07d33">财报公布</text>
+  <text x="400" y="186" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">价格先付款</text>
+  <text x="600" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">货到了,不再付钱</text>
+  <text x="650" y="340" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">示意图,非真实价格路径</text>
+</svg>
