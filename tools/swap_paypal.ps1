@@ -112,6 +112,9 @@ Push-Location $Root
 try {
   & git add src/config.mjs | Out-Null
   & git commit -m "换 PayPal 收款账户(运营者 $Operator)" --allow-empty | Out-Null
+  # 每日发文的云端任务也在往 GitHub 推,先把它的新文章拉下来再推,否则会被拒
+  & git pull --rebase origin main 2>&1 | Out-Host
+  if ($LASTEXITCODE -ne 0) { Fail "git pull 失败(可能有冲突),找 Claude" }
   & git push origin main 2>&1 | Out-Host
   if ($LASTEXITCODE -ne 0) { Fail "git push 失败" }
 } finally { Pop-Location }
