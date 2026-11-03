@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="流动性正反镜像:左栏上涨时价格平稳、风险预算放宽、报价加厚,流动性自我增强;右栏下跌时价格跳动、风险预算收紧、报价撤退,流动性自我抽干">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4f6b8a"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a8453a"/></marker>
+  </defs>
+  <line x1="340" y1="40" x2="340" y2="330" stroke="#ddd4c4" stroke-width="1.5"/>
+  <text x="170" y="36" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#4f6b8a">上涨:回路在造流动性</text>
+  <text x="510" y="36" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#a8453a">下跌:回路在拆流动性</text>
+  <g font-family="system-ui,sans-serif" font-size="12.5" text-anchor="middle">
+    <rect x="70" y="70" width="200" height="40" rx="6" fill="#fff" stroke="#4f6b8a"/>
+    <text x="170" y="95" fill="#33404f">① 价格平稳,波动收窄</text>
+    <rect x="70" y="160" width="200" height="40" rx="6" fill="#fff" stroke="#4f6b8a"/>
+    <text x="170" y="185" fill="#33404f">② 风险预算放宽</text>
+    <rect x="70" y="250" width="200" height="40" rx="6" fill="#fff" stroke="#4f6b8a"/>
+    <text x="170" y="275" fill="#33404f">③ 报价加厚,对面站满人</text>
+    <rect x="410" y="70" width="200" height="40" rx="6" fill="#fff" stroke="#a8453a"/>
+    <text x="510" y="95" fill="#33404f">①′ 价格跳动,波动放大</text>
+    <rect x="410" y="160" width="200" height="40" rx="6" fill="#fff" stroke="#a8453a"/>
+    <text x="510" y="185" fill="#33404f">②′ 风险预算收紧</text>
+    <rect x="410" y="250" width="200" height="40" rx="6" fill="#fff" stroke="#a8453a"/>
+    <text x="510" y="275" fill="#33404f">③′ 报价撤退,对面一起转身</text>
+  </g>
+  <g stroke="#4f6b8a" stroke-width="2" fill="none">
+    <line x1="170" y1="112" x2="170" y2="156" marker-end="url(#ab)"/>
+    <line x1="170" y1="202" x2="170" y2="246" marker-end="url(#ab)"/>
+    <path d="M70 270 C 30 270, 30 90, 66 90" marker-end="url(#ab)"/>
+  </g>
+  <g stroke="#a8453a" stroke-width="2" fill="none">
+    <line x1="510" y1="112" x2="510" y2="156" marker-end="url(#ar)"/>
+    <line x1="510" y1="202" x2="510" y2="246" marker-end="url(#ar)"/>
+    <path d="M610 270 C 650 270, 650 90, 614 90" marker-end="url(#ar)"/>
+  </g>
+  <text x="340" y="345" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#33404f">同一条回路,方向一反,造的就变成了拆的</text>
+</svg>
