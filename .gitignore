@@ -7,3 +7,4 @@ dist/
 .telegram.env
 .telegram-sent.json
 换PayPal-日志.txt
+functions/_lib/paid-store.mjs
