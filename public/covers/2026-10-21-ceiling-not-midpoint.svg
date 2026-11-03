@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:两根金色区间条,上面较长写着140–160,下面被剪短写着145–155;中点用同一条蓝线对齐,上沿被剪掉的一截标红,价格点停在红色那截上;红字:价格住在上沿">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">指引不是中点,是上沿</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">全年调整后EBIT指引(亿美元)· 中点未动 · 股价单日 −6.8%</text>
+  <line x1="340" y1="88" x2="340" y2="236" stroke="#4f6b8a" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="340" y="252" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">中点 150</text>
+  <rect x="140" y="110" width="400" height="26" rx="3" fill="#c8a96a"/>
+  <text x="130" y="128" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">旧 140</text>
+  <text x="550" y="128" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">160</text>
+  <rect x="240" y="180" width="200" height="26" rx="3" fill="#c8a96a"/>
+  <rect x="440" y="180" width="100" height="26" rx="3" fill="none" stroke="#a8453a" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="230" y="198" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#c8a96a">新 145</text>
+  <text x="420" y="198" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" fill="#181f2b">155</text>
+  <text x="490" y="226" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">被剪掉的一截</text>
+  <circle cx="505" cy="123" r="6" fill="#a8453a"/>
+  <text x="505" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a">价格住在这里</text>
+  <text x="48" y="282" font-family="'Noto Serif SC',serif" font-size="13" fill="#a8453a">价格住在天花板底下</text>
+</svg>

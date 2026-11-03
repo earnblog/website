@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="镜像示意图:左侧自有现金流投资是自带刹车的负反馈;右侧借钱投资是股价、借贷、开支、上游财报相互推动的正反馈">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4f6b8a"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a8453a"/></marker>
+  </defs>
+  <line x1="340" y1="30" x2="340" y2="320" stroke="#ddd4c4" stroke-width="1"/>
+  <g font-family="'Noto Serif SC',serif" font-size="14" font-weight="700">
+    <text x="170" y="42" text-anchor="middle" fill="#4f6b8a">花自己的钱:自带刹车</text>
+    <text x="510" y="42" text-anchor="middle" fill="#a8453a">花别人的钱:刹车换成杠杆</text>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#33404f" text-anchor="middle">
+    <rect x="95" y="80" width="150" height="34" rx="4" fill="#fff" stroke="#4f6b8a"/><text x="170" y="102">广告收入 / 经营现金流</text>
+    <rect x="95" y="220" width="150" height="34" rx="4" fill="#fff" stroke="#4f6b8a"/><text x="170" y="242">资本开支</text>
+  </g>
+  <path d="M150 114 V 218" stroke="#4f6b8a" stroke-width="2" marker-end="url(#b)"/>
+  <path d="M195 218 Q 230 166 195 116" stroke="#4f6b8a" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#b)"/>
+  <text x="140" y="172" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">赚多少</text>
+  <text x="140" y="188" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">才花多少</text>
+  <text x="236" y="172" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">负反馈</text>
+  <text x="170" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#4f6b8a">收入一弱,开支自动收缩</text>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#33404f" text-anchor="middle">
+    <rect x="455" y="72" width="110" height="32" rx="4" fill="#fff" stroke="#a8453a"/><text x="510" y="93">股价与AI故事</text>
+    <rect x="565" y="160" width="100" height="32" rx="4" fill="#fff" stroke="#a8453a"/><text x="615" y="181">债市愿意借</text>
+    <rect x="455" y="244" width="110" height="32" rx="4" fill="#fff" stroke="#a8453a"/><text x="510" y="265">资本开支加码</text>
+    <rect x="355" y="160" width="110" height="32" rx="4" fill="#fff" stroke="#a8453a"/><text x="410" y="181">上游财报亮眼</text>
+  </g>
+  <path d="M565 92 Q 610 110 612 156" stroke="#a8453a" stroke-width="2" fill="none" marker-end="url(#r)"/>
+  <path d="M612 194 Q 610 250 568 260" stroke="#a8453a" stroke-width="2" fill="none" marker-end="url(#r)"/>
+  <path d="M455 262 Q 410 250 410 196" stroke="#a8453a" stroke-width="2" fill="none" marker-end="url(#r)"/>
+  <path d="M410 158 Q 412 100 452 90" stroke="#a8453a" stroke-width="2" fill="none" marker-end="url(#r)"/>
+  <text x="510" y="181" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" fill="#a8453a">正反馈</text>
+  <text x="510" y="306" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#a8453a">花多少,看别人愿意借多少</text>
+  <text x="650" y="344" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">机制示意图,非真实数据</text>
+</svg>

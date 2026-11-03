@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:金色管道从见底的经营现金流水箱流向AI资本开支机柜,机柜上方另接一根蓝色管道通向远处的债券市场水塔,交汇处红字:出资人换了">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">现金流转负,不是烧钱,是换了出资人</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">经营现金流 < 资本开支 · 回购归零 · 发债补位</text>
+  <rect x="60" y="140" width="110" height="100" rx="4" fill="none" stroke="#c8a96a" stroke-width="2"/>
+  <rect x="62" y="226" width="106" height="12" fill="#c8a96a"/>
+  <text x="115" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a">经营现金流(见底)</text>
+  <path d="M170 228 H 420" stroke="#c8a96a" stroke-width="6" fill="none"/>
+  <rect x="420" y="160" width="90" height="100" rx="3" fill="#33404f" stroke="#8a94a6" stroke-width="1"/>
+  <g stroke="#8a94a6" stroke-width="1"><line x1="430" y1="180" x2="500" y2="180"/><line x1="430" y1="200" x2="500" y2="200"/><line x1="430" y1="220" x2="500" y2="220"/><line x1="430" y1="240" x2="500" y2="240"/></g>
+  <text x="465" y="278" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">AI资本开支</text>
+  <rect x="580" y="96" width="56" height="70" rx="3" fill="#4f6b8a"/>
+  <path d="M580 104 L608 84 L636 104 Z" fill="#4f6b8a"/>
+  <text x="608" y="184" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#4f6b8a">债券市场</text>
+  <path d="M580 140 H 465 V 160" stroke="#4f6b8a" stroke-width="6" fill="none"/>
+  <circle cx="465" cy="150" r="9" fill="#a8453a"/>
+  <text x="440" y="128" text-anchor="end" font-family="'Noto Serif SC',serif" font-size="13" fill="#a8453a">出资人换了</text>
+</svg>
