@@ -109,6 +109,9 @@ if ($Operator -ne $curOp) {
 # ---- 4. 推送(secrets 只对新部署生效;博客是 GitHub 推送自动部署) ----
 Write-Host "[4/5] 推送触发部署..." -ForegroundColor Cyan
 Push-Location $Root
+# git 把正常进度("From https://…")写到 stderr,PowerShell 5.1 在 Stop 模式下会把它当成错误中断脚本:
+# 这一段临时改成 Continue,只看 git 的退出码判断成败
+$ErrorActionPreference = "Continue"
 try {
   & git add src/config.mjs | Out-Null
   & git commit -m "换 PayPal 收款账户(运营者 $Operator)" --allow-empty | Out-Null
@@ -117,7 +120,7 @@ try {
   if ($LASTEXITCODE -ne 0) { Fail "git pull 失败(可能有冲突),找 Claude" }
   & git push origin main 2>&1 | Out-Host
   if ($LASTEXITCODE -ne 0) { Fail "git push 失败" }
-} finally { Pop-Location }
+} finally { Pop-Location; $ErrorActionPreference = "Stop" }
 Log "已推送,等 Cloudflare 构建(约 1-2 分钟)"
 
 # ---- 5. 自测 ----
