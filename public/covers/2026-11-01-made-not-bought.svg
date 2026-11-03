@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底上,一只集装箱从海上驶入,在左边投资账栏记一个金色加号,在右边进口账栏记一个红色减号,中间的GDP秤保持不动;金字:GDP量的不是买了多少,是在哪儿造的">
+  <rect width="680" height="300" fill="#1c2330"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">GDP量的不是买了多少,是在哪儿造的</text>
+  <text x="48" y="68" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">Investment + · Imports − · Net effect on GDP: 0</text>
+  <path d="M40 232 q 20 -10 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="#4f6b8a" stroke-width="2"/>
+  <rect x="70" y="190" width="90" height="34" fill="#4f6b8a"/>
+  <g stroke="#1c2330" stroke-width="2"><line x1="88" y1="190" x2="88" y2="224"/><line x1="106" y1="190" x2="106" y2="224"/><line x1="124" y1="190" x2="124" y2="224"/><line x1="142" y1="190" x2="142" y2="224"/></g>
+  <path d="M170 207 H 230" stroke="#8a94a6" stroke-width="2" marker-end="url(#a)"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8a94a6"/></marker></defs>
+  <rect x="250" y="120" width="120" height="120" rx="4" fill="none" stroke="#c8a96a" stroke-width="1.5"/>
+  <text x="310" y="145" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#c8a96a">投资 · 库存</text>
+  <text x="310" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="48" font-weight="700" fill="#c8a96a">+</text>
+  <rect x="400" y="120" width="120" height="120" rx="4" fill="none" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="460" y="145" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#a8453a">进口</text>
+  <text x="460" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="48" font-weight="700" fill="#a8453a">−</text>
+  <line x1="560" y1="180" x2="640" y2="180" stroke="#8a94a6" stroke-width="2"/>
+  <path d="M600 180 L 588 210 H 612 Z" fill="#8a94a6"/>
+  <text x="600" y="168" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#c8a96a">净影响 = 0</text>
+  <text x="600" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">对GDP</text>
+</svg>

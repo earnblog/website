@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="折线图:九月初两年期美债收益率4.39%,加息前一天已到4.67%;9月16日美联储加息后有效利率从3.63%升到3.88%并保持不动;两年期一度升到4.92%,10月27日回到4.70%,比有效利率高约80个基点">
+<rect width="680" height="360" fill="#fbf9f4"/>
+<text x="40" y="34" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#33404f">两年期美债 vs 有效联邦基金利率(2026年9月1日—10月27日)</text>
+<line x1="70" y1="300.0" x2="620" y2="300.0" stroke="#ddd4c4" stroke-width="1"/>
+<text x="62" y="304.0" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">3.5%</text>
+<line x1="70" y1="223.3" x2="620" y2="223.3" stroke="#ddd4c4" stroke-width="1"/>
+<text x="62" y="227.3" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">4.0%</text>
+<line x1="70" y1="146.7" x2="620" y2="146.7" stroke="#ddd4c4" stroke-width="1"/>
+<text x="62" y="150.7" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">4.5%</text>
+<line x1="70" y1="70.0" x2="620" y2="70.0" stroke="#ddd4c4" stroke-width="1"/>
+<text x="62" y="74.0" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">5.0%</text>
+<text x="70.0" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">9/1</text>
+<text x="217.3" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">9/16</text>
+<text x="364.6" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">10/1</text>
+<text x="620.0" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f">10/27</text>
+<line x1="217.3" y1="70" x2="217.3" y2="300" stroke="#a8453a" stroke-dasharray="4 4" stroke-width="1.2"/>
+<text x="222.3" y="82" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#a8453a">美联储加息一档</text>
+<path d="M70,280.1 H227.1 V241.7 H620" fill="none" stroke="#c8a96a" stroke-width="2.5"/>
+<text x="616" y="259.7" text-anchor="end" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#b07d33">有效联邦基金利率 3.88%(会议之间一动不动)</text>
+<path d="M70.0,163.5 L79.8,163.5 L89.6,171.2 L99.5,166.6 L138.8,163.5 L148.6,157.4 L158.4,137.5 L168.2,126.7 L197.7,123.7 L207.5,120.6 L217.3,109.9 L227.1,120.6 L237.0,106.8 L266.4,106.8 L276.2,114.5 L286.1,93.0 L295.9,89.9 L305.7,99.1 L335.2,82.3 L345.0,86.9 L354.8,88.4 L364.6,103.7 L374.5,96.1 L403.9,94.5 L413.8,102.2 L423.6,105.3 L433.4,108.3 L443.2,100.7 L482.5,102.2 L492.3,97.6 L502.1,105.3 L512.0,109.9 L541.4,105.3 L551.2,102.2 L561.1,99.1 L570.9,123.7 L580.7,117.5 L610.2,119.1 L620.0,116.0" fill="none" stroke="#4f6b8a" stroke-width="2.2"/>
+<text x="79.8" y="181.5" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#4f6b8a">两年期 4.39%</text>
+<text x="211.3" y="90.6" text-anchor="end" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#33404f">加息之前,曲线先涨了近30个基点</text>
+<circle cx="335.2" cy="82.3" r="3.5" fill="#4f6b8a"/>
+<text x="341.2" y="74.3" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#4f6b8a">4.92%</text>
+<circle cx="620.0" cy="116.0" r="3.5" fill="#4f6b8a"/>
+<text x="614.0" y="106.0" text-anchor="end" font-family="'Noto Serif SC',serif" font-size="11.5" fill="#4f6b8a">曲线自己退回 4.70%</text>
+<path d="M632,116.0 h6 V241.7 h-6" fill="none" stroke="#a8453a" stroke-width="1.5"/>
+<text x="642" y="182.9" font-family="system-ui,sans-serif" font-size="11" fill="#a8453a" transform="rotate(90 642 178.9)" text-anchor="middle">≈80bp</text>
+<text x="40" y="346" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6">数据:美国财政部每日收益率曲线;圣路易斯联储FRED(DFF)</text>
+</svg>

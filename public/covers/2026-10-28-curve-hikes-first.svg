@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底上,一条蓝色的收益率曲线先于一级金色台阶抬升,台阶旁是一扇关着的会议室门,红字:加息不是一个决定,是一条曲线">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <text x="48" y="44" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">加息不是一个决定,是一条曲线</text>
+  <text x="48" y="68" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">2Y Treasury · Effective Fed Funds · Between the meetings</text>
+  <line x1="60" y1="250" x2="620" y2="250" stroke="#33404f" stroke-width="1"/>
+  <path d="M60 236 H 300 V 206 H 620" fill="none" stroke="#c8a96a" stroke-width="4"/>
+  <path d="M60 196 C 140 196, 180 150, 260 132 S 330 104, 360 100 S 450 112, 520 120 S 590 124, 620 122" fill="none" stroke="#4f6b8a" stroke-width="4"/>
+  <circle cx="260" cy="132" r="6" fill="#a8453a"/>
+  <text x="250" y="122" text-anchor="end" font-family="'Noto Serif SC',serif" font-size="12" fill="#a8453a">曲线先动</text>
+  <rect x="284" y="214" width="32" height="36" fill="#1c2330" stroke="#8a94a6" stroke-width="1.2"/>
+  <circle cx="309" cy="233" r="2" fill="#8a94a6"/>
+  <text x="300" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">会议室</text>
+  <path d="M628 122 h8 V 206 h-8" fill="none" stroke="#a8453a" stroke-width="2"/>
+  <text x="560" y="168" text-anchor="end" font-family="'Noto Serif SC',serif" font-size="12" fill="#c8a96a">会议之间,市场已替它收紧又放松</text>
+</svg>

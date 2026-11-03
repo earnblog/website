@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:GDP的记账顺序。先把消费、投资、库存里所有花出去的钱都记上,不分产地;再把其中从国外买来的部分作为进口整体减掉;剩下的才是美国境内造出来的GDP。下方镜像:进口激增时GDP看着弱、需求在发烧;进口骤降时GDP看着强、需求可能在退烧。">
+<rect width="680" height="360" fill="#fbf9f4"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#33404f"/></marker></defs>
+<text x="40" y="34" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#33404f">进口那一行的减号:不是扣分,是退货</text>
+<rect x="40" y="60" width="160" height="150" rx="6" fill="#fff" stroke="#4f6b8a" stroke-width="2"/>
+<text x="120" y="88" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#4f6b8a">① 先全记上</text>
+<text x="120" y="120" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">消费、投资、库存</text>
+<text x="120" y="140" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">不分产地</text>
+<text x="120" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#4f6b8a">私人国内最终销售 +4.9%</text>
+<rect x="260" y="60" width="160" height="150" rx="6" fill="#fff" stroke="#a8453a" stroke-width="2"/>
+<text x="340" y="88" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#a8453a">② 再整体退回</text>
+<text x="340" y="120" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">其中外国造的部分</text>
+<text x="340" y="140" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">作为进口减掉</text>
+<text x="340" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">进口一项 −2.64个百分点</text>
+<rect x="480" y="60" width="160" height="150" rx="6" fill="#fff" stroke="#c8a96a" stroke-width="2"/>
+<text x="560" y="88" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" font-weight="700" fill="#c8a96a">③ 剩下的才是GDP</text>
+<text x="560" y="120" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">美国境内</text>
+<text x="560" y="140" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">造出来的东西</text>
+<text x="560" y="190" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#c8a96a">三季度初值 3.4%</text>
+<line x1="205" y1="135" x2="255" y2="135" stroke="#33404f" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="425" y1="135" x2="475" y2="135" stroke="#33404f" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="40" y1="232" x2="640" y2="232" stroke="#ddd4c4"/>
+<rect x="40" y="248" width="290" height="78" rx="6" fill="#f3ece0"/>
+<text x="56" y="272" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#a8453a">进口激增时</text>
+<text x="56" y="296" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">减号变大 → GDP看着疲软</text>
+<text x="56" y="316" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">其实需求可能正在发烧</text>
+<rect x="350" y="248" width="290" height="78" rx="6" fill="#eef1f5"/>
+<text x="366" y="272" font-family="'Noto Serif SC',serif" font-size="12.5" font-weight="700" fill="#4f6b8a">进口骤降时</text>
+<text x="366" y="296" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">减号变小 → GDP看着强劲</text>
+<text x="366" y="316" font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">其实需求可能正在退烧</text>
+<text x="40" y="348" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6">数据:美国经济分析局(BEA)2026年三季度GDP初值,10月29日发布</text>
+</svg>
