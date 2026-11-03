@@ -1,12 +1,15 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { SITE, I18N, CATEGORIES } from '../config.mjs';
+import { SITE, I18N, CATEGORIES, TIERS } from '../config.mjs';
 const { post, lang = 'zh' } = Astro.props;
 const t = I18N[lang];
 const { title, date, cover, coverCaption, price, category } = post.data;
 const dateStr = t.dateFmt(date);
 const base = lang === 'en' ? '/en' : '';
+const subUrl = `${base}/subscribe/`;
+// 文章需要的最低会员档(frontmatter tier,不写 = 读者档)
+const tier = TIERS.find((x) => x.level === Number(post.data.tier)) || TIERS[0];
 const catInfo = CATEGORIES[category];
 const catName = lang === 'en' ? catInfo.en : catInfo.zh;
 
@@ -28,6 +31,8 @@ const jsonld = JSON.stringify({
   inLanguage: lang === 'en' ? 'en' : 'zh-CN',
   articleSection: catInfo.en,
   isAccessibleForFree: !price,
+  // Google 对付费墙的规范写法:标出哪一段是付费内容,避免被当成对爬虫和读者显示不同内容
+  ...(price ? { hasPart: { '@type': 'WebPageElement', isAccessibleForFree: false, cssSelector: '.paid-section' } } : {}),
   author: { '@type': 'Person', name: SITE.author },
   publisher: { '@type': 'Organization', name: `${SITE.name} ${SITE.nameEn}`, url: SITE.url },
   mainEntityOfPage: new URL(Astro.url.pathname, SITE.url).href,
@@ -35,7 +40,7 @@ const jsonld = JSON.stringify({
 });
 ---
 <BaseLayout title={title} description={post.data.description} lang={lang}>
-  <article class="post" data-slug={post.slug} data-title={title} data-lang={lang}>
+  <article class="post" data-slug={post.slug} data-title={title} data-lang={lang} data-sub={subUrl}>
     <a class="back" href={lang === 'en' ? '/en/' : '/'}>{t.back}</a>
     <div class="post-kicker">
       <span>{SITE.author}</span><span class="dot">/</span><span>{dateStr}</span>
@@ -55,15 +60,17 @@ const jsonld = JSON.stringify({
       <slot />
     </div>
     {price && (
-      <div class="paywall" id="paywall">
+      <div class="paywall paid-section" id="paywall">
         <p class="paywall-note">{t.paywallNote}</p>
-        <button class="btn-gold" id="unlock-btn">{t.unlockBtn(price)}</button>
+        {tier.level > 1 && <p class="paywall-tier">{t.tierLocked(tier[lang].name)}</p>}
+        <a class="btn-gold member-cta" href={subUrl}>{t.memberCta(tier.price)}</a>
         <div class="paywall-or"><span>{t.passOr}</span></div>
-        <button class="btn-ghost pass-btn">{t.passBtn(SITE.passPrice)}</button>
-        <p class="paywall-hint">{t.paywallHint}</p>
+        <div class="pp-label">{t.singleLabel(price)}</div>
+        <div class="pp-box" id="pp-single"></div>
+        <p class="paywall-hint">{t.paywallHint} <a href={`${subUrl}#recover`}>{t.memberHave}</a></p>
       </div>
     )}
-    {price && <div class="post-content" id="paid-content" hidden></div>}
+    {price && <div class="post-content paid-section" id="paid-content" hidden></div>}
 
     {related.length > 0 && (
       <aside class="related">
@@ -84,117 +91,134 @@ const jsonld = JSON.stringify({
     <div class="tip-card" id="tip-card">
       <div class="tip-head">{t.tipHead}</div>
       <div class="tip-row">
-        <button class="tip-btn" data-amount="2">$2</button>
+        <button class="tip-btn on" data-amount="2">$2</button>
         <button class="tip-btn" data-amount="5">$5</button>
         <button class="tip-btn" data-amount="10">$10</button>
         <span class="tip-custom">
           <span class="cur">$</span>
           <input id="tip-amount" type="number" min="1" max="10000" step="1" placeholder={t.tipCustom} />
-          <button class="tip-btn tip-go" id="tip-go">{t.tipGo}</button>
         </span>
       </div>
+      <div class="pp-box" id="pp-tip"></div>
       <p class="tip-note">{t.tipNote}</p>
     </div>
 
-    <p class="pass-line">
-      {t.passLine(SITE.passPrice)}
-      <button class="pass-btn pass-link" type="button">{t.passGo}</button>
-    </p>
-
     <p class="pass-line member-line">
-      {t.memberLine}
-      <a class="pass-link" href={SITE.kofi} target="_blank" rel="noopener noreferrer">{t.memberGo}</a>
+      {t.memberLine(TIERS[0].price)}
+      <a class="pass-link" href={subUrl}>{t.memberGo}</a>
     </p>
   </article>
 </BaseLayout>
 
 <script>
+  import { ppConfig, loadPayPal, api, toast } from '../scripts/pp';
+
   const article = document.querySelector('article.post') as HTMLElement;
   const slug = article.dataset.slug || '';
-  const title = article.dataset.title || '';
   const isEn = article.dataset.lang === 'en';
 
   const MSG = isEn
     ? {
         unavailable: 'Payment is temporarily unavailable. Please try again later.',
-        minAmount: 'Please enter an amount of $1 or more',
-        maxAmount: 'Maximum $10,000 per payment',
+        amount: 'Enter an amount between $1 and $10,000',
         thanks: 'Tip received — thank you for your support',
         unlocked: 'Full article unlocked. Thank you!',
-        unlockfail: 'Payment incomplete — the article is still locked',
+        failed: 'Payment did not go through — nothing was charged',
+        declined: 'PayPal declined the card. Please try another payment method.',
       }
     : {
         unavailable: '支付通道暂时不可用,请稍后再试',
-        minAmount: '请输入 $1 以上的金额',
-        maxAmount: '单笔最多 $10,000',
+        amount: '请输入 $1 – $10,000 之间的金额',
         thanks: '收到你的打赏,谢谢支持',
         unlocked: '已解锁全文,感谢支持',
-        unlockfail: '支付未完成,全文尚未解锁',
+        failed: '支付没有完成,没有扣款',
+        declined: 'PayPal 拒绝了这张卡,请换一种付款方式',
       };
 
-  function toast(msg: string) {
-    const el = document.createElement('div');
-    el.className = 'toast';
-    el.textContent = msg;
-    document.body.appendChild(el);
-    requestAnimationFrame(() => el.classList.add('on'));
-    setTimeout(() => { el.classList.remove('on'); setTimeout(() => el.remove(), 400); }, 4200);
+  const paywall = document.getElementById('paywall');
+
+  // 有权限(单篇已买 / 会员档位够 / 旧通行证)就直接换成全文;返回是否已解锁
+  async function loadFull(): Promise<boolean> {
+    if (!paywall) return true;
+    const r = await fetch(`/api/content?slug=${encodeURIComponent(slug)}`).catch(() => null);
+    const d = r && r.ok ? await r.json() : null;
+    if (!d?.html) return false;
+    const paid = document.getElementById('paid-content')!;
+    paid.innerHTML = d.html;
+    paid.hidden = false;
+    paywall.remove();
+    document.querySelector('.post-content.is-preview')?.classList.remove('is-preview');
+    return true;
   }
 
-  async function checkout(payload: object, btn: HTMLButtonElement) {
-    btn.disabled = true;
-    try {
-      const r = await fetch('/api/checkout', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ ...payload, path: location.pathname }),
-      });
-      const d = await r.json();
-      if (r.ok && d.url) { location.href = d.url; return; }
-      toast(d.error || MSG.unavailable);
-    } catch {
-      toast(MSG.unavailable);
-    }
-    btn.disabled = false;
-  }
-
+  // 打赏金额:预设按钮或自填
+  let tipAmount = 2;
+  const tipInput = document.getElementById('tip-amount') as HTMLInputElement | null;
   document.querySelectorAll<HTMLButtonElement>('.tip-btn[data-amount]').forEach((b) =>
-    b.addEventListener('click', () =>
-      checkout({ type: 'tip', amount: Number(b.dataset.amount), slug, title }, b)),
+    b.addEventListener('click', () => {
+      tipAmount = Number(b.dataset.amount);
+      if (tipInput) tipInput.value = '';
+      document.querySelectorAll('.tip-btn').forEach((x) => x.classList.toggle('on', x === b));
+    }),
   );
-  const tipGo = document.getElementById('tip-go') as HTMLButtonElement | null;
-  tipGo?.addEventListener('click', () => {
-    const v = Number((document.getElementById('tip-amount') as HTMLInputElement).value);
-    if (!Number.isFinite(v) || v < 1) { toast(MSG.minAmount); return; }
-    if (v > 10000) { toast(MSG.maxAmount); return; }
-    checkout({ type: 'tip', amount: v, slug, title }, tipGo);
+  tipInput?.addEventListener('input', () => {
+    tipAmount = Number(tipInput.value);
+    document.querySelectorAll('.tip-btn').forEach((x) => x.classList.remove('on'));
   });
 
-  const unlockBtn = document.getElementById('unlock-btn') as HTMLButtonElement | null;
-  unlockBtn?.addEventListener('click', () => checkout({ type: 'unlock', slug }, unlockBtn));
+  const style = { layout: 'horizontal', height: 42, tagline: false, shape: 'rect', color: 'gold' };
 
-  document.querySelectorAll<HTMLButtonElement>('.pass-btn').forEach((b) =>
-    b.addEventListener('click', () => checkout({ type: 'pass' }, b)),
-  );
-
-  // 付费文章:已解锁(cookie 有效)则直接取全文替换付费墙
-  if (document.getElementById('paywall')) {
-    fetch(`/api/content?slug=${encodeURIComponent(slug)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => {
-        if (d && d.html) {
-          const paid = document.getElementById('paid-content')!;
-          paid.innerHTML = d.html;
-          paid.hidden = false;
-          document.getElementById('paywall')?.remove();
-          document.querySelector('.post-content.is-preview')?.classList.remove('is-preview');
-        }
-      })
-      .catch(() => {});
+  function errorMsg(d: any) {
+    return d?.error === 'declined' ? MSG.declined : MSG.failed;
   }
 
+  (async () => {
+    const unlocked = await loadFull();
+    const cfg = await ppConfig();
+    if (!cfg.open || !cfg.clientId) {
+      document.querySelectorAll('.pp-box').forEach((el) => { el.textContent = MSG.unavailable; el.classList.add('pp-off'); });
+      return;
+    }
+    const paypal = await loadPayPal(cfg.clientId, 'capture').catch(() => null);
+    if (!paypal) return;
+
+    if (!unlocked && document.getElementById('pp-single')) {
+      paypal.Buttons({
+        style,
+        createOrder: async () => {
+          const r = await api('order', { kind: 'single', slug });
+          if (!r.ok) { toast(MSG.unavailable); throw new Error('order'); }
+          return r.data.id;
+        },
+        onApprove: async (data: any) => {
+          const r = await api('capture', { id: data.orderID });
+          if (r.ok) { await loadFull(); toast(MSG.unlocked); } else toast(errorMsg(r.data));
+        },
+        onError: () => toast(MSG.unavailable),
+      }).render('#pp-single');
+    }
+
+    paypal.Buttons({
+      style,
+      onClick: (_d: any, actions: any) => {
+        if (!Number.isFinite(tipAmount) || tipAmount < 1 || tipAmount > 10000) { toast(MSG.amount); return actions.reject(); }
+        return actions.resolve();
+      },
+      createOrder: async () => {
+        const r = await api('order', { kind: 'tip', amount: tipAmount });
+        if (!r.ok) { toast(MSG.unavailable); throw new Error('order'); }
+        return r.data.id;
+      },
+      onApprove: async (data: any) => {
+        const r = await api('capture', { id: data.orderID });
+        toast(r.ok ? MSG.thanks : errorMsg(r.data));
+      },
+      onError: () => toast(MSG.unavailable),
+    }).render('#pp-tip');
+  })();
+
+  // 旧的 Stripe 回跳参数(老链接)仍给提示
   const q = new URLSearchParams(location.search);
   if (q.get('thanks')) toast(MSG.thanks);
   if (q.get('unlocked')) toast(MSG.unlocked);
-  if (q.get('unlockfail')) toast(MSG.unlockfail);
 </script>

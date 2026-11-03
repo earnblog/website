@@ -7,12 +7,13 @@ import { SITE } from '../../config.mjs';
     <h1 class="post-title">Privacy Policy</h1>
     <div class="post-content legal">
       <p class="legal-meta">Last updated: {SITE.legalUpdatedEn}</p>
-      <p>This policy explains how "{SITE.nameEn}" (fncuthdert.com — the "Site") handles your information. The Site is designed to <strong>collect as little data as possible</strong>: there are no user accounts, no registration, and reading free content requires no personal information.</p>
+      <p>This policy explains how "{SITE.nameEn}" (fncuthdert.com — the "Site") handles your information. The Site is designed to <strong>collect as little data as possible</strong>: there are no usernames or passwords, no registration, and reading free content requires no personal information.</p>
 
       <h2>1. What we collect</h2>
       <ul>
-        <li><strong>Payment information</strong>: tips and article purchases are completed on Stripe's hosted pages. Your card details are processed directly by Stripe and <strong>never pass through or get stored on this Site's servers</strong>. From Stripe we receive only the transaction status, amount, and Stripe's transaction ID; the email you provide at checkout is used by Stripe to send your receipt.</li>
-        <li><strong>Functional cookies</strong>: after unlocking a paid article, the Site sets an unlock-credential cookie in your browser (name starting with u_, valid for one year). It only remembers "this article is unlocked" and is not used for tracking or profiling. The Site uses no advertising or analytics cookies.</li>
+        <li><strong>Payment information</strong>: tips, article purchases and memberships are completed in PayPal's window. Your card details and PayPal password are processed directly by PayPal and <strong>never pass through or get stored on this Site's servers</strong>. From PayPal we receive the transaction status, amount, order or subscription ID, and your PayPal account email.</li>
+        <li><strong>Membership records</strong>: when you subscribe, the Site stores your subscription ID, tier, PayPal email and access period, to decide which content you can read and to verify you when you restore access on another device. Topic requests from Inner Circle members are stored so we can reply.</li>
+        <li><strong>Functional cookies</strong>: unlocking a single article sets a cookie whose name starts with u_ (valid for one year); members get a cookie named m. They only remember "unlocked" or "member" and are not used for tracking or profiling. The Site uses no advertising or analytics cookies.</li>
         <li><strong>Server logs</strong>: the Site is hosted on Cloudflare, which keeps basic access logs (such as IP address and access time) for security and operations.</li>
       </ul>
 
@@ -21,13 +22,14 @@ import { SITE } from '../../config.mjs';
 
       <h2>3. Third-party services</h2>
       <ul>
-        <li>Stripe (payment processing): <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></li>
+        <li>PayPal (payment processing): <a href="https://www.paypal.com/myaccount/privacy/privacyhub" target="_blank" rel="noopener">PayPal Privacy Hub</a></li>
+        <li>Stripe (payments made before November 2026): <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></li>
         <li>Cloudflare (hosting and delivery): <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
         <li>Google Fonts (font loading)</li>
       </ul>
 
       <h2>4. Data retention</h2>
-      <p>Transaction records are retained per Stripe's policies and applicable law. The unlock cookie expires after one year; you may clear it at any time (access can be restored via your payment success link).</p>
+      <p>Transaction records are retained per PayPal's policies and applicable law. Membership records are kept for one year after a subscription ends, to handle refunds and disputes. You may clear the cookies at any time and restore access on the Subscribe page with your order or subscription ID.</p>
 
       <h2>5. Your rights</h2>
       <p>You may request access to, correction of, or deletion of information we hold about you (except transaction records we are legally required to keep). Contact <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> and we will respond within a reasonable time.</p>

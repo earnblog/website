@@ -12,22 +12,23 @@ import { SITE } from '../../config.mjs';
       <ul>
         <li><strong>Paid articles</strong> are digital content, unlocked and delivered instantly upon successful payment. Because content cannot be "returned" once read, paid articles are <strong>generally non-refundable</strong>. Every paid article shows its price before payment and offers a free preview of its opening — please purchase only after confirming.</li>
         <li><strong>Tips</strong> are voluntary gifts with no goods or services in return and are <strong>non-refundable</strong>.</li>
-        <li><strong>Annual Pass</strong>: takes effect immediately upon payment and is generally non-refundable; the exceptions below apply equally to the pass. It is a one-time payment with no auto-renewal, so there is no subscription to cancel.</li>
+        <li><strong>Membership</strong>: each monthly charge opens that month's content immediately and is generally non-refundable. You can cancel at any time under Automatic payments in PayPal; no further charges are made, and you keep access until the end of the period you paid for.</li>
       </ul>
 
       <h2>2. Exceptions</h2>
       <p>We will issue a full refund, after verification, in the following cases:</p>
       <ul>
-        <li><strong>Duplicate charge</strong>: you were charged more than once for the same article;</li>
+        <li><strong>Duplicate charge</strong>: you were charged more than once for the same article or the same membership period;</li>
+        <li><strong>Forgotten cancellation</strong>: you ask within <strong>48 hours</strong> of an automatic renewal and have not read any paid content in that period — we refund that period and cancel for you (once per member);</li>
         <li><strong>Failed delivery</strong>: payment succeeded but the content would not unlock, and we could not restore your access within 48 hours;</li>
         <li><strong>Unauthorized transaction</strong>: a payment made with your payment instrument without your authorization (reasonable verification may be required).</li>
       </ul>
 
       <h2>3. How to request</h2>
-      <p>Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> within <strong>7 days</strong> of the transaction, including: your Stripe receipt (or its transaction ID), the payment time and amount, and a description of the problem. We respond within <strong>2 business days</strong>.</p>
+      <p>Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> within <strong>7 days</strong> of the transaction, including: the transaction ID from your PayPal receipt (members: your subscription ID, starting with I-), the payment time and amount, and a description of the problem. We respond within <strong>2 business days</strong>. For payments made through Stripe before November 2026, your Stripe receipt is enough.</p>
 
       <h2>4. Method and timing</h2>
-      <p>Approved refunds are always returned via Stripe <strong>to the original payment method</strong>, typically arriving within 5–10 business days depending on your card issuer.</p>
+      <p>Approved refunds are always returned <strong>through the original payment channel</strong> (PayPal or Stripe). Refunds to a PayPal balance are usually instant; card refunds typically arrive within 5–10 business days depending on your card issuer.</p>
 
       <h2>5. Disputes</h2>
       <p>If you have concerns about a charge, please contact us first at the email above — most issues can be resolved directly, and usually faster than a chargeback through your card issuer.</p>

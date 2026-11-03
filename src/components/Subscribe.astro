@@ -1,0 +1,193 @@
+---
+// 订阅页(中英共用):三档会员、会员状态、换设备找回、内圈点题
+import { SITE, TIERS } from '../config.mjs';
+const { lang = 'zh' } = Astro.props;
+const en = lang === 'en';
+const p = en ? '/en' : '';
+const T = en
+  ? {
+      eyebrow: 'MEMBERSHIP', title: 'Membership',
+      lead: 'Billed monthly through PayPal. Cancel anytime in your PayPal account — you keep access until the end of the month you paid for.',
+      per: '/ month', featured: 'MOST CHOSEN',
+      youAre: 'Your membership', manage: 'Manage or cancel in PayPal →', logout: 'Sign out on this browser',
+      upgradeNote: 'To change tier: subscribe to the new tier above, then cancel the old one in PayPal.',
+      topicHead: 'Topic request (once a month)', topicPh: 'What should I write about? A question, a chart, a narrative you want taken apart…', topicGo: 'Send request',
+      recoverHead: 'Restore access on this device',
+      recoverMember: 'Members: your subscription ID (starts with I-, in the PayPal receipt email and under Automatic payments) plus your PayPal email.',
+      recoverSingle: 'Single articles: the order ID or transaction ID from your PayPal receipt.',
+      subPh: 'I-XXXXXXXXXXXX', emailPh: 'PayPal email', orderPh: 'Order or transaction ID', go: 'Restore',
+      fine: 'By subscribing you agree to the', terms: 'Terms', refunds: 'Refund Policy', contact: 'Contact us',
+    }
+  : {
+      eyebrow: 'MEMBERSHIP', title: '会员订阅',
+      lead: 'PayPal 按月自动扣款。随时可在 PayPal 里退订,退订后已付的这个月照常读到期。',
+      per: '/ 月', featured: '最多人选',
+      youAre: '你的会员', manage: '在 PayPal 管理或退订 →', logout: '在本浏览器退出',
+      upgradeNote: '换档:在上面订阅新的档位,再到 PayPal 里退订旧的。',
+      topicHead: '点题(每月 1 次)', topicPh: '想让我写什么?一个问题、一张图、一个你想拆的流行说法……', topicGo: '提交',
+      recoverHead: '在这台设备上恢复访问',
+      recoverMember: '会员:填订阅号(I- 开头,在 PayPal 付款邮件和「自动付款」里能看到)和 PayPal 邮箱。',
+      recoverSingle: '单篇:填 PayPal 收据上的订单号或交易号。',
+      subPh: 'I-XXXXXXXXXXXX', emailPh: 'PayPal 邮箱', orderPh: '订单号或交易号', go: '恢复',
+      fine: '订阅即表示同意', terms: '《服务条款》', refunds: '《退款政策》', contact: '联系我们',
+    };
+---
+<article class="post subscribe-page" data-lang={lang}>
+  <div class="sub-head">
+    <div class="sub-eyebrow">{T.eyebrow}</div>
+    <h1 class="post-title">{T.title}</h1>
+    <p class="sub-lead">{T.lead}</p>
+  </div>
+
+  <div class="tier-grid">
+    {TIERS.map((t, i) => (
+      <section class:list={['tier-card', i === 1 && 'featured']} data-tier={t.id}>
+        <div class="tier-name">{t[lang].name}{i === 1 && ` · ${T.featured}`}</div>
+        <div class="sub-price"><span class="cur">$</span>{t.price}<span class="per">{T.per}</span></div>
+        <ul>{t[lang].perks.map((x) => <li>{x}</li>)}</ul>
+        <div class="pp-box" id={`pp-sub-${t.id}`}></div>
+      </section>
+    ))}
+  </div>
+
+  <section class="member-panel" id="member-panel" hidden>
+    <h2>{T.youAre}</h2>
+    <p id="member-status"></p>
+    <p><a href="https://www.paypal.com/myaccount/autopay/" target="_blank" rel="noopener noreferrer">{T.manage}</a></p>
+    <p>{T.upgradeNote}</p>
+    <div id="topic-box" hidden>
+      <h2>{T.topicHead}</h2>
+      <textarea id="topic-text" maxlength="2000" placeholder={T.topicPh}></textarea>
+      <div class="form-row"><button class="btn-gold" id="topic-go">{T.topicGo}</button></div>
+    </div>
+    <p><button class="btn-ghost" id="logout">{T.logout}</button></p>
+  </section>
+
+  <section class="recover-panel" id="recover">
+    <h2>{T.recoverHead}</h2>
+    <p>{T.recoverMember}</p>
+    <div class="form-row">
+      <input id="rec-sub" placeholder={T.subPh} autocomplete="off" />
+      <input id="rec-email" type="email" placeholder={T.emailPh} />
+      <button class="btn-ghost" id="rec-sub-go">{T.go}</button>
+    </div>
+    <p>{T.recoverSingle}</p>
+    <div class="form-row">
+      <input id="rec-order" placeholder={T.orderPh} autocomplete="off" />
+      <button class="btn-ghost" id="rec-order-go">{T.go}</button>
+    </div>
+  </section>
+
+  <p class="sub-fine">{T.fine} <a href={`${p}/terms/`}>{T.terms}</a> · <a href={`${p}/refunds/`}>{T.refunds}</a> · <a href={`${p}/contact/`}>{T.contact}</a> · {SITE.contactEmail}</p>
+</article>
+
+<script>
+  import { ppConfig, loadPayPal, api, toast } from '../scripts/pp';
+
+  const page = document.querySelector('.subscribe-page') as HTMLElement;
+  const isEn = page.dataset.lang === 'en';
+  const NAMES: Record<string, string> = isEn
+    ? { reader: 'Reader', research: 'Research', inner: 'Inner Circle' }
+    : { reader: '读者', research: '研究', inner: '内圈' };
+  const M = isEn
+    ? {
+        unavailable: 'Payment is temporarily unavailable. Please try again later.',
+        welcome: 'Membership active — every paid article is open to you now',
+        pending: 'PayPal is still confirming the subscription. Refresh in a minute, or restore with your subscription ID below.',
+        status: (n: string, d: string, active: boolean) => active ? `${n} member · access through ${d}` : `${n} membership ended on ${d}`,
+        badId: 'Check the ID format', email: 'That email does not match the PayPal account on this subscription',
+        notFound: 'Not found — check the ID', inactive: 'This subscription is no longer active',
+        restored: 'Access restored', topicSent: 'Request received — I will reply by email', quota: 'You have already used this month\'s request',
+        signedOut: 'Signed out on this browser',
+      }
+    : {
+        unavailable: '支付通道暂时不可用,请稍后再试',
+        welcome: '会员已开通,全站付费文章现在都能读了',
+        pending: 'PayPal 还在确认订阅,过一分钟刷新,或在下面用订阅号恢复。',
+        status: (n: string, d: string, active: boolean) => active ? `「${n}」会员 · 有效至 ${d}` : `「${n}」会员已于 ${d} 到期`,
+        badId: '号码格式不对,检查一下', email: '邮箱和这份订阅的 PayPal 账户对不上',
+        notFound: '没查到,检查一下号码', inactive: '这份订阅已经不在有效期内',
+        restored: '已恢复访问', topicSent: '收到你的点题,我会邮件回复', quota: '这个月的点题已经用过了',
+        signedOut: '已在本浏览器退出',
+      };
+  const fmt = (s: number) => new Date(s * 1000).toLocaleDateString(isEn ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  async function showMember() {
+    const r = await api('me');
+    const m = r.data?.member;
+    const panel = document.getElementById('member-panel')!;
+    if (!m) { panel.hidden = true; return; }
+    panel.hidden = false;
+    document.getElementById('member-status')!.textContent = M.status(NAMES[m.tier] || m.tier, fmt(m.until), m.active);
+    document.getElementById('topic-box')!.hidden = !(m.active && m.level >= 3);
+    document.querySelectorAll('.tier-card').forEach((c) => c.classList.toggle('current', m.active && (c as HTMLElement).dataset.tier === m.tier));
+  }
+
+  const errText = (d: any) => ({ id: M.badId, email: M.email, not_found: M.notFound, inactive: M.inactive } as any)[d?.error] || M.unavailable;
+
+  (async () => {
+    showMember();
+    const cfg = await ppConfig();
+    if (!cfg.open || !cfg.clientId) {
+      document.querySelectorAll('.tier-card .pp-box').forEach((el) => { el.textContent = M.unavailable; el.classList.add('pp-off'); });
+      return;
+    }
+    const paypal = await loadPayPal(cfg.clientId, 'subscription').catch(() => null);
+    if (!paypal) return;
+    for (const t of cfg.tiers || []) {
+      if (!t.planId) continue;
+      paypal.Buttons({
+        style: { layout: 'vertical', shape: 'rect', color: 'gold', label: 'subscribe', tagline: false },
+        createSubscription: (_d: any, actions: any) => actions.subscription.create({ plan_id: t.planId }),
+        onApprove: async (data: any) => {
+          // 刚批准时 PayPal 偶尔还没把状态改成 ACTIVE:稍等重试几次
+          for (let i = 0; i < 4; i++) {
+            const r = await api('sub/activate', { id: data.subscriptionID });
+            if (r.ok) { toast(M.welcome); showMember(); return; }
+            if (r.data?.error !== 'inactive') break;
+            await new Promise((ok) => setTimeout(ok, 3000));
+          }
+          toast(M.pending);
+          (document.getElementById('rec-sub') as HTMLInputElement).value = data.subscriptionID;
+        },
+        onError: () => toast(M.unavailable),
+      }).render(`#pp-sub-${t.id}`);
+    }
+  })();
+
+  const val = (id: string) => (document.getElementById(id) as HTMLInputElement).value.trim();
+
+  document.getElementById('rec-sub-go')!.addEventListener('click', async (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    b.disabled = true;
+    const r = await api('sub/recover', { id: val('rec-sub'), email: val('rec-email') });
+    b.disabled = false;
+    if (r.ok) { toast(M.restored); showMember(); } else toast(errText(r.data));
+  });
+
+  document.getElementById('rec-order-go')!.addEventListener('click', async (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    b.disabled = true;
+    const r = await api('recover-order', { id: val('rec-order') });
+    b.disabled = false;
+    if (r.ok && r.data.path) { location.href = r.data.path; return; }
+    toast(r.ok ? M.restored : errText(r.data));
+  });
+
+  document.getElementById('topic-go')!.addEventListener('click', async (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    const text = (document.getElementById('topic-text') as HTMLTextAreaElement).value.trim();
+    if (text.length < 4) return;
+    b.disabled = true;
+    const r = await api('topic', { text });
+    b.disabled = false;
+    if (r.ok) { toast(M.topicSent); (document.getElementById('topic-text') as HTMLTextAreaElement).value = ''; }
+    else toast(r.data?.error === 'quota' ? M.quota : M.unavailable);
+  });
+
+  document.getElementById('logout')!.addEventListener('click', async () => {
+    await api('logout', {});
+    toast(M.signedOut);
+    showMember();
+  });
+</script>

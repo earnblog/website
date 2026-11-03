@@ -11,6 +11,7 @@ const posts = defineCollection({
     draft: z.boolean().default(false),
     category: z.enum(['liquidity', 'ai-compute', 'mechanics', 'cycles']).default('mechanics'),
     price: z.number().positive().optional(), // 单位美元;设了就是付费文章,前2段免费预览
+    tier: z.number().int().min(1).max(3).optional(), // 会员最低档:1 读者(默认) / 2 研究 / 3 内圈
 
   }),
 });

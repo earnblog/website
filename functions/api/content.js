@@ -1,6 +1,8 @@
 // GET /api/content?slug=… — 校验解锁 cookie,通过则返回付费正文 HTML
+// 三种身份都认:单篇解锁、会员(按档位)、旧年度通行证(已停售,老买家到期前仍有效)
 import store from '../_lib/paid-store.mjs';
 import { sign } from '../_lib/sign.mjs';
+import { currentMember } from '../_lib/members.mjs';
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -29,5 +31,11 @@ export async function onRequestGet({ request, env }) {
     if (valid) return json({ html: entry.html });
   }
 
-  return json({ error: 'locked' }, 401);
+  // 会员:档位够才放行;档位不够告诉前端差哪一档,好显示升级按钮
+  const member = await currentMember(env, request);
+  const need = entry.tier || 1;
+  if (member?.active && member.level >= need) return json({ html: entry.html });
+  if (member?.active) return json({ error: 'tier', need }, 403);
+
+  return json({ error: 'locked', need }, 401);
 }

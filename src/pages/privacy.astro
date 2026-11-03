@@ -7,12 +7,13 @@ import { SITE } from '../config.mjs';
     <h1 class="post-title">隐私政策</h1>
     <div class="post-content legal">
       <p class="legal-meta">最近更新:{SITE.legalUpdated}</p>
-      <p>本政策说明「{SITE.name}」(fncuthdert.com,下称"本站")如何处理你的信息。本站的设计原则是<strong>尽可能少地收集数据</strong>:不设用户账号,不要求注册,阅读免费内容无需提供任何个人信息。</p>
+      <p>本政策说明「{SITE.name}」(fncuthdert.com,下称"本站")如何处理你的信息。本站的设计原则是<strong>尽可能少地收集数据</strong>:不设用户名密码,不要求注册,阅读免费内容无需提供任何个人信息。</p>
 
       <h2>一、我们收集什么</h2>
       <ul>
-        <li><strong>支付信息</strong>:当你打赏或购买付费文章时,支付在 Stripe 的页面上完成。你的银行卡号等敏感支付数据由 Stripe 直接处理,<strong>不经过、也不存储于本站服务器</strong>。我们仅从 Stripe 获知交易状态(是否支付成功)、金额及 Stripe 生成的交易编号;你在支付时向 Stripe 提供的邮箱用于 Stripe 向你发送收据。</li>
-        <li><strong>功能性 Cookie</strong>:付费文章解锁成功后,本站在你的浏览器写入一个解锁凭证 Cookie(名称以 u_ 开头,有效期一年)。它只用于记住"这篇文章已解锁",不用于追踪或画像。本站不使用任何广告或分析类 Cookie。</li>
+        <li><strong>支付信息</strong>:打赏、购买付费文章和会员订阅都在 PayPal 的窗口里完成。你的银行卡号、PayPal 密码等敏感支付数据由 PayPal 直接处理,<strong>不经过、也不存储于本站服务器</strong>。我们从 PayPal 获知交易状态、金额、订单号或订阅号,以及你 PayPal 账户的邮箱。</li>
+        <li><strong>会员记录</strong>:订阅会员时,本站保存订阅号、档位、PayPal 邮箱和有效期,用于判断你能读哪些内容、在换设备时核对身份。内圈会员提交的点题内容也会保存,用于回复。</li>
+        <li><strong>功能性 Cookie</strong>:单篇解锁后,本站写入一个以 u_ 开头的解锁 Cookie(有效期一年);会员写入一个名为 m 的会员 Cookie。它们只用于记住"已解锁"或"是会员",不用于追踪或画像。本站不使用任何广告或分析类 Cookie。</li>
         <li><strong>服务器日志</strong>:本站托管于 Cloudflare,Cloudflare 会出于安全和运维目的记录基础访问日志(如 IP 地址、访问时间)。</li>
       </ul>
 
@@ -22,13 +23,14 @@ import { SITE } from '../config.mjs';
       <h2>三、第三方服务</h2>
       <p>本站依赖以下第三方处理数据,它们各自的隐私政策适用于其处理行为:</p>
       <ul>
-        <li>Stripe(支付处理):<a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></li>
+        <li>PayPal(支付处理):<a href="https://www.paypal.com/myaccount/privacy/privacyhub" target="_blank" rel="noopener">paypal.com 隐私中心</a></li>
+        <li>Stripe(2026 年 11 月之前的支付):<a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></li>
         <li>Cloudflare(网站托管与分发):<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
         <li>Google Fonts(字体加载)</li>
       </ul>
 
       <h2>四、数据保留</h2>
-      <p>交易记录依 Stripe 的政策及适用法律要求保留;解锁 Cookie 在一年后自动过期,你也可随时在浏览器中清除(清除后可用支付成功页链接恢复解锁)。</p>
+      <p>交易记录依 PayPal 的政策及适用法律要求保留;会员记录在订阅结束后保留一年,用于处理退款与争议。Cookie 可随时在浏览器中清除,清除后可在订阅页用订单号或订阅号恢复。</p>
 
       <h2>五、你的权利</h2>
       <p>你有权查询、更正或要求删除我们持有的与你相关的信息(法律要求保留的交易记录除外)。请通过 <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> 联系我们,我们将在合理时间内回复。</p>

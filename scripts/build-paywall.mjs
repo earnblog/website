@@ -4,7 +4,7 @@ import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { splitBody, renderMd } from '../src/lib/paywall.mjs';
-import { SITE } from '../src/config.mjs';
+import { SITE, TIERS } from '../src/config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 // 中英两个文章目录;pathPrefix 决定解锁后跳回哪个语言版面
@@ -41,14 +41,18 @@ for (const { dir, pathPrefix } of SOURCES) {
     const slug = file.replace(/\.md$/, '');
     if (store[slug]) console.warn(`paywall: slug 冲突 "${slug}",${pathPrefix} 覆盖了先前条目——中英文付费文章文件名不能相同`);
     const { paidMd } = splitBody(body);
-    store[slug] = { title: fm.title || slug, price, path: pathPrefix + slug, html: renderMd(paidMd) };
+    const tier = [1, 2, 3].includes(Number(fm.tier)) ? Number(fm.tier) : 1;
+    store[slug] = { title: fm.title || slug, price, tier, path: pathPrefix + slug, html: renderMd(paidMd) };
   }
 }
 
 await mkdir(path.dirname(OUT), { recursive: true });
 await writeFile(
   OUT,
-  `export default ${JSON.stringify(store, null, 2)};\nexport const passPrice = ${Number(SITE.passPrice) || 50};\n`,
+  `export default ${JSON.stringify(store, null, 2)};\n` +
+    `export const passPrice = ${Number(SITE.passPrice) || 50};\n` +
+    `export const singlePrice = ${Number(SITE.singlePrice) || 9};\n` +
+    `export const tiers = ${JSON.stringify(TIERS.map(({ id, level, price, en }) => ({ id, level, price, en: { name: en.name } })))};\n`,
   'utf8',
 );
-console.log(`paywall: ${Object.keys(store).length} 篇付费文章,通行证 $${SITE.passPrice} -> functions/_lib/paid-store.mjs`);
+console.log(`paywall: ${Object.keys(store).length} 篇付费文章,会员 ${TIERS.map((t) => `${t.id} $${t.price}`).join(' / ')} -> functions/_lib/paid-store.mjs`);

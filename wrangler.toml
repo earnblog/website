@@ -1,0 +1,11 @@
+# 临界博客的 Cloudflare Pages 配置(GitHub 推送自动构建,构建命令 npm run build)。
+# 有了这个文件,绑定以这里为准;密钥(PAYPAL_*、UNLOCK_SECRET、STRIPE_SECRET_KEY)仍在后台 secrets 里。
+name = "website"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-10-01"
+
+# 会员订阅记录、单篇购买、点题
+[[d1_databases]]
+binding = "DB"
+database_name = "linjie-members"
+database_id = "994585b8-5082-48f2-8da0-d72d7291b9f5"
