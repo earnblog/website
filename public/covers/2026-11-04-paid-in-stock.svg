@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:天平左盘放着一块金色芯片,右盘里除了一叠美元,还压着一张红色股票凭证;底部金字:芯片的价格里,夹着一张股票">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <rect x="0" y="236" width="680" height="64" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">权证不是噪音,是用股价打的折</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">标价收美元 · 成交价里夹着一张自己的股票</text>
+  <line x1="340" y1="92" x2="340" y2="214" stroke="#4f6b8a" stroke-width="3"/>
+  <path d="M316 222 L364 222 L352 208 L328 208 Z" fill="#4f6b8a"/>
+  <circle cx="340" cy="92" r="5" fill="#c8a96a"/>
+  <line x1="200" y1="104" x2="480" y2="80" stroke="#c8a96a" stroke-width="2.5"/>
+  <g stroke="#8a94a6" stroke-width="1"><line x1="200" y1="104" x2="170" y2="164"/><line x1="200" y1="104" x2="230" y2="164"/><line x1="480" y1="80" x2="440" y2="140"/><line x1="480" y1="80" x2="520" y2="140"/></g>
+  <path d="M158 164 L242 164 Q236 180 200 180 Q164 180 158 164 Z" fill="#33404f"/>
+  <path d="M428 140 L532 140 Q526 156 480 156 Q434 156 428 140 Z" fill="#33404f"/>
+  <rect x="178" y="128" width="44" height="36" rx="3" fill="#c8a96a"/>
+  <g stroke="#c8a96a" stroke-width="2"><line x1="186" y1="122" x2="186" y2="128"/><line x1="200" y1="122" x2="200" y2="128"/><line x1="214" y1="122" x2="214" y2="128"/><line x1="186" y1="164" x2="186" y2="170"/><line x1="214" y1="164" x2="214" y2="170"/></g>
+  <rect x="188" y="138" width="24" height="16" fill="#181f2b"/>
+  <rect x="440" y="118" width="40" height="22" rx="2" fill="#4f6b8a"/>
+  <rect x="444" y="112" width="40" height="22" rx="2" fill="#5d7a9a"/>
+  <text x="464" y="127" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#fbf9f4">$</text>
+  <rect x="488" y="104" width="36" height="36" rx="2" fill="#a8453a" transform="rotate(8 506 122)"/>
+  <text x="507" y="127" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#fbf9f4" transform="rotate(8 506 122)">股</text>
+  <text x="200" y="204" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">一车芯片</text>
+  <text x="480" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">美元 + 一捆自家股份</text>
+  <text x="340" y="274" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" fill="#c8a96a">芯片的价格里,夹着一张股票</text>
+</svg>

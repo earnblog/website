@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="客户权证反身性回路:左环上涨时,股价上涨、权证增值、客户实际成本下降、订单与指引上调,再推高股价;右环下跌时,股价下跌、权证缩水、客户实际成本上升、订单放缓,再压低股价">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#4f6b8a"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#a8453a"/></marker>
+  </defs>
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <line x1="340" y1="40" x2="340" y2="330" stroke="#ddd4c4" stroke-width="1.5"/>
+  <text x="170" y="32" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#4f6b8a">上涨:越涨越便宜</text>
+  <text x="510" y="32" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#a8453a">下跌:越跌越贵</text>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#33404f" text-anchor="middle">
+    <rect x="110" y="56" width="120" height="34" rx="6" fill="#fff" stroke="#4f6b8a"/><text x="170" y="78">① 股价上涨</text>
+    <rect x="200" y="160" width="130" height="34" rx="6" fill="#fff" stroke="#4f6b8a"/><text x="265" y="182">② 权证增值</text>
+    <rect x="110" y="264" width="120" height="34" rx="6" fill="#fff" stroke="#4f6b8a"/><text x="170" y="280">③ 客户实际成本↓</text><text x="170" y="294" font-size="10" fill="#8a94a6">订单与解锁加速</text>
+    <rect x="10" y="160" width="130" height="34" rx="6" fill="#fff" stroke="#4f6b8a"/><text x="75" y="182">④ 营收与指引上调</text>
+    <rect x="450" y="56" width="120" height="34" rx="6" fill="#fff" stroke="#a8453a"/><text x="510" y="78">①′ 股价下跌</text>
+    <rect x="540" y="160" width="130" height="34" rx="6" fill="#fff" stroke="#a8453a"/><text x="605" y="182">②′ 权证缩水</text>
+    <rect x="450" y="264" width="120" height="34" rx="6" fill="#fff" stroke="#a8453a"/><text x="510" y="280">③′ 客户实际成本↑</text><text x="510" y="294" font-size="10" fill="#8a94a6">股价门槛变远</text>
+    <rect x="350" y="160" width="130" height="34" rx="6" fill="#fff" stroke="#a8453a"/><text x="415" y="182">④′ 订单放缓</text>
+  </g>
+  <g fill="none" stroke-width="1.8">
+    <path d="M230 80 Q275 105 268 156" stroke="#4f6b8a" marker-end="url(#ab)"/>
+    <path d="M262 198 Q255 250 234 272" stroke="#4f6b8a" marker-end="url(#ab)"/>
+    <path d="M108 280 Q70 250 72 200" stroke="#4f6b8a" marker-end="url(#ab)"/>
+    <path d="M78 156 Q80 100 106 78" stroke="#4f6b8a" marker-end="url(#ab)"/>
+    <path d="M570 80 Q615 105 608 156" stroke="#a8453a" marker-end="url(#ar)"/>
+    <path d="M602 198 Q595 250 574 272" stroke="#a8453a" marker-end="url(#ar)"/>
+    <path d="M448 280 Q410 250 412 200" stroke="#a8453a" marker-end="url(#ar)"/>
+    <path d="M418 156 Q420 100 446 78" stroke="#a8453a" marker-end="url(#ar)"/>
+  </g>
+  <text x="170" y="184" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" fill="#c8a96a">正反馈</text>
+  <text x="510" y="184" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" fill="#c8a96a">正反馈</text>
+  <text x="340" y="346" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">折扣用股价计价,股价就写进了报价单</text>
+</svg>

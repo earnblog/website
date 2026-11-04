@@ -76,5 +76,6 @@
     "claim": { "zh": "进口那一行的减号不是拖累,是退货:美国本土需求依然强,GDP 只是扣掉了外国造的部分。", "en": "The minus sign on imports is not a drag but a refund: US domestic demand is still strong, and GDP simply subtracts what was made abroad." },
     "test": { "zh": "三季度 GDP 第二次估算(11 月下旬):私人国内最终销售增速仍在 4% 以上。", "en": "Q3 GDP second estimate (late November): final sales to private domestic purchasers still grow above 4%." },
     "checkBy": "2026-11-27", "verdict": "pending", "note": { "zh": "", "en": "" }
-  }
+  },
+  {"slug": "2026-11-04-paid-in-stock", "slugEn": "paid-in-its-own-stock", "date": "2026-11-04", "claim": {"zh": "AMD的客户权证不是一次性噪音,是随股价重估、用股价计价的折扣:它会作为负债按季度重估,损益落在经营之外,方向跟着股价走。", "en": "AMD's customer warrants are not one-off noise but a discount priced in its own stock: carried as a liability, remeasured every quarter below operating income, moving with the share price."}, "test": {"zh": "到 2026 年 12 月 7 日,AMD 向 SEC 提交的 2026 年三季度 10-Q 显示:客户权证按公允价值列为负债、每季度重估,公允价值变动计入营业利润以下(其他收入/费用),且注明主要随 AMD 股价变动;若 10-Q 显示该变动冲减营收或计入营业利润之内,或权证被列为权益、不再重估,则判断错。", "en": "By December 7, 2026, AMD's Q3 2026 10-Q on SEC EDGAR shows the customer warrants carried as a liability at fair value, remeasured quarterly, with changes recorded below operating income (other income/expense) and attributed mainly to AMD's stock price. If the 10-Q instead books the change against revenue or inside operating income, or classifies the warrants as equity with no remeasurement, the call is wrong."}, "checkBy": "2026-12-07", "verdict": "pending", "note": {"zh": "", "en": ""}}
 ]
