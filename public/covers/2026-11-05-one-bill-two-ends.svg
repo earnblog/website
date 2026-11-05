@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一张金色账单像跷跷板一样横跨画面,左端连着蓝色数据中心被抬起,右端连着芯片被信号红压低;底部金字:一张账单,不可能两头都是利好">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <rect x="0" y="236" width="680" height="64" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">崩的不是AI,是两头都算利好的日子</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">付钱的一头 · 收钱的一头 · 同一张账单</text>
+  <path d="M320 214 L360 214 L340 178 Z" fill="#4f6b8a"/>
+  <g transform="rotate(9 340 176)">
+    <rect x="150" y="166" width="380" height="20" rx="3" fill="#c8a96a"/>
+    <g stroke="#181f2b" stroke-width="1.5" opacity="0.55"><line x1="200" y1="176" x2="300" y2="176"/><line x1="380" y1="176" x2="480" y2="176"/></g>
+    <text x="340" y="181" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#181f2b">资本开支</text>
+    <rect x="158" y="104" width="78" height="60" rx="2" fill="#4f6b8a"/>
+    <g fill="#c8a96a" opacity="0.85"><rect x="168" y="114" width="14" height="6"/><rect x="190" y="114" width="14" height="6"/><rect x="212" y="114" width="14" height="6"/><rect x="168" y="130" width="14" height="6"/><rect x="190" y="130" width="14" height="6"/><rect x="212" y="130" width="14" height="6"/><rect x="168" y="146" width="14" height="6"/><rect x="190" y="146" width="14" height="6"/><rect x="212" y="146" width="14" height="6"/></g>
+    <rect x="448" y="124" width="56" height="40" rx="3" fill="#a8453a"/>
+    <rect x="462" y="134" width="28" height="20" fill="#181f2b"/>
+    <g stroke="#a8453a" stroke-width="2"><line x1="458" y1="118" x2="458" y2="124"/><line x1="476" y1="118" x2="476" y2="124"/><line x1="494" y1="118" x2="494" y2="124"/></g>
+  </g>
+  <text x="96" y="146" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">付钱的:少花一笔 ↑</text>
+  <text x="482" y="226" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">收钱的:发票晚到 ↓</text>
+  <text x="340" y="274" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" fill="#c8a96a">一张账单,不可能两头都是利好</text>
+</svg>
