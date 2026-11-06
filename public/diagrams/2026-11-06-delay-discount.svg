@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="上下两排时间表对照:上排原计划,四年的订单方块按年排开;下排推迟一年,同样四块整体右移一格,每块折回今天都更小">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="30" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">同一排订单,推后一格,每一格折回今天都更小</text>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#33404f">
+    <text x="130" y="330" text-anchor="middle">第1年</text><text x="250" y="330" text-anchor="middle">第2年</text>
+    <text x="370" y="330" text-anchor="middle">第3年</text><text x="490" y="330" text-anchor="middle">第4年</text><text x="610" y="330" text-anchor="middle">第5年</text>
+  </g>
+  <line x1="70" y1="160" x2="650" y2="160" stroke="#ddd4c4" stroke-width="1.5"/>
+  <line x1="70" y1="300" x2="650" y2="300" stroke="#ddd4c4" stroke-width="1.5"/>
+  <text x="70" y="62" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#4f6b8a">原计划</text>
+  <text x="70" y="202" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#a8453a">推迟一年</text>
+  <g fill="#4f6b8a">
+    <rect x="112" y="124" width="36" height="36"/><rect x="230" y="120" width="40" height="40"/>
+    <rect x="348" y="116" width="44" height="44"/><rect x="466" y="112" width="48" height="48"/>
+  </g>
+  <g fill="#c8a96a">
+    <rect x="234" y="268" width="32" height="32"/><rect x="352" y="264" width="36" height="36"/>
+    <rect x="470" y="260" width="40" height="40"/><rect x="588" y="256" width="44" height="44"/>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#33404f">
+    <text x="130" y="112" text-anchor="middle">今天的价值</text>
+    <text x="410" y="236" text-anchor="middle" fill="#a8453a">东西没少,每块都晚到一年 → 每块都打了一道折</text>
+  </g>
+  <rect x="440" y="44" width="200" height="40" rx="4" fill="none" stroke="#ddd4c4"/>
+  <text x="540" y="61" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10.5" fill="#33404f">方块大小 = 折回今天的价值</text>
+  <text x="540" y="76" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10.5" fill="#33404f">折扣率为示意假设</text>
+</svg>

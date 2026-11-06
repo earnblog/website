@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一张金色时间表上,一排代表未来订单的方块被信号红箭头整体推后一格,推后之后每个方块都缩小了一圈;底部金字:推迟不是晚一点,是打折">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <rect x="0" y="236" width="680" height="64" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">估值不是一个数,是一张时间表</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">原计划 · 推后一格 · 每一格都更小</text>
+  <line x1="60" y1="140" x2="630" y2="140" stroke="#4f6b8a" stroke-width="1.5"/>
+  <line x1="60" y1="214" x2="630" y2="214" stroke="#4f6b8a" stroke-width="1.5"/>
+  <g font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6">
+    <text x="60" y="156">原计划</text><text x="60" y="230">推后一年</text>
+  </g>
+  <g fill="#c8a96a">
+    <rect x="130" y="104" width="36" height="36"/>
+    <rect x="230" y="98" width="42" height="42"/>
+    <rect x="330" y="92" width="48" height="48"/>
+    <rect x="430" y="86" width="54" height="54"/>
+  </g>
+  <g fill="#c8a96a" opacity="0.55">
+    <rect x="234" y="182" width="32" height="32"/>
+    <rect x="334" y="177" width="37" height="37"/>
+    <rect x="434" y="172" width="42" height="42"/>
+    <rect x="534" y="168" width="46" height="46"/>
+  </g>
+  <g stroke="#a8453a" stroke-width="2.5" fill="none">
+    <path d="M150 150 C 170 165, 210 170, 240 176"/>
+    <path d="M455 150 C 480 162, 520 165, 548 164"/>
+  </g>
+  <g fill="#a8453a"><path d="M240 176 l-9 -6 l1 10 z"/><path d="M548 164 l-10 -4 l3 9 z"/></g>
+  <text x="340" y="274" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" fill="#c8a96a">推迟不是晚一点,是打折</text>
+</svg>
