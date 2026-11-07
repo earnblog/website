@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一只信号红的油桶跑在前面,身后拖着一张长长的金色欠条,一个蓝色小人攥着欠条另一头在后面追;底部金字:工资不是通胀的油门,是通胀开出去的欠条">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <rect x="0" y="236" width="680" height="64" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">先跑的是油价,后追的是工资</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">物价先拿走一块 · 工资回来追账</text>
+  <line x1="60" y1="200" x2="630" y2="200" stroke="#4f6b8a" stroke-width="1" opacity="0.5"/>
+  <!-- oil barrel -->
+  <g transform="translate(500,112)">
+    <rect x="0" y="0" width="70" height="88" rx="8" fill="#a8453a"/>
+    <line x1="0" y1="22" x2="70" y2="22" stroke="#181f2b" stroke-width="3"/>
+    <line x1="0" y1="66" x2="70" y2="66" stroke="#181f2b" stroke-width="3"/>
+    <text x="35" y="50" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" fill="#fbf9f4">油价</text>
+  </g>
+  <!-- IOU ribbon -->
+  <path d="M500 150 C 430 120, 360 175, 290 150 S 200 140, 168 158" fill="none" stroke="#c8a96a" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <text x="372" y="140" font-family="'Noto Serif SC',serif" font-size="13" fill="#c8a96a">欠条</text>
+  <!-- worker -->
+  <g transform="translate(130,128)" fill="#4f6b8a">
+    <circle cx="20" cy="10" r="10"/>
+    <path d="M12 24 h16 l6 30 h-8 l-4 -18 l-4 18 h-8 z"/>
+    <path d="M26 30 l20 -2 l0 6 l-20 2 z"/>
+    <path d="M14 54 l-8 18 h8 l6 -14 z M26 54 l10 18 h-8 l-8 -14 z"/>
+  </g>
+  <text x="140" y="222" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6">工资</text>
+  <text x="520" y="222" font-family="system-ui,sans-serif" font-size="10" fill="#8a94a6">物价</text>
+  <text x="340" y="274" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" fill="#c8a96a">工资不是通胀的油门,是通胀开出去的欠条</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:左侧油价先涨、开出欠条,工资在后面追;右侧两条分岔路——上路雇主吞下成本,负反馈自我修复;下路成本转给顾客,正反馈自我强化">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <g font-family="'Noto Serif SC',serif">
+    <text x="340" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#33404f">同一张欠条,两种还法</text>
+    <!-- left: start -->
+    <rect x="30" y="130" width="120" height="44" rx="6" fill="#a8453a"/>
+    <text x="90" y="157" text-anchor="middle" font-size="13" fill="#fbf9f4">① 油价先涨</text>
+    <path d="M150 152 H190" stroke="#33404f" stroke-width="2" fill="none"/>
+    <path d="M190 152 l-8 -5 v10 z" fill="#33404f"/>
+    <rect x="192" y="130" width="120" height="44" rx="6" fill="#c8a96a"/>
+    <text x="252" y="150" text-anchor="middle" font-size="12" fill="#33404f">② 工资落后物价</text>
+    <text x="252" y="166" text-anchor="middle" font-size="11" fill="#33404f">欠条开出</text>
+    <path d="M312 152 H350" stroke="#33404f" stroke-width="2" fill="none"/>
+    <path d="M350 152 l-8 -5 v10 z" fill="#33404f"/>
+    <rect x="352" y="130" width="100" height="44" rx="6" fill="#33404f"/>
+    <text x="402" y="157" text-anchor="middle" font-size="12" fill="#fbf9f4">③ 工资追账</text>
+    <!-- branches -->
+    <path d="M452 145 C 480 120, 490 95, 512 90" stroke="#4f6b8a" stroke-width="2" fill="none"/>
+    <path d="M452 160 C 480 185, 490 230, 512 240" stroke="#a8453a" stroke-width="2" fill="none"/>
+    <!-- upper: repair -->
+    <rect x="512" y="56" width="148" height="70" rx="6" fill="none" stroke="#4f6b8a" stroke-width="2"/>
+    <text x="586" y="80" text-anchor="middle" font-size="12" fill="#4f6b8a">雇主吞下:利润被挤</text>
+    <text x="586" y="98" text-anchor="middle" font-size="12" fill="#4f6b8a">招人放慢 → 追账变慢</text>
+    <text x="586" y="116" text-anchor="middle" font-size="11" fill="#4f6b8a">负反馈 · 欠条两清</text>
+    <!-- lower: spiral -->
+    <rect x="512" y="206" width="148" height="70" rx="6" fill="none" stroke="#a8453a" stroke-width="2"/>
+    <text x="586" y="230" text-anchor="middle" font-size="12" fill="#a8453a">转给顾客:售价再涨</text>
+    <text x="586" y="248" text-anchor="middle" font-size="12" fill="#a8453a">工人再落后 → 再追</text>
+    <text x="586" y="266" text-anchor="middle" font-size="11" fill="#a8453a">正反馈 · 欠条越签越大</text>
+    <path d="M520 276 C 420 330, 140 330, 90 178" stroke="#a8453a" stroke-width="1.5" stroke-dasharray="5 4" fill="none"/>
+    <path d="M90 178 l-4 10 l9 -2 z" fill="#a8453a"/>
+    <text x="300" y="322" text-anchor="middle" font-size="11" fill="#a8453a">螺旋:新一轮涨价回到起点</text>
+    <text x="250" y="230" text-anchor="middle" font-size="11" fill="#33404f">分开两条路的,不是工资涨多快,</text>
+    <text x="250" y="248" text-anchor="middle" font-size="11" fill="#33404f">是成本能不能转出去——盯核心物价</text>
+  </g>
+  <line x1="30" y1="345" x2="650" y2="345" stroke="#ddd4c4"/>
+</svg>
