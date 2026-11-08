@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:三只钟并排。AI收入往后推,对应半导体下跌;能源紧张往前收,对应能源股下跌;加息往前拉,折现率提前变贵;收入后推加折现前拉,对远期资产两头挤压">
+<rect width="680" height="360" fill="#fbf9f4"/>
+<text x="340" y="32" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">本周被同时拨动的三只钟</text>
+<circle cx="130" cy="120" r="48" fill="#ffffff" stroke="#c8a96a" stroke-width="3"/>
+<line x1="130.0" y1="78.0" x2="130.0" y2="73.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="151.0" y1="83.6" x2="153.5" y2="79.3" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="166.4" y1="99.0" x2="170.7" y2="96.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="172.0" y1="120.0" x2="177.0" y2="120.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="166.4" y1="141.0" x2="170.7" y2="143.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="151.0" y1="156.4" x2="153.5" y2="160.7" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="130.0" y1="162.0" x2="130.0" y2="167.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="109.0" y1="156.4" x2="106.5" y2="160.7" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="93.6" y1="141.0" x2="89.3" y2="143.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="88.0" y1="120.0" x2="83.0" y2="120.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="93.6" y1="99.0" x2="89.3" y2="96.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="109.0" y1="83.6" x2="106.5" y2="79.3" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="130" y1="120" x2="100.1" y2="102.7" stroke="#c8a96a" stroke-width="4" stroke-linecap="round"/>
+<circle cx="130" cy="120" r="4" fill="#c8a96a"/>
+<path d="M168.6 74.0 A60 60 0 0 0 91.4 74.0" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+<path d="M85.3 79.2 L88.2 70.2 L94.6 77.9 z" fill="#a8453a"/>
+<text x="130" y="198" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#33404f">AI收入的钟</text>
+<text x="130" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f" opacity="0.85">往后推 → 半导体重挫</text>
+<circle cx="340" cy="120" r="48" fill="#ffffff" stroke="#b07d33" stroke-width="3"/>
+<line x1="340.0" y1="78.0" x2="340.0" y2="73.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="361.0" y1="83.6" x2="363.5" y2="79.3" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="376.4" y1="99.0" x2="380.7" y2="96.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="382.0" y1="120.0" x2="387.0" y2="120.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="376.4" y1="141.0" x2="380.7" y2="143.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="361.0" y1="156.4" x2="363.5" y2="160.7" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="340.0" y1="162.0" x2="340.0" y2="167.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="319.0" y1="156.4" x2="316.5" y2="160.7" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="303.6" y1="141.0" x2="299.3" y2="143.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="298.0" y1="120.0" x2="293.0" y2="120.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="303.6" y1="99.0" x2="299.3" y2="96.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="319.0" y1="83.6" x2="316.5" y2="79.3" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="340" y1="120" x2="369.9" y2="102.7" stroke="#b07d33" stroke-width="4" stroke-linecap="round"/>
+<circle cx="340" cy="120" r="4" fill="#b07d33"/>
+<path d="M301.4 74.0 A60 60 0 0 1 378.6 74.0" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+<path d="M384.7 79.2 L375.4 77.9 L381.8 70.2 z" fill="#a8453a"/>
+<text x="340" y="198" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#33404f">能源紧张的钟</text>
+<text x="340" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f" opacity="0.85">往前收 → 能源股重挫</text>
+<circle cx="550" cy="120" r="48" fill="#ffffff" stroke="#4f6b8a" stroke-width="3"/>
+<line x1="550.0" y1="78.0" x2="550.0" y2="73.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="571.0" y1="83.6" x2="573.5" y2="79.3" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="586.4" y1="99.0" x2="590.7" y2="96.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="592.0" y1="120.0" x2="597.0" y2="120.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="586.4" y1="141.0" x2="590.7" y2="143.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="571.0" y1="156.4" x2="573.5" y2="160.7" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="550.0" y1="162.0" x2="550.0" y2="167.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="529.0" y1="156.4" x2="526.5" y2="160.7" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="513.6" y1="141.0" x2="509.3" y2="143.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="508.0" y1="120.0" x2="503.0" y2="120.0" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="513.6" y1="99.0" x2="509.3" y2="96.5" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="529.0" y1="83.6" x2="526.5" y2="79.3" stroke="#ddd4c4" stroke-width="1.5"/>
+<line x1="550" y1="120" x2="584.6" y2="120.0" stroke="#4f6b8a" stroke-width="4" stroke-linecap="round"/>
+<circle cx="550" cy="120" r="4" fill="#4f6b8a"/>
+<path d="M511.4 74.0 A60 60 0 0 1 588.6 74.0" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+<path d="M594.7 79.2 L585.4 77.9 L591.8 70.2 z" fill="#a8453a"/>
+<text x="550" y="198" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#33404f">加息的钟</text>
+<text x="550" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#33404f" opacity="0.85">往前拉 → 折现率提前变贵</text>
+<rect x="90" y="258" width="500" height="62" rx="8" fill="none" stroke="#a8453a" stroke-width="1.8"/>
+<text x="340" y="283" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13.5" fill="#33404f">收入往后推 + 折现往前拉 = 远期资产两头挤压</text>
+<text x="340" y="305" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#a8453a">红色弧线:本周钟被拨动的方向</text>
+</svg>

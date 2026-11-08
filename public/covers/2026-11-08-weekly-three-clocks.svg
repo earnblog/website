@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:深墨底上三只钟并排,AI收入的钟被往后拨,能源紧张的钟被往前收,加息的钟被往前拉;底部金字:市场交易的不是消息,是时间表">
+<rect width="680" height="300" fill="#181f2b"/>
+<rect x="0" y="252" width="680" height="48" fill="#1c2330"/>
+<text x="40" y="38" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">周报 · 2026年11月第一周</text>
+<circle cx="150" cy="125" r="52" fill="#1c2330" stroke="#c8a96a" stroke-width="3"/>
+<line x1="150.0" y1="79.0" x2="150.0" y2="74.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="173.0" y1="85.2" x2="175.5" y2="80.8" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="189.8" y1="102.0" x2="194.2" y2="99.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="196.0" y1="125.0" x2="201.0" y2="125.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="189.8" y1="148.0" x2="194.2" y2="150.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="173.0" y1="164.8" x2="175.5" y2="169.2" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="150.0" y1="171.0" x2="150.0" y2="176.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="127.0" y1="164.8" x2="124.5" y2="169.2" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="110.2" y1="148.0" x2="105.8" y2="150.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="104.0" y1="125.0" x2="99.0" y2="125.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="110.2" y1="102.0" x2="105.8" y2="99.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="127.0" y1="85.2" x2="124.5" y2="80.8" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="150" y1="125" x2="117.6" y2="106.3" stroke="#c8a96a" stroke-width="4" stroke-linecap="round"/>
+<circle cx="150" cy="125" r="4" fill="#c8a96a"/>
+<path d="M191.1 76.0 A64 64 0 0 0 108.9 76.0" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+<path d="M102.7 81.1 L105.6 72.1 L112.1 79.8 z" fill="#a8453a"/>
+<text x="150" y="207" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c8a96a">AI收入</text>
+<text x="150" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#c8a96a" opacity="0.85">往后推</text>
+<circle cx="340" cy="125" r="52" fill="#1c2330" stroke="#8a94a6" stroke-width="3"/>
+<line x1="340.0" y1="79.0" x2="340.0" y2="74.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="363.0" y1="85.2" x2="365.5" y2="80.8" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="379.8" y1="102.0" x2="384.2" y2="99.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="386.0" y1="125.0" x2="391.0" y2="125.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="379.8" y1="148.0" x2="384.2" y2="150.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="363.0" y1="164.8" x2="365.5" y2="169.2" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="340.0" y1="171.0" x2="340.0" y2="176.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="317.0" y1="164.8" x2="314.5" y2="169.2" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="300.2" y1="148.0" x2="295.8" y2="150.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="294.0" y1="125.0" x2="289.0" y2="125.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="300.2" y1="102.0" x2="295.8" y2="99.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="317.0" y1="85.2" x2="314.5" y2="80.8" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="340" y1="125" x2="372.4" y2="106.3" stroke="#8a94a6" stroke-width="4" stroke-linecap="round"/>
+<circle cx="340" cy="125" r="4" fill="#8a94a6"/>
+<path d="M298.9 76.0 A64 64 0 0 1 381.1 76.0" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+<path d="M387.3 81.1 L377.9 79.8 L384.4 72.1 z" fill="#a8453a"/>
+<text x="340" y="207" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#c9ced8">能源紧张</text>
+<text x="340" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#c9ced8" opacity="0.85">往前收</text>
+<circle cx="530" cy="125" r="52" fill="#1c2330" stroke="#4f6b8a" stroke-width="3"/>
+<line x1="530.0" y1="79.0" x2="530.0" y2="74.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="553.0" y1="85.2" x2="555.5" y2="80.8" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="569.8" y1="102.0" x2="574.2" y2="99.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="576.0" y1="125.0" x2="581.0" y2="125.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="569.8" y1="148.0" x2="574.2" y2="150.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="553.0" y1="164.8" x2="555.5" y2="169.2" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="530.0" y1="171.0" x2="530.0" y2="176.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="507.0" y1="164.8" x2="504.5" y2="169.2" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="490.2" y1="148.0" x2="485.8" y2="150.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="484.0" y1="125.0" x2="479.0" y2="125.0" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="490.2" y1="102.0" x2="485.8" y2="99.5" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="507.0" y1="85.2" x2="504.5" y2="80.8" stroke="#8a94a6" stroke-width="1.5"/>
+<line x1="530" y1="125" x2="567.4" y2="125.0" stroke="#4f6b8a" stroke-width="4" stroke-linecap="round"/>
+<circle cx="530" cy="125" r="4" fill="#4f6b8a"/>
+<path d="M488.9 76.0 A64 64 0 0 1 571.1 76.0" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+<path d="M577.3 81.1 L567.9 79.8 L574.4 72.1 z" fill="#a8453a"/>
+<text x="530" y="207" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="14" font-weight="700" fill="#9fb4cc">加息</text>
+<text x="530" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#9fb4cc" opacity="0.85">往前拉</text>
+<text x="340" y="282" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#c8a96a">市场交易的不是消息,是时间表</text>
+</svg>

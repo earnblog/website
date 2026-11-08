@@ -3,19 +3,19 @@
     "slug": "2026-10-02-rent-not-inflation", "date": "2026-10-02",
     "claim": { "zh": "十年期美债收益率这一轮上涨,主要是\"时间的租金\"(实际利率/期限溢价),不是通胀预期;通胀数据走软也压不下来。", "en": "The latest leg up in the 10-year yield is mostly rent on time (real yields / term premium), not inflation expectations; softer inflation prints will not pull it down." },
     "test": { "zh": "到 11 月初:十年期收益率仍在 5% 以上,且 10 月 1 日以来十年期实际利率(DFII10)的变动大于十年期通胀预期(T10YIE)的变动。", "en": "By early November: the 10-year yield is still above 5%, and since October 1 the 10-year real yield (DFII10) has moved more than 10-year breakeven inflation (T10YIE)." },
-    "checkBy": "2026-11-02", "verdict": "pending", "note": { "zh": "", "en": "" }
+    "checkBy": "2026-11-02", "verdict": "mixed", "note": { "zh": "一半对、一半错。错的一半:到 11 月 2 日十年期收益率已降到 4.91%,没守住 5%(美国财政部日度收益率曲线 / FRED DGS10),\"压不下来\"说错了。对的一半:10 月 1 日到 11 月 2 日,十年期实际利率 DFII10 从 2.88% 降到 2.62%(-26 个基点),通胀预期 T10YIE 从 2.36% 降到 2.29%(-7 个基点),变动主要来自实际利率(FRED)。", "en": "Half right, half wrong. Wrong half: by November 2 the 10-year yield had fallen to 4.91%, below 5% (US Treasury daily yield curve / FRED DGS10), so \"won't come down\" was wrong. Right half: from October 1 to November 2 the 10-year real yield (DFII10) fell from 2.88% to 2.62% (-26bp) while 10-year breakevens (T10YIE) fell from 2.36% to 2.29% (-7bp), so the move came mainly from real yields (FRED)." }, "checked": "2026-11-08"
   },
   {
     "slug": "2026-10-03-first-print-not-truth", "date": "2026-10-03",
     "claim": { "zh": "九月非农初值 2.9 万只是第一次报价,后续修正幅度会大到改变解读。", "en": "September's +29k payrolls print is only a first quote; later revisions will be large enough to change the story." },
     "test": { "zh": "11 月初公布十月非农时,九月数据的修正幅度达到 3 万人以上(上修或下修都算)。", "en": "When October payrolls are released in early November, September is revised by 30k or more in either direction." },
-    "checkBy": "2026-11-07", "verdict": "pending", "note": { "zh": "", "en": "" }
+    "checkBy": "2026-11-07", "verdict": "right", "note": { "zh": "BLS 11 月 6 日公布的十月就业报告:九月非农从 +2.9 万上修 3.1 万到 +6.0 万,达到 3 万的门槛;八月同时上修 5.3 万,两个月合计上修 8.4 万(BLS Employment Situation)。", "en": "In the October jobs report released by the BLS on November 6, September payrolls were revised up by 31k, from +29k to +60k, clearing the 30k bar; August was also revised up by 53k, for a combined +84k (BLS Employment Situation)." }, "checked": "2026-11-08"
   },
   {
     "slug": "2026-10-06-one-rack-counted-twice", "date": "2026-10-06",
     "claim": { "zh": "富士康营收大增验证不了 AI 需求,同一条供应链上的数字是回声;真正的证据在链条另一头的终端收入。", "en": "Foxconn's revenue surge cannot verify AI demand — numbers on the same supply chain echo each other; the real evidence sits at the far end, in end-customer revenue." },
     "test": { "zh": "十月底三季报季:微软、谷歌、亚马逊、Meta 的资本开支同比增速,仍明显高于它们云业务/AI 相关收入的同比增速。", "en": "In the late-October earnings season, capex growth at Microsoft, Alphabet, Amazon and Meta still clearly outpaces growth in their cloud / AI-related revenue." },
-    "checkBy": "2026-11-06", "verdict": "pending", "note": { "zh": "", "en": "" }
+    "checkBy": "2026-11-06", "verdict": "right", "note": { "zh": "2026 年三季度同比:亚马逊购置物业设备 +120%,AWS 收入 +39%;Alphabet 购置物业设备 +114%,Google Cloud 收入 +103%;微软购置物业设备约 +103%,Azure 收入 +48%;Meta 资本开支约 +80%,没有单独的云收入。三家有云业务的公司资本开支增速都高于云收入增速,其中 Alphabet 的差距最窄(约 11 个百分点)。出处:各公司 8-K 附件 99.1、10-Q 现金流量表(SEC EDGAR)、微软 IR 新闻稿。", "en": "Q3 2026 year over year: Amazon purchases of property and equipment +120% vs AWS revenue +39%; Alphabet +114% vs Google Cloud +103%; Microsoft about +103% vs Azure +48%; Meta capex about +80%, with no separate cloud revenue. All three cloud companies grew capex faster than cloud revenue; Alphabet's gap was the narrowest (about 11 points). Sources: company 8-K Exhibit 99.1 releases and 10-Q cash flow statements (SEC EDGAR), Microsoft IR release." }, "checked": "2026-11-08"
   },
   {
     "slug": "2026-10-08-ai-capex-bids-rates", "date": "2026-10-08",
