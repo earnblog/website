@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:同一根弹簧,两种弹法。中间是做市商卖出看跌期权后预先卖出的股票;左侧恐惧落空,保险贬值,做市商买回股票推动上涨;右侧恐惧兑现,保险升值,做市商加码卖出推动下跌">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <text x="340" y="34" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="15" font-weight="700" fill="#33404f">同一根弹簧,两种弹法</text>
+  <!-- center -->
+  <rect x="250" y="62" width="180" height="70" rx="8" fill="#fff" stroke="#c8a96a" stroke-width="2"/>
+  <text x="340" y="88" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13" fill="#33404f">有人买走看跌期权</text>
+  <text x="340" y="110" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11.5" fill="#6b5a3a">做市商卖出保险,先卖股票对冲</text>
+  <text x="340" y="126" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#b07d33">= 弹簧被压紧</text>
+  <!-- spring icon -->
+  <path d="M340 168 l-16 -4 l32 -4 l-32 -4 l32 -4 l-32 -4 l16 -4" fill="none" stroke="#c8a96a" stroke-width="3" transform="translate(0,10)"/>
+  <line x1="340" y1="132" x2="340" y2="148" stroke="#ddd4c4" stroke-width="2"/>
+  <!-- branches -->
+  <path d="M320 180 C 260 190, 200 196, 170 214" fill="none" stroke="#4f6b8a" stroke-width="2.5"/>
+  <path d="M360 180 C 420 190, 480 196, 510 214" fill="none" stroke="#a8453a" stroke-width="2.5"/>
+  <!-- left -->
+  <rect x="40" y="214" width="270" height="118" rx="8" fill="#eef2f6" stroke="#4f6b8a" stroke-width="1.5"/>
+  <text x="175" y="238" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#4f6b8a">恐惧落空</text>
+  <text x="60" y="262" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">① 价格止跌,保险离赔付越来越远</text>
+  <text x="60" y="284" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">② 保险贬值,需要的对冲变少</text>
+  <text x="60" y="306" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">③ 做市商买回股票 → 买盘推动上涨</text>
+  <!-- right -->
+  <rect x="370" y="214" width="270" height="118" rx="8" fill="#f6ecea" stroke="#a8453a" stroke-width="1.5"/>
+  <text x="505" y="238" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="13.5" font-weight="700" fill="#a8453a">恐惧兑现</text>
+  <text x="390" y="262" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">①′ 价格续跌,保险离赔付越来越近</text>
+  <text x="390" y="284" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">②′ 风险变大,需要的对冲变多</text>
+  <text x="390" y="306" font-family="system-ui,sans-serif" font-size="11.5" fill="#33404f">③′ 做市商加码卖出 → 越跌越卖</text>
+  <text x="340" y="352" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a7d66">蓝 = 负反馈 · 自我修复    红 = 正反馈 · 自我强化</text>
+</svg>
