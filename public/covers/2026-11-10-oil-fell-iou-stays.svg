@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一只信号红的油桶顺着台阶往下滚,旁边一张金色欠条被蓝色图钉钉在墙上纹丝不动;底部金字:油价跌了,欠条还在">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <rect x="0" y="236" width="680" height="64" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">油价往下滚,欠条钉在墙上</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">温度计会降 · 余额不会自己清零</text>
+  <!-- stairs -->
+  <path d="M330 100 H380 V130 H430 V160 H480 V190 H530 V220 H620 V236 H330 Z" fill="#273042"/>
+  <path d="M330 100 H380 V130 H430 V160 H480 V190 H530 V220 H620" fill="none" stroke="#4f6b8a" stroke-width="2"/>
+  <!-- barrel rolling -->
+  <g transform="translate(468,150) rotate(-24)">
+    <rect x="-24" y="-30" width="48" height="60" rx="7" fill="#a8453a"/>
+    <line x1="-24" y1="-14" x2="24" y2="-14" stroke="#181f2b" stroke-width="3"/>
+    <line x1="-24" y1="14" x2="24" y2="14" stroke="#181f2b" stroke-width="3"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="12" fill="#fbf9f4">油价</text>
+  </g>
+  <path d="M400 112 q20 -14 40 4" fill="none" stroke="#a8453a" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M496 176 q22 -6 30 22" fill="none" stroke="#a8453a" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <!-- wall + IOU -->
+  <rect x="80" y="92" width="190" height="128" fill="#1c2330" stroke="#33404f"/>
+  <g transform="rotate(-3 175 156)">
+    <rect x="104" y="118" width="142" height="78" rx="3" fill="#c8a96a"/>
+    <text x="175" y="148" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="17" font-weight="700" fill="#181f2b">欠 条</text>
+    <line x1="120" y1="166" x2="230" y2="166" stroke="#181f2b" stroke-width="1" opacity="0.6"/>
+    <line x1="120" y1="180" x2="205" y2="180" stroke="#181f2b" stroke-width="1" opacity="0.6"/>
+  </g>
+  <circle cx="175" cy="114" r="9" fill="#4f6b8a"/>
+  <circle cx="175" cy="114" r="3.5" fill="#181f2b"/>
+  <text x="340" y="276" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="20" font-weight="700" fill="#c8a96a">油价跌了,欠条还在。</text>
+</svg>
