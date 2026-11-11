@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:左边蓝色循环,利率下行、借款变多、收入增长、股价上涨、钱更便宜;右边红色循环,利率上行、新钱变贵、开支停不下、股价下跌、钱更贵">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#4f6b8a"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#a8453a"/></marker>
+  </defs>
+  <g font-family="'Noto Serif SC',serif">
+    <text x="340" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#33404f">同一条融资链,两个方向</text>
+    <line x1="340" y1="50" x2="340" y2="330" stroke="#ddd4c4" stroke-dasharray="4 4"/>
+    <text x="170" y="62" text-anchor="middle" font-size="12" fill="#4f6b8a">利率下行:飞轮</text>
+    <text x="510" y="62" text-anchor="middle" font-size="12" fill="#a8453a">利率上行:绞索</text>
+    <!-- left loop -->
+    <circle cx="170" cy="195" r="95" fill="none" stroke="#ddd4c4"/>
+    <path d="M190 102 A95 95 0 0 1 262 175" fill="none" stroke="#4f6b8a" stroke-width="2.5" marker-end="url(#ab)"/>
+    <path d="M258 228 A95 95 0 0 1 195 287" fill="none" stroke="#4f6b8a" stroke-width="2.5" marker-end="url(#ab)"/>
+    <path d="M145 287 A95 95 0 0 1 80 220" fill="none" stroke="#4f6b8a" stroke-width="2.5" marker-end="url(#ab)"/>
+    <path d="M78 168 A95 95 0 0 1 148 102" fill="none" stroke="#4f6b8a" stroke-width="2.5" marker-end="url(#ab)"/>
+    <g font-size="12" fill="#33404f" text-anchor="middle">
+      <text x="170" y="96">钱更便宜</text>
+      <text x="282" y="205">合同借到更多钱</text>
+      <text x="170" y="306">机房更多·收入更快</text>
+      <text x="60" y="198">股价上涨</text>
+    </g>
+    <text x="170" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#4f6b8a">增长降成本</text>
+    <!-- right loop -->
+    <circle cx="510" cy="195" r="95" fill="none" stroke="#ddd4c4"/>
+    <path d="M530 102 A95 95 0 0 1 602 175" fill="none" stroke="#a8453a" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M598 228 A95 95 0 0 1 535 287" fill="none" stroke="#a8453a" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M485 287 A95 95 0 0 1 420 220" fill="none" stroke="#a8453a" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M418 168 A95 95 0 0 1 488 102" fill="none" stroke="#a8453a" stroke-width="2.5" marker-end="url(#ar)"/>
+    <g font-size="12" fill="#33404f" text-anchor="middle">
+      <text x="510" y="96">钱更贵</text>
+      <text x="620" y="205">合同借到更少钱</text>
+      <text x="510" y="306">开支停不下</text>
+      <text x="400" y="198">股价下跌</text>
+    </g>
+    <text x="510" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#a8453a">增长放大成本</text>
+    <text x="340" y="345" text-anchor="middle" font-size="11" fill="#b07d33">轮子是同一个,方向由利率和股价决定</text>
+  </g>
+</svg>
