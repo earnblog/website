@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-label="封面:一把金色折扇从左下的一点向右上方展开,越往远处扇骨缝隙越宽,扇面外沿被一道信号红弧线切开;底部金字:分子没变,扇子张开了">
+  <rect width="680" height="300" fill="#181f2b"/>
+  <rect x="0" y="236" width="680" height="64" fill="#1c2330"/>
+  <text x="48" y="42" font-family="'Noto Serif SC',serif" font-size="16" font-weight="700" fill="#c8a96a">市盈率低,是未来打了折</text>
+  <text x="48" y="66" font-family="system-ui,sans-serif" font-size="10.5" fill="#8a94a6">a low multiple is an opening fan</text>
+  <g stroke-linecap="round">
+    <line x1="200" y1="214" x2="560" y2="70" stroke="#c8a96a" stroke-width="3"/>
+    <line x1="200" y1="214" x2="575" y2="104" stroke="#c8a96a" stroke-width="3"/>
+    <line x1="200" y1="214" x2="584" y2="140" stroke="#4f6b8a" stroke-width="4"/>
+    <line x1="200" y1="214" x2="584" y2="176" stroke="#c8a96a" stroke-width="3"/>
+    <line x1="200" y1="214" x2="575" y2="212" stroke="#c8a96a" stroke-width="3"/>
+    <line x1="200" y1="214" x2="560" y2="226" stroke="#a8453a" stroke-width="3"/>
+  </g>
+  <path d="M560 70 Q600 148 560 226" fill="none" stroke="#a8453a" stroke-width="3" stroke-dasharray="6 5"/>
+  <circle cx="200" cy="214" r="9" fill="#c8a96a"/>
+  <text x="200" y="198" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="11" fill="#8a94a6">今天</text>
+  <text x="596" y="144" font-family="'Noto Serif SC',serif" font-size="11" fill="#4f6b8a">一致预期</text>
+  <text x="340" y="276" text-anchor="middle" font-family="'Noto Serif SC',serif" font-size="20" font-weight="700" fill="#c8a96a">分子没变,扇子张开了。</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="示意图:左边一把收紧的蓝色扇子,扇骨集中在中线附近;右边同一根中线,扇子张得很开,最下沿扇骨标红。两边中线一样高,右边估值更低">
+  <rect width="680" height="360" fill="#fbf9f4"/>
+  <g font-family="'Noto Serif SC',serif" fill="#33404f">
+    <text x="170" y="36" text-anchor="middle" font-size="14" font-weight="700">扇子收紧:增长可信</text>
+    <text x="510" y="36" text-anchor="middle" font-size="14" font-weight="700">扇子张开:增长存疑</text>
+  </g>
+  <line x1="340" y1="50" x2="340" y2="320" stroke="#ddd4c4" stroke-width="1.5"/>
+  <g stroke-linecap="round" stroke-width="2.5">
+    <line x1="40" y1="200" x2="300" y2="150" stroke="#4f6b8a"/>
+    <line x1="40" y1="200" x2="300" y2="170" stroke="#4f6b8a"/>
+    <line x1="40" y1="200" x2="300" y2="130" stroke="#4f6b8a"/>
+    <line x1="40" y1="200" x2="300" y2="190" stroke="#4f6b8a"/>
+    <line x1="40" y1="200" x2="300" y2="110" stroke="#4f6b8a"/>
+  </g>
+  <g stroke-linecap="round" stroke-width="2.5">
+    <line x1="380" y1="200" x2="640" y2="150" stroke="#4f6b8a"/>
+    <line x1="380" y1="200" x2="640" y2="90" stroke="#c8a96a"/>
+    <line x1="380" y1="200" x2="640" y2="60" stroke="#c8a96a"/>
+    <line x1="380" y1="200" x2="640" y2="230" stroke="#b07d33"/>
+    <line x1="380" y1="200" x2="640" y2="280" stroke="#a8453a"/>
+  </g>
+  <line x1="40" y1="150" x2="300" y2="150" stroke="#33404f" stroke-dasharray="4 4" stroke-width="1"/>
+  <line x1="380" y1="150" x2="640" y2="150" stroke="#33404f" stroke-dasharray="4 4" stroke-width="1"/>
+  <g font-family="'Noto Serif SC',serif" font-size="12" fill="#33404f">
+    <text x="40" y="222">今天</text><text x="380" y="222">今天</text>
+    <text x="304" y="146">一致预期</text><text x="590" y="142">一致预期</text>
+    <text x="560" y="300" fill="#a8453a">不顺利的那根</text>
+    <text x="170" y="330" text-anchor="middle" font-size="13">估值:高</text>
+    <text x="510" y="330" text-anchor="middle" font-size="13" fill="#a8453a">估值:低(市盈率"变便宜")</text>
+  </g>
+  <text x="340" y="352" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#8a94a6">蓝=中枢 · 金/赭/红=越来越分散的可能</text>
+</svg>
